@@ -41,7 +41,7 @@ right = \absolute {
   g'8 fis' d' g' fis' d' |
   g'8 fis' d' g' fis' g' |
   <d' a'>2 cis''4 |
-  <fis' a' d''>4-> r2 |
+  <fis' a' d''>4-> r2\fermata |
   
 
 
@@ -359,8 +359,8 @@ right = \absolute {
   <e' g' b' cis''>1 |
   <fis' g' b' d''>1 |
   <g' a' cis'' e''>1 |
-  <g' b' d'' fis''>2.\( g''4\) |
-  <g' b' e'' fis''>2.\( a''4\) |
+  <g' b' d'' fis''>2. g''4 |
+  <g' b' e'' fis''>2. a''4 |
   <g' a' d'' fis''>1 |
   <fis' a' cis'' e''>1 |
 

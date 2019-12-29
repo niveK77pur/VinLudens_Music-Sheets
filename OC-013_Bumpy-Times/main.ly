@@ -8,7 +8,7 @@
   %arranger = "Arr. by VinLudens"
 }
 
-%#(set-global-staff-size 20)
+#(set-global-staff-size 17.9)
 %showLastLength = R1 * 20
 
 \paper {

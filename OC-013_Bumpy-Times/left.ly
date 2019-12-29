@@ -154,7 +154,7 @@ left = \absolute {
 
   b16\( d' cis'8 ~ cis'2\)\fermata |
   cis'16\( d' e'8 d' cis' b4\) |
-  b16\( ais g fis g fis e d e d cis b, |
+  b16_\( ais g fis g fis e d e d cis b, |
   cis16 b, ais, g, ais, g, fis, e, fis, e, d, cis, |
  
   \time 4/4
@@ -284,7 +284,7 @@ left = \absolute {
       r4 <cis fis> <a, cis> |
     }
     \new Voice { \voiceTwo 
-      <d, d>2. |
+      d,2. |
       <d, d>2. |
       <cis, cis>2. |
       <cis,, cis,>2. |
@@ -372,6 +372,7 @@ left = \absolute {
       <g, g>1 |
       <a, a>1 |
       b,1 |
+      r1 |
     }
   >> \oneVoice
 
