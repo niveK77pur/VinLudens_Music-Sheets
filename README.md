@@ -38,4 +38,4 @@ Note that below are not listed all the videos I have on my channel, but only tho
 
 ## Quick Arrangements [[playlist]](https://www.youtube.com/playlist?list=PLglSbmjaleK_wuwjZ8emiQh07JUpsUUJh)
 
-- [QA-004 BB's Theme [Death Stranding]](asasd)
+- [QA-004 BB's Theme [Death Stranding]](https://youtu.be/qfp5m41gQAY)
