@@ -51,8 +51,57 @@ right = \absolute {
       fis''8\) s8 s4 r16 <fis'' a'' d''' fis'''>( q q) r4 |
       s2 r16 <fis'' a'' d''' fis'''>( q q) r4 |
       s2 r16 <fis'' a'' d''' fis'''>( q q) r4 |
+      s1 |
     }
   >> \oneVoice
+
+  
   <e' e''>8 <f' f''>16 q ~ q2.\) |
+  r1 |
+  r1 |
+  r1 |
+    
+  d''16 d'' d'' d'' d'' d'' d'' d'' d'' d'' d'' d'' d''( e'' f'' g'' |
+  <c'' e'' a''>) d'' d'' d'' d'' d'' d'' d'' d'' d'' d'' d'' c'''( bes'' a'' bes'' |
+  <bes' d'' a''>) d'' d'' d'' d'' d'' d'' d'' d'' d'' d'' d'' a''( g'' f'' g'' |
+  <a' d'' e''>1) |
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  << { \oneVoice
+      \change Staff = "left" <f a d'>8 \change Staff = "right" f''16 f''32 <a' d'' f''> ~ q4.. f''32 f'' q16\( e'' f'' g'' |
+      <c'' e'' a''>8\) g''16\( f''32 <a' c'' e''> ~ \voiceTwo q2\) ~ q8 \change Staff = "left" \voiceOne <e g a c'>8( |
+      <d f g bes>8) \change Staff = "right" \oneVoice f''16 f''32 <bes' c'' f''> ~ q4.. f''32 f'' <bes' c'' f''>16\( e'' f'' g'' |
+    }
+    \new Voice { \voiceOne
+      s1 |
+      s4 r4 <c''' e''' a'''>8\arpeggio \tuplet 3/2 { a'''16\( g''' f''' } <a'' c''' e'''>4\) |
+      s1 |
+    }
+  >> \oneVoice
+  g''\)
+  
 %}
 }

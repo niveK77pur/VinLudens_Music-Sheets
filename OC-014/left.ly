@@ -46,14 +46,61 @@ left = \absolute {
       <d, d>2 q |
       <c, c>2 q |
       <b,, b,>2 q |
-      <g,, g,>2-> <ais,, ais,>4 <a,, a,> |
+      <g,, g,>2-> <ais,, ais,>4-> <a,, a,>-> |
       
       <d, d>2 q |
       <c, c>2 q |
       <b,, b,>2 q |
-      <bes,, bes,>2 <g,, d, g,>2 \arpeggio |
-     
+      <bes,, bes,>2-^ <g,, d, g,>2 \arpeggio |
     }
   >> \oneVoice
+
+  << { \voiceOne 
+      r4 f2 f8 e |
+      r4 f2 e8 g |
+      r4 f2 f8 e |
+      r4 g8 f e f e16 d cis8 |
+      
+      r4 <f a>2 <f a>8 <e g> |
+      r4 <e a>2 <e a>8 <c e> |
+      r4 <d f>2 <d f>8 <c e> |
+      r4 <c' e'>8_( <bes d'> <f a>4)\fermata <gis b e' gis'>->\arpeggio |
+    }
+    \new Voice { \voiceTwo 
+      r16 a, d a, f4 ~ f16 a, d a, f a, e a, |
+      r16 a, d a, f4 ~ f16 a, d a, e a, g a, |
+      r16 a, d a, f4 ~ f16 a, d a, f a, e a, |
+      r16 a, d a, g a, f a, e a, f a, e d cis8 |
+      
+      r16 a, d a, <f a>4 ~ q16 a, d a, <f a> a, <e g> a, |
+      r16 a, c a, <e a>4 ~ q16 a, c a, q a, <c e> a, |
+      r16 f, bes, f, <d f>4 ~ q16 f, bes, f, q f, <c e> f, |
+      r16 f, a, f, r2 e16( b, gis, e,) |
+    }
+    \new Voice { \voiceThree
+      d,1 |
+      c,1 |
+      bes,,1 |
+      g,,1 |
+      
+      d,1 |
+      c,1 |
+      bes,,1 |
+      f,,2 \voiceTwo r2 | \voiceThree
+    }
+  >> \oneVoice
+
+  << { \oneVoice
+      r16 a,( d a, f8) f'16( d' a f d f a f d a,) |
+      r16 a,( c a, e8) \voiceTwo e'16( c' a e c e a e c a,) | \oneVoice
+      r16 f,( bes, f, d8) d'16( bes f d bes, d f d bes, f,) |
+    }
+    \new Voice { \voiceTwo 
+      d,1 |
+      c,1 |
+      bes,,1 |
+    }
+  >> \oneVoice
+  
 %}
 }
