@@ -24,7 +24,7 @@ left = \absolute {
       r4 <fis a d'> q q |
       r4 <g a c'> q q |
       r4 <d g b> q q |
-      r4 <e g> q q |
+      r4 <e g> q q16-^ r8. |
       
       r4 <d fis a> r q |
       r4 <c e a> r q |
@@ -41,7 +41,7 @@ left = \absolute {
       <d, a, d>1 \arpeggio |
       <c, a, c>1 \arpeggio |
       <b,, g, b,>1 \arpeggio |
-      <g, e g>1 \arpeggio |
+      <g, e g>2.\arpeggio ~ g,16 r8. |
       
       <d, d>2 q |
       <c, c>2 q |
@@ -93,14 +93,29 @@ left = \absolute {
   << { \oneVoice
       r16 a,( d a, f8) f'16( d' a f d f a f d a,) |
       r16 a,( c a, e8) \voiceTwo e'16( c' a e c e a e c a,) | \oneVoice
-      r16 f,( bes, f, d8) d'16( bes f d bes, d f d bes, f,) |
+      r16 f,( bes, f, d8) d'16( bes f d bes, d f d bes, f, |
+      \key gis \minor 
+      \bar "||"
+      d,16 bes,, <gis,, dis,>8~ q2.) |
     }
     \new Voice { \voiceTwo 
       d,1 |
       c,1 |
-      bes,,1 |
+      bes,,1 ~ |
+      bes,,8 r
     }
   >> \oneVoice
+  
+  \ottava -1
+  fis,,1 |
+  e,,1 |
+  dis,,2. ~ dis,,8. ais,,16( |
+  gis,,1) |
+  fis,,1 |
+  e,,1 |
+  dis,,2. \change Staff = "right" \voiceTwo <ais'' dis'''>8 \change Staff = "left" \oneVoice r16 ais,,16( |
+  
+  <gis,, gis,>1) |
   
 %}
 }

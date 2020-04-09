@@ -24,7 +24,7 @@ right = \absolute {
       fis'8\( fis'8 ~ fis'8 g'16 fis' ~ fis'4.\) d'16\( e'16 |
       fis'8 fis'8 ~ fis'8 a'16 fis' ~ fis'4\) ~ fis'16 d'\( e' d' |
       a'8 g' d' e'16 fis' ~ fis'4.\) d'8\( |
-      a'8 g' d' e'16 e' ~ e' d' d'8 ~ d'4\) |
+      a'8 g' d' e'16 e' ~ e' d' d'8 ~ d'16\) r8. |
       \oneVoice
       <fis' fis''>8\( q ~ q <g' g''>16 <fis' fis''> ~ q4.\) <d' d''>16\( <e' e''> |
       <fis' fis''>8 q ~ q <a' a''>16 <fis' fis''> ~ q4.\) <e' e''>16\( <d' d''> |
@@ -61,10 +61,10 @@ right = \absolute {
   r1 |
   r1 |
     
-  d''16 d'' d'' d'' d'' d'' d'' d'' d'' d'' d'' d'' d''( e'' f'' g'' |
-  <c'' e'' a''>) d'' d'' d'' d'' d'' d'' d'' d'' d'' d'' d'' c'''( bes'' a'' bes'' |
-  <bes' d'' a''>) d'' d'' d'' d'' d'' d'' d'' d'' d'' d'' d'' a''( g'' f'' g'' |
-  <a' d'' e''>1) |
+  \tiny d''16 d'' d'' d'' d'' d'' d'' d'' d'' d'' d'' d'' \normalsize d''( e'' f'' g'' |
+  <c'' e'' a''>) \tiny d'' d'' d'' d'' d'' d'' d'' d'' d'' d'' d'' \normalsize c'''( bes'' a'' bes'' |
+  <bes' d'' a''>) \tiny d'' d'' d'' d'' d'' d'' d'' d'' d'' d'' d'' \normalsize a''( g'' f'' g'' |
+  <a' d'' e''>2) r |
   
 
 
@@ -101,7 +101,21 @@ right = \absolute {
       s1 |
     }
   >> \oneVoice
-  g''\)
+  
+  \key gis \minor 
+  \bar "||"
+  
+  g''16 g'' g''16. gis'' <ais' dis'' gis''>8. ~ q2\) |
+  \ottava 2 
+  <dis''' ais''' cis''''>4.\(\arpeggio b'''8 ais'''8. b''' ais'''8 |
+  dis'''2\) ais''8.\( b'' fis'''8 |
+  fis'''8. e''' dis'''8 dis'''2\) | \ottava 0
+  r4 <b dis' gis' ais'>2. | \ottava 2
+  \appoggiatura { b''8 dis''' gis''' ais''' } \tuplet 3/2 4 { cis''''8\( cis'''' cis'''' cis''''8 b''' ais''' } ais'''4\) \tuplet 3/2 { ais'''8\( ais''' b''' } |
+  \tuplet 3/2 { ais''' gis''' dis''' } dis''''2\) \tuplet 3/2 { dis''''8\( e'''' fis'''' } |
+  \appoggiatura { e''''16 fis'''' } \tuplet 3/2 4 { e''''8 dis'''' cis'''' dis'''' ais''' b''' cis'''' gis''' ais''' } g'''8\)\fermata r16\fermata r16 |
+  
+  
   
 %}
 }
