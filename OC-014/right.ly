@@ -113,9 +113,31 @@ right = \absolute {
   r4 <b dis' gis' ais'>2. | \ottava 2
   \appoggiatura { b''8 dis''' gis''' ais''' } \tuplet 3/2 4 { cis''''8\( cis'''' cis'''' cis''''8 b''' ais''' } ais'''4\) \tuplet 3/2 { ais'''8\( ais''' b''' } |
   \tuplet 3/2 { ais''' gis''' dis''' } dis''''2\) \tuplet 3/2 { dis''''8\( e'''' fis'''' } |
-  \appoggiatura { e''''16 fis'''' } \tuplet 3/2 4 { e''''8 dis'''' cis'''' dis'''' ais''' b''' cis'''' gis''' ais''' } g'''8\)\fermata r16\fermata r16 |
+  \appoggiatura { e''''16 fis'''' } \tuplet 3/2 4 { e''''8 dis'''' cis'''' dis'''' ais''' b''' cis'''' gis''' ais''' } g'''8\)\fermata \ottava 0 r16\fermata r16 |
   
-  
+  << { \oneVoice
+      r4 <b' dis'' gis'' ais''>2 gis''4 | \voiceOne
+      \tuplet 3/2 { cis'''8 b'' ais'' } ~ ais''8 ais''4 ais''8 \tuplet 3/2 { ais''8 ais'' b'' } |
+      \tuplet 3/2 { ais'' gis''4 } dis'''4. b'8 ais' gis' |
+      <ais' cis''>1 |
+      b'8 gis' b'16 gis' b' gis' b' gis' b'8. gis' |
+      
+      ais'1 |
+    }
+    \new Voice { \voiceTwo 
+      s1 |
+      e''4 dis''2. |
+      \tuplet 3/2 { cis''4 dis''8 } ~ dis''4. r4. |
+      e'4 dis'8 e' \tuplet 3/2 4 { fis'8 gis' fis' e' fis' gis' } |
+      cis'1 |
+      <cis' e'>4 s2. |
+    }
+  >> \voiceOne
+
+  gis''16( g'' e'' dis'' cis'' b' ais' gis') gis''16( g'' e'' dis'' cis'' b' ais' gis') |
+  gis''16( g'' e'' dis'' cis'' b' ais' gis') gis''16( ais'' b'' cis''' dis''' e''' g''' gis''') |
+  gis''16( ais'' b'' cis''' dis''' e''' g''' gis''') gis''16( ais'' b'' cis''' dis''' e''' g''' gis''') |
+  ais'''1
   
 %}
 }

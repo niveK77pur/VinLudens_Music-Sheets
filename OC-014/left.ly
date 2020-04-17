@@ -81,7 +81,7 @@ left = \absolute {
       d,1 |
       c,1 |
       bes,,1 |
-      g,,1 |
+      g,,2. r4 |
       
       d,1 |
       c,1 |
@@ -109,13 +109,35 @@ left = \absolute {
   \ottava -1
   fis,,1 |
   e,,1 |
-  dis,,2. ~ dis,,8. ais,,16( |
-  gis,,1) |
+  dis,,1 | 
+  \appoggiatura ais,,4 gis,,1 |
   fis,,1 |
   e,,1 |
-  dis,,2. \change Staff = "right" \voiceTwo <ais'' dis'''>8 \change Staff = "left" \oneVoice r16 ais,,16( |
+  dis,,2. \change Staff = "right" \voiceTwo <ais'' dis'''>8 \change Staff = "left" \oneVoice r8 |
   
-  <gis,, gis,>1) |
+  
+  \appoggiatura ais,,4 <gis,, gis,>1 |
+  \appoggiatura gis,,4 <fis,, fis,>1 |
+  \appoggiatura fis,4 <b,, b,>1 |
+  \appoggiatura b,,4 <e,, e,>1 |
+  \appoggiatura e,4 <a,, a,>1 |
+  << { \voiceTwo \change Staff = "right"  
+      s4 cis'8\( dis' \tuplet 3/2 4 { e' fis' e' dis' e' fis' } |
+    }
+    \new Voice { \oneVoice 
+      \appoggiatura a,,4 cis,,1 |
+    }
+  >> \voiceTwo
+
+
+
+
+
+  
+  g'2\) g'2 |
+  g'2 g'2-- |
+  g'2-- g'2-- |
+  <ais cis' g'>1
   
 %}
 }
