@@ -33,7 +33,7 @@ dynamics = {
   s2. s4\dim |
   s4 s16 s8.\! s2 |
   s1\p | s1 | s1 | s1 | s1 | s1 |
-  s2.\< s4\pp |
+  s2.\> s4\pp |
   s1\mf | s1 | s1 |
   s4 s2.\< |
   s1\sp | s1 | s1 | s1 | s1 | s1 | s1 |

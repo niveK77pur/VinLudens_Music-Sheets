@@ -284,8 +284,8 @@ left = \absolute {
 
       \time 2/4
       <cis fis ais>8 q32 q16. q8-. r | \time 12/8
-      r4 d,16 a, <d fis>4. r4 cis,16 gis, <cis e>4. |
-      r4 b,,16 fis, <b, d>4. r4 a,16 cis <e a>4. |
+      r4 d,16_( a, <d fis>4.) r4 cis,16_( gis, <cis e>4.) |
+      r4 b,,16_( fis, <b, d>4.) r4 a,16_( cis <e a>4.) |
       r4. <g, b, d> r <fis, a, cis> |
       r8 <e g b>-. r s4. r8 <a, cis e>-. r s4. |
 
@@ -300,7 +300,7 @@ left = \absolute {
       <g, g>1 |
       <b, b>2 <a, a> |
       <g, g>1 |
-      <e, e>4^. r <d, d>^. r |
+      <e, e>8 r r4 <d, d>8 r r4 |
       <c, c>2 <fis,, fis,> ~ |
       q8 r s4 |
 
@@ -311,7 +311,7 @@ left = \absolute {
     }
   >> \oneVoice
 
-  \time 4/4 \tempo 4 = 60
+  \time 4/4 \tempo 4 = 50
 
   <b, b>2 <a, a> |
   <g, g>1 |
@@ -428,14 +428,14 @@ left = \absolute {
     }
   >> \oneVoice
 
-  \time 4/4 \key aes \major
+  \time 4/4 \tempo 4 = 88 \key aes \major
   \bar "||"
 
   << { \voiceOne
-      r8 des c bes, r es des c |
-      r8 des c des es4 bes, |
-      r8 des c bes, r es des c |
-      r8 des c f g es bes, as, |
+      r8 des\( c bes,\) r es\( des c\) |
+      r8 des\( c des es4 bes,\) |
+      r8 des\( c bes,\) r es\( des c\) |
+      r8 des\( c f g es bes, as, |
     }
     \new Voice { \voiceTwo
       bes,,2 ees, |
@@ -446,12 +446,12 @@ left = \absolute {
   >> \oneVoice
 
   \time 6/4
-  g,4 es,4 ges,2 f,8 r4 r8 |
-  r4 g,8[ es,] \tuplet 3/2 { f, ges, des, } bes,,4 r4 r |
-  r4 g,8 es, ges,2 f,4 r |
-  r4 g,8[ es,] \tuplet 3/2 { f, ges, des, } bes,,4 r4 \ottava -1 \tuplet 3/2 { as,,8 bes,, as,, } |
-  g,,2 ges,,2 f,,4 \tuplet 3/2 { f,8 f, f, } |
-  f,4 f, f,4 \ottava 0 r4 r2 |
+  g,4\)\( es,4 ges,2 f,8\) r4 r8 |
+  r4 g,8[\( es,] \tuplet 3/2 { f, ges, des, } bes,,4\) r4 r |
+  r4 g,8\( es, ges,2 f,4\) r |
+  r4 g,8[\( es,] \tuplet 3/2 { f, ges, des, } bes,,4\) r4 \ottava -1 \tuplet 3/2 { as,,8( bes,, as,, } |
+  g,,2)\( ges,,2 f,,4\) \tuplet 3/2 { f,8( f, f, } |
+  f,4 f, f,4) \ottava 0 r4 r2 |
 
   \bar "||"
   \time 4/4
@@ -469,7 +469,7 @@ left = \absolute {
     }
   >> \oneVoice
 
-  \change Staff = "right" \voiceTwo bes,16 c d e f g a bes ~ 16 16 16-. \change Staff = "left" \oneVoice s16 r4 |
+  \change Staff = "right" \voiceTwo bes,16 c d e f g a bes ~ 16 16 8 \change Staff = "left" \oneVoice r4 |
   r2 |
 
   << { \voiceOne
@@ -505,14 +505,14 @@ left = \absolute {
   <bes f'>1 | \change Staff = "left" \oneVoice \clef "bass"
 
   <bes, g>1\arpeggio |
-  r16 c'16 d' bes ~ 4 r16 bes16 c' a ~ 4 |
+  r16 c'16\( d' bes ~ 4\) r16 bes16\( c' a ~ 4\) |
 
 
 
 
 
   << { \voiceOne
-      \tuplet 3/2 { g8 a bes } c2 e4 ~ |
+      \tuplet 3/2 { g8\( a bes } c2\) e4 ~ |
       4 \change Staff = "right" <c'' f'' a'' c'''>8\arpeggio\shortfermata b''8\startTrillSpan ~ 2 ~ |
       1 |
       <f a c' f'>8_>\stopTrillSpan \voiceTwo <f, a, c>16[ q] q <a, c f> q q <c f a> q q <f a c'> q q <a c' f'> q |
@@ -520,9 +520,9 @@ left = \absolute {
     }
     \new Voice { \voiceTwo
       s4 r4 c,8 ~ 4. ~ |
-     4 \oneVoice r4 b, c |
+     4 \oneVoice r4 b,^\( c |
      a,2 g, |
-     <f,, f,>1 ~ |
+     <f,, f,>1\) ~ |
      2. ~ 16 8. |
      8-. r8 r2. |
     }

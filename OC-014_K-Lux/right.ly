@@ -115,7 +115,7 @@ right = \absolute {
   r4 <b dis' gis' ais'>2. | \ottava 2
   \appoggiatura { b''8 dis''' gis''' ais''' } \tuplet 3/2 4 { cis''''8\( cis'''' cis'''' cis''''8 b''' ais''' } ais'''4\) \tuplet 3/2 { ais'''8\( ais''' b''' } |
   \tuplet 3/2 { ais''' gis''' dis''' } dis''''2\) \tuplet 3/2 { dis''''8\( e'''' fis'''' } |
-  \appoggiatura { e''''16 fis'''' } \tuplet 3/2 4 { e''''8 dis'''' cis'''' dis'''' ais''' b''' cis'''' gis''' ais''' } g'''8\)\fermata \ottava 0 r16\fermata r16 |
+  \appoggiatura { e''''16 fis'''' } \tuplet 3/2 4 { e''''8 dis'''' cis'''' dis'''' ais''' b''' cis'''' gis''' ais''' } g'''8\)\fermata \ottava 0 r16 r16\fermata |
 
   << { \oneVoice
       r4 <b' dis'' gis'' ais''>2 gis''4 | \voiceOne
@@ -138,9 +138,9 @@ right = \absolute {
 
   gis''16( g'' e'' dis'' cis'' b' ais' gis') gis''16( g'' e'' dis'' cis'' b' ais' gis') |
   gis''16( g'' e'' dis'' cis'' b' ais' gis') gis''16( ais'' b'' cis''' dis''' e''' g''' gis''') |
-  gis''16( ais'' b'' cis''' dis''' e''' g''' gis''') gis''16( ais'' b'' cis''' dis''' e''' g''' gis''') |
-  ais'''1 |
-  gis''8 g'' b''4\fermata ais'' fis'' ~ |
+  gis''16( ais'' b'' cis''' dis''' e''' g''' gis''') gis''16( ais'' b'' cis''' dis''' e''' g''' gis''' |
+  ais'''1) |
+  gis''8\( g'' b''4\)\fermata ais'' fis'' ~ |
 
 
   fis''4 \ottava 2 \tiny <b''' dis''''> r4 <b''' dis''''> | \oneVoice
@@ -185,9 +185,9 @@ right = \absolute {
   \grace { b'''8 } a'''4.\( ~ a'''8 f'''8 e''' d'''4.\) ~ d'''8 a'''8.\( f'''16 |
   g'''4. ~ g'''8 e''' d'''  c'''4.\)\fermata r8 d'''\( e''' |
   f'''4 f'''8 ~ f'''8\) a''4( b''4) f'''8\( f''' e'''8. d'''16 |
-  e'''4 e'''8 ~ e'''8 e'''4\) \change Staff = "left" \voiceOne g''4.( gis'' | \change Staff = "right" \oneVoice \ottava 0
+  e'''4 e'''8 ~ e'''8 e'''4\) \change Staff = "left" \voiceOne g''4. gis'' | \change Staff = "right" \oneVoice \ottava 0
 
-  a''4)\( a''8 ~ a''8 f''8. e''16 d''4 d''8\) ~ d'' a''8.\( f''16 |
+  a''4\( a''8 ~ a''8 f''8. e''16 d''4 d''8\) ~ d'' a''8.\( f''16 |
   g''4 g''8 ~ g''8 e'' d''\prall( c''2.)\) |
   \time 6/8 s2. | \time 12/8
 
@@ -199,10 +199,10 @@ right = \absolute {
   e''4.\)\( c'' b' g'4\) <gis' gis''>8( |
 
 
-  <a' c'' f'' a''>4) q8 ~ q <f' f''> <e' e''> <d' g' b' d''>4 q8 ~ q8 <a' a''> <f' f''> |
-  <g' b' e'' g''>4 q8 ~ q8 <e' e''> <d' d''> <c' e' a' c''>4. ~ q8 <d' d''> <e' e''> |
-  <f' a' d'' f''>4. q4 <a a'>8 <b d' g' b'>4 q8 <f' f''> <e' e''> <dis' dis''> |
-  <e' g' c'' e''>4. <c' e' g' c''> <b e' g' b'> <g b d' g'>4 gis''8\( |
+  <a' c'' f'' a''>4) q8 ~ q <f' f''>( <e' e''> <d' g' b' d''>4) q8 ~ q8 <a' a''>( <f' f''> |
+  <g' b' e'' g''>4) q8 ~ q8 <e' e''>( <d' d''> <c' e' a' c''>4.) ~ q8 <d' d''>( <e' e''> |
+  <f' a' d'' f''>4. q4) <a a'>8( <b d' g' b'>4 q8) <f' f''>( <e' e''> <dis' dis''> |
+  <e' g' c'' e''>4.) <c' e' g' c''> <b e' g' b'> <g b d' g'>4 gis''8\( |
 
   a''4 a''8 ~ a''8 f'' e'' d''4 d''8\) ~ d''8 c''' b''16 a'' |
   g''4\( g''8 ~ g''8 e'' d'' c''4 c''8\) ~ c''8 d''\( dis'' |
@@ -264,8 +264,8 @@ right = \absolute {
   d''16 e'' d'' e'' d'' e'' fis'' a'' fis'' a'' fis'' a'' fis'' a'' fis'' cis'' |
   b'8 b' ~ b'4 \tiny <b'' d''' fis''' b'''>8\arpeggio \normalsize r8 b'8 cis'' |
   << { \voiceOne
-      s4 r16 fis'' fis'' fis'' ~ fis''4 ~ fis''16 fis'' a'' fis'' ~ |
-      fis''2 s2 |
+      s4 r16 fis''\( fis'' fis'' ~ fis''4\) ~ fis''16 fis''\( a'' fis'' ~ |
+      fis''2\) s2 |
       s1 |
       r2 \tiny <fis'' g'' b''>4.. \normalsize b'32 cis'' |
       d''4.. cis''32 d'' e''4.. d''32 e'' |
@@ -273,7 +273,7 @@ right = \absolute {
     }
     \new Voice { \voiceTwo
       d''16 e'' d'' e'' d'' fis'' fis'' fis'' cis'' d'' cis'' d'' cis'' fis'' a'' fis'' |
-      b' cis'' b' cis'' b' cis'' b' cis'' \tiny fis'''[ e''' d''' e''' d''' cis'''8] \normalsize b'32 cis'' |
+      b' cis'' b' cis'' b' cis'' b' cis'' \tiny fis'''[^\( e''' d''' e''' d''' cis'''8]\) \normalsize b'32 cis'' |
       d''8 b' fis'' d'' <a' e''> <cis'' a''> <a' fis''> cis'' |
       <fis' b'>1 |
       r8 g' fis' g' r fis' e' fis' |
@@ -282,11 +282,11 @@ right = \absolute {
   >> \oneVoice
 
   \time 2/4
-  r4 \tuplet 3/2 { r8 <d' d''> <e' e''> } | \time 12/8 \tempo 4. = 60
-  <fis' a' d'' fis''>4 q8 ~ q8 <g' g''> <fis' fis''> <fis' a' d'' fis''>4 <e' e''>8 ~ q <d' d''> <cis' cis''> |
-  <d' fis' a' d''>4 q8 ~ q <e' e''> <d' d''> <fis' a' d'' fis''>4 q8 ~ q <fis' fis''> <g' g''> |
-  <a' d'' fis'' a''>4 <g' g''>8 ~ q <d' d''> <e' e''> <g' ais' e'' g''>4 <fis' fis''>8 ~ q <d' d''> <e' e''> |
-  <fis' a' d'' fis''>4. r4 <e' e''>8 <g' ais' d'' g''>4. r4 <fis' fis''>8 |
+  r4 \tuplet 3/2 { r8 <d' d''>_\( <e' e''> } | \time 12/8 \tempo 4. = 60
+  <fis' a' d'' fis''>4 q8\) ~ q8 <g' g''>\( <fis' fis''> <fis' a' d'' fis''>4 <e' e''>8\) ~ q <d' d''>\( <cis' cis''> |
+  <d' fis' a' d''>4 q8\) ~ q <e' e''>\( <d' d''> <fis' a' d'' fis''>4 q8\) ~ q <fis' fis''>\( <g' g''> |
+  <a' d'' fis'' a''>4 <g' g''>8\) ~ q <d' d''>\( <e' e''> <g' ais' e'' g''>4 <fis' fis''>8\) ~ q <d' d''>\( <e' e''> |
+  <fis' a' d'' fis''>4.\) r4 <e' e''>8\( <g' ais' d'' g''>4.\) r4 <fis' fis''>8\( |
 
 
 
@@ -313,7 +313,7 @@ right = \absolute {
 
   \time 4/4
   << { \voiceOne
-      <d' d''>2 q |
+      <d' d''>2\) q |
       q1 |
     }
     \new Voice { \voiceTwo \tiny
@@ -322,16 +322,16 @@ right = \absolute {
     }
   >> \oneVoice
 
-  <d' d''>4 <e' e''>8 <fis' fis''> <d' d''>4 <e' e''>8 <fis' fis''> |
-  <a' a''>8 <g' g''> <d' d''> <e' e''>8. <e' e''>8. ~ q4 |
-  <d' d''>4 <e' e''>8 <fis' fis''>16 <a' a''> ~ q8. \ottava 1 <fis''' a'''>16\( <g''' b'''>8 <fis''' a'''>16 <d''' fis'''>16 ~ |
+  <d' d''>4\( <e' e''>8 <fis' fis''> <d' d''>4\) <e' e''>8\( <fis' fis''> |
+  <a' a''>8 <g' g''> <d' d''> <e' e''>8. <e' e''>8. ~ q4\) |
+  <d' d''>4\( <e' e''>8 <fis' fis''>16 <a' a''> ~ q8.\) \ottava 1 <fis''' a'''>16\( <g''' b'''>8 <fis''' a'''>16 <d''' fis'''>16 ~ |
   <d''' fis'''>8.\) q16\( <e''' g'''>8 <d''' fis'''>16 <b'' d'''>8 ~ q8 <cis''' e'''>16 ~ q4\) | \ottava 0
   << { \voiceTwo
       <d' d''>4 <e' e''>8 <fis' fis''> <d' d''>4 <e' e''>8 <fis' fis''> |
       <a' a''>8 <g'' d''' g'''> <d' d''> <e' e''>8. <e' e''>8. ~ q4 |
-      <d' d''>4 <e' e''>8 <fis' fis''> <d' d''>4 <e' e''>8 <fis' fis''> |\oneVoice \ottava 1
-      <a'' d''' fis''' a'''>8\arpeggio <g'' g'''> <d'' d'''> <e'' e'''>8. <e'' e'''>8. ~ q4 |
-      r16 e'''8 d''' cis'''8. a'' <d'' fis''>16 ~ q4\fermata | \ottava 0
+      <d' d''>4 <e' e''>8 <fis' fis''> <d' d''>4 <e' e''>8\( <fis' fis''> |\oneVoice \ottava 1
+      <a'' d''' fis''' a'''>8\arpeggio <g'' g'''> <d'' d'''> <e'' e'''>8. <e'' e'''>8. ~ q4\) |
+      r16 e'''8\( d''' cis'''8. a'' <d'' fis''>16 ~ q4\)\fermata | \ottava 0
     }
     \new Voice { \voiceOne \tiny
       r8 \ottava 1 <d''' fis''' b''' d''''> \ottava 0 s4 r8 \ottava 1 <d''' fis''' a''' d''''> \ottava 0 s4 |
@@ -389,8 +389,8 @@ right = \absolute {
   << { \voiceTwo
       <d' fis' a' d''>2. q8^. r |
       <cis' fis' a' cis''>2. q8^. r |
-      <d' fis' a' d''>2 <e' e''>4 <fis' fis''> |
-      <a' cis'' fis'' a''>2 <b' b''>4 <a' a''> |
+      <d' fis' a' d''>2 <e' e''>4\( <fis' fis''> |
+      <a' cis'' fis'' a''>2\) <b' b''>4\( <a' a''> |
     }
     \new Voice { \voiceOne
       r8. d'32 fis' \ottava 1 a' d'' fis'' a'' d''' fis''' a''' d''''8.. ~ d''''16 r4  | \ottava 0
@@ -400,10 +400,10 @@ right = \absolute {
     }
   >> \oneVoice
 
-  <fis' b' d'' fis''>4. r32 q16. ~ q8 q8. q |
-  <fis' a' cis'' fis''>4. r32 q16. ~ q8 q8. <a' a''> |
-  <fis' b' d'' fis''>4. r32 <d'' d'''>16. ~  q4 <cis'' cis'''>
-  <a' cis'' fis'' a''>4. r32 q16. ~ q8 <g' g''>8. <fis' fis''> |
+  <fis' b' d'' fis''>4.\) r32 q16. ~ q8 q8.\( q |
+  <fis' a' cis'' fis''>4.\) r32 q16. ~ q8 q8.\( <a' a''> |
+  <fis' b' d'' fis''>4.\) r32 <d'' d'''>16.\( ~  q4 <cis'' cis'''>
+  <a' cis'' fis'' a''>4.\) r32 q16.\( ~ q8 <g' g''>8. <fis' fis''> |
 
 
 
@@ -411,11 +411,11 @@ right = \absolute {
 
 
 
-  <fis' b' d'' fis''>4 <d' d''>2. |
-  <e' fis' a' e''>4 <d' d''>2. |
-  <d' e' g' d''>4 <cis' cis''>2. |
-  <cis' d' fis' cis''>4 <b b'>2. |
-  <b cis' e' b'>2 <cis' cis''>4 <ais ais'> | \time 5/4 \key d \minor
+  <fis' b' d'' fis''>4 <d' d''>2.\) |
+  <e' fis' a' e''>4( <d' d''>2.) |
+  <d' e' g' d''>4( <cis' cis''>2.) |
+  <cis' d' fis' cis''>4( <b b'>2.) |
+  <b cis' e' b'>2( <cis' cis''>4 <ais ais'>) | \time 5/4 \key d \minor
   \tuplet 6/4 4 { \ottava 1 \tiny d''''16 cis'''' bes''' a''' g''' f''' e''' d''' cis''' bes'' a'' g'' \ottava 0 f'' e'' d'' cis'' bes' a' g' f' e' d' cis' bes \ottava -1 a g f e \normalsize d8\fermata } \ottava 0 |
 
 
@@ -428,7 +428,7 @@ right = \absolute {
 
 
 
-  \time 4/4 \key aes \major
+  \time 4/4 \tempo 4 = 88 \key aes \major
   \bar "||"
 
 
@@ -446,21 +446,21 @@ right = \absolute {
 
 
   \time 6/4
-  r1 r4. bes'8 |
-  <bes es' g'>2 <bes des' f'> r4. bes'8 |
-  <bes es' g'>2 <bes es' ges'> r4. bes'8 |
-  <bes es' g'>2 <bes des' f'> r4. r8 |
-  <g bes es'>2 f'4 ges' <f bes d'>2 ~ |
-  q2 <f a c'>\fermata f'4 d' |
+  r1 r4. bes'8( |
+  <bes es' g'>2) <bes des' f'> r4. bes'8( |
+  <bes es' g'>2) <bes es' ges'> r4. bes'8( |
+  <bes es' g'>2) <bes des' f'> r4. r8 |
+  <g bes es'>2^\( f'4 ges' <f bes d'>2\) ~ |
+  q2 <f a c'> f'4\( d' |
 
   \bar "||"
   \time 4/4
   \key f \major \clef "bass"
 
 
-  c'8. a8. f8 ~ f4 g8 a |
-  bes8. d8. e8 ~ e4 c'8 bes |
-  c'8. e'8. \acciaccatura { es'16 d' } c'8 ~ c'4 a | \voiceOne
+  c'8. a8. f8\) ~ f4 g8\( a |
+  bes8. d8. e8\) ~ e4 c'8\( bes |
+  c'8. e'8. \acciaccatura { es'16 d' } c'8\) ~ c'4 a\( | \voiceOne
 
 
 
@@ -470,20 +470,18 @@ right = \absolute {
 
 
 
-  g16 a bes c' d' e' f' g' ~ g' g'16 g'-. r16 \oneVoice  \clef "treble"  \tuplet 3/2 { a''8\prall g'' f'' } | \time 2/4
-  \tuplet 3/2 4 { a''8 g'' f'' <f'' f'''> <e'' e'''> <d'' d'''> } | \time 4/4
+  g16 a bes c' d' e' f' g' ~ g' g'16 g'8\) \oneVoice  \clef "treble"  \tuplet 3/2 { a''8\prall g'' f'' } | \time 2/4
+  \tuplet 3/2 4 { a''8 g'' f'' <f'' f'''>\( <e'' e'''> <d'' d'''> } | \time 4/4
 
-  <c'' f'' a'' c'''>4 <a' c'' f'' a''>8. <f' a' c'' f''>16 ~ q4 <g' g''>8 <a' a''> |
-  <bes' d'' f'' bes''>4 <d' g' bes' d''>8. <e' g' bes' e''>16 ~ q4 <c'' c'''>8 <bes' bes''> |
-  <c'' e'' a'' c'''>4 <e'' a'' c''' e'''>8. <c'' f'' a'' c'''>16 ~ q4 r8 <a' a''> |
+  <c'' f'' a'' c'''>4 <a' c'' f'' a''>8. <f' a' c'' f''>16\) ~ q4 <g' g''>8\( <a' a''> |
+  <bes' d'' f'' bes''>4 <d' g' bes' d''>8. <e' g' bes' e''>16\)~ q4 <c'' c'''>8 \(<bes' bes''> |
+  <c'' e'' a'' c'''>4 <e'' a'' c''' e'''>8. <c'' f'' a'' c'''>16\) ~ q4 r8 <a' a''>\( |
   <g' bes' d'' g''>4 <d' d''> <f' g' bes' f''> <bes bes'> |
-  <e' g' bes' e''>2 <d' f' a' d''>16-> r8. \tuplet 3/2 { <e'' e'''>8 <f'' f'''> <e'' e'''> } |
+  <e' g' bes' e''>2\) <d' f' a' d''>16-> r8. \tuplet 3/2 { <e'' e'''>8\( <f'' f'''> <e'' e'''> } |
 
-  <c'' f'' a'' c'''>4 <a' c'' f'' a''>8. <f' a' c'' f''>16 ~ q4 <g' g''>8 <a' a''> |
-  <bes' d'' f'' bes''>4 <d' g' bes' d''>8. <e' g' bes' e''>16 ~ q4 <c'' c'''>8 <bes' bes''> |
-  <c'' e'' a'' c'''>4 <e'' a'' c''' e'''>8. <f'' a'' d''' f'''>16 ~ q4 r8 <a' a''> |
-
-
+  <c'' f'' a'' c'''>4 <a' c'' f'' a''>8. <f' a' c'' f''>16\) ~ q4 <g' g''>8\( <a' a''> |
+  <bes' d'' f'' bes''>4 <d' g' bes' d''>8. <e' g' bes' e''>16\) ~ q4 <c'' c'''>8\( <bes' bes''> |
+  <c'' e'' a'' c'''>4 <e'' a'' c''' e'''>8. <f'' a'' d''' f'''>16\) ~ q4 r8 <a' a''>( |
 
 
 
@@ -496,24 +494,26 @@ right = \absolute {
 
 
 
-  <g' g''>16 <a' a''> <bes' bes''> <c'' c'''> <d'' d'''> <e'' e'''> <f'' f'''> <g'' g'''> ~ q q q-. r \ottava 2 a'''' g'''' a'''' f'''' | \ottava 0
+
+
+  <g' g''>16 <a' a''> <bes' bes''> <c'' c'''> <d'' d'''> <e'' e'''> <f'' f'''> <g'' g'''> ~ q8 q16-.) r \ottava 2 a'''' g'''' a'''' f'''' | \ottava 0
   r8 <f a c' f'>16^^ r r2.\fermata |
 
   \bar "||"
 
-  \voiceOne a''4 bes''8 c''' f''4 g''8 a'' |
-  <d'' f'' c'''>8 bes'' \oneVoice f'' g''16 a''16 ~ 8 f'8[ g' f'] |
+  \voiceOne a''4\( bes''8 c''' f''4 g''8 a'' |
+  <d'' f'' c'''>8 bes'' \oneVoice f'' g''16 a''16\) ~ 8\shortfermata f'8[\( g' f'] |
   << {
-      <d' f' c''>8\arpeggio bes' f' g'16 g'16 ~ 16 a'16 f'8 ~ \voiceTwo 4 ~ |
-      4 \oneVoice r8 a'16 g' ~ 4 r8 g' |
+      <d' f' c''>8\arpeggio bes' f' g'16 g'16 ~ 16 a'16 f'8 ~ \voiceTwo 4\) ~ |
+      4 \oneVoice r8 a'16\( g' ~ 4\) r8 g'\( |
     }
     \new Voice { \voiceOne
-      s2. r16 f'' g'' a'' ~ |
-      4 s2. |
+      s2. r16 f''\( g'' a'' ~ |
+      4\) s2. |
     }
   >> \oneVoice
-  \tuplet 3/2 { f'8\prall e' f' } a'4. 8 g'4 |
-  f'8 e' \voiceTwo f'2. \oneVoice |
+  \tuplet 3/2 { f'8\prall e' f' } a'4.\) 8\( g'4\) |
+  f'8\( e' \voiceTwo f'2.\) \oneVoice |
   s1 | \voiceOne
   s8 <f a c' f'>16 q q <a c' f' a'> q q <c' f' a' c''> q q <f' a' c'' f''> q q <a' c'' f'' a''> q |
   q <c'' f'' a'' c'''> q q <f'' a'' c''' f'''> q q <a'' c''' f''' a'''> q q <c''' f''' a''' c''''> q q <f''' a''' c'''' f''''>8.\arpeggio |

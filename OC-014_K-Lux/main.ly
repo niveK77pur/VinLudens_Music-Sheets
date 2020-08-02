@@ -1,7 +1,8 @@
 \version "2.20.0"
 
 \header {
-  title = "OC 014 (WIP)"
+  title = "K-Lux"
+  subtitle = "Composition no. 14"
   %instrument = "Piano"
   composer = "VinLudens"
   %arranger = "Arr. by VinLudens"
