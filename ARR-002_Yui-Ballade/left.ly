@@ -16,8 +16,21 @@ left = \absolute {
   >> \oneVoice
   \clef "bass"
   d,16 fis, a, d e fis a d' \change Staff = "right" \voiceTwo <cis'' e''>4 <d'' fis''> | \change Staff = "left" \oneVoice
-  d8 f a4 <a, e fis> \ottava -1 e,, \ottava 0 |
-  a,
+  d8 eis a4 <a, e fis> \ottava -1 e,, \ottava 0 |
+
+  << { \voiceOne
+      r16 cis e e' ~ 16 b8. ~ 2 |
+      r16 eis b gis' ~ 16 cis'8. ~ 2 |
+      r16 a, cis fis ~ 4 cis16 fis fis' cis' ~ 4 |
+      r8. fis'16 ~ 16 dis'8 b16 <dis' fis'>\arpeggio b dis' fis' ~ 4 |
+     }
+    \new Voice { \voiceTwo
+      a,1 |
+      cis1 |
+      fis,1 |
+      <b, dis fis b>1\arpeggio |
+    }
+  >> \oneVoice
 
 
 %}
