@@ -42,6 +42,17 @@ left = \absolute {
       r16 fis d8 r16 fis d8 r16 gis e8 r16 gis e8 |
       r16 a fis8 fis, a, gis,4 r16 e cis8 |
       r8 fis, a, cis16 d r2 |
+      s1 |
+    }
+  >> \oneVoice
+
+  << { \voiceOne
+      r8 cis16 fis' ~ 16 cis'8. r2 |
+      r8 d16 d' ~ 16 r8. r16 gis cis' gis' ~ 16 <gis cis'>8. |
+    }
+    \new Voice { \voiceTwo
+      <cis fis a>2\arpeggio \clef "treble" <gis' cis'' e''>\arpeggio \clef "bass" |
+      <d fis a>2\arpeggio \clef "treble" <e' gis' cis''>\arpeggio |
     }
   >> \oneVoice
 

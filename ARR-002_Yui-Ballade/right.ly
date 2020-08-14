@@ -46,10 +46,17 @@ right = \absolute {
     }
   >> \oneVoice
 
-  a''8 a''16 b'' ~ 16 a''8 gis''16 ~ 4 fis''8 e'' |
-  fis''8 fis''16 gis''16 ~ 16 fis''8 e''16 ~ 4 r8 cis''8 |
-  d''8 d''16 d'' ~ 16 cis'' d''16 e''16 ~ 8 16 16 ~ 16 d'' e''16 fis'' ~ |
-  8 16 16 ~ 16 gis'' a'' b'' ~ 4 r |
+  << { \voiceTwo
+      a''8 a''16 b'' ~ 16 a''8 gis''16 ~ <gis' cis'' e'' gis''>4 fis''8 e'' |
+      fis''8 fis''16 gis''16 ~ 16 fis''8 e''16 ~ <e' gis' cis'' e''>4 r8 cis''8 |
+      d''8 d''16 d'' ~ 16 cis'' d''16 e''16 ~ 8 16 16 ~ 16 d'' e''16 fis'' ~ |
+      8 16 16 ~ 16 gis'' a'' b'' ~ 4 r |
+    }
+    \new Voice { \voiceOne \tiny
+      r2 e''''16 d'''' cis'''' gis''' ~ 4 |
+      <a'' e'''>4\arpeggio r16 a''' gis''' fis''' <cis''' e''' gis'''>4 <gis' e''>4 |
+    }
+  >> \oneVoice
 
   r8 <a' a''>
 
