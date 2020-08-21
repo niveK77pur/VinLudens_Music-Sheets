@@ -81,7 +81,7 @@ left = \absolute {
 
       <d, d>1 |
       <cis, cis>4.. <fis, fis>16 ~ 2 |
-      <b,, b,>1 |
+      <b,, b,>1-> |
       <a, a>1 |
     }
   >> \oneVoice
@@ -89,7 +89,7 @@ left = \absolute {
   \clef "treble"
   <d' f' a'>4 <f' a' d''> f16 a d' f' a'4 |
   <cis' e' a'>1\arpeggio |
-  
+
   \bar "|."
 
 %}
