@@ -48,13 +48,49 @@ left = \absolute {
 
   << { \voiceOne
       r8 cis16 fis' ~ 16 cis'8. r2 |
-      r8 d16 d' ~ 16 r8. r16 gis cis' gis' ~ 16 <gis cis'>8. |
+      r8 d16 d' ~ 16 r8. r16 gis cis' gis' ~ 16 <gis cis'>8. | \change Staff = "right" \tiny
+      r4 <a'' cis''' e''' a'''>\arpeggio r <b'' e''' gis''' b'''>\arpeggio | \change Staff = "left" \normalsize \voiceTwo
+      r8 a r fis r b,16 b ~ 16 gis e8 |  \time 2/4
+      b4 e, | \time 4/4
     }
     \new Voice { \voiceTwo
       <cis fis a>2\arpeggio \clef "treble" <gis' cis'' e''>\arpeggio \clef "bass" |
-      <d fis a>2\arpeggio \clef "treble" <e' gis' cis''>\arpeggio |
+      <d fis a>2\arpeggio \clef "treble" <e' gis' cis''>\arpeggio | \oneVoice \clef "bass"
+      <fis a d'>2 <gis b e'> |
+      <a d' fis'>4 <fis a d'> <b e' gis' b'>2 |
+      s2 |
     }
   >> \oneVoice
+
+  << { \voiceOne
+      <d e a>16 d e a ~ a d e a r d e a ~ a e d8 |
+      <cis e a>16 cis e a ~ a cis e a r cis e a ~ a e cis8 |
+      <b, d fis>16 d fis a d' a fis d r b, gis, b, e b, gis, e, |
+      r16 a, e a, cis a, e a, r8 e'16 cis' a g e cis |
+
+      r16 <d, d> e16 fis a8 d16 d, ~ 16 d, e fis a8 <d, d> |
+      r16 <cis, cis> e16 gis b8 <cis, cis>16 r16 r16 <fis, fis> <cis fis a>8 \tuplet 6/4 { a16 fis cis a, fis, cis, } |
+      r4 <d fis a> q q |
+      r4 <cis e a> q q |
+    }
+    \new Voice { \voiceTwo
+      d,2 2  |
+      cis,2 2 |
+      b,,2 <e, e> |
+      <cis, cis>2 <cis e g> |
+
+      <d, d>1 |
+      <cis, cis>4.. <fis, fis>16 ~ 2 |
+      <b,, b,>1 |
+      <a, a>1 |
+    }
+  >> \oneVoice
+
+  \clef "treble"
+  <d' f' a'>4 <f' a' d''> f16 a d' f' a'4 |
+  <cis' e' a'>1\arpeggio |
+  
+  \bar "|."
 
 %}
 }
