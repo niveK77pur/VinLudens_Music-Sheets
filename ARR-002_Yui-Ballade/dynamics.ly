@@ -32,7 +32,7 @@ dynamics = {
   s1\cresc |
   s1\! |
   s4\< s8. s16\ff s2 |
-  s1\mf\dim | s1 |
-  s1\p |
+  s1\mf\dim |
+  s2. s16 s8.\p |
 %}
 }
