@@ -31,10 +31,12 @@ Note that below are not listed all the videos I have on my channel, but only tho
 - [OC-011 humble hopes](https://youtu.be/bFPjuCj_ZB0)
 - [OC-012 Morbid thoughts](https://youtu.be/BhO-bKJ2jHc)
 - OC-013 Bumpy Times (to be recorded)
+- [OC-014 K-Lux](https://youtu.be/ezTdEjCeDI4)
 
 ## Arrangements [[playlist]](https://www.youtube.com/playlist?list=PLglSbmjaleK9XPcidmXW_UqWU4VdSH4MW)
 
 - [ARR-001 Kiss The Sky [Tales From The Borderlands]](https://youtu.be/YUVulD8i-EE)
+- [ARR-002 Diamond no Jundo (Yui Ballade) [Oregairu S3 ED]](https://youtu.be/-KcgbhGGknI)
 
 ## Quick Arrangements [[playlist]](https://www.youtube.com/playlist?list=PLglSbmjaleK_wuwjZ8emiQh07JUpsUUJh)
 
