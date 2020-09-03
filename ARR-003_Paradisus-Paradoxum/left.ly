@@ -7,24 +7,49 @@ left = \absolute {
   \ottava -1 d,,1 ~ |
   1 ~ |
   1 | \voiceTwo
-  <a,, a,>16 8 16 16 8 16 ~ 16 16 16-. r r4 | \ottava 0 \oneVoice
+  a,,16 8 16 16 8 16 ~ 16 16 16-. r r4 | \ottava 0 \oneVoice
 
   \bar "||"
 
   << { \voiceOne
       r8 <d f>16 bes,16 ~ 16 16 q8 r8 <e g>16 c ~ 16 16 q8 |
       r8 <f a>16 d ~ 16 16 q8 r8 \tuplet 3/2 { a,16 c f } \tuplet 6/4 { a c' f' c' a f } |
-      r8. bes,16 <d f>8-. r r8. a,16 <des f>8-. r |
-      <c e as>4. <c f a>8 r2 |
-      r
+      r8. bes,16 <d f>8-. r r8. a,16 <cis f>8-. r |
+      <c e gis>4. <c f a>8 r2 | \key a \minor \bar "||"
+      r8 <c e>16 a, ~ 16 16 q8 r8 <c e>16 a, ~ 16 16 q8 |
+      r8 <a, c>16 f, ~ 16 16 q8 r8 <a, c>16 f, ~ 16 16 q8 |
+      r8 <c e>16 a, ~ 16 16 q8 r8 <c e>16 a, ~ 16 16 q8 |
+      r8 <a, c>16 f, ~ 16 16 q8 r8 a,16 c f a b d' |
     }
     \new Voice { \voiceTwo
       <bes,, bes,>2 <c, c> |
       <d, d>2 <f, f> |
       <bes,, bes,>4 r <a,, a,> r |
       r2 r8 <f, f>8. <e, e> |
-      <a,, a,>
+      <a,, a,>2 2 |
+      <f,, f,>2 2 |
+      <a,, a,>2 2 |
+      <f,, f,>2 2 |
     }
   >> \oneVoice
+
+  \key d \minor
+  a,1 |
+  bes,1 |
+  a,1 |
+  bes,1 |
+
+  a,8 <e a>16 a,16 ~ 16 16 q8 a,8 <e a>16 a,16 ~ 16 16 q8 |
+  bes,8 <f bes>16 bes,16 ~ 16 16 q8 bes,8 <f bes>16 bes,16 ~ 16 16 q8 |
+  a,8 <e a>16 a,16 ~ 16 16 q8 a,8 <e a>16 a,16 ~ 16 16 q8 |
+  bes,8 <f bes>16 bes,16 ~ 16 16 q8 bes,8 <f bes>16 bes,16 r4 |
+
+  \key a \minor \bar "||"
+  <f a c'>4 <f a c'> <g b d'> <gis b d'> |
+  <a c' e'> <a c' e'> <g c' e'> <g c' e'> |
+  <f a c'> <f a c'> <g b d'> <gis b d'> |
+  <a cis' e'> q q q |
+  <a c' e'>1 |
+
 %}
 }
