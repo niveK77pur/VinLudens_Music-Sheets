@@ -68,7 +68,7 @@ left = \absolute {
       <b, d fis>16 d fis a d' a fis d r b, gis, b, e b, gis, e, |
       r16 a, e a, cis a, e a, r8 e'16 cis' a g e cis |
 
-      r16 <d, d> e16 fis a8 d16 d, ~ 16 d, e fis a8 <d, d> |
+      r16 <d, d> e16 fis a8 d16 d, _~ 16 d, e fis a8 <d, d> |
       r16 <cis, cis> e16 gis b8 <cis, cis>16 r16 r16 <fis, fis> <cis fis a>8 \tuplet 6/4 { a16 fis cis a, fis, cis, } |
       r4 <d fis a> q q |
       r4 <cis e a> q q |
