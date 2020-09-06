@@ -38,7 +38,7 @@ left = \absolute {
   a,1 |
   bes,1 |
   a,1 |
-  bes,1 |
+  << { \voiceTwo bes,1 | } \new Voice { \voiceOne r2 <g bes>8. 16 r4 | } >> \oneVoice
 
   a,8 <e a>16 a,16 ~ 16 16 q8 a,8 <e a>16 a,16 ~ 16 16 q8 |
   bes,8 <f bes>16 bes,16 ~ 16 16 q8 bes,8 <f bes>16 bes,16 ~ 16 16 \tuplet 3/2 { d'16 bes f } |
@@ -75,9 +75,9 @@ left = \absolute {
       <c e gis>4. <c f a>8 r2 |
       \key a \minor \bar "||"
       r8 <c e>16 a, ~ 16 16 q8 r8 <c e>16 a, ~ 16 16 q8 |
-      r8 <a, c>16 f, ~ 16 16 q8 r8 \voiceTwo <a c'>16 f ~ 8 q8 |
-      r8 <a c'> r q r q r q |
-      r8 <a c'> r q r q r c' |
+      r8 <a, c>16 f, ~ 16 16 q8 r8 \voiceTwo <a c'>16 f ~ 8 <f a>8 |
+      r8 <c' e'> r q r <a c'> r q |
+      r8 <c' e'> r q r <a c'> r4 |
 
     }
     \new Voice { \voiceTwo
@@ -94,8 +94,8 @@ left = \absolute {
       r2 r8 <f, f>8. <e, e> |
       <a,, a,>2 2 |
       <f,, f,>2 <f, f>2 |
-      <a,, a,>2 2 |
-      <f,, f,>2 2 |
+      <a, a>2 2 |
+      <f, f>2 2 |
 
     }
   >> \oneVoice
