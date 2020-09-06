@@ -64,21 +64,21 @@ left = \absolute {
   \key d \minor
   << { \voiceOne
       r8 <d f>16 bes,16 ~ 16 16 q8 r8 <e g>16 c ~ 16 16 q8 |
-      r8 <f a>16 d ~ 16 16 q8 r8 <a c'>16 f ~ 16 16 \tuplet 3/2 { a16 f c } |
+      r8 <f a>16 d ~ 16 16 q8 r8 <a c'>8 \tuplet 6/4 { c16 f a c'16 a f } |
       r8 <d f>16 bes,16 ~ 16 16 q8 r8 <c e g>8 r <cis e g> |
       r8 <f a>16 d q d q d r8 <a es'>16 <a es'> r16 <a c'>16 <a c'> r |
 
       r8 <d f>16 bes,16 ~ 16 16 q8 r8 <e g>16 c ~ 16 16 q8 |
-      r8 <f a>16 d ~ 16 16 q8 r8 <a c'>16 f ~ 16 16 \tuplet 3/2 { c'16 a f } |
-      %{
+      r8 <f a>16 d ~ 16 16 q8 r8 \tuplet 3/2 { g,16 b, d } \tuplet 6/4 { g16 b g d b, g, } |
+
       r8. bes,16 <d f>8-. r r8. a,16 <cis f>8-. r |
       <c e gis>4. <c f a>8 r2 |
       \key a \minor \bar "||"
       r8 <c e>16 a, ~ 16 16 q8 r8 <c e>16 a, ~ 16 16 q8 |
-      r8 <a, c>16 f, ~ 16 16 q8 r8 <a, c>16 f, ~ 16 16 q8 |
-      r8 <c e>16 a, ~ 16 16 q8 r8 <c e>16 a, ~ 16 16 q8 |
-      r8 <a, c>16 f, ~ 16 16 q8 r8 a,16 c f a b d' |
-      %}
+      r8 <a, c>16 f, ~ 16 16 q8 r8 \voiceTwo <a c'>16 f ~ 8 q8 |
+      r8 <a c'> r q r q r q |
+      r8 <a c'> r q r q r c' |
+
     }
     \new Voice { \voiceTwo
       <bes,, bes,>2 <c, c> |
@@ -87,16 +87,16 @@ left = \absolute {
       <d, d>2 <f, f> |
 
       <bes,, bes,>2 <c, c> |
-      <d, d>2 <f, f> |
+      <d, d>2 <g,, g,> |
 
-      %{
+
       <bes,, bes,>4 r <a,, a,> r |
       r2 r8 <f, f>8. <e, e> |
       <a,, a,>2 2 |
-      <f,, f,>2 2 |
+      <f,, f,>2 <f, f>2 |
       <a,, a,>2 2 |
       <f,, f,>2 2 |
-      %}
+
     }
   >> \oneVoice
 
