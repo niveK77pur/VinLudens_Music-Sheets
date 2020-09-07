@@ -77,7 +77,7 @@ right = \absolute {
       <c'' e'' a'' c'''>2.\) r8 \ottava 0 <d'' d'''>8\( |
       <c'' f'' a'' c'''>2.\) \change Staff = "left" \voiceOne r 16 d'\( d' d' |
       \parenthesize d'16 a' a' a' a'8\) r16 f'16\( ~ 16 e'16 f' e' f' e'8\) d'16\( ~ |
-      16 a'8 16 8\) r16 f'16\( ~ 16 e' f' e' f' a'8.\)  |
+      16 a'8 16 8\) r16 f'16\( ~ 16 e' f' e' f' a'8.\)  | \change Staff = "right"
     }
     \new Voice { \voiceOne \tiny
       r4 \ottava 1 <c''' g'''>4 <a'' e'''>16 c''' q c''' ~ 16 g'''8. |
@@ -86,6 +86,47 @@ right = \absolute {
       4 <c''' a'''>4 <f''' d''''> 16 c'''' a''' <d''' g'''> ~ 16 a''' b''' c'''' | \ottava 0
     }
   >> \oneVoice
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  \bar "||" \key d \minor
+  r2 <e' g' bes' cis''> |
+
+  r8 e''8.\( d'' f'' e'' d''8 |
+  c''4. bes'8\) ~ 8 e''8.\( f'' |
+  g''4\) r8 a''8\( ~ 8 e''8 ~ 8 e''16 f'' |
+  <e'' gis' c''>1\) |
+
+  << { \voiceTwo
+      r8 e''8.\( d'' f'' e'' d''8 |
+      c''4. bes'8\) ~ 8 f''8.\( d'' |
+      e''2\) r8 f''8.\( g'' | \time 2/4
+      bes''8. c'''32( bes'' <d'' f'' a''>4)\) ^~ | \time 4/4
+    }
+    \new Voice { \voiceOne \tiny
+      r8 <a'' c'''> q q q q q q |
+      <f'' bes''> <f'' bes''> <f'' bes''>8 <f'' a''> <f'' bes''> c''' bes'' <f'' c'''> |
+      <a'' e'''>8 q q q q q q q |
+      <d''' f'''>8 q r4 |
+    }
+  >> \oneVoice
+  <d'' f'' a''>8 r8 r2 <d' d''>8\( <f' a' d'' f''>\arpeggio |
+
+  \bar "||"
+
+
+  <g' bes' d'' g''>8 <a' a''>16 <g' g''> ~ 16 <f' f''>8 <g' c'' e'' g''>16 ~ 8\)
 
 %}
 }

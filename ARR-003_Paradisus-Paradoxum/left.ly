@@ -95,10 +95,45 @@ left = \absolute {
       <a,, a,>2 2 |
       <f,, f,>2 <f, f>2 |
       <a, a>2 2 |
-      <f, f>2 2 |
+      <f, f>2 4 s4 |
 
     }
   >> \oneVoice
 
+  \bar "||" \key d \minor
+  <bes, cis e a>2 ~ <bes, cis e g> |
+  << { \voiceOne
+      r8 <c' e' g'>8 ~ q2. |
+      <c' e' g'>2 e' |
+      r8 <c' e' g'>8 ~ q2. |
+      r16 <e, e>8 <e gis b>16 q8 <gis c' e'>16 q ~ 8 \tuplet 3/2 8 { e'16 c' gis e c gis, } r8 |
+      s1 |
+      s1 |
+      s1 |
+      s2 |
+      a,16( a,8) es16( d16 c8) bes,16( ~ 16 g, a,)-. r 
+    }
+    \new Voice { \voiceTwo
+      <a, e a b>1 |
+      <gis, e gis>1 |
+      <a, e a b>1 |
+      <e, e>1 |
+
+      a,8. 16 ~ 8 8 ~ 16 8. 8 8 |
+      bes,8. 16 ~ 8 8 ~ 16 8. 8 8 |
+      a,8. 16 ~ 8 8 ~ 16 8. 8 8 | \time 2/4 \ottava -1
+      <bes,, bes,>2 | \time 4/4
+      \voiceTwo a,,16 8 16 16 8 16 ~ 16 16 16-. r r4  | \ottava 0 \oneVoice
+    }
+  >> \oneVoice
+
+
+  << { \voiceOne
+      r8 <d f>16 bes,16 ~ 16 16 q8 r8 <e g>16 c ~ 16 16 q8 |
+    }
+    \new Voice { \voiceTwo
+      <bes,, bes,>2 <c, c> |
+    }
+  >> \oneVoice
 %}
 }
