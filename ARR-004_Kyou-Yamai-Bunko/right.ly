@@ -39,7 +39,7 @@ right = \relative c'' {
   \bar "||"
   \voiceOne
 
-  g4.^\markup{\italic "clam, lonely"} c8 c,4.) c16( d |
+  g4.^\markup{\italic "calm, lonely"} c8 c,4.) c16( d |
   e8 g <g c, a>2) r8 a( |
   g4. c8 <c, g>4) <e g,>16( <d f,> <c e,>8 |
   <c e,>8 <d f,> <c a e c>2) r8 a'(| \voiceOne
