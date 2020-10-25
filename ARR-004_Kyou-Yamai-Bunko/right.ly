@@ -14,8 +14,8 @@ right = \relative c'' {
   <c g'>1) ~ |
   << {
       q2. r8 g |
-      e'4.. g,16 d'4.. g,16 |
-      c4.. g16 b8. c16 a8. b16_( | \voiceTwo
+      <e' e,>4.. g,16 <d' d,>4.. g,16 |
+      <c c,>4.. g16 b8. c16 a8. b16_( | \voiceTwo
       g1) |
       r2 r8 g8^( c e | \oneVoice
       <f c>4..) g,16 e'4.. g,16 |

@@ -24,7 +24,7 @@ left = \relative c' {
       r8 <c e,>[ r q r q]( r4) |
     }
     \new Voice { \relative c'
-      c2. g4( | \voiceTwo
+      c2. g4_( | \voiceTwo
       c,1) |
       c1 |
       c1 |
@@ -42,9 +42,9 @@ left = \relative c' {
       r8 g c g r g[ r g] |
       r8 g r g[ \once\override Rest.staff-position = #-2 r g r g] |
       r8 g \change Staff = "left" \voiceOne r8 c,16( d e4) e16 d c8 |
-      c8 d r2 a,4 | \change Staff = "right" \voiceTwo
-      r8 <g'' c>[ r g r g r g] |
-      r4 r8 g[ \once\override Rest.staff-position = #-2 r g] s4 | \change Staff = "left" \voiceOne
+      c8 d r2 \ottava -1 a,,4 \ottava 0 | \change Staff = "right" \voiceTwo
+      r8 <g''' c>[ r g r g r g] |
+      r4 r8 e[ r e] s4 | \change Staff = "left" \voiceOne
       r2 r8 c,,8( g'16 c d8) |
       <g f>8( e ~ e4) <d b>2 |
     }
@@ -147,9 +147,9 @@ left = \relative c' {
       c4 ees,2 bes'4 |
       c4 bes2 <a a'>4 |
 
-      <aes aes,>2 <g g,>2 |
-      <f f,>4 r <bes bes,>2 |
-      <ees, ees,>1-> ~ |
+      <aes aes,>2-> <g g,>2 |
+      <f f,>4 r <bes bes,>2-> |
+      <ees, ees,>1 ~ |
       1 |
       1 ~ |
       2. r4 |
