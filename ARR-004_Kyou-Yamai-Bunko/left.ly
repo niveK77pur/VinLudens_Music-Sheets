@@ -109,8 +109,8 @@ left = \relative c' {
       f4 <a g'>2. |
       e2 f |
       f8( 16 g <a g'>2.) |
-      f1 |
-      f1 |
+      f4. r8 r c'4. |
+      f,1 |
 
       aes2 r8 aes8 ~ 4 |
       bes2 <b b,>8 r4. |
