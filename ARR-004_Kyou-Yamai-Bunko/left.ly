@@ -45,7 +45,7 @@ left = \relative c' {
       c8 d r2 \ottava -1 a,,4 \ottava 0 | \change Staff = "right" \voiceTwo
       r8 <g''' c>[ r g r g r g] |
       r4 r8 e[ r e] s4 | \change Staff = "left" \voiceOne
-      r2 r8 c,,8( g'16 c d8) |
+      r2 r8 c,=8 ( g'16 c d8) |
       <g f>8( e ~ e4) <d b>2 |
     }
     \new Voice { \relative c
