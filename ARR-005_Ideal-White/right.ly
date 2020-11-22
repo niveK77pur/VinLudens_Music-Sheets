@@ -151,7 +151,7 @@ right = \absolute {
   g'8 as'16 as' ~ 8 es' g' as'16 as' ~ 8 es' |
   g'8 as'16 as' ~ 8 bes' c'' bes' des'' c'' |
   <f' bes'>4. as'16 <des' as'> ~ q4. as'8 |
-  <g' e''>4. c''16 <e' c''> ~ q2 |
+  <g' c'' e''>4.\arpeggio c''16 <e' c''> ~ q2 |
 
   \appoggiatura { es''8 f'' g'' as'' } bes'' <as' as''> <es'' es'''>16 q8 q16 ~ q <des'' des'''>8 <c'' c'''>16 ~ q <des'' des'''>8 q16 |
   <es'' es'''>8 <as' as''>16 <as' as''> ~ q <bes' bes''>8 <c'' c'''>16 ~ 2 |
@@ -196,7 +196,7 @@ right = \absolute {
   <b' dis''>8 <b' dis''>16 <ais' cis''> ~ q <gis' b'>8 <fis' ais'>16 ~ q <gis' b'>8 <ais' cis''>16 ~ q4 |
   <gis'' b''>8 <gis'' b''>16 <fis'' ais''>16 ~ q <gis'' b''>8 <ais'' cis'''>16 ~ q <gis'' b''>16 <ais'' cis'''> <b'' dis'''> ~ q4 |
   dis''8 b' e'' b'16 fis'' ~ 16 b'8 e''16 ~ 16 b'8. |
-  gis'32 ais' b' cis'' dis'' e'' fis'' gis'' ais'' b'' cis''' dis''' e''' fis''' gis''' ais''' ~ 16 <cis''' fis''' ais'''>16 <cis''' fis''' ais'''>8-. r4 |
+  gis'32 ais' b' cis'' dis'' e'' fis'' gis'' \ottava 1 ais'' b'' cis''' dis''' e''' fis''' gis''' ais''' ~ 16 <cis''' fis''' ais'''>16 <cis''' fis''' ais'''>8-. r4 | \ottava 0
 
 
 
@@ -215,7 +215,32 @@ right = \absolute {
   \bar "||"
   \key f \minor
 
-  r
+  r8 as' es''16 8 16 ~ 16 des''8 c''16 ~ 16 as'8. ~ |
+  8 as' es''16 8 16 ~ 16 des''8 c''16 ~ 16 as'8. ~ |
+  8 <f' f''> ~ 16 <g' g''>8. <as' as''>8 <bes' bes''> <as' as''> <bes' bes''> |
+  <c'' f'' as'' c'''>4. <f'' f'''>8 ~ 16 <es'' as''~ c'''~ es'''~>4.. |
+  q2 r4.. \ottava 1 as'''16 |
+
+
+
+
+
+
+
+
+
+  \bar "||"
+  \key f \minor
+
+  as'''8 bes'''16 c'''' ~ 16 es''''8 es''''16 ~ 16 des''''8 c''''16 ~ 16 des''''8. |
+  c''''8\prall bes'''16 as''' ~ 16 as'''8 bes'''16 ~ 4 \ottava 0 es''8. as''16 |
+  as''8 bes''16 c''' ~ 16 es'''8 <as'' es'''>16 ~ 16 des'''8 c'''16 ~ 16 des'''8. |
+  <as'' c'''>8. as''16 <es'' as''>8 c'''16 des''' <bes'' f'''>8. es'''16 <g'' es'''>8. as''16 |
+
+  g''8 as''16 16 ~ 8 es'' g'' as''16 16 ~ 8 es'' |
+  g'' as''16 16 ~ 8 bes'' c''' bes'' des''' c''' |
+  <f'' bes''>4. as''16 <es'' as''> ~ q4. as''8 |
+  <f'' as'' c''' es'''>1 |
 
 %}
 }

@@ -215,12 +215,32 @@ left = \absolute {
   \key f \minor
 
   << { \voiceOne
-
+      r4 <f as c'> r <as c' es'> |
+      r4 <des f as> s2 |
+      r8 <des f>16 bes, ~ 16 bes, <des f>8 r8 <es g>16 c ~ 16 c <es g> 8 | \set tieWaitForNote = ##t
+      r8 des16 es f g as bes \change Staff = "right" \voiceTwo c' des' es' f' g' as'~ bes' c''~ |
+      <as' c'' es''>2 r2 | \set tieWaitForNote = ##f
     }
     \new Voice { \voiceTwo
-      <f, c f>
+      <f, c f>2 <as, es as> |
+      <des, as, des>2 <e, b, e>4\arpeggio <es, bes, es>\arpeggio |
+      <bes,, f, bes,>2 <c, g, c> |
+      <des, as, des>1 |
     }
-  >> \oneVoice
+  >> \oneVoice \change Staff = "left"
 
+  \bar "||"
+  \key f \minor
+
+  \clef "treble"
+  <c'' f'' as''>2 <des'' f'' as''> |
+  <es'' as'' c'''>2 <es'' g'' bes''> |
+  <c' f' as'>2 <des' f' as'> |
+  <es' as' c''> <es' g' bes'>4 ~ q16 c'16 des' es' |
+
+  as'16 f' c' as' f' c' as' f' as' f' des' as' f' des' as' f' |
+  c'' as' es' c'' as' es' c'' as' bes' g' es' bes' g' es' bes' g' |
+  bes' f' des' bes' f' des' bes' f' c'' g' es' c'' g' es' c''8 <f' as' des''>
+  
 %}
 }
