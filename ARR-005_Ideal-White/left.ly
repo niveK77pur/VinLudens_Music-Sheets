@@ -8,7 +8,7 @@ left = \absolute {
   \repeat unfold 8 { d,16 d } |
   \repeat unfold 4 { bes,,16 bes, } \repeat unfold 4 { c, c } |
   \repeat unfold 8 { d,16 d } |
-  <bes,, bes,>16 8 16 ~ 16 8 <c, c>16 ~ 16 8 16 ~ 4 |
+  <bes,, bes,>16 8 16 ~ 16 8 <c, c>16 ~ 16 8 16 ~ 8 r |
 
 
 
@@ -48,7 +48,7 @@ left = \absolute {
       d''4 r16 es'' d'' c'' ~ 4 r16 f' c' a |
     }
     \new Voice { \oneVoice
-      <es, es>1 |
+      <es, es>1-> |
       <g, g>1 |
       <f, f>1 |
       <d, d>1 |
@@ -218,7 +218,7 @@ left = \absolute {
       r4 <f as c'> r <as c' es'> |
       r4 <des f as> s2 |
       r8 <des f>16 bes, ~ 16 bes, <des f>8 r8 <es g>16 c ~ 16 c <es g> 8 | \set tieWaitForNote = ##t
-      r8 des16 es f g as bes \change Staff = "right" \voiceTwo c' des' es' f' g' as'~ bes' c''~ |
+      \tiny r8 des16 es f g as bes \change Staff = "right" \voiceTwo c' des' es' f' g' as'~ bes' c''~ | \normalsize
       <as' c'' es''>2 r2 | \set tieWaitForNote = ##f
     }
     \new Voice { \voiceTwo
@@ -231,7 +231,6 @@ left = \absolute {
 
   \bar "||"
   \key f \minor
-
   \clef "treble"
   <c'' f'' as''>2 <des'' f'' as''> |
   <es'' as'' c'''>2 <es'' g'' bes''> |
@@ -240,7 +239,69 @@ left = \absolute {
 
   as'16 f' c' as' f' c' as' f' as' f' des' as' f' des' as' f' |
   c'' as' es' c'' as' es' c'' as' bes' g' es' bes' g' es' bes' g' |
-  bes' f' des' bes' f' des' bes' f' c'' g' es' c'' g' es' c''8 <f' as' des''>
-  
+  bes' f' des' bes' f' des' bes' f' c'' g' es' c'' g' es' c''8 |
+  <f' as' des''>4 \clef "bass" \tiny as16 g f es des c bes, as, g, as, bes, as,  | \normalsize
+  \voiceTwo as,,16 as, r as,,[ as,] r as,, as, r as,, r8 <es g>16^. <es g>^. r8 |
+
+% Chorus 3 start -----------------------------------------------------------------
+  \bar "||"
+  \key f \minor
+
+  << { \voiceOne
+      r2 r8 f16 <as des'> ~ 16 f <as des'>8 |
+      r8 es16 <as c'> ~ 16 es <as c'>8 <es' g'>8.-> <bes es'>16-> ~ 16 bes,16 <es g>8 |
+      r8 f16 <as c'> ~ 16 f <as c'>8 r8 f16 <as des'> ~ 16 f <as des'>8 |
+      r8 es16 <as c'> ~ 16 es <as c'>8 r8 g16 <bes es'> ~ 16 g <bes es'>8 |
+      \oneVoice
+      f,16 c as c as c as c des, as, f as, f as, f as, |
+      as,16 es c' es c' es c' es g, es bes es bes es bes es |
+      bes,16 f bes f bes f bes f bes,, bes, bes f bes f bes f |
+      c16 g c' g c' g c' g c, c c' g c' g c' g |
+      \voiceOne
+      r8 <f bes>16 des <f bes> des <f bes> des r8 <as c'>16 es <as c'> es <as c'> es |
+      r8 <as des'>16 f <as des'> f <as des'> f r8 <bes es'>16 g <bes es'> g <bes es'> g |
+
+      \bar "||"
+      \key b \major
+
+      r8 \repeat unfold 7 { <b e'>16 gis } |
+      r8 \repeat unfold 7 { <ais dis'>16 fis } |
+      <fis, fis>16-> cis fis, <e, e>-> b, e, <dis, dis>-> ais, dis, dis ais, dis, dis ais, dis,8 |
+
+    }
+    \new Voice { \voiceTwo
+      r8 f,16 ~ <f,, f,>16 ~ 8. <des, des>16 ~ q2 |
+      <as,, as,>2 g8 g,4. |
+      <f,, f,>2 <des, des> |
+      <as,, as,>2 <es, es> |
+
+      s1 |
+      s1 |
+      s1 |
+      s1 |
+
+      <bes,, bes,>2 <c, c> |
+      <des, des>2 <es, es> |
+      \key b \major
+      <e, e>1 |
+      <fis, fis>1 |
+      s1 |
+    }
+  >> \oneVoice
+% Chorus 3 end -----------------------------------------------------------------
+  << { \voiceOne
+      r8 <gis b> gis,16 dis <gis b>8 r8 <gis c'> c16 f <gis c'>8 |
+
+    }
+    \new Voice { \voiceTwo
+      <gis, dis gis>2 <f, c f> |
+    }
+  >>\oneVoice
+  cis,16 cis <cis e> cis, cis <cis e> cis, cis dis, dis dis, dis dis, dis, dis,, dis, |
+  dis,,8 r8 r2. |
+
+  \bar "|."
+
+
 %}
 }

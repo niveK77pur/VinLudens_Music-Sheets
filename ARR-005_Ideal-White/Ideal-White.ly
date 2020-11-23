@@ -8,8 +8,8 @@
   arranger = "Arr. by VinLudens"
 }
 
-%#(set-global-staff-size 20)
-showLastLength = R1 * 10
+#(set-global-staff-size 18)
+%showLastLength = R1 * 10
 
 \paper {
   #(set-paper-size "a4")
