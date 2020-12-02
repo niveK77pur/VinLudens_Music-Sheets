@@ -299,6 +299,7 @@ left = \absolute {
   >>\oneVoice
   cis,16 cis <cis e> cis, cis <cis e> cis, cis dis, dis dis, dis dis, dis, dis,, dis, |
   dis,,8 r8 r2. |
+  r1 |
 
   \bar "|."
 

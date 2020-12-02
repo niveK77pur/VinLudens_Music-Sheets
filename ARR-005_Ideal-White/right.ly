@@ -298,7 +298,8 @@ right = \absolute {
 
 
   gis'8 16 16 ~ 16 8 b'16 ~ 16 ais' fis' dis' cis'4 |
-  r2 <dis'' fis'' ais'' cis'''>\arpeggio\fermata |
+  r2 <dis'' fis'' ais'' cis'''>\arpeggio\fermata | \ottava 1 \set tieWaitForNote = ##t
+  \grace { fis'''16_~ ais'''_~ f'''' dis'''' } <fis''' ais''' cis''''>4 \ottava 0 r2. |
 
   \bar "|."
 
