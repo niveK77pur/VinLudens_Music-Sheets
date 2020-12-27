@@ -3,7 +3,7 @@
 
 right = \absolute {
   \global
-  \tempo 4 = 80
+  \tempo 4 = 84
   <e' g' b' e''>4 <g' g''>8 <fis' fis''> <a' d'' fis'' a''>4 <d'' fis'' a'' d'''> |
   r8 \tuplet 3/2 8 { a''16 fis'' d'' a' fis' d' } a d' fis' a' d'' fis'' \tuplet 3/2 { a''8 b'' d''' } |
 
@@ -52,7 +52,7 @@ right = \absolute {
   >> \oneVoice
 
   <cis' e'>8. fis'16 <cis' fis'>2 r4 |
-  <fis' b'>8. ais'16 <fis' ais'>2 r8 ais' |
+  <fis' b'>8. ais'16 <fis' ais'>2 r8 bes' |
 
 % chorus 1 : start -------------------------------------------------------------
   \key aes \major \bar "||"
@@ -127,7 +127,7 @@ right = \absolute {
       b''8. b'' b''8 a''8. d'''16 ~ 4 |
       g''8. g'' g''8 fis''8. b''16 ~ 4 |
       e''16 cis'' b' fis'' e'' cis'' b'' gis'' e'' cis''' b'' gis'' e''' cis''' b'' gis'' |
-      <fis'' b''>8. ais''16 <fis'' ais''>2 r8 ais' |
+      <fis'' b''>8. ais''16 <fis'' ais''>2 r8 bes' |
     }
     \new Voice { \voiceTwo\tiny
       cis'''16 gis'' e'' gis'' e'' cis'' b'' gis'' ais'' fis'' cis'' gis'' fis'' cis'' ais'' fis'' |
@@ -164,7 +164,6 @@ right = \absolute {
 % chorus 2 : end ---------------------------------------------------------------
   \normalsize
   \key aes \major \bar "||"
-
   <c' c''>2 <ees' ees''> |
   <bes bes'>2. r8 <bes bes'> |
   <des' des''>4 <f' f''> <ees' ees''>4. <bes bes'>8 |
@@ -174,7 +173,7 @@ right = \absolute {
   <es' es''>4. <bes bes'>8 <bes bes'>4. bes'8 |
   <bes' es''>4 des'' c'' bes'8 c' |
   bes4. c'8 c'4. c'8 |
-  e'8. e' e'8 f'4 g' |
+  e'8. e' e'8 f'8. 8. g'8 |
   \grace { f'16 g' } as'4. as'8 g'8. g' as'8 |
   f'8. f' es'8 f'4 g' |
   \key b \major \bar "||"
@@ -184,7 +183,86 @@ right = \absolute {
   4 cis'' b' ais' |
   \key aes \major \bar "||"
   \grace { as'16 bes' } as'2. \voiceOne bes'4 \oneVoice |
-  <c' es' as' c''>1\arpeggio |
+  <c' es' as' c''>2.\arpeggio\fermata \voiceOne r8 bes'' |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% chorus 3 : start -------------------------------------------------------------
+  \key aes \major \bar "||"
+
+  c'''8. 16 ~ 8 bes'' c'''8. 16 ~ 8 des''' |
+  bes''8. 16 ~ 8 as'' g'' bes'' as'' g'' | \oneVoice
+  <f'' as''>8 q16 q ~ q8 q <es'' g''>8 q16 q ~ q8 <f'' as''> |
+  \key b \major \bar "||"
+  <gis'' b''>8 q16 q ~ q8 q q <fis'' ais''> <gis'' b''> <b'' dis'''> |
+
+
+
+
+
+
+
+
+  <b'' dis'''>4 <dis' fis'>8 <fis' b'> <cis'' e''>8. <b' dis''>16 ~ q8 <fis' b'> |
+  <ais' cis''>8 q16 q ~ q8 <gis' b'> <fis' ais'>4 r8 <fis' ais'> |
+  <gis' b'>8. q16 ~ q8 q <fis' ais'>8. <ais' dis''>16 ~ q4 |
+  <e' gis'>8. q16 ~ q8 q <cis' fis'>8. <fis' b'>16 ~ q4 |
+  <cis' e'>8. fis'16 <cis' fis'>2 r4 |
+  <fis' b'>8. cis''16 <fis' cis''>2 r8 cis'' |
+
+% chorus 3 : end ---------------------------------------------------------------
+
+  <b' d''>8. <g' b'>16 q2 <g' b'>4 |
+  <b' d''>8. <a' cis''>16 q2. |
+  <b' dis''>2 <fis' b'>2 |
+  <dis' fis' b'>2 \tiny fis''4. fis''8 |
+  fis''2 \normalsize r4 cis'' |
+  <cis'' e''>4. <b' dis''>8 <b' dis''>2 |
+  r2 <dis'' b''>4 <cis'' a''> |
+  <b' g''>2 <g' d''> |
+  <a' e''>2 <cis'' a''>4 <e'' cis'''> | \voiceOne
+  << { \voiceOne
+      <gis'' e'''>4. <fis'' dis'''>8 <e'' b''>2 |
+      r2 cis'''2 |
+    }
+    \new Voice { \voiceTwo \tiny
+      r2 r4 dis''4 |
+      e''4. dis''8 cis''4 r |
+    }
+  >>
+
+  dis'''2 b'' |
+  <fis'' b''>1 | \oneVoice
+
+  <b fis'>4 <g e'> d' b
+  <g d'> <e cis'> <g d'> e' |
+  <b cis' dis' fis'>4\arpeggio \ottava 1 \voiceOne <b'' fis'''>2.\trill |
+  <dis''' b'''>1\trill |
+  <fis''' dis''''>1\trill  ~ |
+  q1\trill |\once \set PianoStaff.connectArpeggios = ##t
+  <fis''' ais''' b''' fis''''>1\arpeggio |
+
+  \bar "|."
 
 %}
 }

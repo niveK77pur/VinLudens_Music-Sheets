@@ -7,7 +7,7 @@
   arranger = "Arr. by VinLudens"
 }
 
-%#(set-global-staff-size 20)
+#(set-global-staff-size 17.5)
 %showLastLength = R1 * 10
 
 \paper {

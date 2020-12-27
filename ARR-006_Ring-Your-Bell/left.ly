@@ -183,6 +183,7 @@ left = \absolute {
       r8 fis,16 ais, ~ 16 fis, ais,8 r8 fis,16 ais, ~ 16 fis, ais,8 |
       \key aes \major
       r8 c16 es16 ~ 16 as c'8 \change Staff = "right" \voiceTwo es' as' r4 \change Staff = "left" \voiceOne
+      s1 |
     }
     \new Voice { \voiceTwo
       <as,, as,>1 |
@@ -198,13 +199,85 @@ left = \absolute {
       <f, f>4. q8 <es, es>4. q8 |
       <d, d>4. q8 <bes,, bes,>4 <c, c> |
       <cis, cis>2 cis, |
-      cis2 cis, |
+      cis,2 cis, |
       fis,,2 2 |
       fis,,2 2 |
-      as,1 |
-      <as,, as,>1 |
+      as,1 | \oneVoice
+      <as,, as,>2. r4 |
     }
   >> \oneVoice
+
+% chorus 3 : start -------------------------------------------------------------
+  \key aes \major \bar "||"
+  << { \voiceOne \change Staff = "right" \voiceTwo
+      r4. es'8 as'8. g'16 ~ 8 as'8 |
+      g'4. f'8 e'2 | \change Staff = "left" \voiceOne
+      f4 as c' es' |
+      \key b \major \bar "||"
+      e'8. dis'16 ~ 8 b8 s2 |
+    }
+    \new Voice { \voiceTwo
+      as1 |
+      g2 e4 ~ 16 \clef "bass" e16 e,8 |
+      <f, as, c>2 <es g bes> |
+      <e gis b>2 b16 gis e b, fis,4-> |
+    }
+  >> \oneVoice
+  b,,8 fis,16 b, <dis fis>4 ~ q16 b,,16 b, <dis fis>16 ~ q4 |
+  <ais,, fis, cis>4\arpeggio <cis fis> <dis, ais, fis>\arpeggio <dis fis ais> |
+  gis,16 dis gis b gis dis gis, dis fis, cis fis ais fis cis fis, cis |
+  e,16 b, e gis e b, e, b, dis, ais, dis fis dis ais, dis, ais, |
+  cis, gis, e cis gis, gis e cis b gis e cis' b gis \change Staff = "right" e' cis' | \change Staff = "left"
+  fis,16 cis ais fis cis cis' ais fis e' cis' ais fis e cis ais, fis, |
+
+% chorus 3 : end ---------------------------------------------------------------
+
+  << { \voiceOne
+      r8 b,16 <d g> ~ q b, <d g>8 r8 b,16 <d g> ~ q b, <d g>8 |
+      r8 cis16 <e a> ~ q cis <e a>8 r2 |
+      r8 dis16 fis b fis dis b, r8 dis16 fis b fis dis b, |
+      r8 dis16 fis b fis dis b, r8 dis16 fis b fis dis b, |
+      r8 dis16 fis b fis dis b, r8 dis16 fis b fis dis b, |
+      r8 dis16 fis b fis dis b, r8 dis16 fis b fis dis b, |
+      r8 dis16 fis b fis dis b, r2 |
+      r8 b,16 d g d b, g, r8 b,16 d g b d' \change Staff = "right" \voiceTwo g' | \change Staff = "left" \voiceOne
+      r8 cis16 e a e cis a, r2 |
+      r8 b,16 fis b b, fis b r8 b,16 fis b b, fis b |
+      r8 b,16 fis b b, fis b r8 b,16 fis \change Staff = "right" \voiceTwo b dis' fis' b' |
+
+      ais'4 b' fis' dis' |
+      fis'2 fis' |
+      s1 |
+      s1 | \change Staff = "left" \voiceOne
+      s2 \clef "treble" dis' |
+      e'2 fis' |
+      b'2 fis' |
+      dis'' ais' |\change Staff = "right" \voiceTwo
+      <dis'' fis'' ais'' b'' dis'''>1\arpeggio |
+
+    }
+    \new Voice { \voiceTwo
+      <g,, g,>2 q |
+      <a,, a,>2 q4 <ais,, ais,> |
+      b,,2 b,, |
+      b,,2 b,, |
+      b,,2 b,, |
+      b,,2 b,, |
+      b,,2 b,,4 <a,, a,> |
+      <g,, g,>2 g,, |
+      <a,, a,>2 a,,4 <fis,, fis,> |
+      <b,, b,>2 b, |
+      <b,, b,>2 b, |
+
+      b1 |
+      b1 |
+      <g,, g,>1 |
+      <a,, a,>1 |
+      <b,, b,>1 |
+    }
+  >> \oneVoice
+
+  \bar "|."
 
 %}
 }
