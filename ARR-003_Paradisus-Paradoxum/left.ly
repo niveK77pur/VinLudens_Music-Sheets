@@ -133,8 +133,10 @@ left = \absolute {
       r8 d16 f f' d' a f r8 f'16 c' a f c a, |
       r16 d f d bes f d' bes r c' a e r e' cis' a |
       r16 f-. a-. f-. c'-. a-. bes-. a-. r c' a f e' c' a g |
-      r16 bes a g f e d bes, r d e f g a bes c' |
-      r16 c' bes a g f e d r b, d g b g d b, |
+      %r16 bes a g f e d bes, r d e f g a bes c' |
+      %r16 c' bes a g f e d r b, d g b g d b, |
+      r8 <d f>16 bes,16 ~ 16 16 q8 r8 <e g>16 c ~ 16 16 q8 |
+      r8 <f a>16 d ~ 16 16 q8 r8 <b, d>16 g, ~ 16 q16 q8 |
       r16 d f d bes f d' bes r16 cis f cis a f cis' a |
       <c e gis>4. <c f a>8 r2 |
       \key a \minor \bar "||"
@@ -148,8 +150,10 @@ left = \absolute {
       <d, d>2 <f, f> |
       bes,2 c4 cis4 |
       d2 f |
-      bes,2 c2 |
-      d2 g, |
+      %bes,2 c2 |
+      %d2 g, |
+      <bes,, bes,>2 <c, c> |
+      <d, d>2 <g,, g,> |
       bes,2 a, |
       r2 r8 <f, f>8. <e, e> |
 
@@ -159,5 +163,23 @@ left = \absolute {
       <f, f>2 4 s4 |
     }
   >> \oneVoice
+
+  %r1 |
+  \bar "||" \key d \minor
+
+  \ottava -1 d,,1 ~ |
+  1 ~ |
+  1 | \ottava 0
+  r8 <d a>[ r q r q r q] |
+  r8 <d a>[ r q r q] r4 |
+  r8 <d a>[ r q r q r q] |
+  r4.. c16 c,8. c,16 g, c8. |
+  r8 <d a>[ r q r q r q] |
+  r8 <d a>[ r q r q] r4 |
+  <a, a>16-. q-. r8 <a c' e'>8. a16 a,4 e16 c a,8 |
+  <a,, a,>16 q8 <es, es>16 <d, d> <c, c>8 <bes,, bes,>16 ~ q <g,, g,> <a,, a,>8 ~ q4 |
+  \set tieWaitForNote = ##t \ottava -1 \grace { \stemDown a,,8^~ e,, \stemNeutral } <a,,, a,,>2\fermata \ottava 0 r2 |\set tieWaitForNote = ##f
+
+
 %}
 }

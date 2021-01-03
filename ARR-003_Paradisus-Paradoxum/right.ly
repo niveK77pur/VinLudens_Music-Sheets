@@ -137,16 +137,46 @@ right = \absolute {
   <a'' d''' f''' a'''>8\arpeggio\( <bes'' bes'''> <a'' a'''> <f'' f'''> <a'' cis''' f''' a'''> <bes'' bes'''> <a'' a'''> <f'' f'''> |
   <gis'' c''' e''' gis'''>4. <a'' c''' f''' a'''>8\) r <a' a''>8.\( <b' b''> |
   << { \voiceTwo \key a \minor \bar "||"
-      <c'' e'' a'' c'''>2.\) r8 \ottava 0 <d'' d'''>8\( |
-      <c'' f'' a'' c'''>2.\) \change Staff = "left" \voiceOne r 16 d'\( d' d' |
+      <c'' e'' a'' c'''>2.\) r4|
+      s2. \change Staff = "left" \voiceOne r 16 d'\( d' d' |
       \parenthesize d'16 a' a' a' a'8\) r16 f'16\( ~ 16 e'16 f' e' f' e'8\) d'16\( ~ |
       16 a'8 16 8\) r16 f'16\( ~ 16 e' f' e' f' a'8.\)  | \change Staff = "right"
     }
     \new Voice { \voiceOne \tiny
-      r4 \ottava 1 <c''' g'''>4 <a'' e'''>16 c''' q c''' ~ 16 g'''8. |
-      r4 \ottava 1 \oneVoice <c''' a'''>4 <f''' d''''>16 c'''' a''' <d''' g'''> ~ 16 a''' b''' c'''' |
+      r4 \ottava 1 <c''' g'''>4 <a'' e'''>16 c''' q c''' ~ 16 g'''8 <a'' f'''>16 ~ | \oneVoice
+      q4 <c''' a'''>4 <f''' d''''>16 c'''' a''' <d''' g'''> ~ 16 a''' b''' c'''' |
       <e''' b'''>4 <c''' g'''>4 <a'' e'''>16 c''' q c''' ~ 16 g'''8 <a'' f'''>16 ~ |
       4 <c''' a'''>4 <f''' d''''> 16 c'''' a''' <d''' g'''> ~ 16 a''' b''' c'''' | \ottava 0
+    }
+  >> \oneVoice
+
+  %r1 |
+  \bar "||" \key d \minor
+
+  <c'' a'>4. d''16 c'' <bes' g'>4 c'' |
+  <bes' f'> a' <g' e'> a' |
+  <g' d'>4. a'16 g' <bes' f'>4 <c'' g'>4 |
+  << { \voiceTwo
+      d'16 a'8 16 ~ 16 8 16 d'16 ees' d'8 d'16 ees' d'8 |
+      d'16 a'8 16 ~ 16 8 16 a'16 bes' a'8 a'16 bes' a'8 |
+      d'16 a'8 16 ~ 16 8 16 d'16 ees' d'8 d'16 ees' d'8 |
+      r8 c' ~ 16 d'8. es'8 d' c' d' |
+      d'16 a'8 16 ~ 16 8 16 d'16 ees' d'8 d'16 ees' d'8 |
+      d'16 a'8 16 ~ 16 8 16 a'16 bes' a'8 a'16 bes' a'8 |
+      r8 a' ~ 16 bes'8. c''8 d'' c''16 bes' a' g' |
+      a'1 |
+      r1 |
+    }
+    \new Voice { \voiceOne
+      <d'' g'' a''>1 |
+      <c'' d'' g''>2. r4 |
+      <c'' e''>1 |
+      <c'' f''>1 |
+      <d'' g'' a''>1 |
+      <c'' d'' g''>1 | % a''8 ~ | \arpeggioArrowDown
+      s1 |%16 e''32 d'' a'8 r2. | \arpeggioNormal
+      s1 |
+      s1 |
     }
   >> \oneVoice
 
