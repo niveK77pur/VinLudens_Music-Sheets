@@ -173,13 +173,37 @@ left = \absolute {
   r8 <d a>[ r q r q r q] |
   r8 <d a>[ r q r q] r4 |
   r8 <d a>[ r q r q r q] |
-  r4.. c16 c,8. c,16 g, c8. |
+  r4.. c16( c,8.) c,16( g, c8.) |
   r8 <d a>[ r q r q r q] |
   r8 <d a>[ r q r q] r4 |
   <a, a>16-. q-. r8 <a c' e'>8. a16 a,4 e16 c a,8 |
   <a,, a,>16 q8 <es, es>16 <d, d> <c, c>8 <bes,, bes,>16 ~ q <g,, g,> <a,, a,>8 ~ q4 |
   \set tieWaitForNote = ##t \ottava -1 \grace { \stemDown a,,8^~ e,, \stemNeutral } <a,,, a,,>2\fermata \ottava 0 r2 |\set tieWaitForNote = ##f
 
+  \set PianoStaff.connectArpeggios = ##t
+  << { \voiceOne
+      r4.. e'16\(\arpeggio ~ 8 d' c' bes |
+      a4..\) es'16\( ~ 8 f' c'4\) | \change Staff = "right" \voiceTwo
+      e''4 \appoggiatura { es''16 d'' } c''4 d'' cis'' |
+      d''2 \change Staff = "left" \voiceOne es4 c |
+      r8. c'16\( ~ 16 bes8 a16 ~ 8\) e8\( f g |
+      a8.\) c'16\( ~ 16 d'8 e'16 ~ 8 f' \appoggiatura { e'16 es' } d'4\)
+    }
+    \new Voice { \voiceTwo
+      <bes, d a>4..\arpeggio <c g>16\arpeggio ~ q2 |
+      d4.. f16 ~ 2 |
+      <bes, g>2 <c a>4 <cis g> |
+      <d f a>2 f, |
+      <bes, d f>4.. <c e>16 ~ 2 |
+      <d f>4.. <f a>16 ~ 2 |
+    }
+  >> \oneVoice
+
+  bes,,16 <f, bes,> bes,, <f, bes,> bes,, <f, bes,> bes,, <f, bes,> c, <g, c> c, <g, c> cis, <g, cis> cis, <g, cis> |
+  d, <a, d> d, <a, d> d, <a, d> d, <a, d> r2 |
+
+  <bes,,, bes,,>8-> <f, bes,>16 bes,, <f, bes,> bes,, <f, bes,> bes,, <g, c> c, <g, c> c, <g, c> c, <g, c> c, |
+  <a, d>16 d, <a, d> d, <a, d> d, <a, d> d, <c f> f, <c f> f, <c f> f, <c f> f, |
 
 %}
 }

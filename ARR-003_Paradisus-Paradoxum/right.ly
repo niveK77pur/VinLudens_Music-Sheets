@@ -155,7 +155,7 @@ right = \absolute {
 
   <c'' a'>4. d''16 c'' <bes' g'>4 c'' |
   <bes' f'> a' <g' e'> a' |
-  <g' d'>4. a'16 g' <bes' f'>4 <c'' g'>4 |
+  <g' d'>4. a'16 g' <bes' f'>4^"transition!" <c'' g'>4 |
   << { \voiceTwo
       d'16 a'8 16 ~ 16 8 16 d'16 ees' d'8 d'16 ees' d'8 |
       d'16 a'8 16 ~ 16 8 16 a'16 bes' a'8 a'16 bes' a'8 |
@@ -165,7 +165,6 @@ right = \absolute {
       d'16 a'8 16 ~ 16 8 16 a'16 bes' a'8 a'16 bes' a'8 |
       r8 a' ~ 16 bes'8. c''8 d'' c''16 bes' a' g' |
       a'1 |
-      r1 |
     }
     \new Voice { \voiceOne
       <d'' g'' a''>1 |
@@ -176,10 +175,30 @@ right = \absolute {
       <c'' d'' g''>1 | % a''8 ~ | \arpeggioArrowDown
       s1 |%16 e''32 d'' a'8 r2. | \arpeggioNormal
       s1 |
-      s1 |
     }
   >> \oneVoice
 
+  r2 d''4\( f'' |
+  g''8 a''16 g'' ~ 16 f''8 g''16 ~ 8\) r d''8\( f'' |
+  g''8 e'''16 e''' ~ 16 c'''8 a''16 ~ 4\) a''8\( c''' | \voiceOne
+  g''4\) a''8 c''' g'' c''' f''4 |
+  e''8. f''16 e'' c'' a' c'' a'4 d''8\( f'' |
+  g''8 a''16 g'' ~ 16 f''8 g''16 ~ 8\) r d''8\( f'' |
+  g''8 f'''16 e''' ~ 16 c'''8 d'''16 ~ 4\) r |
+
+  << { \voiceOne
+      r8 <bes' bes''> <a' a''> <f' f''> <a' a''> <bes' bes''> <a' a''> <f' f''> |
+      <d'' g'' a'' d'''>2 r8 <a a'>\( ~ 16 <c' c''>8. |
+    }
+    \new Voice { \voiceTwo \tiny
+      s1 |
+      r8 <a' d''>16 g' <a' d''> g' <a' d''> <a' d''>
+    }
+  >> \oneVoice
+
+  <d' g' bes' d''>2..\) <f' f''>8\( |
+  <e' g' c'' e''>8 <f' f''>16 <e' e''>16 ~ 16 <c' c''>8 <a c' f' a'>16 ~ 4\) <a' a''>8 <c'' c'''>|
+  <g' bes' d'' g''>
 
 %}
 }
