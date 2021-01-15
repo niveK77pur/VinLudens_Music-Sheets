@@ -38,7 +38,7 @@ left = \absolute {
   a,1 |
   bes,1 |
   a,1 |
-  << { \voiceTwo bes,1 | } \new Voice { \voiceOne r2 <g bes>8. 16 r4 | } >> \oneVoice
+  << { \voiceTwo bes,2. r4 | } \new Voice { \voiceOne r2 <g bes>8. 16 r4 | } >> \oneVoice
 
   a,8 <e a>16 a,16 ~ 16 16 q8 a,8 <e a>16 a,16 ~ 16 16 q8 |
   bes,8 <f bes>16 bes,16 ~ 16 16 q8 bes,8 <f bes>16 bes,16 ~ 16 16 \tuplet 3/2 { d'16 bes f } |
@@ -127,6 +127,7 @@ left = \absolute {
     }
   >> \oneVoice
 
+  \bar "||"
 
   << { \voiceOne
       r8 bes,16 d g bes d'8 r8 c16 e a c' a e |
@@ -170,6 +171,7 @@ left = \absolute {
   \ottava -1 d,,1 ~ |
   1 ~ |
   1 | \ottava 0
+
   r8 <d a>[ r q r q r q] |
   r8 <d a>[ r q r q] r4 |
   r8 <d a>[ r q r q r q] |
@@ -178,7 +180,27 @@ left = \absolute {
   r8 <d a>[ r q r q] r4 |
   <a, a>16-. q-. r8 <a c' e'>8. a16 a,4 e16 c a,8 |
   <a,, a,>16 q8 <es, es>16 <d, d> <c, c>8 <bes,, bes,>16 ~ q <g,, g,> <a,, a,>8 ~ q4 |
-  \set tieWaitForNote = ##t \ottava -1 \grace { \stemDown a,,8^~ e,, \stemNeutral } <a,,, a,,>2\fermata \ottava 0 r2 |\set tieWaitForNote = ##f
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  \set tieWaitForNote = ##t \ottava -1 \grace { \stemDown a,,8^~ e,, \stemNeutral } <a,,, a,,>4\fermata \ottava 0 r4 r2 |\set tieWaitForNote = ##f
 
   \set PianoStaff.connectArpeggios = ##t
   << { \voiceOne
@@ -202,8 +224,54 @@ left = \absolute {
   bes,,16 <f, bes,> bes,, <f, bes,> bes,, <f, bes,> bes,, <f, bes,> c, <g, c> c, <g, c> cis, <g, cis> cis, <g, cis> |
   d, <a, d> d, <a, d> d, <a, d> d, <a, d> r2 |
 
+
+
+
+
+
+
   <bes,,, bes,,>8-> <f, bes,>16 bes,, <f, bes,> bes,, <f, bes,> bes,, <g, c> c, <g, c> c, <g, c> c, <g, c> c, |
   <a, d>16 d, <a, d> d, <a, d> d, <a, d> d, <c f> f, <c f> f, <c f> f, <c f> f, |
+  << { \voiceOne
+      r8 <d f>16 bes,16 ~ 16 16 q8 r8 <c e g>8 r <cis e g> |
+      r8 <f a>16 d q d q d r8 <a, c e>16 q r16 q16 r8 |
+
+      r8 <d f>16 bes,16 ~ 16 16 q8 r8 <e g>16 c ~ 16 16 q8 |
+      s2 r8 << { f'8\( d'4\) } \\ { <g b >4. } >> |
+
+      r8. bes,16 <d f>8-. r r8. a,16 <cis f>8-. r |
+      <c e gis>4. <c f a>8 r2 |
+      \key a \minor \bar "||"
+      r8 <c e>16 a, ~ 16 16 q8 r8 <c e>16 a, ~ 16 16 q8 |
+      r8 <a, c>16 f, ~ 16 16 q8 r8 \voiceTwo <a c'>16 f ~ 8 <f a>8 |
+      r8 <c' e'> r q r <a c'> r q |
+      r8 <c' e'> r q r <a c'> r q |
+
+    }
+    \new Voice { \voiceTwo
+      <bes,, bes,>2 <c, c>4 <cis, cis> |
+      <d, d>2 <a,, a,> |
+
+      <bes,, bes,>2 <c, c> |
+      <d, d>8 q16 q16^. r16 q^. r <g,, g,>16 ~ q2 |
+
+
+      <bes,, bes,>4 r <a,, a,> r |
+      r2 r8 <f, f>8. <e, e> |
+      <a,, a,>2 2 |
+      <f,, f,>2 <f, f>2 |
+      <a, a>2 2 |
+      <f, f>2 4 s4 |
+    }
+  >> \oneVoice
+
+  a,16 d <e a> d a, d <e a> d a, d <e a> d a, d <e a> d |
+  f,16 d e d f, d e d f, d e d f, d e d |
+  a,16 d <e a> d a, d <e a> d a, d <e a> d a, d <e a> d |
+  f,16 d e d f, d e d \tuplet 6/4 4 { f,16 d e f a d' g' d' a f d8 } |
+  \voiceTwo a,,16 8 16 16 8 16 ~ 16 16 16-. r \ottava 0 r4 | \oneVoice
+
+\bar "|."
 
 %}
 }
