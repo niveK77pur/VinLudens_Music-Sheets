@@ -4,9 +4,17 @@
 right = \absolute {
   \global
   \tempo 4 = 99
-  <c'' a'>4. d''16 c'' <bes' g'>4 c'' |
-  <bes' f'> a' <g' e'> a' |
-  <g' d'>4. a'16 g' <bes' f'>4 <c'' g'>4 |
+  << { \voiceOne
+      c''4. d''16 c'' bes'4 c'' |
+      bes' a' g' a' |
+      g'4. a'16 g' bes'4 c''4 |
+    }
+    \new Voice { \voiceTwo
+      a'2 g' |
+      f'2 e' |
+      d'2 f'4 g' |
+    }
+  >> \oneVoice
   \change Staff = "left" \voiceOne a,16( a,8) es16( d16 c8) bes,16( ~ 16 g, a,)-. r \change Staff = "right" \oneVoice <d' d''>8\( <f' f''> |
 
   \bar "||"
@@ -132,7 +140,7 @@ right = \absolute {
 
   <g' bes' d'' g''>8 <a' a''>16 <g' g''> ~ 16 <f' f''>8 <g' c'' e'' g''>16 ~ 8\) r <d' d''>8\( <f' f''> |
   <g' c'' e'' g''>8 <e'' e'''>16 <e'' e'''> ~ 16 <c'' c'''>8 <a' c'' f'' a''>16 ~ 4\) <a' a''>8\( <c'' c'''> |
-  <g' bes' d'' g''>4\) <a' a''>8 <c'' c'''> <g' c'' e'' g''> <c'' c'''> <f' a' cis'' f''> c'' |
+  <g' bes' d'' g''>4\) <a' a''>8 <c'' c'''> <g' c'' e'' g''> <c'' c'''> <f' a' cis'' f''>4 |
   <e' g' c'' e''>2 <c' f' a' c''>4 <d'' d'''>8\( <f'' f'''> |
 
   <g'' bes'' d''' g'''> <a'' a'''>16 <g'' g'''> ~ 16 <f'' f'''>8 <g'' c''' e''' g'''>16 ~ 8\) r <d'' d'''>8\( <f'' f'''> |
@@ -150,7 +158,7 @@ right = \absolute {
       r4 \ottava 1 <c''' g'''>4 <a'' e'''>16 c''' q c''' ~ 16 g'''8 <a'' f'''>16 ~ | \oneVoice
       q4 <c''' a'''>4 <f''' d''''>16 c'''' a''' <d''' g'''> ~ 16 a''' b''' c'''' |
       <e''' b'''>4 <c''' g'''>4 <a'' e'''>16 c''' q c''' ~ 16 g'''8 <a'' f'''>16 ~ |
-      4 <c''' a'''>4 <f''' d''''> 16 c'''' a''' <d''' g'''> ~ 16 a''' b''' c'''' | \ottava 0
+      4 <c''' a'''>4 <f''' d''''> 16 c'''' a''' <d''' g'''> ~ 16 a''' b''' c''''\fermata | \ottava 0
     }
   >> \oneVoice
 
@@ -165,12 +173,19 @@ right = \absolute {
 
 
 
-  %r1 |
+  s1 |
   \bar "||" \key d \minor
-
-  <c'' a'>4. d''16 c'' <bes' g'>4 c'' |
-  <bes' f'> a' <g' e'> a' |
-  <g' d'>4. a'16 g' <bes' f'>4^"transition!" <c'' g'>4 |
+  << { \voiceOne
+      c''4. d''16 c'' bes'4 c'' |
+      bes' a' g' a' |
+      g'4. a'16 g' bes'4 c''8 cis'' |
+    }
+    \new Voice { \voiceTwo
+      a'2 g' |
+      f'2 e' |
+      d'4 e' f'8 g' a' bes' |
+    }
+  >> \oneVoice
   << { \voiceTwo
       d'16 a'8 16 ~ 16 8 16 d'16 ees' d'8 d'16 ees' d'8 |
       d'16 a'8 16 ~ 16 8 16 a'16 bes' a'8 a'16 bes' a'8 |
@@ -222,7 +237,7 @@ right = \absolute {
 
   << { \voiceOne
       r8 <bes' bes''> <a' a''> <f' f''> <a' a''> <bes' bes''> <a' a''> <f' f''> |
-      <d'' g'' a'' d'''>2 r8 <a a'>\( ~ 16 <c' c''>8. |
+      <d'' g'' a'' d'''>2-> r8 <a a'>\( ~ 16 <c' c''>8. |
     }
     \new Voice { \voiceTwo \tiny
       s1 |
@@ -268,8 +283,10 @@ right = \absolute {
    d'16\( a' a' a' a'8\) r16 f'16\( ~ 16 e'16 f' e' f' e'8\) d'16\( ~ |
    16 a'8 16 8\) r16 f'16\( ~ 16 e' f' e' f' a'8.\) |
    d'16\( a' a' a' a'8\) r16 f'16\( ~ 16 e'16 f' e' f' e'8\) d'16\( ~ |
-   16 a'8 16 8\) r16 bes'\( ~ 16  a' bes' a' bes' <d'' d'''>8.\) |
-   \change Staff = "left" \voiceOne a,16( a,8) es16( d16 c8) bes,16( ~ 16 g, a,)-. r16 r4 |
+   16 a'8 16 8\) r16 bes'\( ~ 16  a' bes' a' bes' d''8.\) |
+   %\change Staff = "left" \voiceOne a,16( a,8) es16( d16 c8) bes,16( ~ 16 g, a,)-. r16 r4 |
+   <a a'>16( q8) <es' es''>16( <d' d''> <c' c''>8) <bes bes'>16( ~ q <g g'> <a a'>8) r4 |
+
 
    \bar "|."
 %}

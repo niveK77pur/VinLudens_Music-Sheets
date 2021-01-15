@@ -7,6 +7,14 @@ left = \absolute {
   \ottava -1 d,,1 ~ |
   1 ~ |
   1 | \voiceTwo
+
+
+
+
+
+
+
+
   a,,16 8 16 16 8 16 ~ 16 16 16-. r \ottava 0 r4 | \oneVoice
 
   \bar "||"
@@ -69,7 +77,7 @@ left = \absolute {
       r8 <f a>16 d q d q d r8 <a es'>16 <a es'> r16 <a c'>16 <a c'> r |
 
       r8 <d f>16 bes,16 ~ 16 16 q8 r8 <e g>16 c ~ 16 16 q8 |
-      r8 <f a>16 d ~ 16 16 q8 r8 \tuplet 3/2 { g,16 b, d } \tuplet 6/4 { g16 b g d b, g, } |
+      r8 <f a>16 d ~ 16 16 q8 r8 \tuplet 3/2 8 { g,16 b, d } \tuplet 6/4 { f g f d b, g, } | %\tuplet 3/2 { g,16 b, d } \tuplet 6/4 { g16 b g d b, g, } |
 
       r8. bes,16 <d f>8-. r r8. a,16 <cis f>8-. r |
       <c e gis>4. <c f a>8 r2 |
@@ -121,8 +129,8 @@ left = \absolute {
 
       a,8. 16 ~ 8 8 ~ 16 8. 8 8 |
       bes,8. 16 ~ 8 8 ~ 16 8. 8 8 |
-      a,8. 16 ~ 8 8 ~ 16 8. 8 8 | \time 2/4 \ottava -1
-      <bes,, bes,>2 | \time 4/4
+      a,8. 16 ~ 8 8 ~ 16 8. 8 8 |
+      \time 2/4 <bes,, bes,>2 | \time 4/4 \ottava -1
       \voiceTwo a,,16 8 16 16 8 16 ~ 16 16 16-. r \ottava 0 r8 s | \oneVoice
     }
   >> \oneVoice
@@ -134,10 +142,10 @@ left = \absolute {
       r8 d16 f f' d' a f r8 f'16 c' a f c a, |
       r16 d f d bes f d' bes r c' a e r e' cis' a |
       r16 f-. a-. f-. c'-. a-. bes-. a-. r c' a f e' c' a g |
-      %r16 bes a g f e d bes, r d e f g a bes c' |
-      %r16 c' bes a g f e d r b, d g b g d b, |
-      r8 <d f>16 bes,16 ~ 16 16 q8 r8 <e g>16 c ~ 16 16 q8 |
-      r8 <f a>16 d ~ 16 16 q8 r8 <b, d>16 g, ~ 16 q16 q8 |
+      r8 bes,16 d f bes d' f' r e' c' g e c g, e, |
+      r16 f, a, d f a d' a r4 <g b d'> |
+      %r8 <d f>16 bes,16 ~ 16 16 q8 r8 <e g>16 c ~ 16 16 q8 |
+      %r8 <f a>16 d ~ 16 16 q8 r8 <b, d>16 g, ~ 16 q16 q8 |
       r16 d f d bes f d' bes r16 cis f cis a f cis' a |
       <c e gis>4. <c f a>8 r2 |
       \key a \minor \bar "||"
@@ -153,8 +161,8 @@ left = \absolute {
       d2 f |
       %bes,2 c2 |
       %d2 g, |
-      <bes,, bes,>2 <c, c> |
-      <d, d>2 <g,, g,> |
+      <bes,, bes,>2 <c c'> |
+      <d, d>2 <g, g> |
       bes,2 a, |
       r2 r8 <f, f>8. <e, e> |
 
@@ -165,12 +173,19 @@ left = \absolute {
     }
   >> \oneVoice
 
-  %r1 |
+  \change Staff = "right" c''16 b' gis' e' \change Staff = "left" c' b a gis \tuplet 7/8 { f16 d b, gis, %{\tuplet 3/2 {%} f, d, b,, } |
   \bar "||" \key d \minor
 
   \ottava -1 d,,1 ~ |
   1 ~ |
   1 | \ottava 0
+
+
+
+
+
+
+
 
   r8 <d a>[ r q r q r q] |
   r8 <d a>[ r q r q] r4 |
@@ -179,7 +194,7 @@ left = \absolute {
   r8 <d a>[ r q r q r q] |
   r8 <d a>[ r q r q] r4 |
   <a, a>16-. q-. r8 <a c' e'>8. a16 a,4 e16 c a,8 |
-  <a,, a,>16 q8 <es, es>16 <d, d> <c, c>8 <bes,, bes,>16 ~ q <g,, g,> <a,, a,>8 ~ q4 |
+  <a,, a,>16( q8) <es, es>16( <d, d> <c, c>8) <bes,, bes,>16( ~ q <g,, g,> <a,, a,>8) ~ q4 |
 
 
 
@@ -204,7 +219,7 @@ left = \absolute {
 
   \set PianoStaff.connectArpeggios = ##t
   << { \voiceOne
-      r4.. e'16\(\arpeggio ~ 8 d' c' bes |
+      s4.. e'16\(\arpeggio ~ 8 d' c' bes |
       a4..\) es'16\( ~ 8 f' c'4\) | \change Staff = "right" \voiceTwo
       e''4 \appoggiatura { es''16 d'' } c''4 d'' cis'' |
       d''2 \change Staff = "left" \voiceOne es4 c |
@@ -231,10 +246,10 @@ left = \absolute {
 
 
   <bes,,, bes,,>8-> <f, bes,>16 bes,, <f, bes,> bes,, <f, bes,> bes,, <g, c> c, <g, c> c, <g, c> c, <g, c> c, |
-  <a, d>16 d, <a, d> d, <a, d> d, <a, d> d, <c f> f, <c f> f, <c f> f, <c f> f, |
+  <a, d>16 d, <a, d> d, <a, d> d, <a, d> d, <c f> f, <c f> f, \tuplet 6/4 { f16 c a, c a, f, } |
   << { \voiceOne
-      r8 <d f>16 bes,16 ~ 16 16 q8 r8 <c e g>8 r <cis e g> |
-      r8 <f a>16 d q d q d r8 <a, c e>16 q r16 q16 r8 |
+      r8 bes,16 d f d bes, f, r e c g, r e cis a, |
+      r8 <f a>16 d q d q d r8 <a, c e>16 q r16 <e a c'>16 r8 |
 
       r8 <d f>16 bes,16 ~ 16 16 q8 r8 <e g>16 c ~ 16 16 q8 |
       s2 r8 << { f'8\( d'4\) } \\ { <g b >4. } >> |
@@ -249,8 +264,8 @@ left = \absolute {
 
     }
     \new Voice { \voiceTwo
-      <bes,, bes,>2 <c, c>4 <cis, cis> |
-      <d, d>2 <a,, a,> |
+      <bes,, bes,>2 c,4 cis, |
+      d,4 r <a,, a,>2 |
 
       <bes,, bes,>2 <c, c> |
       <d, d>8 q16 q16^. r16 q^. r <g,, g,>16 ~ q2 |
@@ -268,8 +283,11 @@ left = \absolute {
   a,16 d <e a> d a, d <e a> d a, d <e a> d a, d <e a> d |
   f,16 d e d f, d e d f, d e d f, d e d |
   a,16 d <e a> d a, d <e a> d a, d <e a> d a, d <e a> d |
-  f,16 d e d f, d e d \tuplet 6/4 4 { f,16 d e f a d' g' d' a f d8 } |
-  \voiceTwo a,,16 8 16 16 8 16 ~ 16 16 16-. r \ottava 0 r4 | \oneVoice
+  \tuplet 6/4 4 { f,16 d e f a c' e' c' a f e d f, d e f a d' } g'4
+  %f,16 d e d f, d e d \tuplet 6/4 4 { f,16 d e f a d' g' d' a f d8 } |
+  %\voiceTwo a,,16 8 16 16 8 16 ~ 16 16 16-. r \ottava 0 r4 | \oneVoice
+  <a,, a,>16( q8) <es, es>16( <d, d> <c, c>8) <bes,, bes,>16( ~ q <g,, g,> <a,, a,>8) r4 |
+
 
 \bar "|."
 
