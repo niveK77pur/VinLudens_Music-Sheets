@@ -3,7 +3,6 @@
 \header {
   title = "Paradisus Paradoxum"
   subtitle = "Re:Zero S1 OP2"
-  subsubtitle = "Work In Progress"
   %instrument = "Piano"
   composer = "by MYTH & ROID"
   arranger = "Arr. by VinLudens"
