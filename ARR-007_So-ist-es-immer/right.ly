@@ -182,7 +182,49 @@ right = \absolute {
   <as as'>8. <des' des''>8 <es' es''>16 <bes bes'>4\) <ges ges'>8\( |
   <as as'>4 <es' es''>8 <des' des''>8. <f f'> |
   <des' des''>8. <es' es''>8 <des' des''>16 <es' es''>4.\) |
-  <as c' es'>
+  <as c' es'>2. |
+
+
+  <ges'' bes'' des''' ges'''>8\( <des'' des'''>16  <ces'' es'' ges'' ces'''>8.  <bes' des'' ges'' bes''>8 <ges''' ges''> <f'' as'' des''' f'''> |
+  <ges'' bes'' es''' ges'''>2.\) |
+  <ges'' bes'' des''' ges'''>8\( <f''' f''>16 <f'' bes'' des''' f'''>8. <ges'' bes'' des''' ges'''>8 <ges''' ges''> <as'' des''' es''' as'''> |
+  <ges'' bes'' es''' ges'''>4\) des''16\( bes' des'' as'' ges'' f'' des''8\) |
+  <ges'' bes'' des''' ges'''>8\( <des''' des''>16 <des'' es'' as'' des'''>8. <des'' ges'' bes'' des'''>8 <as'' as'''> <f''' f''> |
+  <ges'' bes'' es''' ges'''>4.\) r8 <ges' ges''>16\( <as' as''>8  <bes' es'' ges'' bes''>16 ~ |
+  q8 <bes' bes''>8 <ces'' ces'''>16 <bes' des'' f'' bes''> ~ q8 <as' as''> <f'' f'''> |
+  <ges'' as'' c''' ges'''>8\) f''16( des'' es'' ges' bes'4.) |
+
+
+
+
+
+
+
+
+
+
+
+
+  << { \voiceTwo
+      ges'16 f' es' des'8 ges16 ~ 4. |
+      ges'16 des' as ges8 \change Staff = "left" \voiceOne des16 ~ 4. | \change Staff = "right" \voiceTwo
+      ges'16 f' es' des'8 ges16 ~ 4. |
+      ges'16 des' as ges8. ~ 4.\fermata |
+      \voiceOne
+      r4. <ges' bes'>4.\arpeggio |
+      bes''8.\arpeggio\( as'' f'''4. |
+      \appoggiatura { es'''8 d''' } des'''2.\) |
+    }
+    \new Voice { \voiceOne \tiny
+      r2. |
+      r4. r8 \slashedGrace ces''16 des''8 ces'' |
+      bes'4. r8 \arpeggioArrowDown <ges'' bes'' ces'''>4\arpeggio | \arpeggioNormal
+      r2. |
+    }
+  >> \oneVoice
+
+
+  \bar "|."
 
 %}
 }

@@ -178,11 +178,53 @@ left = \absolute {
   \repeat unfold 5 { ges,16 <des ges> } ges, des |
   \repeat unfold 6 { bes,16 as } |
   as, <es c'> as, <es c'> as, es as, es as, es bes, es |
-  \repeat unfold 3 { ces16 <ges bes> } \repeat unfold 3 { ces16 ges } |
+  \repeat unfold 3 { ces16 <ges bes> } ces16 <ges \parenthesize bes> \repeat unfold 2 { ces16 ges } |
   \repeat unfold 5 { ges,16 <des ges> } ges, des |
   \repeat unfold 6 { bes,16 <as des'> } |
-  \repeat unfold 6 { as, <es c'> } |
-  <as, es>
+  \repeat unfold 3 { as,16 <es c'> } as, c' es c' es c' |
+  es4. \repeat unfold 6 { <as,, as,>16 } |
+
+  << { \voiceOne
+      r8 es16 <ges ces'>8. r8 es16 <ges bes des'>8. |
+      r8. <f ges bes f'>8 \change Staff = "right" \voiceTwo <es' as' des''>16 ~ q8 <as' des'' f''> <des'' f'' as''> | \change Staff = "left" \voiceOne
+      r8. <es ges bes>r8 es16 <ges as>8. |
+      r8 f16 <ges bes f'>8. ~ q16 <as des' ges'>16 ~ q4 |
+      r8. <es ges bes> r8 es16 <ges bes des'>8. |
+      r8	 f16 <ges bes f'>8 \change Staff = "right" es'16 <as' des''>8 s4 | \change Staff = "left"
+      r4. r8 as16 f bes,8 |
+      r4. <as c' es'> |
+    }
+    \new Voice { \voiceTwo
+      <ces, ges, ces>4. <des, as, des> |
+      <es, bes, es>4. <ges, ges>16 <as, as> <ges, ges> <f, f> <es, es> <des, des> |
+      <ces, ges, ces>4. <bes,, f, bes,> |
+      <es,, es,>2. |
+      <ces, ges, ces>4. <des, as, des> |
+      <es, bes, es>2. |
+      <ces, ges, ces>4. <bes,, f, bes,> |
+      <as,, es, as,>2. |
+    }
+  >> \oneVoice
+
+  \appoggiatura { as,16 a, bes, } ces4. ces |
+  ces4. \voiceTwo ces | \oneVoice
+  <ces, ges,>4. ces, | \ottava -1
+  ces,,2. |
+  << { \voiceOne \set PianoStaff.connectArpeggios = ##t
+      r4. \ottava 0 <es ges as des'>4.\arpeggio | \change Staff = "right" \voiceTwo
+      <es' ges' as' des'' ges''>2.\arpeggio ~ |
+      <es' ges' as' des''>
+    }
+    \new Voice { \voiceTwo
+      \ottava -1 ges,,2. ~ |
+      \ottava -1 2.|
+    }
+  >> \oneVoice
+  
+
+
+  
+  \bar "|."
 
 %}
 }
