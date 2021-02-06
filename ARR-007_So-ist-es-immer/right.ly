@@ -3,7 +3,7 @@
 
 right = \absolute {
   \global
-  \tempo 4. = 44
+  \tempo 4. = 40
 
   r2. |
   r2. |
@@ -67,10 +67,10 @@ right = \absolute {
 
 
 
-  \ottava 1 \tiny des'''16 ges''' bes'' des''' ~ 8 ~ 4. |
-  des'''16 ges''' bes'' des''' ~ 8 ~ 4. |
-  des'''16 ges''' bes'' ees''' ~ 8 ~ 4. |
-  des'''16 ges''' aes'' des''' ~ 8 ~ 4. | \ottava 0 \normalsize
+  \ottava 1 \tiny des'''16 ges''' bes'' des'''8. ~ 4. |
+  des'''16 ges''' bes'' des'''8. ~ 4. |
+  des'''16 ges''' bes'' ees'''8. ~ 4. |
+  des'''16 ges''' aes'' des'''8. ~ 4. | \ottava 0 \normalsize
 
   \bar "||"
 
@@ -80,7 +80,7 @@ right = \absolute {
   as''4\( 8 des'''4 f''8 |
   ges''8 es''16 des''8. es''4.\) |
   es''8.\( des''16 es''8 bes''4 8 |
-  es'''4 \grace a''?8 bes''16 as'' ges''4.\) |
+  es'''4 \slashedGrace a''8 bes''16 as'' ges''4.\) |
   as''4\( 8 des'''4 f''8 |
   as''4 ges''16 f'' es''4.\) |
 
@@ -189,7 +189,7 @@ right = \absolute {
   <ges'' bes'' es''' ges'''>2.\) |
   <ges'' bes'' des''' ges'''>8\( <f''' f''>16 <f'' bes'' des''' f'''>8. <ges'' bes'' des''' ges'''>8 <ges''' ges''> <as'' des''' es''' as'''> |
   <ges'' bes'' es''' ges'''>4\) des''16\( bes' des'' as'' ges'' f'' des''8\) |
-  <ges'' bes'' des''' ges'''>8\( <des''' des''>16 <des'' es'' as'' des'''>8. <des'' ges'' bes'' des'''>8 <as'' as'''> <f''' f''> |
+  <ges'' bes'' des''' ges'''>8\( <des''' des''>16 <des'' es'' as'' des'''>8. <des'' ges'' bes'' des'''>8 <ges'' ges'''> <f''' f''> |
   <ges'' bes'' es''' ges'''>4.\) r8 <ges' ges''>16\( <as' as''>8  <bes' es'' ges'' bes''>16 ~ |
   q8 <bes' bes''>8 <ces'' ces'''>16 <bes' des'' f'' bes''> ~ q8 <as' as''> <f'' f'''> |
   <ges'' as'' c''' ges'''>8\) f''16( des'' es'' ges' bes'4.) |

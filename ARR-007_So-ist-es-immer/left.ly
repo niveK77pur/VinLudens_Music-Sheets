@@ -29,7 +29,7 @@ left = \absolute {
       << { <ges bes>4.\arpeggio <ges bes es'> } \\ { \change Staff = "right" \voiceTwo es'4.\arpeggio s } >> |
       <des ges>4. q |
       <f \parenthesize as>4. <f as> |
-      <es as>4. <es as c'>4 es,8 |
+      <es as>4. <es as c'>4\arpeggio es,8 |
       as,2. |
     }
     \new Voice { \voiceTwo
@@ -188,7 +188,7 @@ left = \absolute {
       r8 es16 <ges ces'>8. r8 es16 <ges bes des'>8. |
       r8. <f ges bes f'>8 \change Staff = "right" \voiceTwo <es' as' des''>16 ~ q8 <as' des'' f''> <des'' f'' as''> | \change Staff = "left" \voiceOne
       r8. <es ges bes>r8 es16 <ges as>8. |
-      r8 f16 <ges bes f'>8. ~ q16 <as des' ges'>16 ~ q4 |
+      r8 f16 <ges bes f'>8. ~ q8 <as des' ges'>4 |
       r8. <es ges bes> r8 es16 <ges bes des'>8. |
       r8	 f16 <ges bes f'>8 \change Staff = "right" es'16 <as' des''>8 s4 | \change Staff = "left"
       r4. r8 as16 f bes,8 |
@@ -220,10 +220,10 @@ left = \absolute {
       \ottava -1 2.|
     }
   >> \oneVoice
-  
 
 
-  
+
+
   \bar "|."
 
 %}

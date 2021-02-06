@@ -6,9 +6,15 @@
   % instrument = "Piano"
   composer = "Hiroyuki Sawano"
   arranger = "Arr. by VinLudens"
+  tagline = \markup {
+    \with-url #"https://youtube.com/c/VinLudens"
+    \line {
+      "Engraving with Lilypond" $(lilypond-version) \char ##x2014 "https://youtube.com/c/VinLudens"
+    }
+  }
 }
 
-%#(set-global-staff-size 20)
+#(set-global-staff-size 17.7)
 %showLastLength = R1 * 10
 
 \paper {
