@@ -129,7 +129,7 @@ left = \absolute {
       r8 r16 f ges bes f' ges' f' des' as8 |
       r8 r16 ces' ges es r8 des'16 as ges8 |
       r8 <ges bes>16 <ges bes> r <ges bes f'> <ges bes f'>4. |
-      r8 r16 \parenthesize ces' ges es r8 r16 bes ges es |
+      r8 r16 ces' ges es r8 r16 bes ges es |
       r8 r16 f ges bes f' ges' f' des' as8 |
       r8 r16 ces' ges es r8 des'16 as ges8 |
       r8 r16 <as, es> <as, es> <es as> <as c'>4. |
