@@ -100,7 +100,7 @@ right = \absolute {
   \bar "||"
 
 
-  <es' es''>4\( <f' f''> <g' g''> <es' es''>8. q16 |
+  <es' es''>4\( <f' f''> <g' g''> <es' es''>8. q16 | \override Script.padding = #1.2
   <c'' c'''>8-_ <bes' bes''>-_\) r8 <es' es''>4. <g' g''>16\( <as' as''> <bes' bes''>8 |
   <bes' bes''>8 <as' as''> <g' g''> <as' as''>16 <g' g''> ~ q8 <d' d''> <g' g''> <f' f''> |
   <f' f''> <es' es''> <d' d''> <es' es''> <g' g''>2\) |
@@ -112,7 +112,7 @@ right = \absolute {
       r16 bes'-3 g'-2 bes' r bes'-2 g'-1 bes' r bes'-2 g'-1 bes' r4 |
     }
   >> \oneVoice
-  \appoggiatura { es''16-2 f''-3 g''-4 } <c'' c'''>8-_ <bes' bes''>-_\) r8 <es' g' bes' es''>4. <g' g''>16\( <as' as''> <bes' bes''>8 |
+  \appoggiatura { \once \override Fingering.padding = #1.8 es''16-2 \once \override Fingering.padding = #1.4 f''-3 \once \override Fingering.padding = #1 g''-4 } <c'' c'''>8-_ <bes' bes''>-_\) r8 <es' g' bes' es''>4. <g' g''>16\( <as' as''> <bes' bes''>8 |
   <bes' bes''>8 <as' as''> <g' g''> <as' as''>16 <g' g''> ~ q8 <f' f''> <es' es''>16 <d' d''> <es' es''>8 ~ |
   q1\) |
 
@@ -139,7 +139,7 @@ right = \absolute {
       8 g'\) ~ 2. |
 
       g'8\( g'16 g' ~ 8 16 16 ~ 8 f'16 g' ~ 4\) |
-      f'8\( f'16 f' ~ 8 16 16 ~ 8 ees'16 f' ~ 8\) r16 d'\( |
+      f'8\( f'16 f' ~ 8 16 16 ~ 8 ees'16 f' ~ 8\) r16 d'\(  |
       es'8 16 16 ~ 16 8 es'16 as'8 bes' f'16 es' f'8 ~ |
       f'8  ees'8 ~ 8\) es'16( d' des'4) r8 \voiceOne r16 es'\( |
     }
@@ -157,7 +157,7 @@ right = \absolute {
   >> \oneVoice
 
   << { \voiceOne
-      bes'8-_ bes'-_ bes' bes' bes'16 es' es'8\) ~ 8 r16 es'\( |
+      \override Script.padding = #1.2 bes'8-_ \override Script.padding = #1.6 bes'-_ bes' bes' bes'16 es' es'8\) ~ 8 r16 es'\( | \revert Script.padding
       bes'8 bes' bes' bes' bes'16 es' es'8\) ~ 8 es'16\( f' |
       g'8-4 f' g' g'16 b' ~ 8 g' f'16 es' f'8 ~ |
       8 ees'8 ~ 4\) r8 es'\( <es' es''> <d' d''> |
@@ -188,13 +188,13 @@ right = \absolute {
   \bar "||"
 
 
-  <es' es''>4\( <f' f''> <g' g''> <es' es''>8. q16 | \showStaffSwitch
+  <es' es''>4\( <f' f''> <g' g''> <es' es''>8. q16 | \override Script.padding = #1.7
   <c'' c'''>8-_ <bes' bes''>-_\) r4 r4 <g' g''>16\( <as' as''> <bes' bes''>8 |
-  <bes' bes''>8 <as' as''> <g' g''> <as' as''>16 <g' g''> ~ q8 <d' d''> <g' g''> <f' f''> | \hideStaffSwitch
+  <bes' bes''>8 <as' as''> <g' g''> <as' as''>16 <g' g''> ~ q8 <d' d''> <g' g''> <f' f''> |
   <f' f''> <es' es''> <d' d''> <es' es''> <g' g''>2\) |
 
-  <es' g' bes' es''>4\( <f' g' bes' f''> <g' bes' es'' g''> <es' g' bes' es''> |
-  \appoggiatura { es''16 f'' g'' }  <c'' d'' f'' c'''>8-_  <bes' d'' f'' bes''>-_\) r8 <es'' g'' bes'' es'''>4 \tiny es'''8\prall \normalsize <g' g''>16\( <as' as''> <bes' bes''>8 |
+  <es' g' bes' es''>4\( <f' g' bes' f''> <g' bes' es'' g''> <es' g' bes' es''> | \override Script.padding = #1.6
+  \appoggiatura { es''16 f'' g'' }  <c'' d'' f'' c'''>8-_  <bes' d'' f'' bes''>-_\) r8 <es'' g'' bes'' es'''>4 \revert Script.padding \tiny es'''8\prall \normalsize <g' g''>16\( <as' as''> <bes' bes''>8 |
   <bes' c'' es'' bes''>8 <as' as''> <g' g''> <as' as''>16 <g' bes' es'' g''> ~ q8 <f' f''> <es' es''>16 <d' d''> <es' es''>8 ~ |
 
 
@@ -240,7 +240,7 @@ right = \absolute {
   \bar"||"
 
   <bes' c'' es''>4\arpeggio\( f'' g'' es''8. es''16 |
-  c'''8-_ bes''-_ r8\) g'' ~ 16 f'' es''8 g''16\( as'' bes''8 |
+  c'''8 bes''\) r8 g''\( ~ 16 f'' es''8\) g''16\( as'' bes''8 |
   bes''8 as'' g'' as''16 g'' ~ 8 d'' g'' f'' |
   <d'' f''>8 es'' d'' es'' <d'' g''>2\) |
 
@@ -251,14 +251,14 @@ right = \absolute {
 
 
   <es' g' c'' es''>4-^\( <f' g' c'' f''>-^ <g' c'' es'' g''>-^ <es' g' c'' es''>8.-^ <es' es''>16 |
-  <c'' c'''>8-_ <bes' bes''>-_\) r4 r4 <g' g''>16\( <as' as''> <bes' bes''>8 |
+  \override Script.padding = #1.8 <c'' c'''>8-_ \override Script.padding = #1.6 <bes' bes''>-_\) r4 r4 <g' g''>16\( <as' as''> <bes' bes''>8 | \revert Script.padding
   <bes' c'' es'' bes''>8 <as' as''> <g' g''> <as' as''>16 <b' d'' f'' b''> ~ q8 <g' g''> <b' b''> <es'' es'''> |
   <d'' g'' bes'' d'''>8. <es'' es'''>16\) <es' bes'>8 <d' ges' a'> <des' f' as'>4 <es' g' bes'> |
 
   <es' a' c'' es''>4\( <f' f''> <g' b' es'' g''> <es' es''> |
   \appoggiatura { es''16 f'' g'' } <c'' d'' f'' c'''>8-_ <d'' f'' bes'' d'''>-_ r <f'' g'' bes'' f'''>8\) es'''16 d''' es'''8 <g' g''>16\( <as' as''> <bes' bes''>8 |
   <bes' c'' es'' bes''>8 <as' as''> <g' g''> <as' as''>16 <g' bes' es'' g''> ~ q8 <f' f''> <es' es''>16 <d' d''> <es' es''>8 ~ |
-  q2.\) \tuplet 3/2 { <g' g''>8-.\( <as' as''>-. <bes' bes''>-. } |
+  q2.\) \tuplet 3/2 { <g' g''>8-.\( <as' as''>-. <bes' bes''>\shortfermata } |
   <bes' c'' es'' bes''>8\arpeggio <as' as''> ~ 8 <g' g''>16 <as' as''> <g' c'' es'' g''>8 <f' f''> ~ 8 <es' es''>16 <d' d''> |
   <es' es''>1\) |
   <es' g' bes' d''>8\arpeggio( bes' f'' d'' as'' f'' c''' as'' |
@@ -310,8 +310,8 @@ right = \absolute {
       s1 |
     }
     \new Voice { \oneVoice \tiny
-      r8. \ottava 1 es''32-1\( g''-2 as''-3 g''-1 as''-2 bes'' as''-1 bes'' es'''-4 bes''-2 as'' bes''-3 as'' g'' as''-4 g''-3 es''-2 bes'-1\)_\( es'' as''-3 bes''-4 g''-1 bes'' es'''-4 bes'' es'''-2 |
-      bes'''2-.\) \ottava 0 r2 |
+      r8. \ottava 1 \once \override Fingering.padding = #1 es''32-1\( g''-2 as''-3 g''-1 as''-2 bes'' as''-1 bes'' es'''-4 bes''-2 as'' bes''-3 as'' g'' as''-4 g''-3 es''-2 \once \override Fingering.padding = #1 bes'-1\)_\( es'' as''-3 bes''-4 g''-1 bes'' es'''-4 bes'' es'''-2 |
+      bes'''2-.\) \ottava 0 \normalsize r2 |
     }
   >> \oneVoice
 

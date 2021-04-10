@@ -4,7 +4,7 @@
   title = "Yakusoku"
   subtitle = "Horimiya ED"
   %instrument = "Piano"
-  composer = "Friends"
+  composer = "by Friends"
   arranger = "Arr. by VinLudens"
   tagline = \markup {
     \with-url #"https://youtube.com/c/VinLudens"
@@ -14,7 +14,7 @@
   }
 }
 
-%#(set-global-staff-size 20)
+#(set-global-staff-size 18)
 %showLastLength = R1 * 10
 
 \paper {

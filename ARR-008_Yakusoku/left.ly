@@ -86,7 +86,7 @@ left = \absolute {
   << { \voiceOne
       <bes, es as>2\arpeggio <g, bes, es f>\arpeggio
       <bes, c es g>1 |
-      r4 r8. f16 <as c' es'>4 <as c' es' f'> |
+      r4 r8. f16_( <as c' es'>4) <as c' es' f'> |
       r2 r8. <es' g' bes'>16 ~ 16 es16 es,8 |
     }
     \new Voice { \voiceTwo
@@ -133,7 +133,7 @@ left = \absolute {
   %\bar "||"
 
 
-  \clef "treble" <es es'>1 | \clef "bass"
+  \clef "treble" <es es'>1-> | \clef "bass"
   <d bes>4 q q q |
   <c as>4 q <b, as> q |
   <d g>4 q q q |
@@ -174,7 +174,7 @@ left = \absolute {
   << { \voiceOne
       r4 <bes, es as> r <g, bes, es f> |
       s1 |
-      r4 r8. f16 <as c' es'>4 <as c' es' f'> |
+      r4 r8. f16_( <as c' es'>4) <as c' es' f'> |
       r4 r8 \change Staff = "right" \voiceTwo bes'16 \change Staff = "left" \voiceOne g'-1 es' bes g es bes, g, es, bes,, |
     }
     \new Voice { \voiceTwo
@@ -253,27 +253,27 @@ left = \absolute {
       s1 |
       r4 \tuplet 3/2 { d'16 bes g } <g bes es'>8 ~ 16 c g c <g bes> c g8 |
       \tuplet 6/4 4 { f,16 c f as c' f' c' as f c f,8 g,16 b, d g b d' g' d' b g d g, }
-      s1 |
-      s1 |
+      s2. r8 \tuplet 3/2 { g16 es bes, } |
+      r8 \tuplet 3/2 { a16 es c } r8 \tuplet 3/2 { a16 es c } r8 \tuplet 3/2 { g16 es c } r4  |
       r2 r8. c16 <es g> c c c, |
       r8. f16 <as c'> f8. r8. bes,16 <d f> bes,8. |
       r4 <es g bes> <g bes d'> <g bes des' e'>\arpeggio |
       r4 <es f> r b\( ~ |
-      b2 bes4 as |
-      es1\) |
+      b2 bes4 as | \once \set PianoStaff.connectArpeggios = ##t
+      es1\arpeggio\) |
     }
     \new Voice { \oneVoice
       <as,, as,>2-^ ~ q8. as,,16 as, as,, as,8 | \voiceTwo
       <g,, g,>8-_ q8-_ r <c, c> ~ q2 |
       f,2 g, | \oneVoice
-      <c, c>4 <c c'>8 <b, b> <bes, bes>4 <es, es> |
-      <a,, a,>4 ~ q8 q <as,, as,>4 ~ q8 q |\voiceTwo
+      <c, c>4 <c c'>8 <b, b> <bes, bes>4 \voiceTwo <es, es> |
+      <a,, a,>4 q <as,, as,>4 q |
       <g,, g,>8-_ q8-_ r <c, c> ~ q2 |
       <f, f>2 <bes,, bes,> |
       <es, es>2. r4 |
       <f, es>2 <bes, as> ~ |
       bes,1 |
-      bes,1 |
+      bes,1 \arpeggio |
     }
   >> \oneVoice
 
