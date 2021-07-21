@@ -13,7 +13,7 @@
   }
 }
 
-%#(set-global-staff-size 20)
+#(set-global-staff-size 17)
 %showLastLength = R1 * 10
 
 \paper {
@@ -37,7 +37,12 @@
       midiInstrument = "acoustic grand"
     } { \clef bass \left }
   >>
-  \layout { }
+  \layout {
+    \context {
+      \Score
+      \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/8)
+    }
+  }
   \midi {
     %\tempo 4=80
     \set Staff.midiMaximumVolume = #0.7

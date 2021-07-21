@@ -8,7 +8,7 @@ left = \absolute {
   r1 |
   r1 |
   r1 |
-  r4 \clef "treble" es'8.\( es'16 ~ 4 c'8. es'16 ~ |
+  r4 \rhythmMarkC #"softer rythm" \rhyMarkDottedEighths \rhyMarkTriplets \clef "treble" es'8.\( es'16 ~ 4 c'8. es'16 ~ |
   4\) es'8.\( es'16 ~ 4 c'8. es'16 ~ |
   4\) g'8.\( g'16 ~ 8. f'16 ~ 4\) |
   es'4\( f' es'8. f'16 ~ 8. es'16 ~ |
@@ -74,7 +74,12 @@ left = \absolute {
   <f as c'>4 q8 r r2 |
   <f b d'>1 |
   <g bes>1 |
+
   <c es g>2 \clef "treble" <f'' as'' c'''> | \clef "bass"
+
+
+
+
   <f as ces'>2 \clef "treble" <f'' as'' ces'''>4.. \clef "bass" e,16 ~ |
   \tuplet 3/2 4 { e,4 ces8 e8 as ces'} d'2 |
 
@@ -96,10 +101,35 @@ left = \absolute {
       r4 c2. |
       r4 c2. |
       r4 c2. |
-      cis1 |
+      des1 |
     }
   >> \oneVoice
-r
+
+  <as, as>4 <as c'> <g, g> <as c'> |
+  <f, f>4 <as c'> <bes, bes> <bes d'> |
+  <es, es>4 <g bes> <d, d> <g bes> |
+  <c, c>4 <es g> <bes,, bes,> <es g> |
+  <as, as>4 <as c'> <g, g> <as c'> |
+  <f, f>4 <as c'> <bes, bes> <bes d'> |
+  <es, es>4 <g bes> <d, d> <g bes> |
+  <c, c>4 <es g> <bes,, bes,> <bes, d> |
+  <f,, f,>2 ~ \tuplet 3/2 4 { q4 f,,8 f, as, c } |
+  <bes,, bes,>2 <bes, f bes> |
+  << { \voiceOne
+      r4 es, <g, d> bes, |
+      \change Staff = "right" <g d'> bes \change Staff = "left" \clef "treble" <g' d''> bes' |
+      \change Staff = "right" \ottava 1 <g'' d'''> bes'' \change Staff = "left" \ottava 1 <es'' bes'' es''' f'''>2\arpeggio |
+    }
+    \new Voice { \voiceTwo
+      <es,, es,>1 |
+      s1 |
+      s1 |
+    }
+  >> \oneVoice
+
+  \bar "|."
+
+
 
 %}
 }
