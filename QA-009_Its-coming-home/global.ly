@@ -57,7 +57,7 @@ global = {
 
 
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-%                                       
+%
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 %% http://lsr.di.unimi.it/LSR/Item?id=204
@@ -107,7 +107,7 @@ rhythmMarkC = #(define-music-function (parser location label musicI musicII ) (s
                 \new Staff \with {
                   fontSize = #rhythmMarkCStaffReduce
                   \override StaffSymbol.staff-space = #(magstep rhythmMarkCStaffReduce)
-                  \override StaffSymbol.line-count = #0 
+                  \override StaffSymbol.line-count = #0
                   \override VerticalAxisGroup.Y-extent = #'(0 . 0)  % td
                 }
 
@@ -134,7 +134,7 @@ rhythmMarkC = #(define-music-function (parser location label musicI musicII ) (s
                 \new Staff \with {
                   fontSize = #rhythmMarkCStaffReduce
                   \override StaffSymbol.staff-space = #(magstep rhythmMarkCStaffReduce)
-                  \override StaffSymbol.line-count = #0 
+                  \override StaffSymbol.line-count = #0
                   \override VerticalAxisGroup.Y-extent = #'(0 . 0)  % td
                 }
 

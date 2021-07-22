@@ -72,16 +72,17 @@ left = \absolute {
   \bar "||"
 
   <f as c'>4 q8 r r2 |
-  <f b d'>1 |
+  <f ces' d'>1 |
   <g bes>1 |
+
 
   <c es g>2 \clef "treble" <f'' as'' c'''> | \clef "bass"
 
 
 
 
-  <f as ces'>2 \clef "treble" <f'' as'' ces'''>4.. \clef "bass" e,16 ~ |
-  \tuplet 3/2 4 { e,4 ces8 e8 as ces'} d'2 |
+  <f as ces'>2 \clef "treble" <f'' as'' ces'''>4.. \clef "bass" fes,16 ~ |
+  \tuplet 3/2 4 { 4 ces8 fes8 as ces'} d'2 |
 
   <g bes des'>1 |
 

@@ -72,15 +72,16 @@ right = \absolute {
   \bar "||"
 
   r2 g'8.\( f'16 g'4 |
-  g'8. \grace bes' b' as' g'8. f'4 |
+  g'8. \grace bes'8 ces''8. as' g'8. f'4 |
   << { \voiceTwo
-      \grace { es'8 f' } g'2.\) \change Staff = "left" \shape #'((0 . 0) (-3 . 0) (-8 . -8) (0 . 1)) PhrasingSlur es'4^\( | \change Staff = "right"
+      %\grace { es'8 f' } g'2.\) \change Staff = "left" \shape #'((0 . 0) (-3 . 0) (-8 . -8) (0 . 1)) PhrasingSlur es'4^\( | \change Staff = "right"
+      \grace { es'8 f' } g'2.\) \change Staff = "left" \voiceOne es'4 \showStaffSwitch | \change Staff = "right"
     }
     \new Voice { \voiceOne \tiny
       \change Staff = "left" \tuplet 3/2 { \shape #'((-0.5 . 5.7) (0 . 12) (0 . 0) (0.2 . 5)) Slur r_( es' bes' } \change Staff = "right" \tuplet 3/2 { es''8 bes'' es''') }
     }
   >> \oneVoice
-  d''4 bes' as' g' |
+  d''4\( bes' as' g' | \hideStaffSwitch
   as'4 ges'8. f'16 ~ 8. f'16 es'8. <as ces' d'>16 ~ |
   q2\) r8. g'16\( f'8. g'16 ~ |
   << { \voiceTwo
@@ -128,7 +129,7 @@ right = \absolute {
 
 
 
-
+  \mark \markup { \normalsize\fermata }
   \bar "|."
 
 
