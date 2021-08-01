@@ -66,19 +66,34 @@ left = \absolute {
       f,2 g, |
       as,2 a, |
       bes,1 | \voiceOne
-      r8 \tuplet 5/4 { d32 f b d' f' } \change Staff = "right" \tuplet 6/4 { b' d'' f'' b'' d''' f''' } b'''8 s2 |
+      r8 \shape #'((-3 . -0.5) (2.5 . -1) (0 . 0) (0 . 3)) Slur \tuplet 5/4 { d32_( f b d' f' } \change Staff = "right" \tuplet 6/4 { b' d'' f'' b'' d''' f''' } b'''8) s2 |
     }
   >> \oneVoice
 
   << { \voiceTwo
       <c, c>4. <g,, g,>8 ~ q2 | \voiceOne
-      r8. as,16 <c es as> as, r8 r8 es, <g, bes, es>4 |
+      r8. as,16 <c es bes> as, r8 r8 es, <g, bes, es>4 |
+      r4 <c ees g c'>8 r r16 d'16 bes f d bes, g,8 |
+      r8. as,16 <c es as>8 r8 r4 <es, g, bes, es>8 \tuplet 3/2 { es16 bes, es, } |
+      r8. c16 <es g c'> c r8 r8 g,8 <bes, d g>16 g, g, g,, |
+      r8. as,16 <c es bes> as, r8 r8 es, <g, bes, es>4 |
+      r8. <as, es as>16 ~ q8 <es as c'> r16 c' as es c as, es,8 |
+      r8. es16 as bes b8 s2 |
     }
     \new Voice { \voiceOne
       r8. c16 <es g c'> c r8 r8 g,8 <bes, d g>16 g, g, g,, | \voiceTwo
       <as,, as,>4. <es,, es,>8 ~ q2 |
+      <c, c>4. <g,, g,>8 ~ q2 |
+      <as,, as,>4. <es,, es,>8 ~ q2 |
+      <c, c>4. <g,, g,>8 ~ q2 |
+      <as,, as,>4. <es,, es,>8 ~ q2 |
+      <as,, as,>1 |
+      <as,, as,>2 r |
     }
   >> \oneVoice
+  
+  \bar "|."
+
 
 %}
 }
