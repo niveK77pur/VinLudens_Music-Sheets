@@ -42,6 +42,8 @@ left = \absolute {
       bes4. <g bes>8 ~ 2 |
     }
   >> \oneVoice
+  
+  \bar "||"
 
 
   f,8 c16 f g as c' f' ~ 2 |
@@ -69,6 +71,8 @@ left = \absolute {
       r8 \shape #'((-3 . -0.5) (2.5 . -1) (0 . 0) (0 . 3)) Slur \tuplet 5/4 { d32_( f b d' f' } \change Staff = "right" \tuplet 6/4 { b' d'' f'' b'' d''' f''' } b'''8) s2 |
     }
   >> \oneVoice
+  
+  \bar "||"
 
   << { \voiceTwo
       <c, c>4. <g,, g,>8 ~ q2 | \voiceOne

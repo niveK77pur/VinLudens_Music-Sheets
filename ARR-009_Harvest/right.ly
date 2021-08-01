@@ -42,6 +42,8 @@ right = \absolute {
 
 
 
+  
+  \bar "||"
 
   << { \voiceTwo
       as'2. bes'8 g' ~ |
@@ -69,6 +71,8 @@ right = \absolute {
 
 
 
+  
+  \bar "||"
 
 
   <es'' g'' bes'' es'''>4. <bes' d'' f'' bes''>8 ~ 4.\) <g' g''>16\( <bes' bes''> |

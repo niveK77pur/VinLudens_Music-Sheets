@@ -14,7 +14,7 @@
   }
 }
 
-%#(set-global-staff-size 20)
+#(set-global-staff-size 19)
 %showLastLength = R1 * 10
 
 \paper {
