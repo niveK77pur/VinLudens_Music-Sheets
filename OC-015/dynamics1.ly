@@ -24,6 +24,9 @@ dynamics = {
   s4\p s\< |
   s2\ff s2\dim s4\! s4\< |
   s1\ff s8 s4.\dim |
+  \once\override Score.BarLine.layer = #3
+  \once\override Score.DynamicText.layer = #4
+  \once\override Score.DynamicText.whiteout = ##t
   \once\override DynamicText.X-offset = #-2 s1.\mf | s1. | s1. |
   s2. |
   s1.\pp | s1. |

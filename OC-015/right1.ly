@@ -15,7 +15,7 @@ right = \absolute {
   \time 2/4 r4 \tuplet 3/2 { <a' a''>8\( <b' b''> <a' a''> } | \time 12/8
 
   <cis'' fis'' a'' cis'''>4. <a' d'' fis'' a''>8 <fis' a' d'' fis''>4  <d' fis' a' d''>2\) \tuplet 3/2 { <a' a''>8\( <b' b''> <a' a''> } |
-  \tuplet 3/2 { <cis'' cis'''>8 <d'' d'''> <e'' e'''> } <cis'' cis'''>8 <a' a''>4\) <a' a''>8\( \tuplet 3/2 { <b' b''>8 <a' a''> <g' g''> } <fis' fis''>8 <d' d''>8\) \grace { d''16 fis'' } d''4\fermata |
+  \grace ais'' \tuplet 3/2 { <d'' fis'' cis'''>8 <d'' d'''> <e'' e'''> } <d'' fis'' cis'''>8 <a' a''>4\) <a' a''>8\( \tuplet 3/2 { <b' b''>8 <a' a''> <g' g''> } <fis' fis''>8 <d' d''>8\) \grace { d''16 fis'' } d''4\fermata |
 
 
 
@@ -42,12 +42,12 @@ right = \absolute {
   a[( ais cis' e'] \change Staff = "right" g' ais' cis'' e'' g'' ais'' cis''' e''' g''' e''' cis''' ais'' g'' e'' cis'' ais' g' \change Staff = "left" e'[ cis' ais]) |
   \shape #'((0 . 0) (8 . 0) (-2 . 2) (0 . 0)) Slur
   a[( cis' e' g'] \change Staff = "right" a' cis'' e'' g'' a'' cis''' e''' g''' a''' g''' e''' cis''' a'' g'' e'' cis'' a' \change Staff = "left" g'[ e' cis']) |
-  \time 6/8 \stemDown \tuplet 7/6 { a(-"rall." c' d' ees' fis' g' \change Staff = "right" a' } \stemNeutral \tuplet 7/6 { bes' cis'' d'' e'' f'' fis'' g'' }
+  \time 6/8 \tuplet 7/6 { a(-"rall." c' d' ees' fis' g' \change Staff = "right" a' } \stemNeutral \tuplet 7/6 { bes' cis'' d'' e'' f'' fis'' g'' }
 
 
   \bar "||"
   \time 12/8
-  \tempo 8=104
+  \once\override Score.MetronomeMark.X-offset = #6 \tempo "Tempo 1" 8=104
 
   a''8)\( fis''16 cis'' b' a'' fis'' cis'' g'' fis'' d'' b' g'4 fis'2\) |
   a''8\( fis''16 cis'' b' a'' fis'' cis''\) \grace a''16 b''\( a'' fis'' d'' b'2\) cis''8\( fis'' |
