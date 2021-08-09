@@ -1,7 +1,7 @@
  \version "2.22.1"
 
 \header {
-  title = "Benighted Sheep"
+  title = "Befogged Reality"
   subtitle = "Original Composition No. 15"
   %instrument = "Piano"
   composer = "VinLudens"
