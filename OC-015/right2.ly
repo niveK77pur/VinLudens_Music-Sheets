@@ -80,7 +80,7 @@ right = \relative c'' {
   ais2 cis4 |
   dis4 cis b |
   ais gis fis |
-  dis2.\) |
+  dis2.\) | \once \override PhrasingSlur.positions = #'(3.5 . 3) \once \override Slur.positions = #'(2.5 . 4.5)
   dis'4\(( e fis |
   \grace { e16 fis } e2) dis4( |
   \grace { cis16 dis } cis4.) fis,8( b cis |
@@ -270,19 +270,7 @@ right = \relative c'' {
   4 r2. |
 
   <b e g>4. fis'16 e dis4 c ~ |
-  4\fermata r4\fermata <g g'>4 <a a'> |
-  \bar "||" \tempo 4=96
-  b'2 a4 g |
-  fis2 dis ~ |
-  2 \tuplet 3/2 4 { e8-_ fis-_ e-_ dis-- e-- fis-- } |
-  g2 fis4 e | \voiceOne
-  d2 c |
-  s1 |
-
-  \clef "treble" b,2 <g' g'>4 <a a'> |
-  <b b'>2 <fis fis'> |
-
-
+  \bar "||" 4\fermata r4\fermata
 
 
 %}

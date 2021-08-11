@@ -1,4 +1,4 @@
- \version "2.22.1"
+\version "2.22.1"
 
 \header {
   title = "Befogged Reality"
@@ -51,6 +51,29 @@
 \include "dynamics2.ly"
 \score {
   \header { piece = "Quavering Foundations." }
+  \new PianoStaff \with {
+    instrumentName = "Piano"
+  } << \accidentalStyle piano
+    \new Staff = "right" \with {
+      midiInstrument = "acoustic grand"
+    } \right
+    \new Dynamics = "Dynamics" \dynamics
+    \new Staff = "left" \with {
+      midiInstrument = "acoustic grand"
+    } { \clef bass \left }
+  >>
+  \layout { }
+  %\midi {
+  %  %\tempo 4=80
+  %  \set Staff.midiMaximumVolume = #0.7
+  %}
+}
+
+\include "right3.ly"
+\include "left3.ly"
+\include "dynamics3.ly"
+\score {
+  \header { piece = "Forever Lost." }
   \new PianoStaff \with {
     instrumentName = "Piano"
   } << \accidentalStyle piano

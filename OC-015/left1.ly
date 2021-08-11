@@ -50,7 +50,7 @@ left = \absolute {
 
   \bar "||"
   \time 12/8
-
+  \clef "treble"
   << { \voiceOne
       r4 a' r4 e'4 s2 |
       r4 a' r4 fis'2 e'8 d' |
@@ -63,7 +63,7 @@ left = \absolute {
       d'2 g2 r2 |
       d'2 g2 r2 |
       b2 e2 r2 |
-      \time 6/8 b2 e4 ~ |
+      \time 6/8 b2 \clef "bass" \shape #'((0 . 0) (0 . 0) (0 . -1) (0 . 0)) Tie e4 ~ |
       \time 4/4 1 |
       <d, a,>
     }
