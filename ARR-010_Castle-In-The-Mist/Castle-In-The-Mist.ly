@@ -2,7 +2,7 @@
 
 \header {
   title = "Castle In The Mist"
-  subtitle = \markup { \vspace #2 \epsfile #Y #4 #"images/ico.eps"  "EDIT THIS IMAGE"}
+  subtitle = \markup { \vspace #2 \epsfile #Y #4 #"images/ico.eps"}
   %subtitle = "ICO"
   %instrument = "Piano"
   composer = "Michiru Ōshima"
