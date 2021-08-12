@@ -21,7 +21,6 @@ left = \absolute {
   d4 a b |
   c4 a b |
   d4 a b |
-
   e4 a b |
   d4 a b |
   c4 a b |
@@ -112,10 +111,114 @@ left = \absolute {
   \key a \minor
 
   << { \voiceOne
-      r
+      r2. |
+      r2 \voiceTwo b,4( |
     }
     \new Voice { \voiceTwo
       <f, f>2. |
+    }
+  >> \oneVoice
+
+
+  \bar "||" \key e \minor
+
+  << { \voiceTwo
+      e,2.) ~ |
+      2. ~ |
+      2. ~ |
+      2 \ottava -1 d,8( e, |
+      e,,2.) ~ |
+      \set Voice.middleCPosition = #(+ 6 7) 2. | \unset Voice.middleCPosition
+      c2. ~ |
+      2. |
+    }
+    \new Voice { \voiceOne
+      r4 a b |
+      d a b |
+      c a b |
+      d a r |
+      r4 \ottava 0 a b |
+      d a b |
+      c a b |
+      d a b |
+    }
+  >> \oneVoice
+
+  << { \voiceOne
+      r4 a b |
+      r a b |
+      r a b |
+      r a b |
+      r a b |
+      r a b |
+      r a b |
+      r a b |
+
+      r a b |
+      r a b |
+      r a b |
+      r a b |
+      r a b |
+      r a b |
+      r a b |
+      r a b |
+    }
+    \new Voice { \voiceTwo
+      e,2. |
+      d,2. |
+      c,2. |
+      d,2. |
+      e, |
+      d, |
+      c,4. c |
+      d,2. |
+      e,2. |
+      d,2. |
+      c,2. |
+      d,2. |
+      e, |
+      d, |
+      c,4. c |
+      <d, d>4 e fis |
+    }
+  >> \oneVoice
+
+  << { \voiceOne 
+      r a b |
+      r a b |
+      r a b |
+      r a b |
+      r a b |
+      r a b |
+      r a b |
+      r a b |
+      r a b |
+      r a b |
+      r a b |
+      r a b |
+      r a b |
+      r a b |
+      r a b |
+      r a b |
+    }
+    \new Voice { \voiceTwo 
+      <e, e>4. a,8 b,4 |
+      <d, d>2.
+      <c, c>2 c4 |
+      d,2. |
+      <e, e>2. |
+      <d, d>2.
+      <c, c>2 c4 |
+      d,2. |
+      <e, e>2. |
+      <d, d>2.
+      <c, c>2 c4 |
+      d,2. |
+      <e, e>2. |
+      <d, d>2.
+      <c, c>2 c4 |
+      d,2. |
+
     }
   >> \oneVoice
 
