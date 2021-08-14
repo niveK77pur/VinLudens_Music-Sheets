@@ -4,14 +4,12 @@
 left = \absolute {
   \global
 
-  e4 a b |
-  d4 a b |
-  c4 a b |
-  d4 a b |
-  e4 a b |
-  d4 a b |
-  c4 a b |
-  d4 a b |
+  \repeat volta 2 {
+    e4 a b |
+    d4 a b |
+    c4 a b |
+    d4 a b |
+  }
 
   e4 a b |
   d4 a b |
@@ -107,20 +105,29 @@ left = \absolute {
 
 
 
+
   \bar "||"
   \key a \minor
+  \time 4/4
 
   << { \voiceOne
-      r2. |
-      r2 \voiceTwo b,4( |
+      r4 <f a c' e'> q <f a c'> |
+      r4 <e g b d'> r <d f a c'> |
+      r4 <c e g b> q q |
+      r4 <d f a c'> q q |
+      r4 <e b> \showStaffSwitch \change Staff = "right" \voiceTwo <g' b' e'' g''> \change Staff = "left" \voiceTwo b,4( | \hideStaffSwitch
     }
     \new Voice { \voiceTwo
-      <f, f>2. |
+      <f, c f>1 |
+      <e, b, e>2 <d, a, d> |
+      <c, g, c>1 |
+      <d, a, d>1 |
+      <e, b, e>2 r |
     }
   >> \oneVoice
 
 
-  \bar "||" \key e \minor
+  \bar "||" \key e \minor \time 3/4 \tempo "Tempo 1" 4 = 150
 
   << { \voiceTwo
       e,2.) ~ |
@@ -183,44 +190,76 @@ left = \absolute {
     }
   >> \oneVoice
 
-  << { \voiceOne 
-      r a b |
-      r a b |
-      r a b |
-      r a b |
-      r a b |
-      r a b |
-      r a b |
-      r a b |
-      r a b |
-      r a b |
-      r a b |
-      r a b |
-      r a b |
-      r a b |
-      r a b |
+  << { \voiceOne
       r a b |
     }
-    \new Voice { \voiceTwo 
+    \new Voice { \voiceTwo
       <e, e>4. a,8 b,4 |
-      <d, d>2.
-      <c, c>2 c4 |
-      d,2. |
-      <e, e>2. |
-      <d, d>2.
-      <c, c>2 c4 |
-      d,2. |
-      <e, e>2. |
-      <d, d>2.
-      <c, c>2 c4 |
-      d,2. |
-      <e, e>2. |
-      <d, d>2.
-      <c, c>2 c4 |
-      d,2. |
-
     }
   >> \oneVoice
+  <d, d>4 <a, a> <b, b> |
+  <c, c>4 <a, a> <b, b> |
+  <d, d>4 <a, a> <b, b> |
+  <e, e>4 <a, a> <b, b> |
+  <d, d>4 <a, a> <b, b> |
+  <c, c>4 <a, a> <b, b> |
+  <d, d>4 <a, a> <b, b> |
+  <e, e>4 <a, a> <b, b> |
+  <d, d>4 <a, a> <b, b> |
+  <c, c>4 <a, a> <b, b> |
+  <d, d>4 <a, a> <b, b> |
+  <e, e>4 a b |
+  <d, d>4 a b |
+  c,4 a b |
+  d4 a b |
+
+  e4 a b |
+  d a b |
+  c a b |
+  d a b |
+  e4 a b |
+  d a b |
+  c a b |
+  d a b |
+
+  e4 a b |
+  d a b |
+  c a b |
+  d a b |
+  e4 a b |
+  d a b |
+  c a b |
+  d a b |
+
+  e4 a b |
+  d a b |
+  c a b |
+  d a b |
+  e4 a b |
+  d a b |
+  c a b |
+  d a b |
+
+  << { \voiceOne
+      d a b |
+      d'4 r2 |
+      r4 \ottava 0 <e b d'>4 g | \set tieWaitForNote = ##t \tieDown
+      e4 \tuplet 3/2 4 { g8 b e' \clef "treble" g'~ b'~ e''~ } |
+      <g' b' e''>2. |
+
+    }
+    \new Voice { \voiceTwo
+      d2. |
+      s2. |
+      \ottava -1 e,,2.~ \ottava 0 |
+      \set middleCPosition = #(+ 6 7) 2.~ |
+      2 r4 |
+    }
+  >> \oneVoice
+
+
+  \bar "|."
+
 
 %}
 }
