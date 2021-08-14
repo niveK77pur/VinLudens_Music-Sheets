@@ -28,10 +28,10 @@ left = \absolute {
   c4 a b |
   d4 a b |
 
-  << { \voiceOne
-      r4 <g a> <g b> |
-      r4 <fis a> <fis b> |
-      r4 <e a> <e b> |
+  << { \voiceOne \set Staff.fingeringOrientations = #'(up)
+      r4 <g-3 a-2> <g-3 b-1> |
+      r4 <fis-3 a-2> <fis-3 b-1> |
+      r4 <e-5 a-2> <e-5 b-1> |
       r4 <fis a> <fis b> |
       r4 <g a> <g b> |
       r4 <fis a> <fis b> |
@@ -44,7 +44,7 @@ left = \absolute {
       r4 <g a> <g b> |
       r4 <fis a> <fis b> |
       r4 <e a> <e b> | \oneVoice
-      d,8 d e fis g fis |
+      d,8 d-1 e-3 fis-2 g-1 fis-2 | \unset Staff.fingeringOrientations
     }
     \new Voice { \voiceTwo
       <e, e>2. |
@@ -66,9 +66,9 @@ left = \absolute {
     }
   >> \oneVoice
 
-  e,8 e g a b a |
-  d,8 d fis a b a |
-  c,8 c e g a g |
+  e,8 e g-3 a-2 b-1 a-2 |
+  d,8 d fis-3 a b a |
+  c,8 c e-3 g-2 a g |
   d,8 d e fis g fis |
   e,8 e g a b a |
   d,8 d fis a b a |
@@ -114,7 +114,7 @@ left = \absolute {
       r4 <f a c' e'> q <f a c'> |
       r4 <e g b d'> r <d f a c'> |
       r4 <c e g b> q q |
-      r4 <d f a c'> q q |
+      r4 <d fis a d'> q q |
       r4 <e b> \showStaffSwitch \change Staff = "right" \voiceTwo <g' b' e'' g''> \change Staff = "left" \voiceTwo b,4( | \hideStaffSwitch
     }
     \new Voice { \voiceTwo
@@ -168,7 +168,7 @@ left = \absolute {
       r a b |
       r a b |
       r a b |
-      r a b |
+      r a-2 b-1 |
     }
     \new Voice { \voiceTwo
       e,2. |
@@ -186,7 +186,7 @@ left = \absolute {
       e, |
       d, |
       c,4. c |
-      <d, d>4 e fis |
+      <d, d>4 e-5 fis-3 |
     }
   >> \oneVoice
 
@@ -230,6 +230,7 @@ left = \absolute {
   d a b |
   c a b |
   d a b |
+
 
   e4 a b |
   d a b |
