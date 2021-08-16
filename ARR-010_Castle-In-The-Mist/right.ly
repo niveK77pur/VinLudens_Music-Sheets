@@ -2,6 +2,7 @@
 \include "global.ly"
 
 right = \absolute {
+  \override Score.StaffSymbol.layer = #10
   \global
   \tempo 4 = 150
   \repeat volta 2 {
@@ -105,7 +106,9 @@ right = \absolute {
     }
   >> \oneVoice
 
-
+  \once\override Staff.KeyCancellation.layer = #3
+  \once\override Staff.KeyCancellation.whiteout = ##t
+  \once\override Staff.KeyCancellation.whiteout-style = #'rounded-box
   \bar "||"
   \key a \minor
   \time 4/4
@@ -113,8 +116,8 @@ right = \absolute {
 
   d''8 c''16\) \small b'64-3 c'' b' a' \tuplet 14/16 { g'-1 a' b' c''-1 d'' e'' \ottava 1 f''-1 g'' a'' b'' c'''-1 d''' e''' f'''-4 } \tuplet 3/2 { a'''8-5 \normalsize \ottava 0 f'\( g'\) } \tuplet 3/2 { e'16\( f' e' } d'16 c'\) |
   r16\shortfermata \tuplet 5/3 { c'16\( d' e' f' g' } \tuplet 3/2 { a'8 b' c'' } d''8\shortfermata e''16 d'' <g' e''>4\) | \set Staff.fingeringOrientations = #'(up)
-  r16\shortfermata g''\( <b' fis''> g'' ~ 16 <g' e''>8.\) \tuplet 3/2 4 { <e'-1 c''-4>8\( <fis'-2 d''-5> <e' c''> <e' c''> <d' b'>4\) } |
-  \grace { g''16\( a'' b''} \tuplet 3/2 { <g'' c'''>8 b'' a''\) } <e''-1 g''-3>16\(( <fis''-2 a''-4>) <d''-1 fis''-3>( <e'' g''>) <c''-2 e''-4>( <b' d''>8.) ~ q8\) \tuplet 3/2 { b16\( c' d' } |
+  r16\shortfermata g''\( <b' fis''> g'' ~ 16 <g' e''>8.\) \tuplet 3/2 4 { <e'_1 c''_4>8\( <fis'_2 d''_5> <e' c''> <e' c''> <d' b'>4\) } |
+  \grace { g''16\( a'' b''} \tuplet 3/2 { <g'' c'''>8 b'' a''\) } \set fingeringOrientations = #'(down) <e''-1 g''-3>16\(( <fis''-2 a''-4>) <d''-1 fis''-3>( <e'' g''>) <c''-2 e''-4>( <b' d''>8.) ~ q8\) \tuplet 3/2 { b16\( c' d' } | \unset fingeringOrientations
   e'2\) \ottava 1 \voiceOne <b'' e''' a''' b'''>4\arpeggio\fermata \ottava 0 \oneVoice r |
 
 
@@ -191,7 +194,7 @@ right = \absolute {
   >> \oneVoice
 
 
-\clef "treble^8" <e'' g'' b''-5>2\( <e'' fis'' a''>4 |
+  \clef "treble^8" <e'' g'' b''-5>2\( <e'' fis'' a''>4 |
 
 
 
@@ -207,7 +210,7 @@ right = \absolute {
   <e'' g'' b''>2\( <e'' fis'' a''>4 |
   <d'' fis'' b''>2 <d'' fis'' a''>4 |
   <c'' e'' b''>2 <g'' b'' d'''-4>8( e'''-5) |
-  <b'' d''' fis'''-4>( g''' d''' b''-1) <d'' a''-4>4 |
+  \once\override Fingering.padding = #0.5 \once\override Fingering.self-alignment-X = #1.3 <b'' d''' fis'''-4>( g''' d''' b''-1) <d'' a''-4>4 |
   <e'' g'' b''-5>2.\) |
   <fis'' a'' b'' d'''>2. |
   \clef "treble" e'''4.\( b''8 b'8 d'' |
@@ -222,23 +225,23 @@ right = \absolute {
   fis'-2 b'-5 fis' b' fis' d'-1 |
   e'-2 g'-4 e' g' e' g' |
 
-  e'4 \normalsize r8 fis'4(\( g'8 |
+  e'4 \normalsize r8 \once\override PhrasingSlur.positions = #'(1 . 3.2) fis'4(\( g'8 |
   a'8. b') a''4( fis''8 ~ |
   4 d''2\)) ~ |
   4 e''2 |
   r4 r8 b''\( a'' b''\) ~ |
   2. |
-  r4 <d'' d'''>8\( q ~ q4\) |
-  r2. |
+  r4 <d'' d'''>8\( q ~ q4\) ~ |
+  q2. |
 
 
   \tuplet 3/2 4 { \ottava 1 \tiny <d'''^2 fis'''^4>8 b''^1 <d''' fis'''> b'' <d''' fis'''> b'' <d''' fis'''> b'' <d''' fis'''> } |
-  \tuplet 3/2 4 { g''_1 <b''_2 d'''_4> g'' <b'' d'''> g'' <b'' d'''> g'' <b'' d'''> g'' } |
+  \tuplet 3/2 4 { \stemUp g''_1 <b''_2 d'''_4> g'' <b'' d'''> g'' <b'' d'''> g'' <b'' d'''> g'' \stemNeutral } |
   \tuplet 3/2 4 { <fis''_2 b''_5> d''_1 <fis'' b''> d'' <fis'' b''> d'' <fis'' b''> d'' <fis'' b''> } |
   \tuplet 3/2 4 { d''_1 <e''_2 g''_4> d'' <e'' g''> d'' <e'' g''> } d''4 |
   \tuplet 3/2 4 { <d''' fis'''>8 b'' <d''' fis'''> b'' <d''' fis'''> b'' <d''' fis'''> b'' <d''' fis'''> } |
   \tuplet 3/2 4 { b''8 <d''' fis'''> b'' <d''' fis'''> b'' <d''' fis'''> b'' <d''' fis'''> b'' } |
-  \tuplet 3/2 4 { <b'' d'''> g'' <b'' d'''> g'' <b'' d'''> g'' <b'' d'''> g'' q } |
+  \tuplet 3/2 4 { \stemDown <b'' d'''> g'' <b'' d'''> g'' <b'' d'''> g'' <b'' d'''> g'' q \stemNeutral } |
   <b'' d''' fis'''>2. \ottava 0 | \normalsize
 
 
@@ -260,6 +263,7 @@ right = \absolute {
 
 
   \bar "|."
+
 
 
 %}

@@ -2,6 +2,7 @@
 \include "global.ly"
 
 left = \absolute {
+
   \global
 
   \repeat volta 2 {
@@ -19,6 +20,7 @@ left = \absolute {
   d4 a b |
   c4 a b |
   d4 a b |
+
   e4 a b |
   d4 a b |
   c4 a b |
@@ -67,7 +69,7 @@ left = \absolute {
   >> \oneVoice
 
   e,8 e g-3 a-2 b-1 a-2 |
-  d,8 d fis-3 a b a |
+  d,8 d fis-3 a-2 b a |
   c,8 c e-3 g-2 a g |
   d,8 d e fis g fis |
   e,8 e g a b a |
@@ -106,6 +108,7 @@ left = \absolute {
 
 
 
+
   \bar "||"
   \key a \minor
   \time 4/4
@@ -115,7 +118,7 @@ left = \absolute {
       r4 <e g b d'> r <d f a c'> |
       r4 <c e g b> q q |
       r4 <d fis a d'> q q |
-      r4 <e b> \showStaffSwitch \change Staff = "right" \voiceTwo <g' b' e'' g''> \change Staff = "left" \voiceTwo b,4( | \hideStaffSwitch
+      r4 <e b> \showStaffSwitch \change Staff = "right" \voiceTwo <b' e'' g'' g'> \change Staff = "left" \voiceTwo b,4( | \hideStaffSwitch
     }
     \new Voice { \voiceTwo
       <f, c f>1 |
