@@ -209,8 +209,19 @@ left = \absolute {
   <d, d>4 <a, a> <b, b> |
   <e, e>4 <a, a> <b, b> |
   <d, d>4 <a, a> <b, b> |
+
+
+
   <c, c>4 <a, a> <b, b> |
+
+
+
   <d, d>4 <a, a> <b, b> |
+
+
+
+
+
   <e, e>4 a b |
   <d, d>4 a b |
   c,4 a b |

@@ -133,14 +133,14 @@ right = \absolute {
   \bar "||" \key e \minor \time 3/4
 
 
-  \tiny r4 <a'-3 b'-4>8 q q q | \unset Staff.fingeringOrientations
-  r4 <a' b'>8 q q q |
-  r4 <a' b'>8 q q q |
-  r4 <a' b'>8 q q q |
-  r4 <a' b'>8 q q q |
-  r4 <a' b'>8 q q q |
-  r4 <a' b'>8 q q q |
-  r4 <a' b'>8[ q] r \normalsize \voiceTwo b-1\( |
+  \tiny r4 <a'-3 b'-4>8 q q q ~ | \unset Staff.fingeringOrientations
+  q4 <a' b'>8 q q q ~ |
+  q4 <a' b'>8 q q q ~ |
+  q4 <a' b'>8 q q q ~ |
+  q4 <a' b'>8 q q q ~ |
+  q4 <a' b'>8 q q q ~ |
+  q4 <a' b'>8 q q q ~ |
+  q4 <a' b'>8[ q] r \normalsize \voiceTwo b-1\( |
 
 
 
@@ -209,8 +209,19 @@ right = \absolute {
   <d'' fis'' b''>2.\) |
   <e'' g'' b''>2\( <e'' fis'' a''>4 |
   <d'' fis'' b''>2 <d'' fis'' a''>4 |
-  <c'' e'' b''>2 <g'' b'' d'''-4>8( e'''-5) |
-  \once\override Fingering.padding = #0.5 \once\override Fingering.self-alignment-X = #1.3 <b'' d''' fis'''-4>( g''' d''' b''-1) <d'' a''-4>4 |
+  \override Fingering.layer = #4
+  \override PhrasingSlur.layer = #3
+  \override Fingering.whiteout = ##t
+  <c'' e'' b''>2 \once\override Fingering.padding = #0.85 <g'' b'' d'''-4>8( e'''-5) |
+  % \once\override Fingering.padding = #0 \once\override Fingering.self-alignment-X = #1.5
+  \override Fingering.whiteout-style = #'rounded-box
+  \override Slur.layer = #5
+  <b'' d''' fis'''-4>(
+  \revert Fingering.layer
+  \revert PhrasingSlur.layer
+  \revert Fingering.whiteout
+  \revert Slur.layer
+    g''' d''' b''-1) <d'' a''-4>4 |
   <e'' g'' b''-5>2.\) |
   <fis'' a'' b'' d'''>2. |
   \clef "treble" e'''4.\( b''8 b'8 d'' |
@@ -228,10 +239,10 @@ right = \absolute {
   e'4 \normalsize r8 \once\override PhrasingSlur.positions = #'(1 . 3.2) fis'4(\( g'8 |
   a'8. b') a''4( fis''8 ~ |
   4 d''2\)) ~ |
-  4 e''2 |
-  r4 r8 b''\( a'' b''\) ~ |
-  2. |
-  r4 <d'' d'''>8\( q ~ q4\) ~ |
+  4 e''2 ~ |
+  4 r8 b''\( a'' b''\) ~ |
+  2. ~ |
+  4 <d'' d'''>8\( q ~ q4\) ~ |
   q2. |
 
 
