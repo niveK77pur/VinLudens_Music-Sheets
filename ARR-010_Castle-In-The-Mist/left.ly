@@ -212,9 +212,9 @@ left = \absolute {
 
 
 
+
+
   <c, c>4 <a, a> <b, b> |
-
-
 
   <d, d>4 <a, a> <b, b> |
 

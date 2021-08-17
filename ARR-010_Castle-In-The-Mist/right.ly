@@ -211,11 +211,11 @@ right = \absolute {
   <d'' fis'' b''>2 <d'' fis'' a''>4 |
   \override Fingering.layer = #4
   \override PhrasingSlur.layer = #3
+  \override Slur.layer = #5
+  \override Fingering.whiteout-style = #'rounded-box
   \override Fingering.whiteout = ##t
   <c'' e'' b''>2 \once\override Fingering.padding = #0.85 <g'' b'' d'''-4>8( e'''-5) |
   % \once\override Fingering.padding = #0 \once\override Fingering.self-alignment-X = #1.5
-  \override Fingering.whiteout-style = #'rounded-box
-  \override Slur.layer = #5
   <b'' d''' fis'''-4>(
   \revert Fingering.layer
   \revert PhrasingSlur.layer
