@@ -3,7 +3,7 @@
 
 global = {
   \key e \minor
-  \time 4/4
+  \time 12/8
 }
 
 % Some other usefull commands

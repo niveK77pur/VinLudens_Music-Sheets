@@ -115,9 +115,9 @@ left = \relative c' {
       q2. |
     }
     \new Voice \relative c, { \voiceTwo
-      cis2. ~ |
+      cis2.-> ~ |
       2. |
-      dis2. ~ |
+      dis2.-> ~ |
       2. |
       fis4. r |
       s2. |
