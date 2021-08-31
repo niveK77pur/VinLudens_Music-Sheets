@@ -23,6 +23,7 @@
 
 \include "global.ly"
 
+%{
 \include "right1.ly"
 \include "left1.ly"
 \include "dynamics1.ly"
@@ -40,10 +41,10 @@
     } { \clef bass \left }
   >>
   \layout { }
-  %\midi {
-  %  %\tempo 4=80
-  %  \set Staff.midiMaximumVolume = #0.7
-  %}
+  % \midi {
+  %   %\tempo 4=80
+  %   \set Staff.midiMaximumVolume = #0.7
+  % }
 }
 
 \include "right2.ly"
@@ -63,10 +64,10 @@
     } { \clef bass \left }
   >>
   \layout { }
-  %\midi {
-  %  %\tempo 4=80
-  %  \set Staff.midiMaximumVolume = #0.7
-  %}
+  % \midi {
+  %   %\tempo 4=80
+  %   \set Staff.midiMaximumVolume = #0.7
+  % }
 }
 
 \include "right3.ly"
@@ -91,12 +92,13 @@
     \set Staff.midiMaximumVolume = #0.7
   }
 }
+%}
 
 \include "right4.ly"
 \include "left4.ly"
 \include "dynamics4.ly"
 \score {
-  \header { piece = "Tholing Circumstances" }
+  \header { piece = "Tholing Circumstances." }
   \new PianoStaff \with {
     instrumentName = "Piano"
   } << \accidentalStyle piano
