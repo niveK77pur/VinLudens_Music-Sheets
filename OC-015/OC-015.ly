@@ -23,7 +23,7 @@
 
 \include "global.ly"
 
-%{
+
 \include "right1.ly"
 \include "left1.ly"
 \include "dynamics1.ly"
@@ -92,7 +92,7 @@
     \set Staff.midiMaximumVolume = #0.7
   }
 }
-%}
+
 
 \include "right4.ly"
 \include "left4.ly"
