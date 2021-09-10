@@ -38,7 +38,7 @@ right = \absolute {
   ces''4 ~ \tuplet 3/2 { 16 bes'8 } ~ 16\) as'8\( ges'16 f' es' |
   des'4 ~ 16 es'16 f'8 as'8. \acciaccatura f'16 ges'16 ~ |
   8. f' es'8 des'8. es'16 ~ |
-  es'4.\) ~ 8. fes'16( es' des' |
+  es'4.\)^~ 8. fes'16( es' des' |
   %<f as des'>2. |
   %r2. |
   \bar "||" \time 4/4 \tempo 4 = 72
@@ -150,11 +150,11 @@ right = \absolute {
 
 
 
-  <as' des'' es'' as''>4\) \grace { ges''8 as'' }<ges' ges''>4 \grace { f''8 ges'' } <f' f''>4 |
-  \grace { es''8 f'' } <bes' bes''> \tempo 4. = 96 q q q q q |
+  <as' des'' es'' as''>4\arpeggio\) \grace { ges''8 as'' }<ges' ges''>4 \grace { f''8 ges'' } <f' f''>4 |
+  \grace { es''8 f'' } <bes' bes''>-> \tempo 4. = 96 q q q q q |
   q q q q q q |
   q q q q q q |
-  q \repeat unfold 5 bes' |
+  q-> \repeat unfold 5 bes' |
   \repeat unfold 6 bes' |
   \repeat unfold 6 bes' |
   \repeat unfold 6 bes' |
@@ -211,7 +211,7 @@ right = \absolute {
   <c' e' gis'>4. \grace { a''8 b'' } a''16 gis'' e'' c'' \change Staff = "left" \clef "treble" b' a' \change Staff = "right" |
   gis' e' c' \change Staff = "left" \clef "bass" b a \change Staff = "right" \clef "bass" gis fis gis fis gis fis gis |
   fis gis fis gis fis gis fis gis fis gis fis gis fis gis a b a fis ~ 4. |
-  gis4. \clef "treble" \voiceOne b8 <e' gis'> b' |
+  gis4. \clef "treble" \voiceOne \tiny b8 <e' gis'> b' |
   \ottava 1 <e'' gis''> b'' <e''' gis'''> b''' <dis'''' b''''>4 |
   \mark \markup { \normalsize\fermata }
 

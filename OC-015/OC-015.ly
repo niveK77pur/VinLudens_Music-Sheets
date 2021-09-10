@@ -14,21 +14,32 @@
   }
 }
 
-#(set-global-staff-size 18)
+#(set-global-staff-size 17.6)
 %showLastLength = R1 * 10
 
 \paper {
   #(set-paper-size "a4")
+  % tocItemMarkup = \markup {
+  %   \override #'(line-width . 50)
+  %   \fill-with-pattern #1 #CENTER .
+  %     \column { \fromproperty #'toc:text }
+  %     \center-column { \fromproperty #'toc:page }
+  % }
+  % tocFormatMarkup = #make-italic-markup
 }
 
-\include "global.ly"
+% \markuplist \table-of-contents
 
+\include "global.ly"
 
 \include "right1.ly"
 \include "left1.ly"
 \include "dynamics1.ly"
+\tocItem \markup "Vacuous Times"
 \score {
-  \header { piece = "Vacuous Times." }
+  % \header { piece = "Vacuous Times." }
+  %\header { piece = \markup { \box \override #'(box-padding . 0.6) { \large \bold \caps "Vacuous Times" } \typewriter "Part 1." } }
+  \header { piece = \markup \part-title "Vacuous Times" }
   \new PianoStaff \with {
     instrumentName = "Piano"
   } << \accidentalStyle piano
@@ -50,8 +61,9 @@
 \include "right2.ly"
 \include "left2.ly"
 \include "dynamics2.ly"
+\tocItem \markup "Quavering Foundations"
 \score {
-  \header { piece = "Quavering Foundations." }
+  \header { piece = \markup \part-title "Quavering Foundations" }
   \new PianoStaff \with {
     instrumentName = "Piano"
   } << \accidentalStyle piano
@@ -73,8 +85,9 @@
 \include "right3.ly"
 \include "left3.ly"
 \include "dynamics3.ly"
+\tocItem \markup "Forever Lost"
 \score {
-  \header { piece = "Forever Lost." }
+  \header { piece = \markup \part-title "Forever Lost" }
   \new PianoStaff \with {
     instrumentName = "Piano"
   } << \accidentalStyle piano
@@ -93,12 +106,12 @@
   }
 }
 
-
 \include "right4.ly"
 \include "left4.ly"
 \include "dynamics4.ly"
+\tocItem \markup "Tholing Circumstances"
 \score {
-  \header { piece = "Tholing Circumstances." }
+  \header { piece = \markup \part-title "Tholing Circumstances" }
   \new PianoStaff \with {
     instrumentName = "Piano"
   } << \accidentalStyle piano

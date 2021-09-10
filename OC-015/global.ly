@@ -6,6 +6,25 @@ global = {
   \time 12/8
 }
 
+% \header { piece = \markup { \box \override #'(box-padding . 0.6) \box {
+  % \large \bold \caps "Vacuous Times" } \typewriter "Part 1." } }
+#(define ptnum 0)
+#(define (incpt)
+   (set! ptnum (+ ptnum 1))
+   (values ptnum))
+#(define-markup-command (part-title layout props title)
+  (markup?)
+  "Markup for part titles."
+  (interpret-markup layout props (markup
+      #:box
+      #:override '(box-padding . 0.6) #:box
+      #:large #:bold #:caps title
+
+      #:typewriter #:concat ( "Part " (number->string (incpt)) "." )
+    )
+  )
+)
+
 % Some other usefull commands
 %
 % Staves -----------------------------------------------------------------------

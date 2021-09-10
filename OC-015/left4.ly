@@ -38,7 +38,7 @@ left = \absolute {
       r4. <f, des> |
       r4. <bes, ges> |
       r4. <es, as, c> |
-      r8 \ottava 0 a,16 des fes ges a4. |
+      r8 \ottava 0 a,16( des fes ges \change Staff = "right" \voiceTwo a4.) \change Staff = "left" \voiceOne |
       %r8. as, des8 ges8. f16 ~ |
       %f8 bes8. as16 ~ as8 des'4 |
       \bar "||" \time 4/4
@@ -88,7 +88,7 @@ left = \absolute {
       \voiceTwo <bes, f bes>2. ~ |
       q | \oneVoice
       <es,, es,>2. ~ |
-      q |
+      q4. r |
     }
   >> \oneVoice
 
@@ -212,7 +212,7 @@ left = \absolute {
       s2. |
       s2. |
       s2. |
-      <b, e>4. \change Staff = "right" \voiceTwo r8 dis' r |
+      <b, e>4. \change Staff = "right" \voiceTwo \tiny r8 dis' r |
       dis'' r dis''' r <b'' e''' gis'''>4 |
     }
     \new Voice { \voiceTwo
