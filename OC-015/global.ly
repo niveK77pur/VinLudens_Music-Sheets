@@ -4,6 +4,7 @@
 global = {
   \key d \major
   \time 12/8
+  %\set Staff.ottavationMarkups = #ottavation-ordinals
 }
 
 % \header { piece = \markup { \box \override #'(box-padding . 0.6) \box {

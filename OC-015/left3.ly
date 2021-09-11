@@ -7,8 +7,15 @@ left = \relative c' {
   \partial 2 r2 |
 
   \clef "treble" g8 d' g b d g d b g d b d |
-  fis,8 dis' a' b \change Staff = "right" \voiceOne dis fis b2. | \change Staff = "left" \oneVoice
-  r1. |
+  fis,8 dis' a'
+  %\override Beam.layer = -3 \override Beam.whiteout = ##t \override Beam.whiteout-style = #'outline
+  b \change Staff = "right" \voiceOne
+  %\override Stem.layer = -2 \override Stem.whiteout = ##t \override Stem.whiteout-style = #'rounded-box
+  dis fis \override Stem.whiteout = ##f
+  \override NoteHead.layer = -1 \override NoteHead.whiteout = ##t \override NoteHead.whiteout-style = #'rounded-box
+  \override Dots.layer = -2 \override Dots.whiteout = ##t \override Dots.whiteout-style = #'rounded-box
+  b2. | \change Staff = "left" \oneVoice
+  r1. | \revert NoteHead.whiteout \revert Stem.whiteout \revert Beam.whiteout   \revert Dots.layer \revert Dots.whiteout \revert Dots.whiteout-style  \revert NoteHead.layer \revert NoteHead.whiteout-style  \revert Stem.layer \revert Stem.whiteout-style  \revert Beam.layer \revert Beam.whiteout-style
   \clef "bass" e,,,8 b' e \clef "treble" g b e b g e \clef "bass" b g b |
   c,8 g' c \clef "treble" dis g a \change Staff = "right" \voiceTwo c dis g a c dis | \once \override Beam.positions = #'(-3.0 . -5.0)
   \oneVoice \tuplet 13/9 { \stemDown a'8 g dis c \change Staff = "left" \clef "treble" \stemUp a g dis c \change Staff = "right" \clef "treble" \stemDown a g dis c \change Staff = "left" \clef "bass" \stemUp b \stemNeutral } s4. |
@@ -32,7 +39,7 @@ left = \relative c' {
   c,=,8 <c' e g> q q q <c e> q q q |
   a,=,,8 <a' c e> q q q q q q q |
   \bar "||" \time 4/4
-  \ottava -1 g,=,,4 d' g d' | \ottava 0
+  \ottava -1 g,=,,4 d' \ottava 0 g d' | \ottava 0
   g, d' g d' |
   <g, d' g>1 |
   << { \voiceOne

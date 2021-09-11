@@ -42,7 +42,7 @@ right = \absolute {
   a[( ais cis' e'] \change Staff = "right" g' ais' cis'' e'' g'' ais'' cis''' e''' g''' e''' cis''' ais'' g'' e'' cis'' ais' g' \change Staff = "left" e'[ cis' ais]) |
   \shape #'((0 . 0) (8 . 0) (-2 . 2) (0 . 0)) Slur
   a[( cis' e' g'] \change Staff = "right" a' cis'' e'' g'' a'' cis''' e''' g''' a''' g''' e''' cis''' a'' g'' e'' cis'' a' \change Staff = "left" g'[ e' cis']) |
-  \time 6/8 \once\override Beam.positions = #'(7 . 7.5) \tuplet 7/6 { \stemUp a(-"rall." c' d' ees' fis' g' \change Staff = "right" \stemDown a' } \stemNeutral \tuplet 7/6 { bes' cis'' d'' e'' f'' fis'' g'' }
+  \time 6/8 \once\override Beam.positions = #'(7 . 7.5) \tuplet 7/6 { \shape #'((0 . 0) (0 . 0) (0 . 1) (4.5 . 0)) Slur  \stemUp a(-"rall." c' d' ees' fis' g' \change Staff = "right" \stemDown a' } \stemNeutral \tuplet 7/6 { bes' cis'' d'' e'' f'' fis'' g'' }
 
 
   \bar "||"

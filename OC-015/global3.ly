@@ -4,6 +4,7 @@
 global = {
   \key e \minor
   \time 12/8
+  %\set Staff.ottavationMarkups = #ottavation-ordinals
 }
 
 % Some other usefull commands

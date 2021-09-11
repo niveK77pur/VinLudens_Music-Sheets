@@ -72,13 +72,13 @@ right = \absolute {
 
 
   <es' bes' es''>4. \tiny\voiceOne \ottava 1 <bes'' es''' bes'''> |
-  <bes''' es'''' bes''''>4. \normalsize\oneVoice \ottava 0 r8 <ges= ges'>\( <as= as'> |
+  \ottava 2 <bes''' es'''' bes''''>4. \normalsize\oneVoice \ottava 0 r8 <ges= ges'>\( <as= as'> |
   <bes d' bes'>4.\) \tiny\voiceOne\ottava 1 <bes'' d''' bes'''> |
-  <bes''' d'''' bes''''> \normalsize\oneVoice \ottava 0 <bes bes'>8\( <as as'> <ges ges'> |
+  \ottava 2 <bes''' d'''' bes''''> \normalsize\oneVoice \ottava 0 \shape #'((0 . 0) (0 . -1) (2 . 9) (0 . 6)) PhrasingSlur <bes bes'>8\( <as as'> <ges ges'> |
   \voiceOne <as= des' as'>8. \change Staff = "left" <ges= ges'>16. <f f'>\) \change Staff = "right" \tiny\voiceOne\ottava 1 <bes'' des''' as'''>4. |
-  <bes''' des'''' as''''>4. \normalsize\oneVoice \ottava 0 r8 <f f'>\( <as as'> |
+  \ottava 2 <bes''' des'''' as''''>4. \normalsize\oneVoice \ottava 0 r8 <f f'>\( <as as'> |
   <ges des' ges'>4.\) \tiny\voiceOne\ottava 1 <ges'' bes'' es'''> |
-  <ges''' bes''' des'''' es''''>4.\arpeggio\fermata \normalsize\oneVoice \ottava 0 r8 \clef "bass" <es es'>\( <f f'> |
+  \ottava 2 <ges''' bes''' des'''' es''''>4.\arpeggio\fermata \normalsize\oneVoice \ottava 0 r8 \clef "bass" <es es'>\( <f f'> |
 
 
 
@@ -115,7 +115,7 @@ right = \absolute {
   <bes es' ges' bes'>8.\)\arpeggio \tiny\voiceOne ces'32 ges' ces'' bes' es'' bes'' \ottava 1 ces'' ges'' ces''' bes'' es''' bes''' ces''' ges''' ces'''' bes''' es'''' bes'''' |
   \normalsize\oneVoice \ottava 0 r4. r8 <ges= ges'>\( <as= as'> |
   <bes d' bes'>8.\) \tiny\voiceOne ces'32 ges' ces'' bes' d'' bes'' \ottava 1 ces'' ges'' ces''' bes'' d''' bes''' ces''' ges''' ces'''' bes''' d'''' bes'''' | |
-  \normalsize\oneVoice \ottava 0 r4.  <bes= bes'='>8\( <des' des''> <bes bes'> |
+  \normalsize\oneVoice \ottava 0 r4. \shape #'((0 . 0) (0 . -1) (2 . 9) (0 . 6)) PhrasingSlur <bes= bes'='>8\( <des' des''> <bes bes'> |
   \voiceOne <as des' as'>8 <bes bes'> \change Staff = "left" <f f'> q32\) \change Staff = "right" \tiny\voiceOne bes'32 des'' as'' \ottava 1 bes' des'' f'' bes'' des''' as''' bes'' des''' |
   \time 7/8 f''' bes''' des'''' as'''' \normalsize\oneVoice \ottava 0 r4. r8 <f f'>\( <as as'> | %\time 6/8
   <ges bes des' ges'>\) \tiny\voiceOne\ottava 1 f'''16 es''' des''' a'' \tuplet 8/6 { bes''16 as'' ges'' f'' es'' des'' c'' a' } |
@@ -170,7 +170,7 @@ right = \absolute {
   \repeat unfold 6 bes' |
   \repeat unfold 6 bes' |
   \repeat unfold 6 bes' |
-  \repeat unfold 5 bes' bes' ~ |
+  \repeat unfold 5 bes' bes'-\tweak minimum-length #3 ~ |
   bes'2.\fermata |
 
 
@@ -204,12 +204,12 @@ right = \absolute {
   ces'''8 des''' ces''' bes''8.\) f''16( as'' f'' |
   ges'' f'' es'' des'' es'' f'' \ottava 1 ges'' as'' bes'' c''' des''' es''' |
   f''' es''' f''' ges''' as''' bes''' c'''' des'''' es'''' ges'''' f'''' es'''' |
-  f''''4.) \ottava 0 <f' as' c''>4 ~ q16 <cis' e' gis'>16 ~  |
-  \bar "||" \key e \major
-  q4 \change Staff = "left" a,16( e b \change Staff = "right" cis' e' gis' b'8 ~ |
+  f''''4.) \ottava 0 <f' as' c''>4 ~ q16 <cis' e' gis'>16 \tweak layer #-2 ~  |
+  \bar "||" \tweak layer #-1 \tweak whiteout ##t \tweak whiteout-style #'rounded-box \key e \major
+  q4 \change Staff = "left" \shape #'((0 . -2) (0 . 2.5) (0 . 0.3) (0 . 0)) Slur a,16\tweak eccentricity #2 ( e b \change Staff = "right" cis' e' gis' b'8 ~ |
   16) r r4 r16 <b dis' fis'>8. r8 |
-  <c' e' gis'>4. \grace { a''8 b'' } a''16 gis'' e'' c'' \change Staff = "left" \clef "treble" b' a' \change Staff = "right" |
-  gis' e' c' \change Staff = "left" \clef "bass" b a \change Staff = "right" \clef "bass" gis fis gis fis gis fis gis |
+  <c' e' gis'>4. \grace { a''8 b'' } \once\override Beam.positions = #'(-2 . -5.8) a''16 gis'' e'' c'' \change Staff = "left" \once\override Staff.Clef.layer = #-1 \once\override Staff.Clef.whiteout = ##t \once\override Staff.Clef.whiteout-style = #'rounded-box \clef "treble" b' a' \change Staff = "right" |
+  \once\override Beam.positions = #'(-6 . -5) gis' e' c' \change Staff = "left" \clef "bass" b a \change Staff = "right" \clef "bass" gis fis gis fis gis fis gis |
   fis gis fis gis fis gis fis gis fis gis fis gis fis gis a b a fis ~ 4. |
   gis4. \clef "treble" \voiceOne \tiny b8 <e' gis'> b' |
   \ottava 1 <e'' gis''> b'' <e''' gis'''> b''' <dis'''' b''''>4 |

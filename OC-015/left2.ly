@@ -267,6 +267,7 @@ left = \relative c' {
   <c b'>4 q q q |
   <a b'>4 q q q |
   <g d' g>4 q <fis dis' \parenthesize a'>-> fis' ~ |
+
   4 r2. |
 
   <e, b' e>2 <c g' dis'> |

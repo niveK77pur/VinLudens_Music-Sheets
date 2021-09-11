@@ -3,17 +3,23 @@
 
 right = \relative c'' {
   \global
-
+  \override PhrasingSlur.layer = -5
   \partial 2 <g g'>4\( <a a'> |
   \tempo 4.=96
   <b' b,>2. a4. g |
   fis2. dis ~ |
-  2.\) e8-_\( fis-_ e-_ dis-- e-- fis-- |
-  g2. fis4. e | \voiceOne
-  d2. c\) |
-  s2. s4. \change Staff = "left" a,=8\( g a | \change Staff = "right" \oneVoice
 
-  \clef "treble" b=2.\) \hideStaffSwitch <g' g'>4.\( <a a'> |
+
+
+
+
+
+  2.\) \revert PhrasingSlur.layer e8-_\( fis-_ e-_ dis-- e-- fis-- |
+  g2. fis4. e | \voiceOne \mergeDifferentlyDottedOn\mergeDifferentlyHeadedOn
+  d2. c\) | \mergeDifferentlyDottedOff\mergeDifferentlyHeadedOff
+  s2. s4. \change Staff = "left" a,=8 g a | \once\override VoiceFollower.minimum-length = #4 \once\override VoiceFollower.springs-and-rods = #ly:spanner::set-spacing-rods  \showStaffSwitch \change Staff = "right" \oneVoice
+
+  \clef "treble" b=2. \hideStaffSwitch <g' g'>4.\( <a a'> |
   <b=' b'>2. <e, e'>4.\) r8 <g g'>\( <a a'> |
   <b b'> <d d'> <b b'> <b b'> <a a'> <g g'> <a a'>4.\) r8 r16 \ottava 1 <\parenthesize g' g'>[\( r <a a'>] |
   r16 <b b'>[ r <d d'> r <b b'>] r <dis dis'>[ r <d d'> r <c c'>] r <b b'>16 ~ 4 ~ 4\) \ottava 0 bes=''16( a |

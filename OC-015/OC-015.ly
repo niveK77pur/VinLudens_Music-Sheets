@@ -37,8 +37,6 @@
 \include "dynamics1.ly"
 \tocItem \markup "Vacuous Times"
 \score {
-  % \header { piece = "Vacuous Times." }
-  %\header { piece = \markup { \box \override #'(box-padding . 0.6) { \large \bold \caps "Vacuous Times" } \typewriter "Part 1." } }
   \header { piece = \markup \part-title "Vacuous Times" }
   \new PianoStaff \with {
     instrumentName = "Piano"

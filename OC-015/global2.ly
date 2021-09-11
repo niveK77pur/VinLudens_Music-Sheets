@@ -4,6 +4,7 @@
 global = {
   \key gis \minor
   \time 3/4
+  %\set Staff.ottavationMarkups = #ottavation-ordinals
 }
 
 % Some other usefull commands

@@ -41,7 +41,7 @@ left = \absolute {
       r8 \ottava 0 a,16( des fes ges \change Staff = "right" \voiceTwo a4.) \change Staff = "left" \voiceOne |
       %r8. as, des8 ges8. f16 ~ |
       %f8 bes8. as16 ~ as8 des'4 |
-      \bar "||" \time 4/4
+      \bar "||" \time 4/4 \shape #'((0.5 . -7.8) (0 . -12) (0 . -7.5) (0 . -2)) PhrasingSlur
       r8\( as, des16 ges8 f16 ~ f16 bes8 as16 ~ as16 des'8. |
     }
     \new Voice { \voiceTwo
@@ -71,13 +71,13 @@ left = \absolute {
   \bar "||" \time 6/8 \tempo 4. = 60 \key ges \major
 
   << { \change Staff = "right" \voiceTwo \tiny
-      r4.\) <ges'' ces'''> |
+      \hideNotes es'4.\) \unHideNotes <ges'' ces'''> |
       <ges''' ces''''>4. s |
-      r4. <ges'' ces'''> |
+      s4. <ges'' ces'''> |
       <ges''' ces''''>4. s |
-      r2. |
+      s2. |
       <bes'' f''' as'''>4. s |
-      r4. des'' |
+      s4. des'' |
       <bes'' des'''> s |
     \change Staff = "left" \normalsize }
     \new Voice { \oneVoice
@@ -85,7 +85,7 @@ left = \absolute {
       q2. |
       <ces ges ces'>2. ~ |
       q2. |
-      \voiceTwo <bes, f bes>2. ~ |
+      \voiceTwo \shape #'((0 . 0) (0 . -2) (-1 . -1.2) (0 . 0)) Tie <bes, f bes>2.~ |
       q | \oneVoice
       <es,, es,>2. ~ |
       q4. r |
@@ -93,20 +93,20 @@ left = \absolute {
   >> \oneVoice
 
   << { \voiceOne \change Staff = "right" \voiceTwo \small
-      r4. <as es' as'>8 q q  |
+      s4. <as es' as'>8 q q  |
       q q q q s4 |
-      r4. <ges des' ges'>8 q q |
+      s4. <ges des' ges'>8 q q |
       q q q q s4 |
-      r8 <fes ces' fes'> q q q s | \change Staff = "left" \oneVoice \normalsize
+      s8 <fes ces' fes'> q q q s | \change Staff = "left" \oneVoice \normalsize
       r4. <des, as, des> |
     }
-    \new Voice { \voiceTwo
-      \grace { as,8 ~-"TIE" } <as,, as,>2. ~ |
+    \new Voice { \voiceTwo \temporary\override Tie.minimum-length = #2.6
+      \grace { as,8 ~ } <as,, as,>2.~ |
       q |
-      \grace { ges,8 ~-"TIE" } <ges,, ges,>2. ~ |
+      \grace { ges,8 ~ } <ges,, ges,>2. ~ |
       q |
       \grace { fes,8 ~ } <fes,, fes,>2. |
-      \grace { des,8 ~-"TIE" } <des,, des,>2. |
+      \grace { des,8 ~ } <des,, des,>2. | \revert Tie.minimum-length
     }
   >> \oneVoice
 
@@ -116,17 +116,17 @@ left = \absolute {
       q2. |
       <ces ges ces'>2. ~ |
       q2. |
-      \voiceTwo <bes, f bes>2. ~ |
-      \time 7/8 q ~ q8 | \oneVoice \time 6/8
+      \voiceTwo \shape #'((0 . 0) (-0.5 . -3) (0 . 0) (0 . 0)) Tie <bes, f bes>2.-\tweak layer #-2 ~ |
+      \tweak layer #-1 \tweak whiteout ##t \time 7/8 q ~ q8 | \oneVoice \time 6/8
       \grace es,8 ~ <es,, es,>2. ~ |
-      4. \voiceTwo r4 r16 as, ~ |
+      4. \voiceTwo r4 r16 as,-\tweak minimum-length #3 ~ |
     }
     \new Voice { \change Staff = "right" \voiceTwo \tiny
-      r8. ces'32 ges' ces'' s s s ces'' ges'' ces''' s s s ces''' ges''' ces'''' s s s |
+      \tweak Y-offset -6 r8. ces'32 ges' ces'' s s s ces'' ges'' ces''' s s s ces''' ges''' ces'''' s s s |
       s2. |
-      r8. ces'32 ges' ces'' s s s  ces'' ges'' ces''' s s s ces''' ges''' ces'''' s s s |
+      \tweak Y-offset -6.3 r8. ces'32 ges' ces'' s s s  ces'' ges'' ces''' s s s ces''' ges''' ces'''' s s s |
       s2. |
-      s8 s8 s8 s32 s s s bes' des'' f'' s s s bes'' des''' |
+      s4. s32 s s s bes' des'' f'' s s s bes'' des''' |
       \time 7/8 f'''32 s s s s4. s4. | %\time 6/8
 
     \change Staff = "left" \normalsize }
@@ -204,8 +204,8 @@ left = \absolute {
       r4. <f des'> |
       r4. <bes ges'> |
       r4. <es as c'> |
-      r4. <as es'>4 ~ q16 <e b>16 ~ |
-      \bar "||" \key e \major
+      r4. <as es'>4 ~ q16 <e b>16 \tweak layer #-2 ~ |
+      \bar "||" \tweak layer #-1 \tweak whiteout ##t \tweak whiteout-style #'rounded-box \key e \major
       4 s8 s4. |
       r4. r16 <cis gis>8. r8 |
       <e b>2. |
@@ -222,10 +222,10 @@ left = \absolute {
       bes,2. |
       es2. |
       as,2. |
-      des4. ~ 4 ~ 16 a,16 ~ |
+      des4. ~ 4 ~ 16 a,16 \tweak layer #-2 ~ |
       2. ~ |
-      16 fis, ~ 4 ~ 4 r8 |
-      a,2. ~ |
+      16 fis,~ 4 ~ 4 r8 |
+      %{\shape #'((0 . 0) (0 . 0) (0 . -1.5) (0 . 0)) Tie%} a,2.\tweak layer #-2 ~ |
       \once\set Voice.middleCPosition = #6 2. ~ |
       2. ~ |
       4. r8. e, ~ |

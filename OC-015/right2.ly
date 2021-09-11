@@ -5,7 +5,7 @@ right = \relative c'' {
   \global
   \tempo "Pressing" 2.=80
 
-
+  \once\override PhrasingSlur.positions = #'(0 . -1)
   b2.\( |
   ais2 cis4 |
   b4 gis ais |
@@ -32,7 +32,7 @@ right = \relative c'' {
   ais2 cis4 |
   dis4 cis b |
   ais gis fis |
-  dis2.\) |
+  dis2.\) | \once\override PhrasingSlur.positions = #'(0 . 0)
   dis4\( e fis |
   e2 dis4 |
   cis2 ais4 |
@@ -75,17 +75,17 @@ right = \relative c'' {
 
 
 
-
+  \once\override PhrasingSlur.positions = #'(2 . 2.5)
   b'2.\( |
   ais2 cis4 |
   dis4 cis b |
   ais gis fis |
-  dis2.\) | \once \override PhrasingSlur.positions = #'(3.5 . 3) \once \override Slur.positions = #'(2.5 . 4.5)
+  dis2.\) | \once\alterBroken positions #'((2.5 . 4) (5 . 2.5)) PhrasingSlur
   dis'4\(( e fis |
   \grace { e16 fis } e2) dis4( |
   \grace { cis16 dis } cis4.) fis,8( b cis |
   <dis fis,>2 cis4 |
-  \grace { b16 cis } b2) gis4( |
+  \grace { b16 cis } b2) \once\override Slur.positions = #'(1 . 0) gis4( |
   <a des>2 ces4 |
   \grace { ais16 b } ais4 b cis)\) |
 
@@ -126,7 +126,7 @@ right = \relative c'' {
 
   \bar "||" \time 3/4
   \tempo "Tempo 1" 2. = 80
-
+  \once\alterBroken positions #'((0 . 0) (0 . -1)) PhrasingSlur
   b2.\( |
   ais2 cis4 |
   b4 gis ais |
@@ -148,12 +148,12 @@ right = \relative c'' {
 
 
 
-
+  \once\override PhrasingSlur.positions = #'(2 . 2.5)
   b'2.\( |
   ais2 cis4 |
   dis4 cis b |
   ais gis fis |
-  dis2.\) |
+  dis2.\) | \once\alterBroken positions #'(() (0 . 2)) PhrasingSlur
   dis4\( e fis |
   e2 dis4 |
   cis2 ais4 |
@@ -174,7 +174,7 @@ right = \relative c'' {
 
 
 
-
+  \once\alterBroken positions #'((2 . 0)) PhrasingSlur
   b'2.\( |
   ais2 cis4 |
   b4 gis ais |
@@ -196,7 +196,7 @@ right = \relative c'' {
 
 
 
-
+  \once\override PhrasingSlur.positions = #'(2 . 2)
   b'2.\( |
   ais2 cis4 |
   dis4 cis b |
@@ -256,17 +256,18 @@ right = \relative c'' {
   \tempo 4 = 40
 
   q2\arpeggio |
-  r16 \tuplet 5/4 { e64\( g b d c } b8 ~ 4\) |
+  r16 \tuplet 5/4 { e64-\shape #'((0 . 0) (0 . 0) (-1 . 0.5) (0 . 0))\( g b d c } b8 ~ 4\) |
   r16 \tuplet 5/4 { a,64\( d fis g fis } b8 ~ 4\) |
-  r16 \tuplet 5/4 { fis,64\( a d e d } g8 ~ 4\) |
-  r16 e,32\( fis g fis b16 ~ 4 ~ |
+  r16 \tuplet 5/4 { fis,64\( a d e d } g8 ~ 4\) | \alterBroken positions #'((0 . 3) ()) PhrasingSlur
+  r16 e,32\( fis g fis b16\tweak minimum-length #2.5 ~ 4 ~ |
   4\) 4 |
 
   \bar "||" \time 4/4 \tempo 4=60
 
   \grace { b16 c } <b e>4 q q \grace { b16 c } q4 |
   \grace { d16 e } <b fis'>4 q q4 \grace { fis'16 g } q4 |
-  \grace { g16 a } <d, b'>4 q8. \tuplet 3/2 { r32 a'[( g] } \tuplet 3/2 { <e a> g fis) } ~ 8. dis4 ~ |
+  \grace { g16 a } <d, b'>4 q4 \grace { a'16^( g } \afterGrace 1/4 <e a>4-> { g16 fis) } dis4 ~ |
+  %\grace { g16 a } <d, b'>4 q8. \tuplet 3/2 { r32 a'[( g] } \tuplet 3/2 { <e a>-> g fis) } ~ 8. dis4 ~ |
   4 r2. |
 
   <b e g>4. fis'16 e dis4 c ~ |

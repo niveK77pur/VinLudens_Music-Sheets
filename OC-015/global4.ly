@@ -4,6 +4,7 @@
 global = {
   \key des \major
   \time 4/4
+  %\set Staff.ottavationMarkups = #ottavation-ordinals
 }
 
 % Some other usefull commands
