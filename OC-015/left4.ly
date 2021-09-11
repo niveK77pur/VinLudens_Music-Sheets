@@ -85,8 +85,9 @@ left = \absolute {
       q2. |
       <ces ges ces'>2. ~ |
       q2. |
-      \voiceTwo \shape #'((0 . 0) (0 . -2) (-1 . -1.2) (0 . 0)) Tie <bes, f bes>2.~ |
-      q | \oneVoice
+      %\voiceTwo \shape #'((0 . 0) (0 . -2) (-1 . -1.2) (0 . 0)) Tie <bes, f bes>2.~ |
+      \voiceTwo <bes,~ f\shape #'((0 . 0) (0 . -0.8) (-1.5 . -0.5) (0 . 0))~ bes\shape #'((0 . 0.6) (0 . -1.2) (-1.5 . -0.7) (0 . 0.6))~ >2. |
+      \once\override TieColumn.positioning-done = #'() q | \oneVoice
       <es,, es,>2. ~ |
       q4. r |
     }
@@ -116,8 +117,8 @@ left = \absolute {
       q2. |
       <ces ges ces'>2. ~ |
       q2. |
-      \voiceTwo \shape #'((0 . 0) (-0.5 . -3) (0 . 0) (0 . 0)) Tie <bes, f bes>2.-\tweak layer #-2 ~ |
-      \tweak layer #-1 \tweak whiteout ##t \time 7/8 q ~ q8 | \oneVoice \time 6/8
+      \voiceTwo <bes,~ f-\tweak layer #-2 \shape #'((0.2 . 0) (-0 . -1.5) (0 . 0) (0 . 0))~ bes-\tweak layer #-2 \shape #'((0 . 0.6) (-0.5 . -2.8) (0 . 1) (0 . 0.6))~>2. | \once\override TieColumn.positioning-done = #'()
+      \tweak layer #-1 \tweak whiteout ##t \tweak whiteout-style #'rounded-box \time 7/8 q ~ q8 | \oneVoice \time 6/8
       \grace es,8 ~ <es,, es,>2. ~ |
       4. \voiceTwo r4 r16 as,-\tweak minimum-length #3 ~ |
     }
