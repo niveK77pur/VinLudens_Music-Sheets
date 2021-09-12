@@ -41,7 +41,7 @@ right = \absolute {
   es'4.\)^~ 8. fes'16( es' des' |
   %<f as des'>2. |
   %r2. |
-  \bar "||" \time 4/4 \tempo 4 = 72
+  \bar "||" \time 4/4 %\tempo 4 = 72
   <f as des'>1) |
 
 
