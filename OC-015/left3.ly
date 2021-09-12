@@ -29,7 +29,7 @@ left = \relative c' {
   \clef "treble" g,,=8 d' g b d g d b g d b d |
   fis,8 dis' a' b dis \change Staff = "right" \voiceTwo fis dis2. | \change Staff = "left" \oneVoice
   r1. | \once \override Beam.positions = #'(-1.0 . -5.0)
-  \clef "bass" e,,=8 b' e \clef "treble" g b e b g e \clef "bass" b g b |
+  \clef "bass" \once\override Beam.positions = #'(-2.2 . -0.8) e,,=8 b' e \clef "treble" g b e b g e \clef "bass" b g b |
   c,8 g' c \clef "treble" dis g a \change Staff = "right" \voiceTwo c dis g a c dis | \once \override Beam.positions = #'(-1.0 . -5.0)
   \oneVoice \tuplet 13/9 { \stemDown a'8 g dis c \change Staff = "left" \clef "treble" \stemUp a g dis c \change Staff = "right" \clef "treble" \stemDown a g dis c \change Staff = "left" \clef "bass" \stemUp b \stemNeutral } s4. |
 
