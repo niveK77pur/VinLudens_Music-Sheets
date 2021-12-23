@@ -31,15 +31,14 @@ left = \absolute {
     }
   >> \oneVoice \tieNeutral
   
-  \bar "||"
 
   << { \voiceOne
       e'2. d'\) |
       b4\( a8 b4 a8 b4 d'8 ~ 4 e'8 ~ |
       2. d'\) |
-      b4\( a8 b4 a8 b4 g'8 ~ 4 a'8 ~ |
+      b4\( a8 b4 a8 b4 g'8 ~ 4 a'8 \tweak minimum-length #3.5 ~ |
       4. g'4 fis'8 fis'4 e'8 e'4 d'8 |
-      d'4 e'8 ~ 4 g8 ~ 4\) r8 \clef "bass" g8\( a b 
+      d'4 e'8 ~ 4 g8 \tweak Y-offset #0.2 \tweak minimum-length #3 ~ 4\) r8 \clef "bass" g8\( a b 
       c'4. b8 a g a4 b8 ~ 4 g8 ~ |
       2.\) r |
     }
@@ -54,5 +53,43 @@ left = \absolute {
       1. |
     }
   >> \oneVoice
+
+  
+  a,4 e8 c'4. ~ 4 e8 a4. |
+  b,4 fis8 b4. ~ 4 fis8 b4. |
+  c4 g8 c'4. ~ 4 g8 c'4. |
+
+  d4. a4 d'8 ~ 2. |
+
+
+
+
+
+
+  a,4 e8 c'4. ~ 4 e8 a4. |
+  b,4 fis8 b4. ~ 4 fis8 b4. |
+  c4 g8 c'4. ~ 4 g8 c'4. |
+  <d fis a d'>2.\arpeggio r |
+
+
+
+  c4 g8 <c' e'>4. d4 a8 <d' fis'>4. |
+  g,4 d8 <g b>4. g,4 d8 <g b>4. |
+  c4 g8 <c' e'>4. d4 a8 <d' fis'>4. |
+  e4 b8 <e' g'>4. e4 b8 e'4. |
+  c4 g8 <c' e'>4. d4 a8 <d' fis'>4. |
+  g,4 d8 <g b>4. e,4 b,8 <e g>4. |
+  c4 g8 <c' e'>4. d4 a8 <d' fis'>4. |
+  g,4 d8 <g b>4. g,4 d8 <g b>4. |
+  
+  c4 g8 <c' e'>4. d4 a8 <d' fis'>4. |
+  g,4 d8 <g b>4. e,4 b,8 <e g>4. |
+  c4 g8 <c' e'>4. d4 a8 <d' fis'>4. |
+  e4 b8 <e' g'>4. e4 b8 <e' g'>4. |
+  c4 g8 <c' e'>4. d4 a8 <d' fis'>4. |
+  g,4 d8 <g b>4. e,4 b,8 <e g>4. |
+  c4 g8 <c' e'>4. d4 a8 <d' fis'>4. |
+  g,
+
 %}
 }

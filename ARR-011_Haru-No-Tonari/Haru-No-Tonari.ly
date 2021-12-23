@@ -1,17 +1,17 @@
 \version "2.22.1"
 
+date = #(strftime "%B %d %Y" (localtime (current-time)))
 \header {
   title = "Haru No Tonari"
   subtitle = "Yuru Camp ED 2"
   %instrument = "Piano"
   composer = "Eri Sasaki"
   arranger = "Arr. by VinLudens"
-  tagline = \markup {
+  tagline = \markup { \center-column {
     \with-url #"https://youtube.com/c/VinLudens"
-    \line {
-      "Engraving with Lilypond" $(lilypond-version) \char ##x2014 "https://youtube.com/c/VinLudens"
-    }
-  }
+    \line { "Engraving with Lilypond" $(lilypond-version) \char ##x2014 "https://youtube.com/c/VinLudens" }
+    \line { \small \italic {  \date  } }
+  } }
 }
 
 %#(set-global-staff-size 20)
