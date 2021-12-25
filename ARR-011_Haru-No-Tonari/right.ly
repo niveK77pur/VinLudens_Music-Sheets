@@ -135,7 +135,7 @@ right = \absolute {
   g''8 d'''8 g''' b'''4. e''8 b''8 e''' g'''4. |
   \ottava 0 \voiceOne
   s1. | %c''4 e''8 <g'' c'''>4. d''4 fis''8 <a'' d'''>4. |
-  r4. r4 \normalsize b''8 a''4 g''8 d''4 b'8 | \oneVoice
+  \offset Y-offset #1.5 Rest \once\override Rest.X-offset = #.5 r4. r4 \revert Rest.Y-offset \normalsize b''8 a''4 g''8 d''4 b'8 | \oneVoice
 
 
 
