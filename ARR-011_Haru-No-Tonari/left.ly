@@ -134,7 +134,7 @@ left = \absolute {
       4. g'4 fis'8 fis'4 e'8 e'4 d'8 |
       d'4 e'8 ~ 4 g'8 ~ 4\) r8 \shape #'((0 . 0) (1 . 3) (0 . -3.5) (0 . 0)) PhrasingSlur g'8\( a' \change Staff = "right" \ottava 0 \oneVoice \stemDown b' \stemNeutral |
       <e' g' c''>4. b'8 a' g' <d' fis' a'>4 b'8 ~ 4 <b d' g'>8 ~ |
-      1.\) | \change Staff = "left"
+      2.\) g8 \change Staff = "left" d g, d,4. |
     }
     \new Voice { \voiceTwo 
       <g c'>2. <fis a> |
@@ -149,7 +149,62 @@ left = \absolute {
   >> \oneVoice
 
   
-  r 
+  <c, c>2. <d, d> |
+  <e, e>1. |
+  <c, c>2. <d, d> |
+  <g,, g,>1. |
+  <c, c>2. <d, d> |
+  <g,, g,>2. <e,, e,> |
+  <c, c>2. <d, d> |
+  <g,, g,>1. |
+
+
+  a,4 e8 c'4. ~ 4 e8 a4. |
+  b,4 fis8 b4. ~ 4 fis8 b4. |
+  c4 g8 c'4. ~ 4 g8 c'4. |
+
+  d4. a4 d'8 ~ 2. |
+
+
+
+
+
+
+  a,4 e8 c'4. ~ 4 e8 a4. |
+  b,4 fis8 b4. ~ 4 fis8 b4. |
+  c4 g8 c'4. ~ 4 g8 c'4. |
+  <d fis a c'>2.\arpeggio r4 <d, d>8-. r4. |
+
+
+  c4 g8 <c' e'>4. d4 a8 <d' fis'>4. |
+  g,4 d8 <g b>4. g,4 d8 <g b>4. |
+  c4 g8 <c' e'>4. d4 a8 <d' fis'>4. |
+  e4 b8 <e' g'>4. e4 b8 e'4. |
+  c4 g8 <c' e'>4. d4 a8 <d' fis'>4. |
+  g,4 d8 <g b>4. e,4 b,8 <e g>4. |
+  c4 g8 <c' e'>4. d4 a8 <d' fis'>4. |
+  g,4 d8 <g b>4. g,4 d8 <g b>4. |
+  
+  c4 g8 <c' e'>4. d4 a8 <d' fis'>4. |
+  g,4 d8 <g b>4. e,4 b,8 <e g>4. |
+  c4 g8 <c' e'>4. d4 a8 <d' fis'>4. |
+  e4 b8 <e' g'>4. e4 b8 e'4. |
+  c4 g8 <c' e'>4. d4 a8 <d' fis'>4. |
+  g,4 d8 <g b>4. e,4 b,8 <e g>4. |
+  c4 g8 <c' e'>4. d4 a8 <d' fis'>4. |
+  g,8 d g \change Staff = "right" b d' g' b' d'' g'' b'' g'' d'' |
+  b' g' d' b \change Staff = "left" g d g, d g \change Staff = "right" b d' g' | \change Staff = "left"
+  \time 4/4
+  f,1 |
+  d,1 |
+  <c c'>1 |
+  <d d'>1 |
+  g,1 |
+  <g,, g,>1 |
+
+  
+  \bar "|."
+
 
 %}
 }
