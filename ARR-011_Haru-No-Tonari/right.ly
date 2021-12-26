@@ -41,7 +41,7 @@ right = \absolute {
   g''4 d'''8 <g''' b'''>4. e''4 b''8 <e''' g'''>4. |
   \ottava 0
   c''4 e''8 <g'' c'''>4. d''4 fis''8 <a'' d'''>4. |
-  g'4 b'8 <d'' g''>4 \normalsize \grace a''8\( b''8 a''4 g''8 d''4 b'8 |
+  g'4 b'8 <d'' g''>4 \normalsize \once\override PhrasingSlur.eccentricity = #-1 \grace a''8\( b''8 a''4 g''8 d''4 b'8 |
 
 
 
@@ -85,7 +85,7 @@ right = \absolute {
   r4. <c'' e'' b''>4.\( <d'' fis'' b''>4 <d'' a''>8 ~ 4 <e'' b''>8 ~ |
   4.\) d'''4. b'' a''4 g''8 |
   r4 r8 <c'' e'' b''>4.\( <d'' fis'' b''>4 <d'' a''>8 ~ 4 <e'' g''>8\) |
-  b''4. c''' <d' d''>4\( <e' e''>8 <g' g''>4 <b' b''>8 ~ |
+  b''4. c''' \once\override PhrasingSlur.positions = #'(4.5 . 4) <d' d''>4\( <e' e''>8 <g' g''>4 <b' b''>8 ~ |
   4. <b' b''> <b' b''>4 <a' a''>8 ~ 4 <b' b''>8 ~ |
   4.\) d'''4. b'' a''4 g''8 |
   r4 r8 <b' b''>4.\( <b' b''>4 <a' a''>8 ~ 4 <g' g''>8 ~ |
@@ -163,8 +163,8 @@ right = \absolute {
   c'4 d'8 ~ 4 8 ~ 4.\) \parenthesize b8\( c' d'
   e'2. d'4.\) r4 c'8\( | 
   << { \voiceTwo
-      b4 d'8 ~ 4 \parenthesize 8 ~ 2.\) |
-      r2. \voiceOne a4\( 8 \parenthesize 4 c'8 ~ |
+      b4 d'8 ~ 4 \parenthesize 8 \tweak Y-offset #-0.3 ~ 2.\) |
+      r2. \voiceOne \once\alterBroken positions #'((-0.5 . 1) (1.1 . -1)) PhrasingSlur a4\( 8 \parenthesize 4 c'8 \tweak minimum-length #3.5 ~ |
     }
     \new Voice { \voiceOne \small
       r2. g''8 fis'' d'' a' g' fis' |
@@ -195,11 +195,11 @@ right = \absolute {
   1.\) |
   s1. |
   \time 4/4
-  <c' e' a'>2 g'4 fis' |
-  <d' fis' b'>4 a'2 b'4 |
-  <c'' e'' b''>2 a''4 g'' |
+  <c' e' a'>2\( g'4 fis' |
+  <d' fis' b'>4 a'2 b'4\) |
+  <c'' e'' b''>2\( a''4 g'' |
   \tuplet 3/2 2 { <d'' fis'' b''>4 d''' b'' a'' b'' fis''} |
-  <b' d'' g''>1 |
+  <b' d'' g''>1\) |
   \clef "bass" <fis g b d'>1 |
   
   
