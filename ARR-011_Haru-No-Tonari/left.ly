@@ -149,12 +149,12 @@ left = \absolute {
   >> \oneVoice
 
   
-  <c, c>2. <d, d> |
-  <e, e>1. |
-  <c, c>2. <d, d> |
-  <g,, g,>1. |
-  <c, c>2. <d, d> |
-  <g,, g,>2. <e,, e,> |
+  <c, c>2.\( <d, d> |
+  <e, e>1.\) |
+  <c, c>2.\( <d, d> |
+  <g,, g,>1.\) |
+  <c, c>2.\( <d, d> |
+  <g,, g,>2. <e,, e,>\) |
   <c, c>2. <d, d> |
   <g,, g,>1. |
 
@@ -193,7 +193,7 @@ left = \absolute {
   g,4 d8 <g b>4. e,4 b,8 <e g>4. |
   c4 g8 <c' e'>4. d4 a8 <d' fis'>4. |
   g,8 d g \change Staff = "right" b d' g' b' d'' g'' b'' g'' d'' |
-  b' g' d' \tweak Beam.positions #'(-5 . -7) b \change Staff = "left" g d g, d g \change Staff = "right" b d' g' | \change Staff = "left"
+  b' g' d' \tweak Beam.positions #'(-5 . -6.85) b \change Staff = "left" g d g, d g \change Staff = "right" b d' g' | \change Staff = "left"
   \time 4/4
   f,1 |
   d,1 |
