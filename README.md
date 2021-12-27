@@ -46,7 +46,7 @@ Note that below are not listed all the videos I have on my channel, but only tho
 - [ARR-008 Yakusoku [Horimiya ED]](https://youtu.be/IV-pdFUEAi8)
 - [ARR-009 Harvest [Hai to Gensou no Grimgar ED]](https://youtu.be/bov2motsmNw)
 - [ARR-010 Castle In The Mist [ICO]](https://youtu.be/UDlyPDsNv5Q)
-- ARR-011 Haru No Tonari [Yuru Camp ED 2] (work in progress)
+- ARR-011 Haru No Tonari [Yuru Camp ED 2] (to be recorded)
 
 ## Quick Arrangements [[playlist]](https://www.youtube.com/playlist?list=PLglSbmjaleK_wuwjZ8emiQh07JUpsUUJh)
 
