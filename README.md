@@ -46,7 +46,7 @@ Note that below are not listed all the videos I have on my channel, but only tho
 - [ARR-008 Yakusoku [Horimiya ED]](https://youtu.be/IV-pdFUEAi8)
 - [ARR-009 Harvest [Hai to Gensou no Grimgar ED]](https://youtu.be/bov2motsmNw)
 - [ARR-010 Castle In The Mist [ICO]](https://youtu.be/UDlyPDsNv5Q)
-- ARR-011 Haru No Tonari [Yuru Camp ED 2] (to be recorded)
+- [ARR-011 Haru No Tonari [Yuru Camp ED 2]](https://youtu.be/GEqdTtRq_Rs)
 
 ## Quick Arrangements [[playlist]](https://www.youtube.com/playlist?list=PLglSbmjaleK_wuwjZ8emiQh07JUpsUUJh)
 
@@ -54,3 +54,4 @@ Note that below are not listed all the videos I have on my channel, but only tho
 - [QA-004 BB's Theme [Death Stranding]](https://youtu.be/qfp5m41gQAY)
 - [QA-008 Horimiya EP7 OST](https://youtu.be/OrR9Vq6VVLM)
 - [QA-009 It's coming home](https://youtu.be/YHUKJo5SFfQ)
+- [QA-010 Akuma no Ko Attack on Titan ED](https://youtu.be/iiDSybLrkbA)
