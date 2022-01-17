@@ -26,7 +26,7 @@ left = \absolute {
       cis1 |
       d1 |
       g,2 fis, |
-      <b,, b,>1-> |
+      b,1-> |
       cis1 |
     }
   >> \oneVoice

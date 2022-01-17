@@ -10,7 +10,8 @@ date = #(strftime "%B %d %Y" (localtime (current-time)))
   tagline = \markup { \center-column {
     \with-url #"https://youtube.com/c/VinLudens"
     \line { "Engraving with Lilypond" $(lilypond-version) \char ##x2014 "https://youtube.com/c/VinLudens" }
-    \line { \small \italic {  \date  } }
+    \line { \small \italic {  January 13 2022  } }
+    %\line { \small \italic {  \date  } }
   } }
 }
 
