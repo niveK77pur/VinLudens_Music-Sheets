@@ -15,6 +15,22 @@ pedal = { \override SustainPedal.X-offset = #5
   s4 s\sustainRaise s8 s8\sustainRaise  s4 |
   s4\sustainRaise s8 s8\sustainRaise s4 s8 s8\sustainRaise |
   s4 s4 s8 8\sustainOff s4\sustainOn |
-  s1\sustainOff |
+  s1\sustainOff | 
+  s1*6 |
+  s2. s4\sustainOn |
+  s8\sustainRaise s8\sustainOff s8 s8\sustainOn s2\sustainOff |
+  s8\sustainOn s8\sustainOff s8 s8\sustainOn s2\sustainOff |
+  s8\sustainOn s8\sustainOff s8 s8\sustainOn s2\sustainOff |
+  s8\sustainOn s8\sustainOff s8 s8\sustainOn s2\sustainOff |
+  s8\sustainOn s8\sustainOff s8 s8\sustainOn s2\sustainOff |
+  s8\sustainOn s8\sustainOff s8 s8\sustainOn s2\sustainOff |
+  s8\sustainOn s8\sustainOff s8 s8\sustainOn s2\sustainOff |
+  s1\sustainOn |
+  s4.\sustainRaise s4.\sustainRaise s4\sustainRaise |
+  \sustainTrailEnd s4\sustainRaise s8\sustainOff s4. s4 |
+  s1*3 |
+  s2 \sustainTrailStart s4\sustainOn s4\sustainRaise
+  s1\sustainRaise |
+  s2.\sustainRaise s4\sustainRaise |
 %}
 }

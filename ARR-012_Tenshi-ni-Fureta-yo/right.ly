@@ -17,6 +17,27 @@ right = \absolute {
   c''-3 bes'4-2\) r8 r4 d''\( |
   c''8 bes'4\) r8 r2 \acciaccatura { c''16\( d'' } |
   es''8-3 d''-2 es'' d'' es'' d'' bes'-1 d''-4 |
-  c''4.-3\) r8 r8 <c' f' a'>-. q-. r |
+  c''4.-3\) r8 r8 <c' f' a'>-. q4-.|
+  
+  d'4. r8 r4. bes8-1\( |
+  d'-2 es' f' es'4 d'8-2 c'-1 bes-2 |
+  d'4.-4\) r8 r4. bes8\( |
+  d'8 es' f' es'4 d'8-2 c'-1 d'-4 |
+  c'-3 bes4-2\) r8 r4 d'\( |
+  c'8 bes4\) r8 r2 \acciaccatura { c'16\( d' } |
+  es'8-3 d'-2 es' d' es' d' bes-1 d'-4 |
+  c'4-3\) r8 <bes bes'>8\( <d' d''>4 <f' f''> |
+  
+  
+  <g' g''>4 q8 8 ~ 8 <es' es''> <d' d''> <c' c''> ~ |
+  q4 <d' d''>8 <es' es''> ~ 4\) r4 |
+  \acciaccatura { d''16\( es'' } <f' f''>8 <f' f''>4 <d' d''>8 <f' f''>4 <g' g''> |
+  <d' d''> <c' c''> <bes bes'>\) r8 d''8\( |
+  
+  es''4. bes'8 es''4\) r8 es''\( |
+  f''4. d''16 c'' bes'4\) r8 c''16\( d'' |
+  es''8 d'' es'' d'' es'' <d' d''> <es' es''> <f' f''>
+  <g' g''>4 <f' f''> <g' g''> <a' a''>\) |
+
 %}
 }
