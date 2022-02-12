@@ -34,10 +34,66 @@ right = \absolute {
   \acciaccatura { d''16\( es'' } <f' f''>8 <f' f''>4 <d' d''>8 <f' f''>4 <g' g''> |
   <d' d''> <c' c''> <bes bes'>\) r8 d''8\( |
   
+
+
+
+
+
+
+
+
+
   es''4. bes'8 es''4\) r8 es''\( |
   f''4. d''16 c'' bes'4\) r8 c''16\( d'' |
   es''8 d'' es'' d'' es'' <d' d''> <es' es''> <f' f''>
-  <g' g''>4 <f' f''> <g' g''> <a' a''>\) |
+  <g' g''>4 <f' f''> <g' g''> <a' a''> |
+
+
+
+
+
+
+
+
+
+
+  <c'' d'' f'' c'''>4.\)\( <bes' bes''>8 <bes' bes''>4.\) <d' d''>8\( |
+  <g' a' d'' g''>4. <f' f''>8 <f' f''>4.\) <f' f''>8\( |
+  <c'' d'' g'' c'''>4. <bes' bes''>8 <bes' bes''>4.\) <d' d''>8\( |
+  <g' a' c'' g''>4. <f' f''>8 ~ 4.\) <f' f''>8\( |
+
+  <g' g''>8 <es' es''> <bes' bes''> <a' a''> ~ 2\) |
+  \acciaccatura { a''16\( bes'' } <c'' c'''>8 <a' a''> <c'' c'''> <bes' bes''> ~ 4\) r8 <d' d''>\( |
+  <es' es''>2 <es' es''>8. q <f' f''>8 ~ |
+  q8\) <c'' c'''>\( <c'' c'''> <d'' d'''> <c'' c'''> <bes' bes''> <bes' bes''>4\) |
+
+
+
+
+
+
+
+
+  <c'' d'' f'' c'''>4.\( <bes' bes''>8 <bes' bes''>4.\) <d' d''>8\( |
+  <g' a' d'' g''>4. <f' f''>8 <f' f''>4.\) <f' f''>8\( |
+  <c'' d'' g'' c'''>4. <bes' bes''>8 <bes' bes''>4.\) <d' d''>8\( |
+  <g' a' c'' g''>4. <f' f''>8 ~ 4.\) <f' f''>8\( |
+
+  <g' g''>8 <es' es''> <d' d''> <c' c''> ~ 2\) |
+  \acciaccatura { d''16\( es'' } <f' f''>8 <d' d''> <gis' gis''> <g' g''> ~ 4\) r8 <d' d''>\( |
+  <es' es''>2 <es' es''>8. q <f' f''>8 |
+  <d' d''>4\) <c' c''>\( <bes bes'> <c' c''>8 <c' c''> ~ |
+  q8 bes' bes'4.\) bes'8\( c'' f'' ~ |
+  8 es'' d'' es'' d''( \prall c'') bes' a'\) |
+  a'\( bes' c'' a'4 f'4 g'8 ~ |
+  4\) 
+
+
+
+
+
+
+
 
 %}
 }
