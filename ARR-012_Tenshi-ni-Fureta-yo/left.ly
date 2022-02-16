@@ -160,6 +160,10 @@ left = \absolute {
   f bes a' c' f bes a' c' |
   d a f' bes d a f' bes |
   g, d bes f g, d bes f |
+  c8 es c' g a, es c' fis |
+  d fis d' a b, f d' gis |
+  es g es' bes c fis es' bes |
+  <f a d'>2 c' |
   
 %}
 }

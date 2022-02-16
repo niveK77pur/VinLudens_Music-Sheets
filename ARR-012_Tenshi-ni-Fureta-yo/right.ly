@@ -143,15 +143,16 @@ right = \absolute {
   \acciaccatura { c''16\( d'' } es''4 f'' g'' |
   a'' bes'' c''' |
   d'''2.\mordent\) |
-  \ottava 1 c''''8( bes''' a''' f''' es''' f''' |
+  \ottava 1 c''''8-5( bes'''-3 a'''-2 f'''-1 es'''-2 f'''-3 |
   \time 4/4 \tempo "Tempo I" 4 = 120
-  g'''4)\( \ottava 0  g''8 g''8 ~ 8 a'' bes'' c'''8 ~ |
+  g'''4-4) \ottava 0  g''8\( g''8 ~ 8 a'' bes'' c'''8 ~ |
   8 a'' g'' f'' ~ 4\) r4 |
   \acciaccatura { a''16\( bes'' } c'''8 c'''4 a''8 c'''4 d''' |
-  \tuplet 3/2 4 { a''8 bes'' a'' g'' a'' g'' f'' d'' es'' f'' es'' d'' } 
-  \tuplet 3/2 4 { es''8 c'' d'' es'' f'' g'' fis'' c'' d'' es'' fis'' g'' a'' fis'' a'' bes'' c''' bes'' a'' gis'' a'' }
-  \tuplet 6/4 { bes''16 b'' c''' cis''' d''' es'''} \tuplet 3/2 4 { f'''8 es''' d''' c''' b'' c''' es''' d''' c''' }
-  \tuplet 6/4 { es'''16 g''' es''' d''' c''' bes'' } <d'' d'''>2\) <a' a''>
+  \tuplet 3/2 4 { a''8 bes''-3 a'' g'' a''-4 g'' f'' d''-1 es''-3 f'' es'' d'' } |
+  \tuplet 3/2 4 { es''8-3 c''-1 d'' es'' f''-1 g''-4 fis''-3 c'' d'' es'' fis''-4 g''-1 } |
+  \tuplet 3/2 4 { a''-3 fis''-1 a''-2 bes'' c''' bes'' a''-2 gis''-1 a'' } \tuplet 6/4 { ais''16-3 b'' c''' cis'''-3 d''' dis'''-3} |
+  \tuplet 3/2 4 { f'''8-4 es'''-3 d''' c''' b''-2 c'''-1 es''' d''' c''' }
+  \tuplet 6/4 { es'''16-3 g'''-5 es''' d''' c'''-1 bes''-3 } <d'' d'''-5>2\) <a' a''>
   
 
 
