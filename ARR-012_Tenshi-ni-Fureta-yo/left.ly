@@ -3,9 +3,9 @@
 
 left = \absolute {
   \global \override Fingering.direction = #DOWN
-  <bes, f>4 <bes d'>8( f-4 bes-1 bes,-5 f-1 f,-5 ~ |
-  4) <a c'>8( f a-1 a,-5 f-1 c-3 |
-  g,-5)( d-2 bes) f,( ~ 8 c a) es,( ~ |
+  <bes, f>4 \shape #'((0 . 0) (0 . 0) (0 . 0.5) (0 . 0)) Slur <bes d'>8( f-4 bes-1 bes,-5 f-1 f,-5 ~ |
+  4) \shape #'((0 . 0) (0 . 0) (0 . 0.5) (0 . 0)) Slur <a c'>8( f a-1 a,-5 f-1 c-3 |
+  g,-5)( d-2 bes) \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 1.5)) Slur f,( ~ 8 c a) es,( ~ |
   8-5 bes,-3 g4 ~ 8) <c f a>8-. 8-. r8 | \revert Fingering.direction
   
   \bar "||" %\clef "treble"
@@ -88,14 +88,78 @@ left = \absolute {
           <es,, es,>4( r8 <f, f>8) ~ 2 |
           <d, d>4( r8 <g, g>8) ~ 2 |
           <c, c>1 | \voiceOne
-          <f, f>4_! q2. |
+          <f, f>4_! <f,, f,>2. |
       }
   >> \oneVoice
-  <bes, f>4 <bes d'>8( f bes bes, f f, ~ |
-  4) <a c'>8( f a a, f c |
-  g,)( d bes) f,( ~ 8 c a) es,( ~ |
-  8 bes, g4 ~ 8) 
+  <bes, f>4 \shape #'((0 . 0) (0 . 0) (0 . 0.5) (0 . 0)) Slur <bes d'>8( f bes bes, f f, ~ |
+  4) \shape #'((0 . 0) (0 . 0) (0 . 0.5) (0 . 0)) Slur <a c'>8( f a a, f c |
+  g,)( d bes) \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 1.5)) Slur f,( ~ 8 c a) \shape #'((0 . 0) (0 . 5) (-4 . 3) (0 . 0)) Slur es,^( ~ |
+  << { \voiceTwo
+          ees,1 |
+          \hideNotes \change Staff = "right" \once\override NoteColumn.ignore-collision = ##t <es' a'>1) \unHideNotes \change Staff = "left" |
+      }
+      \new Voice { %\voiceTwo 
+          \once\override Beam.positions = #'(2 . 3) ees,8 bes, f \change Staff = "right" g a bes c' d'|
+          \change Staff = "left" 
+          \shape #'(
+            ((0 . 0) (0 . 0) (0 . 0) (0 . 9))
+            ((0 . 0) (0 . 0) (0 . 2) (0 . -2))
+          ) Slur
+          f,8^( c8 g es a g c' a |
+          \change Staff = "right" es' c' g' es' a' g' c'' a' |
+          es'' c'' g'' es'' a'' g'' c''' a'' |
+          \time 3/4 \hideNotes\once\override NoteColumn.ignore-collision = ##t d'''2._) \unHideNotes |
+      }
+      \new Voice { \voiceTwo
+        s1 |
+        f,1_"Voicing and Slur placement" ~ |
+        1 ~ |
+        1 | \voiceOne 
+        
+        \clef "treble"
+        \time 3/4 \tempo 4 = 160
+  
+        bes'4 <d'' f''> q |
+      }
+  >> \oneVoice
 
+  bes'4 q q |
+  bes'4 q q |
+  bes'4 q q |
+  f' <a' d''> q |
+  f' <a' d''> q |
+  fis' <a' c''> q |
+  fis' <a' c''> q |
+  aes' <bes' d''> q |
+  aes' <bes' d''> q |
+  g' <bes' d''> q |
+  g' q q |
+  es' <g' bes'> q |
+  es' q q |
+  f' <a' c''> q |
+  f'4 r2 |
+  
+  \clef "bass" bes,4 f d' |
+  bes,4 f d' |
+  bes,4 f d' |
+  bes,4 f d' |
+  f,4 c a |
+  f, c a |
+  f, c a |
+  f, c a |
+  g, d bes |
+  g, d bes |
+  f, d a |
+  f, d a |
+  es, bes, g |
+  es, bes, g |
+  f, c bes |
+  f, c a |
+
+  es8 a g' bes es a g' bes |
+  f bes a' c' f bes a' c' |
+  d a f' bes d a f' bes |
+  g, d bes f g, d bes f |
   
 %}
 }

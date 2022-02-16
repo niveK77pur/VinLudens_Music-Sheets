@@ -3,8 +3,8 @@
 
 right = \absolute {
   \global \tempo 4 = 120
-  f'8\( a' bes' c''4 bes'8 c'' f'' ~ |
-  8 es'' d'' es'' d''( \prall c'') bes' a'\) |
+  \shape #'((0 . 0) (0 . 0) (0 . 2) (0 . 0)) PhrasingSlur f'8\( a' bes' c''4 bes'8 c'' f'' ~ |
+  8 es'' d'' es'' d''(\prall c'') bes' a'\) |
   a'\( bes' c'' a'4 f'4 g'8 ~ |
   4\) \clef "bass" \ottava -1 es,, \ottava 0 r2 | 
   
@@ -83,14 +83,76 @@ right = \absolute {
   \acciaccatura { d''16\( es'' } <f' f''>8 <d' d''> <gis' gis''> <g' g''> ~ 4\) r8 <d' d''>\( |
   <es' es''>2 <es' es''>8. q <f' f''>8 |
   <d' d''>4\) <c' c''>\( <bes bes'> <c' c''>8 <c' c''> ~ |
-  q8 bes' bes'4.\) bes'8\( c'' f'' ~ |
+
+
+
+
+
+
+
+
+  q8 bes' bes'4.\) \shape #'((0 . 0) (0 . 0) (0 . 2) (0 . 0)) PhrasingSlur bes'8\( c'' f'' ~ |
   8 es'' d'' es'' d''( \prall c'') bes' a'\) |
   a'\( bes' c'' a'4 f'4 g'8 ~ |
-  4\) 
+
+  1\) |
+  <es' a'>1 |
+  s1 |
+  s1 |
+  
 
 
 
 
+
+
+
+
+  \clef "treble^8"
+  %\time 3/4 \tempo 4 = 160
+  
+  d'''2. |
+  r2 r8. bes''16\( |
+  d'''4 es''' f''' |
+  es'''\prall d''' c'''8. bes''16 |
+  d'''2.\) |
+  r2 r8. bes''16-\tweak positions #'(1.5 . 1.5) \( |
+  d'''4 es''' f'''
+  \acciaccatura g'''8 f'''4 es''' d'''
+  \acciaccatura es'''8 d'''4 bes''2\) |
+  r4 g'''\( f''' |
+  c''' bes''2 ~ |
+  4\) r2 |
+  \acciaccatura { c'''16\( d''' } es'''4 d''' es'''8. d'''16 |
+  es'''4 d''' bes''8. d'''16 |
+  c'''2.\) |
+  r4 r \clef "treble" cis''4\( |
+  
+  d''2.\) |
+  r2 r8. cis''16\( |
+  d''4 e'' f'' |
+  e'' d'' c''8. f'16 |
+  a'2.\) |
+  r2 r8. cis''16\( |
+  d''4 es'' f'' |
+  es'' d'' c''8. d''16 |
+  c''4 bes'2\) |
+  r4 \acciaccatura f''8\( g''4 f'' |
+  \once\override Script.script-priority = #-100 c''^\prall^\markup{\sharp} bes'2 ~ |
+  4\) r2 |
+  \acciaccatura { c''16\( d'' } es''4 f'' g'' |
+  a'' bes'' c''' |
+  d'''2.\mordent\) |
+  \ottava 1 c''''8( bes''' a''' f''' es''' f''' |
+  \time 4/4 \tempo "Tempo I" 4 = 120
+  g'''4)\( \ottava 0  g''8 g''8 ~ 8 a'' bes'' c'''8 ~ |
+  8 a'' g'' f'' ~ 4\) r4 |
+  \acciaccatura { a''16\( bes'' } c'''8 c'''4 a''8 c'''4 d''' |
+  \tuplet 3/2 4 { a''8 bes'' a'' g'' a'' g'' f'' d'' es'' f'' es'' d'' } 
+  \tuplet 3/2 4 { es''8 c'' d'' es'' f'' g'' fis'' c'' d'' es'' fis'' g'' a'' fis'' a'' bes'' c''' bes'' a'' gis'' a'' }
+  \tuplet 6/4 { bes''16 b'' c''' cis''' d''' es'''} \tuplet 3/2 4 { f'''8 es''' d''' c''' b'' c''' es''' d''' c''' }
+  \tuplet 6/4 { es'''16 g''' es''' d''' c''' bes'' } <d'' d'''>2\) <a' a''>
+  
 
 
 
