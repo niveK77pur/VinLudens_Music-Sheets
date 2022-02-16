@@ -101,11 +101,7 @@ left = \absolute {
       \new Voice { %\voiceTwo 
           \once\override Beam.positions = #'(2 . 3) ees,8 bes, f \change Staff = "right" g a bes c' d'|
           \change Staff = "left" 
-          \shape #'(
-            ((0 . 0) (0 . 0) (0 . 0) (0 . 9))
-            ((0 . 0) (0 . 0) (0 . 2) (0 . -2))
-          ) Slur
-          f,8^( c8 g es a g c' a |
+          f,8^( c8 g es \once\override Beam.positions = #'(4.4 . 4) a g \change Staff = "right" c' \change Staff = "left" a |
           \change Staff = "right" es' c' g' es' a' g' c'' a' |
           es'' c'' g'' es'' a'' g'' c''' a'' |
           \time 3/4 \hideNotes\once\override NoteColumn.ignore-collision = ##t d'''2._) \unHideNotes |
