@@ -108,10 +108,19 @@ right = \absolute {
 
 
 
+
+
+
+
+
+
   \clef "treble^8"
   %\time 3/4 \tempo 4 = 160
   
   d'''2. |
+
+
+
   r2 r8. bes''16\( |
   d'''4 es''' f''' |
   es'''\prall d''' c'''8. bes''16 |
@@ -144,6 +153,7 @@ right = \absolute {
   a'' bes'' c''' |
   d'''2.\mordent\) |
   \ottava 1 c''''8-5( bes'''-3 a'''-2 f'''-1 es'''-2 f'''-3 |
+
   \time 4/4 \tempo "Tempo I" 4 = 120
   g'''4-4) \ottava 0  g''8\( g''8 ~ 8 a'' bes'' c'''8 ~ |
   8 a'' g'' f'' ~ 4\) r4 |
@@ -153,10 +163,32 @@ right = \absolute {
   \tuplet 3/2 4 { a''-3 fis''-1 a''-2 bes'' c''' bes'' a''-2 gis''-1 a'' } \tuplet 6/4 { ais''16-3 b'' c''' cis'''-3 d''' dis'''-3} |
   \tuplet 3/2 4 { f'''8-4 es'''-3 d''' c''' b''-2 c'''-1 es''' d''' c''' }
   \tuplet 6/4 { es'''16-3 g'''-5 es''' d''' c'''-1 bes''-3 } <d'' d'''-5>2\) <a' a''>
-  
+
+  <c'' d'' f'' c'''>4.\( <bes' bes''>8 <bes' bes''>4.\) <d' d''>8\( |
+  <g' a' d'' g''>4. <f' f''>8 <f' f''>4.\) <f' f''>8\( |
+  <bes' d'' a''>4. <g' g''>8 <bes' bes''>4.\) <d' d''>8\( |
+  <g' a' c'' g''>4. <f' f''>8 ~ 4.\) <f' f''>8\( |
+
+  <g' g''>8 <es' es''> <bes' bes''> <c'' c'''> ~ 2\) |
+  \acciaccatura { a''16\( bes'' } <c'' c'''>8 <d'' d'''> <c'' c'''> <bes' bes''> ~ 4\) r8 <d' d''>\( |
+  <es' es''>2 <es' es''>8. q <f' f''>8 ~ |
+  q8\) <c'' c'''>\( <c'' c'''> <d'' d'''> <c'' c'''> <bes' bes''> <bes' bes''>4\) |
 
 
 
 
+
+
+
+
+  <c'' d'' f'' c'''>4.\( <bes' bes''>8 <bes' bes''>4.\) <d' d''>8\( |
+  <g' a' d'' g''>4. <f' f''>8 <f' f''>4.\) <f' f''>8\( |
+  <bes' d'' a''>4. <g' g''>8 <bes' bes''>4.\) <d' d''>8\( |
+  <g' a' c'' g''>4. <f' f''>8 ~ 4.\) <f' f''>8\( |
+
+  <g' g''>8 <es' es''> <d' d''> <c' c''> ~ 2\) |
+  \acciaccatura { d''16\( es'' } <f' f''>8 <gis' gis''> <bes' bes''> <g' g''> ~ 4\) r8 <d' d''>\( |
+  <es' es''>2 <es' es''>8. q <f' f''>8 |
+  <d' d''>4\) <c' c''> <bes bes'> <c' c''>8 <c' c''> ~ |
 %}
 }
