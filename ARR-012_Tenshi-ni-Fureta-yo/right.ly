@@ -60,10 +60,10 @@ right = \absolute {
   <c'' d'' f'' c'''>4.\)\( <bes' bes''>8 <bes' bes''>4.\) <d' d''>8\( |
   <g' a' d'' g''>4. <f' f''>8 <f' f''>4.\) <f' f''>8\( |
   <c'' d'' g'' c'''>4. <bes' bes''>8 <bes' bes''>4.\) <d' d''>8\( |
-  <g' a' c'' g''>4. <f' f''>8 ~ 4.\) <f' f''>8\( |
+  <g' a' c'' g''>4. <f' f''>8 4.\) <f' f''>8\( |
 
   <g' g''>8 <es' es''> <bes' bes''> <a' a''> ~ 2\) |
-  \acciaccatura { a''16\( bes'' } <c'' c'''>8 <a' a''> <c'' c'''> <bes' bes''> ~ 4\) r8 <d' d''>\( |
+  \acciaccatura { a''16\( bes'' } <c'' c'''>8 <a' a''> <c'' c'''> <bes' bes''> ~ 4\) r8 d'16\( d'' |
   <es' es''>2 <es' es''>8. q <f' f''>8 ~ |
   q8\) <c'' c'''>\( <c'' c'''> <d'' d'''> <c'' c'''> <bes' bes''> <bes' bes''>4\) |
 
@@ -77,10 +77,10 @@ right = \absolute {
   <c'' d'' f'' c'''>4.\( <bes' bes''>8 <bes' bes''>4.\) <d' d''>8\( |
   <g' a' d'' g''>4. <f' f''>8 <f' f''>4.\) <f' f''>8\( |
   <c'' d'' g'' c'''>4. <bes' bes''>8 <bes' bes''>4.\) <d' d''>8\( |
-  <g' a' c'' g''>4. <f' f''>8 ~ 4.\) <f' f''>8\( |
+  <g' a' c'' g''>4. <f' f''>8 4.\) <f' f''>8\( |
 
   <g' g''>8 <es' es''> <d' d''> <c' c''> ~ 2\) |
-  \acciaccatura { d''16\( es'' } <f' f''>8 <d' d''> <gis' gis''> <g' g''> ~ 4\) r8 <d' d''>\( |
+  \acciaccatura { d''16\( es'' } <f' f''>8 <d' d''> <gis' gis''> <g' g''> ~ 4\) r8 d'16\( d'' |
   <es' es''>2 <es' es''>8. q <f' f''>8 |
   <d' d''>4\) <c' c''>\( <bes bes'> <c' c''>8 <c' c''> ~ |
 
@@ -167,10 +167,10 @@ right = \absolute {
   <c'' d'' f'' c'''>4.\( <bes' bes''>8 <bes' bes''>4.\) <d' d''>8\( |
   <g' a' d'' g''>4. <f' f''>8 <f' f''>4.\) <f' f''>8\( |
   <bes' d'' a''>4. <g' g''>8 <bes' bes''>4.\) <d' d''>8\( |
-  <g' a' c'' g''>4. <f' f''>8 ~ 4.\) <f' f''>8\( |
+  <g' a' c'' g''>4. <f' f''>8 4.\) <f' f''>8\( |
 
   <g' g''>8 <es' es''> <bes' bes''> <c'' c'''> ~ 2\) |
-  \acciaccatura { a''16\( bes'' } <c'' c'''>8 <d'' d'''> <c'' c'''> <bes' bes''> ~ 4\) r8 <d' d''>\( |
+  \acciaccatura { a''16\( bes'' } <c'' c'''>8 <d'' d'''> <c'' c'''> <bes' bes''> ~ 4\) r8 d'16\( d'' |
   <es' es''>2 <es' es''>8. q <f' f''>8 ~ |
   q8\) <c'' c'''>\( <c'' c'''> <d'' d'''> <c'' c'''> <bes' bes''> <bes' bes''>4\) |
 
@@ -184,11 +184,83 @@ right = \absolute {
   <c'' d'' f'' c'''>4.\( <bes' bes''>8 <bes' bes''>4.\) <d' d''>8\( |
   <g' a' d'' g''>4. <f' f''>8 <f' f''>4.\) <f' f''>8\( |
   <bes' d'' a''>4. <g' g''>8 <bes' bes''>4.\) <d' d''>8\( |
-  <g' a' c'' g''>4. <f' f''>8 ~ 4.\) <f' f''>8\( |
+  <g' a' c'' g''>4. <f' f''>8 4.\) <f' f''>8\( |
 
   <g' g''>8 <es' es''> <d' d''> <c' c''> ~ 2\) |
-  \acciaccatura { d''16\( es'' } <f' f''>8 <gis' gis''> <bes' bes''> <g' g''> ~ 4\) r8 <d' d''>\( |
+  \acciaccatura { d''16\( es'' } <f' f''>8 <gis' gis''> <bes' bes''> <g' g''> ~ 4\) r8 d'16\( d'' |
   <es' es''>2 <es' es''>8. q <f' f''>8 |
-  <d' d''>4\) <c' c''> <bes bes'> <c' c''>8 <c' c''> ~ |
+  <d' d''>4\) <c' c''>\( <bes bes'> <c' c''>8 <c' c''> ~ |
+
+
+
+
+
+
+
+
+  8 bes' bes'2\) f''8\( <d'' bes''>8 ~ |
+  8 f''8 <es'' c'''> <f'' d'''>8 ~ 8\) \ottava 1 <bes'' f'''>8 <es''' bes'''>8 8 ~ |
+  
+  
+  8 <bes'' f'''>8 <es''' bes'''> <es''' bes'''>8 ~ 8 <bes'' f'''> <es''' bes'''> <a''' c''''>8 ~ |
+  8 <c''' f'''> <f''' bes'''> <a''' c''''>8 ~ 8 <c''' f'''> <f''' bes'''> <a''' c''''>8 ~ |
+  8 <c''' fis'''> <fis''' a'''> <a''' c''''>8 ~ 8 <c''' fis'''> <fis''' c''''> <bes''' d''''>8 ~ |
+  8 8 <a''' c''''>4 <g''' bes'''> <f''' a'''> |
+  \grace { <g''' bes'''-4>16 <f''' a'''-3> } <es''' g'''-4>2 r |
+  r8 <bes'' bes'''>8 8 <g'' g'''> <bes'' bes'''> <c''' c''''> <d''' d''''>4 |
+  <c''' c''''>1 |
+  <d''' fis''' a''' d''''>1\arpeggio | \ottava 0
+  
+  \time 6/8 \tempo 4. = 72
+  <g' g''>4.\( <a' a''> |
+  <bes' bes''> <c'' c'''> |
+  <f' f''>4.\) r8 es' d' |
+  es'4 f'8 ~ 8 r4 |
+  r8 <f' as'> <es' ges'> <des' f'>4 es''8 ~ |
+  8 des'' es'' f''4 es''8 ~ |
+  8 g' bes' g''4 f''8 ~ |
+  4. g''4. |
+  <c'' a''> <f'' d'''>8. a'' |
+  
+  
+  \time 4/4 \tempo 4=120
+  <c'' d'' f'' c'''>4.\( <bes' bes''>8 <bes' bes''>4.\) <d' d''>8\( |
+  <g' a' d'' g''>4. <f' f''>8 <f' f''>4.\) <f' f''>8\( |
+  <c'' d'' g'' c'''>4. <bes' bes''>8 <bes' bes''>4.\) <d' d''>8\( |
+  <g' a' c'' g''>4. <f' f''>8 4.\) <f' f''>8\( |
+
+  <g' g''>8 <es' es''> <bes' bes''> <a' a''> ~ 2\) |
+  \acciaccatura { a''16\( bes'' } <c'' c'''>8 <a' a''> <c'' c'''> <bes' bes''> ~ 4\) r8 d'16\( d'' |
+  <es' es''>2 <es' es''>8. q <f' f''>8 ~ |
+  q8\) <c'' c'''>\( <c'' c'''> <d'' d'''> <c'' c'''> <bes' bes''> <bes' bes''>4\) |
+
+
+
+
+
+
+
+
+  <c'' d'' f'' c'''>4.\( <bes' bes''>8 <bes' bes''>4.\) <d' d''>8\( |
+  <g' a' d'' g''>4. <f' f''>8 <f' f''>4.\) <f' f''>8\( |
+  <bes' d'' a''>4. <g' g''>8 <bes' bes''>4.\) <d' d''>8\( |
+  %<c'' d'' g'' c'''>4. <bes' bes''>8 <bes' bes''>4.\) <d' d''>8\( |
+  <g' a' c'' g''>4. <f' f''>8 4.\) <f' f''>8\( |
+
+  <g' g''>8 <es' es''> <d' d''> <c' c''> ~ 2\) |
+  \acciaccatura { d''16\( es'' } <f' f''>8 <d' d''> <gis' gis''> <g' g''> ~ 4\) r8 d'16\( d'' |
+  <es' es''>2 <es' es''>8. q <f' f''>8 |
+  <d' d''>4\) <c' c''>\( <bes bes'> <c' c''>8 <c' c''> ~ |
+
+
+
+
+
+
+
+
+  q8 bes' bes'4.\) \shape #'((0 . 0) (0 . 0) (0 . 2) (0 . 0)) PhrasingSlur bes'8\( c'' f'' ~ |
+  8 es'' d'' es'' d''( \prall c'') bes' a'\) |
+  a' bes' c'' a'4 f'4 g'8 ~ |
 %}
 }
