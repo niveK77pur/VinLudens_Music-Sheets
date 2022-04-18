@@ -162,7 +162,8 @@ right = \absolute {
   \tuplet 3/2 4 { es''8-3 c''-1 d'' es'' f''-1 g''-4 fis''-3 c'' d'' es'' fis''-4 g''-1 } |
   \tuplet 3/2 4 { a''-3 fis''-1 a''-2 bes'' c''' bes'' a''-2 gis''-1 a'' } \tuplet 6/4 { ais''16-3 b'' c''' cis'''-3 d''' dis'''-3} |
   \tuplet 3/2 4 { f'''8-4 es'''-3 d''' c''' b''-2 c'''-1 es''' d''' c''' }
-  \tuplet 6/4 { es'''16-3 g'''-5 es''' d''' c'''-1 bes''-3 } <d'' d'''-5>2\) <a' a''>
+  \tuplet 6/4 { es'''16-3 g'''-5 es''' d''' c'''-1 bes''-3 } <d'' d'''-5>2\) <a' a''>\fermata |
+  r4 r8 \tuplet 3/2 { \change Staff = "left" f16 \change Staff = "right" f' f'' } \tuplet 6/4 4 { \change Staff = "left" g16 \change Staff = "right" g' g'' \change Staff = "left" gis \change Staff = "right" gis' gis'' \change Staff = "left" a \change Staff = "right" a' a'' \change Staff = "left" bes \change Staff = "right" bes' bes'' } |
 
   <c'' d'' f'' c'''>4.\( <bes' bes''>8 <bes' bes''>4.\) <d' d''>8\( |
   <g' a' d'' g''>4. <f' f''>8 <f' f''>4.\) <f' f''>8\( |
@@ -199,7 +200,7 @@ right = \absolute {
 
 
   8 bes' bes'2\) f''8\( <d'' bes''>8 ~ |
-  8 f''8 <es'' c'''> <f'' d'''>8 ~ 8\) \ottava 1 <bes'' f'''>8 <es''' bes'''>8 8 ~ |
+  8 f''8 <es'' c'''> <f'' d'''>8 ~ 8\) \ottava 1 <bes'' f'''>8^"slurs?" <es''' bes'''>8 8 ~ |
   
   
   8 <bes'' f'''>8 <es''' bes'''> <es''' bes'''>8 ~ 8 <bes'' f'''> <es''' bes'''> <a''' c''''>8 ~ |
@@ -214,7 +215,7 @@ right = \absolute {
   \time 6/8 \tempo 4. = 72
   <g' g''>4.\( <a' a''> |
   <bes' bes''> <c'' c'''> |
-  <f' f''>4.\) r8 es' d' |
+  <f' f''>4.\) r8 es'^"slurs?" d' |
   es'4 f'8 ~ 8 r4 |
   r8 <f' as'> <es' ges'> <des' f'>4 es''8 ~ |
   8 des'' es'' f''4 es''8 ~ |
@@ -244,7 +245,6 @@ right = \absolute {
   <c'' d'' f'' c'''>4.\( <bes' bes''>8 <bes' bes''>4.\) <d' d''>8\( |
   <g' a' d'' g''>4. <f' f''>8 <f' f''>4.\) <f' f''>8\( |
   <bes' d'' a''>4. <g' g''>8 <bes' bes''>4.\) <d' d''>8\( |
-  %<c'' d'' g'' c'''>4. <bes' bes''>8 <bes' bes''>4.\) <d' d''>8\( |
   <g' a' c'' g''>4. <f' f''>8 4.\) <f' f''>8\( |
 
   <g' g''>8 <es' es''> <d' d''> <c' c''> ~ 2\) |
@@ -261,6 +261,40 @@ right = \absolute {
 
   q8 bes' bes'4.\) \shape #'((0 . 0) (0 . 0) (0 . 2) (0 . 0)) PhrasingSlur bes'8\( c'' f'' ~ |
   8 es'' d'' es'' d''( \prall c'') bes' a'\) |
-  a' bes' c'' a'4 f'4 g'8 ~ |
+  a' bes' c'' d''4 c''8 bes' a' |
+
+  \time 9/8 \tempo 4. = 120
+  
+  <d'' f''>2. ~ q4. |
+  <bes' d''>2. ~ q4. |
+  <bes' d''>2. ~ q4. |
+  <f' bes' c''>2. ~ q4. |
+  
+  \time 6/8 
+  
+  \tuplet 2/3 4. { <f' bes'>8 d'8 bes f } |
+  bes, f bes d' f' bes' |
+  d''8 bes' fis' d' bes fis |
+  bes, fis bes d' fis' bes' |
+  bes'' f'' d'' bes' f' d' |
+  bes d' f' bes' d'' f'' |
+  d''' bes'' fis'' d'' bes' fis' |
+  bes fis' bes' d'' fis'' bes'' |
+  \ottava 1 bes''' f''' d''' bes'' f'' bes' |
+  d'''' bes''' f''' d''' bes'' f'' |
+  \ottava 2 f'''' d'''' bes''' f''' d''' bes'' |
+  
+  bes''''8 f'''' d'''' bes''' f''' d''' |
+  \ottava 1 d'''' bes''' f''' d''' bes'' f''
+  \ottava 0 d''' bes'' f'' d'' bes' f'
+  d'' bes' f' d' bes f
+  \clef "bass" d' bes f d bes, f,
+  bes, c bes, f, d, c,
+  r2. |
+  \clef "treble" <d' f' bes'>4 r8 r4. |
+  \clef "bass" <d f bes>4. ~ q8 r4 |
+
+  \bar "|."
+
 %}
 }

@@ -163,6 +163,7 @@ left = \absolute {
   d fis d' a b, f d' gis |
   es g es' bes c fis es' bes |
   <f a d'>2 c' |
+  r4 r8 s8 s2 |
   
   <bes,, bes,>4 <bes, d f>8 bes,,16 bes, bes,, bes, bes,,8 <bes, d f>4 |
   <f,, f,>4 <f, a, d>8 f,,16 f, f,, f, f,,8 <f, a, d>4 |
@@ -260,6 +261,40 @@ left = \absolute {
   >> \oneVoice
   <bes, f>4 \shape #'((0 . 0) (0 . 0) (0 . 0.5) (0 . 0)) Slur <bes d'>8( f bes bes, f f, ~ |
   4) \shape #'((0 . 0) (0 . 0) (0 . 0.5) (0 . 0)) Slur <a c'>8( f a a, f c |
-  g,)( d bes) \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 1.5)) Slur f,( ~ 8 c a) 
+  g,)( d bes) \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 1.5)) Slur f,( ~ 8 c a c |
+  
+  \time 9/8
+  
+  es,8)( bes, d es g a bes d' \change Staff = "right" f') \change Staff = "left" |
+  f,8( c f g a bes d' c' \change Staff = "right" es') \change Staff = "left" |
+  g,( d g a bes a bes c' \change Staff = "right" d') \change Staff = "left" |
+  a,( es a bes a bes c' d' \change Staff = "right" es') \change Staff = "left" |
+  
+  \time 6/8 
+  
+  <bes, f>2. |
+  s2. |
+  <bes, fis bes>2. |
+  s2. |
+  \clef "treble" <bes f'>2. |
+  s2. |
+  <bes fis' bes'>2. |
+  s2. |
+  <bes' f''>2._"pedal?" |
+  s2. |
+  s2. |
+  
+  s2. |
+  bes''2. |
+  es''2.
+  d'2. |
+  \clef "bass" c2. |
+  r2. |
+  <bes,,, bes,,>4-^ r8 r4. |
+  <bes, f bes>4 r8 r4. |
+  <bes,, f, bes,>4. ~ q8 r4 |
+  
+  \bar "|."
+
 %}
 }
