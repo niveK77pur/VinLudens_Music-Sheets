@@ -96,8 +96,8 @@ right = \absolute {
   a'\( bes' c'' a'4 f'4 g'8 ~ |
 
   1\) |
-  \change Staff = "left" f,8^( c8-2 g-1 es-3 \once\override Beam.positions = #'(4.4 . 4) a-1 g-2 \change Staff = "right" c'-1 \change Staff = "left" a-1 |
-  \change Staff = "right" es'-2 c'-1 g'-4 es'-2 \change Staff = "left" \clef "treble" a'-1 g'-3 \change Staff = "right" c''-2 a'-1 |
+  \change Staff = "left" f,8_( c8-2 g-1 es-3 \once\override Beam.positions = #'(4.4 . 4) a-1 g-2 \change Staff = "right" c'-1 \change Staff = "left" a-1 |
+  \change Staff = "right" es'-2 c'-1 g'-4 es'-2 \change Staff = "left" \clef "treble" a'-1 g'-3 \change Staff = "right" c''-2^"rythm??" a'-1 |
   es''-3 c''-1 g''-5 es''-3 \change Staff = "left" a''-1 g''-3 \change Staff = "right" c'''-3 a''-1 |
   
   \clef "treble^8"
@@ -145,8 +145,8 @@ right = \absolute {
   \tuplet 3/2 4 { es''8-3 c''-1 d'' es'' f''-1 g''-4 fis''-3 c'' d'' es'' fis''-4 g''-1 } |
   \tuplet 3/2 4 { a''-3 fis''-1 a''-2 bes'' c''' bes'' a''-2 gis''-1 a'' } \tuplet 6/4 { ais''16-3 b'' c''' cis'''-3 d''' dis'''-3} |
   \tuplet 3/2 4 { f'''8-4 es'''-3 d''' c''' b''-2 c'''-1 es''' d''' c''' }
-  \tuplet 6/4 { es'''16-3 g'''-5 es''' d''' c'''-1 bes''-3 } <d'' d'''-5>2 <a' a''>\)\fermata |
-  r4 r8 \tuplet 3/2 { \change Staff = "left" f16 \change Staff = "right" f' f'' } \tuplet 6/4 4 { \change Staff = "left" g16 \change Staff = "right" g' g'' \change Staff = "left" gis \change Staff = "right" gis' gis'' \change Staff = "left" a \change Staff = "right" a' a'' \change Staff = "left" bes \change Staff = "right" bes' bes'' } |
+  \tuplet 6/4 { es'''16-3 g'''-5 es''' d''' c'''-1 bes''-3 } <d'' d'''-5>2 <a' a''>\)\fermata | \set baseMoment = #(ly:make-moment 1/8) \override TupletBracket.bracket-visibility = #'if-no-beam
+  r4 r8 \tuplet 3/2 { \change Staff = "left" f16 \change Staff = "right" f' f'' } \set subdivideBeams = ##t \tuplet 3/2 8 { \change Staff = "left" g16 \change Staff = "right" g' g'' \change Staff = "left" gis \change Staff = "right" gis' gis'' \change Staff = "left" a \change Staff = "right" a' a'' \change Staff = "left" bes \change Staff = "right" bes' bes'' } \unset subdivideBeams \revert TupletBracket.bracket-visibility |
 
   <c'' d'' f'' c'''>4.\( <bes' bes''>8 <bes' bes''>4.\) <d' d''>8\( |
   <g' a' d'' g''>4. <f' f''>8 <f' f''>4.\) <f' f''>8\( |
@@ -255,25 +255,25 @@ right = \absolute {
   
   \time 6/8 
   
-  \tuplet 2/3 4. { <f'-3 bes'-5>8 d'8 \change Staff = "left" bes f } |
-  bes, f bes \change Staff = "right" d' f' bes' |
-  d''8-5 bes' fis' d' \change Staff = "left" bes fis |
-  bes, fis bes \change Staff = "right" d' fis' bes' |
-  bes''-4 f'' d'' \change Staff = "left" bes' f' d' |
-  bes d' f' bes' \change Staff = "right" d'' f'' |
-  d''' bes'' fis'' d'' \change Staff = "left" bes' fis' |
-  bes fis' bes' \change Staff = "right" d'' fis'' bes'' |
-  \ottava 1 bes''' f''' d''' \change Staff = "left" \clef "treble^8" bes'' f'' bes' | \change Staff = "right"
-  d'''' bes''' f''' d''' \change Staff = "left" \clef "treble^8" bes'' f'' | \change Staff = "right"
-  \ottava 2 f'''' d'''' bes''' f''' \change Staff = "left" \clef "treble^15" d''' bes'' | \change Staff = "right"
+  \shape #'((0.5 . 2) (2 . -2) (-3 . 0) (0 . 0)) Slur \tuplet 2/3 4. { <f'-3 bes'-5>8_( d'8 \change Staff = "left" bes f } |
+  bes, f bes \change Staff = "right" d' f' bes') |
+  \shape #'((0 . 1) (6 . -1) (-3 . 0) (0 . 0.5)) Slur d''8-5_( bes' fis' \once\override Beam.positions = #'(-4 . -3) d' \change Staff = "left" bes fis |
+  bes, fis bes \change Staff = "right" d' fis' bes') |
+  \shape #'((0 . 0) (4 . -0.5) (-2 . 0) (0 . 0)) Slur bes''-4_( f'' d'' \change Staff = "left" bes' f' d' |
+  bes d' f' bes' \change Staff = "right" d'' f'') |
+  \shape #'((0 . 1) (8 . -1) (-6 . -1) (0 . 1)) Slur d'''_( bes'' fis'' d'' \change Staff = "left" bes' fis' |
+  bes fis' bes' \change Staff = "right" d'' fis'' bes'') |
+  \ottava 1 bes'''( f''' d''' \change Staff = "left" \clef "treble^8" bes'' f'' bes') | \change Staff = "right"
+  d''''( bes''' f''' d''' \change Staff = "left" \clef "treble^8" bes'' f'') | \change Staff = "right"
+  \ottava 2 f''''( d'''' bes''' f''' \change Staff = "left" \clef "treble^15" d''' bes'') | \change Staff = "right"
   
-  bes''''8-4 f'''' d'''' bes'''-4 f''' d''' |
+  bes''''8-4( f'''' d'''' bes'''-4 f''' d''' |
   \ottava 1 d''''-5 bes'''-4 f''' d''' bes''-4 f''-2 |
   \ottava 0 d'''-5 bes''-4 f'' d'' bes' f' |
   d'' bes' f' d' bes f |
   \clef "bass" d' bes f d bes, f, |
   bes,-4 c-5 bes,-4 f,-2 d,-1 c,-2 |
-  r2. |
+  \change Staff = "left" \ottava -1 <bes,,, bes,,>4-^) \ottava 0 r8 r4. | \change Staff = "right"
   \clef "treble" <d' f' bes'>4 r8 r4. |
   \clef "bass" <d f bes>4. ~ q8 r4 |
 

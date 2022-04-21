@@ -93,7 +93,7 @@ left = \absolute {
   >> \oneVoice
   <bes, f>4 \shape #'((0 . 0) (0 . 0) (0 . 0.5) (0 . 0)) Slur <bes d'>8( f bes bes, f f, ~ |
   4) \shape #'((0 . 0) (0 . 0) (0 . 0.5) (0 . 0)) Slur <a c'>8( f a a, f c |
-  g,)( d bes) \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 1.5)) Slur f,( ~ 8 c a) \shape #'((0 . 0) (0 . 5) (-4 . 3) (0 . 0)) Slur es,^( ~ | 
+  g,)( d bes) \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 1.5)) Slur f,( ~ 8 c a) \shape #'((0 . 0.5) (-1 . -2) (0 . 0) (0 . 0)) Slur es,_( ~ | 
 
   \once\override Beam.positions = #'(2 . 3) ees,8 bes, f \change Staff = "right" g-1 a bes c'-1 d' |
   \change Staff = "right"  <es' a'>1) \change Staff = "left" |
@@ -248,8 +248,8 @@ left = \absolute {
   
   \time 9/8
   
-  \shape #'((0 . 0) (0 . 0) (-1 . 2) (0 . 10.5)) Slur es,8-5)_( bes,-3 d-1 es-4 g-2 a-1 bes-3 d'-2 \change Staff = "right" f' \change Staff = "left" |
-  \shape #'((0 . 0) (0 . 0) (-1 . 2) (0 . 10.5)) Slur f,8)_( c f-1 g-4 a-3 bes-2 d'-1 c'-2 \change Staff = "right" es' \change Staff = "left" |
+  \shape #'((0 . 0) (0 . 0) (-1 . 2) (0 . 10.5)) Slur es,8-5)_( bes,-3 d-1 es-4 g-2 a-1 \once\override Beam.positions = #'(6 . 4.5) bes-3 d'-2 \change Staff = "right" f' \change Staff = "left" |
+  \shape #'((0 . 0) (0 . 0) (-1 . 2) (0 . 10.5)) Slur f,8)_( c f-1 g-4 a-3 bes-2 \once\override Beam.positions = #'(6 . 4) d'-1 c'-2 \change Staff = "right" es' \change Staff = "left" |
   \shape #'((0 . 0) (0 . 0) (-1 . 2) (0 . 10.5)) Slur g,)_( d g-1 a-3 bes-2 a \once\override Beam.positions = #'(5.5 . 4) bes c' \change Staff = "right" d' \change Staff = "left" |
   \shape #'((0 . 0) (0 . 0) (-1 . 5) (0 . 10)) Slur a,)_( es-2 a-1 bes-2 a-3 bes \once\override Beam.positions = #'(5.5 . 4) c' \change Staff = "right" d'-1 es'-2 \change Staff = "left" |
   
@@ -273,7 +273,7 @@ left = \absolute {
   d'2. |
   \clef "bass" c2. |
   r2. |
-  <bes,,, bes,,>4-^ r8 r4. |
+  s2. |
   <bes, f bes>4 r8 r4. |
   <bes,, f, bes,>4. ~ q8 r4 |
   
