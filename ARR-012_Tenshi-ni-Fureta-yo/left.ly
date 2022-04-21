@@ -94,33 +94,16 @@ left = \absolute {
   <bes, f>4 \shape #'((0 . 0) (0 . 0) (0 . 0.5) (0 . 0)) Slur <bes d'>8( f bes bes, f f, ~ |
   4) \shape #'((0 . 0) (0 . 0) (0 . 0.5) (0 . 0)) Slur <a c'>8( f a a, f c |
   g,)( d bes) \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 1.5)) Slur f,( ~ 8 c a) \shape #'((0 . 0) (0 . 5) (-4 . 3) (0 . 0)) Slur es,^( ~ | 
-  << { \voiceTwo 
-          ees,1-"Repeat note?" |
-          \hideNotes \change Staff = "right" \once\override NoteColumn.ignore-collision = ##t <es' a'>1) \unHideNotes \change Staff = "left" |
-          s1 |
-          s1 |
-      }
-      \new Voice { %\voiceTwo 
-          \once\override Beam.positions = #'(2 . 3) ees,8 bes, f \change Staff = "right" g a bes c' d'|
-          \change Staff = "left" 
-          f,8^( c8 g es \once\override Beam.positions = #'(4.4 . 4) a g \change Staff = "right" c' \change Staff = "left" a |
-          \change Staff = "right" es' c' g' es' a' g' c'' a' |
-          es'' c'' g'' es'' a'' g'' c''' a'' |
-          \time 3/4 \hideNotes\once\override NoteColumn.ignore-collision = ##t d'''2._) \unHideNotes |
-      }
-      \new Voice { \voiceTwo
-        s1 |
-        f,1_"Voicing and Slur placement" ~ |
-        1 ~ |
-        1 | \voiceOne 
-        
-        \clef "treble"
-        \time 3/4 \tempo 4 = 160
-  
-        bes'4 <d'' f''> q |
-      }
-  >> \oneVoice
 
+  \once\override Beam.positions = #'(2 . 3) ees,8 bes, f \change Staff = "right" g-1 a bes c'-1 d' |
+  \change Staff = "right"  <es' a'>1) \change Staff = "left" |
+  s1 |
+  s1 |
+
+  \clef "treble"
+  \time 3/4 \tempo 4 = 160
+
+  bes'4 <d'' f''> q |
   bes'4 q q |
   bes'4 q q |
   bes'4 q q |
@@ -155,14 +138,14 @@ left = \absolute {
   f, c a |
 
 
-  es8 a g' bes es a g' bes |
-  f bes a' c' f bes a' c' |
+  es8-5 a-3 g'-1 bes-2 es-5 a-3 g'-1 bes-2 |
+  f-5 bes-3 a'-1 c'-2 f bes a' c' |
   d a f' bes d a f' bes |
   g, d bes f g, d bes f |
   c8 es c' g a, es c' fis |
   d fis d' a b, f d' gis |
-  es g es' bes c fis es' bes |
-  <f a d'>2 c' |
+  es g es' bes c fis es'-1 bes-2 |
+  <f-5 a-3 d'-1>2\( c'\) |
   r4 r8 s8 s2 |
   
   <bes,, bes,>4 <bes, d f>8 bes,,16 bes, bes,, bes, bes,,8 <bes, d f>4 |
@@ -207,16 +190,16 @@ left = \absolute {
   <f f'>2 <f' a' c''> |
   <fis fis'>2 <fis' a' c''> |
   <g g'>4 <g' bes' d''> <f f'> <f' a' c''> |
-  <es es'>8 bes g' bes d a f' c8 ~ |
-  8 g8 es' g bes, f d' f |
+  <es es'>8 bes-2 g'-1 bes-2 d-5 a-2 f' c8 ~ |
+  8 g8-3 es' g bes, f-3 d' f |
   c g c' g d' g es' g |
-  d fis fis' fis g' fis a' fis |
+  d fis-3 fis' fis-4 g' fis a' fis |
   
   \time 6/8
+  es,16-5 bes,-3 g-1 bes,-3 bes-1 bes,-3 es,-5 bes,-3 g-1 bes,-3 bes-1 es,-3 |
   es,16 bes, g bes, bes bes, es, bes, g bes, bes bes, |
-  es,16 bes, g bes, bes bes, es, bes, g bes, bes bes, |
-  bes,,16 f, d f, f f, bes,, f, d f, f f, |
-  bes,,16 f, d f, f f, c, g, e g, g g, |
+  bes,,16-5 f,-3 d-1 f,-3 f-1 f,-3 bes,,-3 f, d f, f f, |
+  bes,,16 f, d f, f f, c,-5 g,-3 e g, g g, |
   des, as, f as, as as, des, as, f as, as as, |
   des, as, f as, as as, des, as, f as, as as, |
   es, bes, g bes, bes bes, es, bes, g bes, bes bes, |
@@ -261,18 +244,18 @@ left = \absolute {
   >> \oneVoice
   <bes, f>4 \shape #'((0 . 0) (0 . 0) (0 . 0.5) (0 . 0)) Slur <bes d'>8( f bes bes, f f, ~ |
   4) \shape #'((0 . 0) (0 . 0) (0 . 0.5) (0 . 0)) Slur <a c'>8( f a a, f c |
-  g,)( d bes) \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 1.5)) Slur f,( ~ 8 c a c |
+  g,)( d bes) \shape #'((0 . 0) (0 . 0) (-1 . 2) (0 . 10.5)) Slur f,( ~ 8 c a c |
   
   \time 9/8
   
-  es,8)( bes, d es g a bes d' \change Staff = "right" f') \change Staff = "left" |
-  f,8( c f g a bes d' c' \change Staff = "right" es') \change Staff = "left" |
-  g,( d g a bes a bes c' \change Staff = "right" d') \change Staff = "left" |
-  a,( es a bes a bes c' d' \change Staff = "right" es') \change Staff = "left" |
+  \shape #'((0 . 0) (0 . 0) (-1 . 2) (0 . 10.5)) Slur es,8-5)_( bes,-3 d-1 es-4 g-2 a-1 bes-3 d'-2 \change Staff = "right" f' \change Staff = "left" |
+  \shape #'((0 . 0) (0 . 0) (-1 . 2) (0 . 10.5)) Slur f,8)_( c f-1 g-4 a-3 bes-2 d'-1 c'-2 \change Staff = "right" es' \change Staff = "left" |
+  \shape #'((0 . 0) (0 . 0) (-1 . 2) (0 . 10.5)) Slur g,)_( d g-1 a-3 bes-2 a \once\override Beam.positions = #'(5.5 . 4) bes c' \change Staff = "right" d' \change Staff = "left" |
+  \shape #'((0 . 0) (0 . 0) (-1 . 5) (0 . 10)) Slur a,)_( es-2 a-1 bes-2 a-3 bes \once\override Beam.positions = #'(5.5 . 4) c' \change Staff = "right" d'-1 es'-2 \change Staff = "left" |
   
   \time 6/8 
   
-  <bes, f>2. |
+  <bes, f>2.) |
   s2. |
   <bes, fis bes>2. |
   s2. |
@@ -285,7 +268,7 @@ left = \absolute {
   s2. |
   
   s2. |
-  bes''2. |
+  \clef "treble" bes''2. |
   es''2.
   d'2. |
   \clef "bass" c2. |

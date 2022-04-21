@@ -96,31 +96,14 @@ right = \absolute {
   a'\( bes' c'' a'4 f'4 g'8 ~ |
 
   1\) |
-  <es' a'>1 |
-  s1 |
-  s1 |
+  \change Staff = "left" f,8^( c8-2 g-1 es-3 \once\override Beam.positions = #'(4.4 . 4) a-1 g-2 \change Staff = "right" c'-1 \change Staff = "left" a-1 |
+  \change Staff = "right" es'-2 c'-1 g'-4 es'-2 \change Staff = "left" \clef "treble" a'-1 g'-3 \change Staff = "right" c''-2 a'-1 |
+  es''-3 c''-1 g''-5 es''-3 \change Staff = "left" a''-1 g''-3 \change Staff = "right" c'''-3 a''-1 |
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   \clef "treble^8"
   %\time 3/4 \tempo 4 = 160
   
-  d'''2. |
-
-
-
+  d'''2.-4) |
   r2 r8. bes''16\( |
   d'''4 es''' f''' |
   es'''\prall d''' c'''8. bes''16 |
@@ -162,7 +145,7 @@ right = \absolute {
   \tuplet 3/2 4 { es''8-3 c''-1 d'' es'' f''-1 g''-4 fis''-3 c'' d'' es'' fis''-4 g''-1 } |
   \tuplet 3/2 4 { a''-3 fis''-1 a''-2 bes'' c''' bes'' a''-2 gis''-1 a'' } \tuplet 6/4 { ais''16-3 b'' c''' cis'''-3 d''' dis'''-3} |
   \tuplet 3/2 4 { f'''8-4 es'''-3 d''' c''' b''-2 c'''-1 es''' d''' c''' }
-  \tuplet 6/4 { es'''16-3 g'''-5 es''' d''' c'''-1 bes''-3 } <d'' d'''-5>2\) <a' a''>\fermata |
+  \tuplet 6/4 { es'''16-3 g'''-5 es''' d''' c'''-1 bes''-3 } <d'' d'''-5>2 <a' a''>\)\fermata |
   r4 r8 \tuplet 3/2 { \change Staff = "left" f16 \change Staff = "right" f' f'' } \tuplet 6/4 4 { \change Staff = "left" g16 \change Staff = "right" g' g'' \change Staff = "left" gis \change Staff = "right" gis' gis'' \change Staff = "left" a \change Staff = "right" a' a'' \change Staff = "left" bes \change Staff = "right" bes' bes'' } |
 
   <c'' d'' f'' c'''>4.\( <bes' bes''>8 <bes' bes''>4.\) <d' d''>8\( |
@@ -208,9 +191,9 @@ right = \absolute {
   8 <c''' fis'''> <fis''' a'''> <a''' c''''>8 ~ 8 <c''' fis'''> <fis''' c''''> <bes''' d''''>8 ~ |
   8 8 <a''' c''''>4 <g''' bes'''> <f''' a'''> |
   \grace { <g''' bes'''-4>16 <f''' a'''-3> } <es''' g'''-4>2 r |
-  r8 <bes'' bes'''>8 8 <g'' g'''> <bes'' bes'''> <c''' c''''> <d''' d''''>4 |
+  r8 <bes'' bes'''>8\( 8 <g'' g'''> <bes'' bes'''> <c''' c''''> <d''' d''''>4 |
   <c''' c''''>1 |
-  <d''' fis''' a''' d''''>1\arpeggio | \ottava 0
+  <d''' fis''' a''' d''''>1\)\arpeggio | \ottava 0
   
   \time 6/8 \tempo 4. = 72
   <g' g''>4.\( <a' a''> |
@@ -261,35 +244,35 @@ right = \absolute {
 
   q8 bes' bes'4.\) \shape #'((0 . 0) (0 . 0) (0 . 2) (0 . 0)) PhrasingSlur bes'8\( c'' f'' ~ |
   8 es'' d'' es'' d''( \prall c'') bes' a'\) |
-  a' bes' c'' d''4 c''8 bes' a' |
+  a'\( bes' c'' d''4 c''8 bes' a' |
 
   \time 9/8 \tempo 4. = 120
   
-  <d'' f''>2. ~ q4. |
+  <d'' f''>2.\) ~ q4. |
   <bes' d''>2. ~ q4. |
   <bes' d''>2. ~ q4. |
   <f' bes' c''>2. ~ q4. |
   
   \time 6/8 
   
-  \tuplet 2/3 4. { <f' bes'>8 d'8 bes f } |
-  bes, f bes d' f' bes' |
-  d''8 bes' fis' d' bes fis |
-  bes, fis bes d' fis' bes' |
-  bes'' f'' d'' bes' f' d' |
-  bes d' f' bes' d'' f'' |
-  d''' bes'' fis'' d'' bes' fis' |
-  bes fis' bes' d'' fis'' bes'' |
-  \ottava 1 bes''' f''' d''' bes'' f'' bes' |
-  d'''' bes''' f''' d''' bes'' f'' |
-  \ottava 2 f'''' d'''' bes''' f''' d''' bes'' |
+  \tuplet 2/3 4. { <f'-3 bes'-5>8 d'8 \change Staff = "left" bes f } |
+  bes, f bes \change Staff = "right" d' f' bes' |
+  d''8-5 bes' fis' d' \change Staff = "left" bes fis |
+  bes, fis bes \change Staff = "right" d' fis' bes' |
+  bes''-4 f'' d'' \change Staff = "left" bes' f' d' |
+  bes d' f' bes' \change Staff = "right" d'' f'' |
+  d''' bes'' fis'' d'' \change Staff = "left" bes' fis' |
+  bes fis' bes' \change Staff = "right" d'' fis'' bes'' |
+  \ottava 1 bes''' f''' d''' \change Staff = "left" \clef "treble^8" bes'' f'' bes' | \change Staff = "right"
+  d'''' bes''' f''' d''' \change Staff = "left" \clef "treble^8" bes'' f'' | \change Staff = "right"
+  \ottava 2 f'''' d'''' bes''' f''' \change Staff = "left" \clef "treble^15" d''' bes'' | \change Staff = "right"
   
-  bes''''8 f'''' d'''' bes''' f''' d''' |
-  \ottava 1 d'''' bes''' f''' d''' bes'' f''
-  \ottava 0 d''' bes'' f'' d'' bes' f'
-  d'' bes' f' d' bes f
-  \clef "bass" d' bes f d bes, f,
-  bes, c bes, f, d, c,
+  bes''''8-4 f'''' d'''' bes'''-4 f''' d''' |
+  \ottava 1 d''''-5 bes'''-4 f''' d''' bes''-4 f''-2 |
+  \ottava 0 d'''-5 bes''-4 f'' d'' bes' f' |
+  d'' bes' f' d' bes f |
+  \clef "bass" d' bes f d bes, f, |
+  bes,-4 c-5 bes,-4 f,-2 d,-1 c,-2 |
   r2. |
   \clef "treble" <d' f' bes'>4 r8 r4. |
   \clef "bass" <d f bes>4. ~ q8 r4 |
