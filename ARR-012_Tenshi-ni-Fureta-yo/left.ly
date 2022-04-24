@@ -96,9 +96,9 @@ left = \absolute {
   g,)( d bes) \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 1.5)) Slur f,( ~ 8 c a) \shape #'((0 . 0.5) (-1 . -2) (0 . 0) (0 . 0)) Slur es,_( ~ | 
 
   \once\override Beam.positions = #'(2 . 3) ees,8 bes, f \change Staff = "right" g-1 a bes c'-1 d' |
-  \change Staff = "right"  <es' a'>1) \change Staff = "left" |
-  s1 |
-  s1 |
+  \cadenzaOn \change Staff = "right"  <es' a'>1) \change Staff = "left"
+  s1
+  s4 \cadenzaOff | %\bar "|"
 
   \clef "treble"
   \time 3/4 \tempo 4 = 160
@@ -268,10 +268,10 @@ left = \absolute {
   s2. |
   
   s2. |
-  \clef "treble" bes''2. |
-  es''2.
-  d'2. |
-  \clef "bass" c2. |
+  \clef "treble" bes''2.-. |
+  es''2.-. |
+  d'2.-. |
+  \clef "bass" c2.-. |
   r2. |
   s2. |
   <bes, f bes>4 r8 r4. |

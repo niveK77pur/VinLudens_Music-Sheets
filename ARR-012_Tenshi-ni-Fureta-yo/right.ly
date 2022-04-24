@@ -95,10 +95,10 @@ right = \absolute {
   8 es'' d'' es'' d''( \prall c'') bes' a'\) |
   a'\( bes' c'' a'4 f'4 g'8 ~ |
 
-  1\) |
-  \change Staff = "left" f,8_( c8-2 g-1 es-3 \once\override Beam.positions = #'(4.4 . 4) a-1 g-2 \change Staff = "right" c'-1 \change Staff = "left" a-1 |
-  \change Staff = "right" es'-2 c'-1 g'-4 es'-2 \change Staff = "left" \clef "treble" a'-1 g'-3 \change Staff = "right" c''-2^"rythm??" a'-1 |
-  es''-3 c''-1 g''-5 es''-3 \change Staff = "left" a''-1 g''-3 \change Staff = "right" c'''-3 a''-1 |
+  1\) | \cadenzaOn %\override Score.BarNumber.break-visibility = #all-visible
+  \change Staff = "left" f,8_([ c8-2 g-1 es-3] \once\override Beam.positions = #'(4.4 . 4) a-1[ g-2 \change Staff = "right" c'-1 \change Staff = "left" a-1]
+  \change Staff = "right" \tuplet 14/16 { \stemDown es'16-2[ c'-1 g'-4 es'-2 \change Staff = "left" \clef "treble" \stemUp a'-1 g'-3 \change Staff = "right" \stemDown c''-2 a'-1
+  es''-3 c''-1 g''-5 es''-3 \change Staff = "left" \stemUp a''-1 g''-3] } \change Staff = "right" \stemNeutral \cadenzaOff \partial 4 c'''8[-3 a''-1] | 
   
   \clef "treble^8"
   %\time 3/4 \tempo 4 = 160
@@ -183,14 +183,14 @@ right = \absolute {
 
 
   8 bes' bes'2\) f''8\( <d'' bes''>8 ~ |
-  8 f''8 <es'' c'''> <f'' d'''>8 ~ 8\) \ottava 1 <bes'' f'''>8^"slurs?" <es''' bes'''>8 8 ~ |
+  8 f''8 <es'' c'''> <f'' d'''>8 ~ 8\) \ottava 1 <bes'' f'''>8\( <es''' bes'''>8 8 ~ |
   
   
-  8 <bes'' f'''>8 <es''' bes'''> <es''' bes'''>8 ~ 8 <bes'' f'''> <es''' bes'''> <a''' c''''>8 ~ |
-  8 <c''' f'''> <f''' bes'''> <a''' c''''>8 ~ 8 <c''' f'''> <f''' bes'''> <a''' c''''>8 ~ |
-  8 <c''' fis'''> <fis''' a'''> <a''' c''''>8 ~ 8 <c''' fis'''> <fis''' c''''> <bes''' d''''>8 ~ |
+  8\) <bes'' f'''>8\( <es''' bes'''> <es''' bes'''>8 ~ 8\) <bes'' f'''>\( <es''' bes'''> <a''' c''''>8 ~ |
+  8 <c''' f'''> <f''' bes'''> <a''' c''''>8 ~ 8\) <c''' f'''>\( <f''' bes'''> <a''' c''''>8 ~ |
+  8 <c''' fis'''> <fis''' a'''> <a''' c''''>8 ~ 8\) <c''' fis'''>\( <fis''' c''''> <bes''' d''''>8 ~ |
   8 8 <a''' c''''>4 <g''' bes'''> <f''' a'''> |
-  \grace { <g''' bes'''-4>16 <f''' a'''-3> } <es''' g'''-4>2 r |
+  \grace { <g''' bes'''-4>16 <f''' a'''-3> } <es''' g'''-4>2\) r |
   r8 <bes'' bes'''>8\( 8 <g'' g'''> <bes'' bes'''> <c''' c''''> <d''' d''''>4 |
   <c''' c''''>1 |
   <d''' fis''' a''' d''''>1\)\arpeggio | \ottava 0
@@ -198,13 +198,13 @@ right = \absolute {
   \time 6/8 \tempo 4. = 72
   <g' g''>4.\( <a' a''> |
   <bes' bes''> <c'' c'''> |
-  <f' f''>4.\) r8 es'^"slurs?" d' |
-  es'4 f'8 ~ 8 r4 |
-  r8 <f' as'> <es' ges'> <des' f'>4 es''8 ~ |
-  8 des'' es'' f''4 es''8 ~ |
-  8 g' bes' g''4 f''8 ~ |
+  <f' f''>4.\) r8 es'\( d' |
+  es'4 f'8 ~ 8\) r4 |
+  r8 <f' as'>\( <es' ges'> <des' f'>4 es''8 ~ |
+  8 des'' es'' f''4\) es''8\( ~ |
+  8 g' bes' g''4\) f''8\( ~ |
   4. g''4. |
-  <c'' a''> <f'' d'''>8. a'' |
+  <c'' a''> <f'' d'''>8. a''\) |
   
   
   \time 4/4 \tempo 4=120
