@@ -263,7 +263,7 @@ left = \absolute {
   s2. |
   <bes fis' bes'>2. |
   s2. |
-  <bes' f''>2._"pedal?" |
+  <bes' f''>2. |
   s2. |
   s2. |
   

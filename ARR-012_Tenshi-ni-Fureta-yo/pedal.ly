@@ -42,6 +42,72 @@ pedal = { \override SustainPedal.X-offset = #5
   s1\sustainRaise |
   s4\sustainOff s2.\sustainOn |
   s4\sustainRaise \sustainTrailEnd s8.\sustainRaise s16\sustainOff s2 |
+  s1 |
+  s2 s8 \sustainTrailStart s8\sustainOn s8 s8\sustainRaise |
+  s1 |
+  \cadenzaOn s1\sustainRaise s1 \cadenzaOff \partial 4 s4 |
+  \time 3/4
+  s2.\sustainRaise |
+  s2.\sustainRaise |
+  \sustainTrailEnd s4\sustainRaise s2\sustainOff |
+  s2.*10 |
+  s4 \sustainTrailStart s4\sustainOn s4 |
+  s2.\sustainRaise |
+  s2.\sustainOff |
+  s2.\sustainOn |
+  s2.\sustainRaise |
+  \sustainTrailEnd s4\sustainRaise s2\sustainOff |
+  s2.*11 |
+  s4 \sustainTrailStart s4\sustainOn s4 |
+  s2.\sustainRaise |
+  \time 4/4
+  s2\sustainRaise s2\sustainRaise |
+  s2\sustainRaise s2\sustainRaise |
+  \sustainTrailEnd s4\sustainRaise s4\sustainOff s2 |
+  s1*3 |
+  s4 \sustainTrailStart s4\sustainOn s2\sustainRaise |
+  s2\sustainRaise s2\sustainOff |
+  s4 s8 s8\sustainOn s2 |
+  \sustainTrailEnd s4\sustainRaise s2.\sustainOff |
+  s1*14 |
+  s2 \sustainTrailStart s2\sustainOn |
+  s1\sustainRaise |
+  s1\sustainRaise |
+  s1\sustainRaise |
+  s1\sustainRaise |
+  s1\sustainRaise |
+  s2\sustainRaise s2\sustainRaise |
+  s2\sustainRaise s4.\sustainRaise s8\sustainRaise |
+  s2 s2\sustainRaise |
+  s1\sustainRaise |
+  s1\sustainRaise |
+  s4.\sustainRaise s4.\sustainRaise |
+  s4.\sustainRaise \sustainTrailEnd s4\sustainRaise s8\sustainOff |
+  s2.*7 |
+  s1*18 |
+  s8 s8 \sustainTrailStart s8\sustainOn s8\sustainRaise s2 |
+  \time 9/8
+  s2.\sustainRaise s4. |
+  \sustainTrailEnd s4\sustainRaise s8\sustainOff s4. s4. |
+  s2. s4. |
+  s2. \sustainTrailStart s4.\sustainOn |
+  \time 6/8
+  s2.\sustainRaise | s2. |
+  \sustainTrailEnd s4.\sustainRaise s8\sustainOff s4 | s2. |
+  s2. | s2. |
+  s2. | s4. \sustainTrailStart s4.\sustainOn |
+  s2.\sustainRaise |
+  s2. |
+  s2. |
+  s2.\sustainRaise |
+  s2. |
+  s2. |
+  s2. |
+  s2. |
+  s2.\sustainOff |
+  s4\sustainOn s8\sustainOff s4. |
+  s4\sustainOn s8\sustainOff s4. |
+  s4.\sustainOn s8 s4\sustainOff |
 
 %}
 }
