@@ -8,7 +8,7 @@ left = \absolute {
   g,-5)( d-2 bes) \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 1.5)) Slur f,( ~ 8 c a) es,( ~ |
   8-5 bes,-3 g4 ~ 8) <c f a>8-. 8-. r8 | \revert Fingering.direction
   
-  \bar "||" %\clef "treble"
+  %\clef "treble"
   
   <bes f'>8-. <d' f'>-! <d' f'>-! <bes f'>-. <d' f'>-! <d' f'>-! <d' f'>-! <d' f'>-! |
   <bes f'>8-. <d' f'>-! <d' f'>-! <bes f'>-. <d' f'>-! <d' f'>-! <d' f'>-! <d' f'>-! |
@@ -100,7 +100,7 @@ left = \absolute {
   s1
   s4 \cadenzaOff | %\bar "|"
 
-  \clef "treble"
+  \clef "treble" \bar "||"  \once\override Score.MetronomeMark.Y-offset = #5
   \time 3/4 \tempo 4 = 160
 
   bes'4 <d'' f''> q |
@@ -184,7 +184,7 @@ left = \absolute {
   >> \oneVoice
   <bes, f>4. <f bes d'>8 ~ 2 |
   <bes, f>2 <f bes d'> |
-  
+  \once\override Staff.NoteHead.layer = #10
   %\clef "treble"
   <es es'>2 <es' g' bes'> |
   <f f'>2 <f' a' c''> |
@@ -248,7 +248,7 @@ left = \absolute {
   
   \time 9/8
   
-  \shape #'((0 . 0) (0 . 0) (-1 . 2) (0 . 10.5)) Slur es,8-5)_( bes,-3 d-1 es-4 g-2 a-1 \once\override Beam.positions = #'(6 . 4.5) bes-3 d'-2 \change Staff = "right" f' \change Staff = "left" |
+  \shape #'((0 . 0) (0 . 0) (-1 . 2) (0 . 10.5)) Slur es,8-5)_(-"SLURS?" bes,-3 d-1 es-4 g-2 a-1 \once\override Beam.positions = #'(6 . 4.5) bes-3 d'-2 \change Staff = "right" f' \change Staff = "left" |
   \shape #'((0 . 0) (0 . 0) (-1 . 2) (0 . 10.5)) Slur f,8)_( c f-1 g-4 a-3 bes-2 \once\override Beam.positions = #'(6 . 4) d'-1 c'-2 \change Staff = "right" es' \change Staff = "left" |
   \shape #'((0 . 0) (0 . 0) (-1 . 2) (0 . 10.5)) Slur g,)_( d g-1 a-3 bes-2 a \once\override Beam.positions = #'(5.5 . 4) bes c' \change Staff = "right" d' \change Staff = "left" |
   \shape #'((0 . 0) (0 . 0) (-1 . 5) (0 . 10)) Slur a,)_( es-2 a-1 bes-2 a-3 bes \once\override Beam.positions = #'(5.5 . 4) c' \change Staff = "right" d'-1 es'-2 \change Staff = "left" |

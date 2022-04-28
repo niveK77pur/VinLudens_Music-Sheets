@@ -3,9 +3,9 @@
 date = #(strftime "%B %d %Y" (localtime (current-time)))
 \header {
   title = "Tenshi ni Fureta yo"
-  subtitle = "TODO: Page numbering on same side/place"
+  subtitle = "K-On!!, Season 2, Episode 24, 19:43"
   %instrument = "Piano"
-  composer = "???"
+  composer = "Susumu Kawaguchi"
   arranger = "Arr. by VinLudens"
   tagline = \markup { \center-column {
     \with-url #"https://youtube.com/c/VinLudens"
@@ -14,11 +14,14 @@ date = #(strftime "%B %d %Y" (localtime (current-time)))
   } }
 }
 
-%#(set-global-staff-size 20)
+#(set-global-staff-size 18)
 %showLastLength = R1 * 10
 
+pagenumheader = \markup { \fill-line { \null \fromproperty #'page:page-number-string } }
 \paper {
   #(set-paper-size "a4")
+  evenHeaderMarkup = \markup { \on-the-fly \print-page-number-check-first \pagenumheader }
+  oddHeaderMarkup = \evenHeaderMarkup
 }
 
 \include "global.ly"

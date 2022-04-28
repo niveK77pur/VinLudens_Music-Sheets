@@ -262,12 +262,12 @@ right = \absolute {
   \shape #'((0 . 0) (4 . -0.5) (-2 . 0) (0 . 0)) Slur bes''-4_( f'' d'' \change Staff = "left" bes' f' d' |
   bes d' f' bes' \change Staff = "right" d'' f'') |
   \shape #'((0 . 1) (8 . -1) (-6 . -1) (0 . 1)) Slur d'''_( bes'' fis'' d'' \change Staff = "left" bes' fis' |
-  bes fis' bes' \change Staff = "right" d'' fis'' bes'') |
+  bes fis' bes' \change Staff = "right" d'' fis'' bes'') | \once\override Staff.OttavaBracket.padding = #1.5
   \ottava 1 bes'''( f''' d''' \change Staff = "left" \clef "treble^8" bes'' f'' bes') | \change Staff = "right"
-  d''''( bes''' f''' d''' \change Staff = "left" \clef "treble^8" bes'' f'') | \change Staff = "right"
+  d''''( bes''' f''' d''' \change Staff = "left" \clef "treble^8" bes'' f'') | \change Staff = "right" \once\override Staff.OttavaBracket.padding = #3
   \ottava 2 f''''( d'''' bes''' f''' \change Staff = "left" \clef "treble^15" d''' bes'') | \change Staff = "right"
   
-  bes''''8-4( f'''' d'''' bes'''-4 f''' d''' |
+  bes''''8-4( f'''' d'''' bes'''-4 f''' d''' | \once\override Staff.OttavaBracket.padding = #2
   \ottava 1 d''''-5 bes'''-4 f''' d''' bes''-4 f''-2 |
   \ottava 0 d'''-5 bes''-4 f'' d'' bes' f' |
   d'' bes' f' d' bes f |
