@@ -185,7 +185,7 @@ right = \absolute {
   8 bes' bes'2\) f''8\( <d'' bes''>8 ~ |
   8 f''8 <es'' c'''> <f'' d'''>8 ~ 8\) \ottava 1 <bes'' f'''>8\( <es''' bes'''>8 8 ~ |
   
-  
+  \bar "||"
   8\) <bes'' f'''>8\( <es''' bes'''> <es''' bes'''>8 ~ 8\) <bes'' f'''>\( <es''' bes'''> <a''' c''''>8 ~ |
   8 <c''' f'''> <f''' bes'''> <a''' c''''>8 ~ 8\) <c''' f'''>\( <f''' bes'''> <a''' c''''>8 ~ |
   8 <c''' fis'''> <fis''' a'''> <a''' c''''>8 ~ 8\) <c''' fis'''>\( <fis''' c''''> <bes''' d''''>8 ~ |
@@ -246,7 +246,7 @@ right = \absolute {
   8 es'' d'' es'' d''( \prall c'') bes' a'\) |
   a'\( bes' c'' d''4 c''8 bes' a' |
 
-  \time 9/8 \tempo 4. = 120
+  \time 9/8 \tempo 4. = 120 \bar "||"
   
   <d'' f''>2.\) ~ q4. |
   <bes' d''>2. ~ q4. |
