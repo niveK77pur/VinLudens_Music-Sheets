@@ -5,7 +5,7 @@ left = \absolute {
   \global \override Fingering.direction = #DOWN
   <bes, f>4 \shape #'((0 . 0) (0 . 0) (0 . 0.5) (0 . 0)) Slur <bes d'>8( f-4 bes-1 bes,-5 f-1 f,-5 ~ |
   4) \shape #'((0 . 0) (0 . 0) (0 . 0.5) (0 . 0)) Slur <a c'>8( f a-1 a,-5 f-1 c-3 |
-  g,-5)( d-2 bes) \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 1.5)) Slur f,( ~ 8 c a) es,( ~ |
+  g,-5)( d-2 bes) \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 2.5)) Slur f,( ~ 8 c a) es,( ~ |
   8-5 bes,-3 g4 ~ 8) <c f a>8-. 8-. r8 | \revert Fingering.direction
   
   %\clef "treble"
@@ -93,7 +93,7 @@ left = \absolute {
   >> \oneVoice
   <bes, f>4 \shape #'((0 . 0) (0 . 0) (0 . 0.5) (0 . 0)) Slur <bes d'>8( f bes bes, f f, ~ |
   4) \shape #'((0 . 0) (0 . 0) (0 . 0.5) (0 . 0)) Slur <a c'>8( f a a, f c |
-  g,)( d bes) \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 1.5)) Slur f,( ~ 8 c a) \shape #'((0 . 0.5) (-1 . -2) (0 . 0) (0 . 0)) Slur es,_( ~ | 
+  g,)( d bes) \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 2.5)) Slur f,( ~ 8 c a) \shape #'((0 . 1) (-1 . -2) (0 . 0) (0 . 0)) Slur es,_( ~ | 
 
   \once\override Beam.positions = #'(2 . 3) ees,8 bes, f \change Staff = "right" g-1 a bes c'-1 d' |
   \cadenzaOn \change Staff = "right"  <es' a'>1) \change Staff = "left"
@@ -244,13 +244,13 @@ left = \absolute {
   >> \oneVoice
   <bes, f>4 \shape #'((0 . 0) (0 . 0) (0 . 0.5) (0 . 0)) Slur <bes d'>8( f bes bes, f f, ~ |
   4) \shape #'((0 . 0) (0 . 0) (0 . 0.5) (0 . 0)) Slur <a c'>8( f a a, f c |
-  g,)( d bes) \shape #'((0 . 0) (0 . 0) (-1 . 2) (0 . 10.5)) Slur f,( ~ 8 c a c |
+  g,)( d bes) \shape #'((0 . 0) (0 . 0) (-1 . 2) (0 . 11.5)) Slur \once\override Slur.layer = #-10 f,( ~ 8 c a c | \once\override Staff.TimeSignature.whiteout = #3 \once\override Staff.TimeSignature.layer = #-9
   
   \time 9/8
   
-  \shape #'((0 . 0) (0 . 0) (-1 . 2) (0 . 10.5)) Slur es,8-5)_(-"SLURS?" bes,-3 d-1 es-4 g-2 a-1 \once\override Beam.positions = #'(6 . 4.5) bes-3 d'-2 \change Staff = "right" f' \change Staff = "left" |
-  \shape #'((0 . 0) (0 . 0) (-1 . 2) (0 . 10.5)) Slur f,8)_( c f-1 g-4 a-3 bes-2 \once\override Beam.positions = #'(6 . 4) d'-1 c'-2 \change Staff = "right" es' \change Staff = "left" |
-  \shape #'((0 . 0) (0 . 0) (-1 . 2) (0 . 10.5)) Slur g,)_( d g-1 a-3 bes-2 a \once\override Beam.positions = #'(5.5 . 4) bes c' \change Staff = "right" d' \change Staff = "left" |
+  \shape #'((0 . 0) (0 . 0) (-1 . 2) (0 . 10.5)) Slur es,8-5)_( bes,-3 d-1 es-4 g-2 a-1 \once\override Beam.positions = #'(6 . 4.5) bes-3 d'-2 \change Staff = "right" f' \change Staff = "left" |
+  \shape #'(((0 . 0) (0 . 0) (-1 . 1) (0 . -3)) ((0 . 8) (0 . 8.5) (0 . 9.5) (0 . 10.5))) Slur f,8)_( c f-1 g-4 a-3 bes-2 \once\override Beam.positions = #'(6 . 4) d'-1 c'-2 \change Staff = "right" es' \change Staff = "left" |
+  \shape #'((0 . 0) (0 . 0) (-1 . 2) (1 . 9)) Slur g,)_( d g-1 a-3 bes-2 a \once\override Beam.positions = #'(5.5 . 4) bes c' \change Staff = "right" d' \change Staff = "left" |
   \shape #'((0 . 0) (0 . 0) (-1 . 5) (0 . 10)) Slur a,)_( es-2 a-1 bes-2 a-3 bes \once\override Beam.positions = #'(5.5 . 4) c' \change Staff = "right" d'-1 es'-2 \change Staff = "left" |
   
   \time 6/8 

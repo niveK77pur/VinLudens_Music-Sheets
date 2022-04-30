@@ -96,7 +96,7 @@ right = \absolute {
   a'\( bes' c'' a'4 f'4 g'8 ~ |
 
   1\) | \cadenzaOn %\override Score.BarNumber.break-visibility = #all-visible
-  \change Staff = "left" f,8_([ c8-2 g-1 es-3] \once\override Beam.positions = #'(4.4 . 4) a-1[ g-2 \change Staff = "right" c'-1 \change Staff = "left" a-1]
+  \change Staff = "left" \shape #'((0 . 0) (3 . -1.5) (0 . 2) (-0.5 . 10)) Slur f,8_([ c8-2 g-1 es-3] \once\override Beam.positions = #'(4.4 . 4) a-1[ g-2 \change Staff = "right" c'-1 \change Staff = "left" a-1]
   \change Staff = "right" \tuplet 14/16 { \stemDown es'16-2[ c'-1 g'-4 es'-2 \change Staff = "left" \clef "treble" \stemUp a'-1 g'-3 \change Staff = "right" \stemDown c''-2 a'-1
   es''-3 c''-1 g''-5 es''-3 \change Staff = "left" \stemUp a''-1 g''-3] } \change Staff = "right" \stemNeutral \cadenzaOff \partial 4 c'''8[-3 a''-1] | 
   
@@ -253,21 +253,21 @@ right = \absolute {
   <bes' d''>2. ~ q4. |
   <f' bes' c''>2. ~ q4. |
   
-  \time 6/8 
+  \time 6/8    \once\override Score.DynamicText.whiteout = #3 \once\override Score.DynamicText.layer = #-9 \once\override Slur.layer = #-10
   
-  \shape #'((0.5 . 2) (2 . -2) (-3 . 0) (0 . 0)) Slur \tuplet 2/3 4. { <f'-3 bes'-5>8_( d'8 \change Staff = "left" bes f } |
+  \shape #'((1 . 3) (0 . -2.5) (-2.5 . -0.5) (0 . 3)) Slur \tuplet 2/3 4. { <f'-3 bes'-5>8_( d'8 \change Staff = "left" bes f } |
   bes, f bes \change Staff = "right" d' f' bes') |
-  \shape #'((0 . 1) (6 . -1) (-3 . 0) (0 . 0.5)) Slur d''8-5_( bes' fis' \once\override Beam.positions = #'(-4 . -3) d' \change Staff = "left" bes fis |
-  bes, fis bes \change Staff = "right" d' fis' bes') |
-  \shape #'((0 . 0) (4 . -0.5) (-2 . 0) (0 . 0)) Slur bes''-4_( f'' d'' \change Staff = "left" bes' f' d' |
+  \shape #'((0 . 4) (6 . -3) (-3 . 0) (0 . 3)) Slur d''8-5_( bes' fis' \once\override Beam.positions = #'(-4 . -3) d' \change Staff = "left" bes fis |
+  bes, fis bes \change Staff = "right" d' fis' bes') | \once\override Score.DynamicText.whiteout = #3 \once\override Score.DynamicText.layer = #-9 \once\override Slur.layer = #-10
+  \shape #'((0 . 2.5) (4 . -1.5) (-2 . -1.5) (0 . 3)) Slur bes''-4_( f'' d'' \change Staff = "left" bes' f' d' |
   bes d' f' bes' \change Staff = "right" d'' f'') |
-  \shape #'((0 . 1) (8 . -1) (-6 . -1) (0 . 1)) Slur d'''_( bes'' fis'' d'' \change Staff = "left" bes' fis' |
+  \shape #'((0 . 3.5) (8 . -1.5) (-6 . -1.5) (0 . 4)) Slur d'''_( bes'' fis'' d'' \change Staff = "left" bes' fis' |
   bes fis' bes' \change Staff = "right" d'' fis'' bes'') | \once\override Staff.OttavaBracket.padding = #1.5
   \ottava 1 bes'''( f''' d''' \change Staff = "left" \clef "treble^8" bes'' f'' bes') | \change Staff = "right"
   d''''( bes''' f''' d''' \change Staff = "left" \clef "treble^8" bes'' f'') | \change Staff = "right" \once\override Staff.OttavaBracket.padding = #3
-  \ottava 2 f''''( d'''' bes''' f''' \change Staff = "left" \clef "treble^15" d''' bes'') | \change Staff = "right"
+  \ottava 2 \shape #'((0 . 0) (0 . 0) (0 . 1) (0 . 0)) Slur f''''( d'''' bes''' f''' \change Staff = "left" \clef "treble^15" d''' bes'') | \change Staff = "right"
   
-  bes''''8-4( f'''' d'''' bes'''-4 f''' d''' | \once\override Staff.OttavaBracket.padding = #2
+  \shape #'(((0 . 0) (0 . 0) (0 . 0) (2.5 . 0)) ()) Slur bes''''8-4( f'''' d'''' bes'''-4 f''' d''' | \once\override Staff.OttavaBracket.padding = #2
   \ottava 1 d''''-5 bes'''-4 f''' d''' bes''-4 f''-2 |
   \ottava 0 d'''-5 bes''-4 f'' d'' bes' f' |
   d'' bes' f' d' bes f |
