@@ -3,7 +3,7 @@
 date = #(strftime "%B %d %Y" (localtime (current-time)))
 \header {
   title = "Tenshi ni Fureta yo"
-  subtitle = "K-On!!"
+  subtitle = "K-On!!, Season 2, Episode 24, 19:43"
   %instrument = "Piano"
   composer = "Susumu Kawaguchi"
   arranger = "Arr. by VinLudens"
