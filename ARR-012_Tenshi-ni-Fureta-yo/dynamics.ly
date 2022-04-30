@@ -52,10 +52,13 @@ dynamics = {
   s1\f |
   s1*7 |
   s2 s8 s8\mf s4 | s1*3 |
-  \cadenzaOn s1 s1 \cadenzaOff \partial 4 s4 | \once\override DynamicText.whiteout = #3 \once\override Staff.BarLine.layer = #-10
+  \cadenzaOn s1 s2 s8 s4._"rall." \cadenzaOff \partial 4 s4 | \once\override DynamicText.whiteout = #3 \once\override Staff.BarLine.layer = #-10
   s2.\ppunaCorda | s2.*14 | \once\override DynamicText.whiteout = #3 \once\override Staff.BarLine.layer = #-10
   s4\tweak self-alignment-X #LEFT \mtreCorde s4 s4 |
-  s2.\mp | s2.*15 |
+  s2.\mp | s2.*11 |
+  s2.\< |s2. |
+  s2.\f |
+  s2.\mp |
   s1\tweak whiteout 3 \unaCorda | s1*2 |
   s1\crescPoco |
   s1\tweak self-alignment-X #LEFT \mtreCorde | s1*2 |
