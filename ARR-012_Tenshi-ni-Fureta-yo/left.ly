@@ -244,7 +244,7 @@ left = \absolute {
   >> \oneVoice
   <bes, f>4 \shape #'((0 . 0) (0 . 0) (0 . 0.5) (0 . 0)) Slur <bes d'>8( f bes bes, f f, ~ |
   4) \shape #'((0 . 0) (0 . 0) (0 . 0.5) (0 . 0)) Slur <a c'>8( f a a, f c |
-  g,)( d bes) \shape #'((0 . 0) (0 . 0) (-1 . 2) (0 . 11.5)) Slur \once\override Slur.layer = #-10 f,( ~ 8 c a c | \once\override Staff.TimeSignature.whiteout = #3 \once\override Staff.TimeSignature.layer = #-9
+  g,)( d bes) %{\shape #'((0 . 0) (0 . 0) (-1 . 2) (0 . 11.5)) Slur%} \once\override Slur.layer = #-10 f,( ~ 8 c a c | \once\override Staff.TimeSignature.whiteout = #3 \once\override Staff.TimeSignature.layer = #-9
   
   \time 9/8
   
