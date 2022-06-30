@@ -1,8 +1,61 @@
 \version "2.22.1"
 \include "global.ly"
 
-left = \absolute {
-  \global
-  r
-%}
+left = \relative c'' {
+  \global \clef "treble"
+
+  \partial 4. a4.-> ~ |
+  2. |
+  <d a>2. ~ |
+  2. |
+
+  \clef "bass" a,=4. a,,=,,4. ~ |
+  \cadenzaOn
+  2.*13/15
+
+  \cadenzaOff \partial 4. \tiny c'=4. \normalsize |
+
+
+
+
+
+  g=,2.
+  r2. |
+
+
+  \repeat volta 2 {
+
+    <a=, g'>2. |
+    <d c'>2. |
+    <g, fis'>2. |
+    <e d'>2. |
+
+    <a=, g'>2. |
+    <d c'>2. |
+    <b a'>2. |
+    <gis e'>2. |
+
+    <a=, g'>2. |
+    <d c'>2. |
+    <g, fis'>2. |
+    <e d'>2. |
+
+    \alternative {
+      <a=, g'>2. |
+    }
+
+    <bes e>2.
+
+    \time 4/4
+
+    b8 e g e b dis fis dis |
+
+    
+    \bar "||"
+
+    r8
+
+
+  }
+
 }
