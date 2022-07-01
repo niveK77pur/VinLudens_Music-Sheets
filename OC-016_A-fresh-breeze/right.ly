@@ -52,8 +52,21 @@ right = \relative c'' {
 
     
     \bar "||"
+    \tempo "Andantino" 4=80
 
-    <c=' d e g>4\arpeggio 
+    <c=' d e g>4\(\arpeggio r8 fis16-_ g-_ <b=' c,>8. fis='16 r8 fis8 ^~ |
+    << { \voiceOne 
+        fis='4\) \oneVoice r8 e16-_\( fis-_ <a=' d,>8. f16\) r8 f^\( |
+        \voiceOne e8. e16 ~ \oneVoice 8-_ d16-_ e-_ d8.-_ c16 ~ 16 b8 d16 |
+        b2.\) r8 b'=' |
+      }
+      \new Voice { \voiceTwo 
+        <d,=' b a>8. 16 s2. |
+        b=8. 16 s2. |
+        \change Staff = "left" \voiceOne s4 g=4\(-"RH bracket" fis d\) |
+      }
+    >> \oneVoice
+
 
   }
 
