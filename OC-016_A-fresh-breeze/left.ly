@@ -25,6 +25,7 @@ left = \relative c'' {
 
   \repeat volta 2 {
 
+
     <a=, g'>2. |
     <d c'>2. |
     <g, fis'>2. |

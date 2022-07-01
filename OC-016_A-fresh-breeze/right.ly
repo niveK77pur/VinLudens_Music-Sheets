@@ -20,11 +20,12 @@ right = \relative c'' {
     }
   >> \oneVoice
   <fis=' b,= a>4. \grace { e16 dis } d4.\)\fermata ~ |
-  4\fermata r8\fermata \tempo "Adagio" 4. = 60 b'='8\( d b |
+  4\fermata r8\fermata b'='8\( d b |
   
 
   \repeat volta 2 {
 
+    \tempo "Adagio" 4. = 60 
     b4.\) e,='8\( fis g |
     b4. a8 g fis |
     a4. d,4. ~ |
