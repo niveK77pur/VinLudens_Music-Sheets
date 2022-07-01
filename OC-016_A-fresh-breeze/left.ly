@@ -1,4 +1,4 @@
-\version "2.22.1"
+\version "2.23.10"
 \include "global.ly"
 
 left = \relative c'' {
@@ -41,9 +41,9 @@ left = \relative c'' {
     <e d'>2. |
 
     \alternative {
-      <a=, g'>2. |
+      { <a=, g'>2. | }
+      { <a=, g'>2. | }
     }
-
     <bes e>2.
 
     \time 4/4

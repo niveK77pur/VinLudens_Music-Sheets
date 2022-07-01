@@ -1,4 +1,4 @@
-\version "2.22.1"
+\version "2.23.10"
 \include "global.ly"
 
 right = \relative c'' {
@@ -41,8 +41,8 @@ right = \relative c'' {
     4.\) d='8 e a |
 
     \alternative {
-      { fis4. ~ \tuplet 2/3 { 8 e } }
-      { fis8 g fis g fis e }
+      { fis4. ~ \tuplet 2/3 { 8 e } | }
+      { fis8 g fis g fis e  | }
     }
     dis4 e fis |
 

@@ -1,4 +1,4 @@
-\version "2.22.1"
+\version "2.23.10"
 
 date = #(strftime "%B %d %Y" (localtime (current-time)))
 \header {
@@ -16,10 +16,9 @@ date = #(strftime "%B %d %Y" (localtime (current-time)))
 %#(set-global-staff-size 20)
 %showLastLength = R1 * 10
 
-pagenumheader = \markup { \fill-line { \null \fromproperty #'page:page-number-string } }
 \paper {
   #(set-paper-size "a4")
-  evenHeaderMarkup = \markup { \on-the-fly \print-page-number-check-first \pagenumheader }
+  evenHeaderMarkup = \markup { \if \should-print-page-number \fromproperty #'page:page-number-string }
   oddHeaderMarkup = \evenHeaderMarkup
 }
 
