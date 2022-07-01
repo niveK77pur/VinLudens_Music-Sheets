@@ -32,13 +32,13 @@ right = \relative c'' {
 
     b4.\) e,='8\( fis g |
     b4.\) \grace { b16\( d } fis4 e8 |
-    d4 c8 ~ 8 d c |
+    d4 c8 ~ 8 b c |
     <gis=' e'>4.\) b='8\( d b |
 
     b4.\) e,='8\( fis g |
     b4. a8 g fis |
     a4. d,4. ~ |
-    4.\) d='8 e a |
+    4.\) d='8\( e g |
 
     \alternative {
       { fis4. ~ \tuplet 2/3 { 8 e } | }
@@ -48,7 +48,7 @@ right = \relative c'' {
 
     \time 4/4
 
-    g4. fis16 e fis2 |
+    g4. fis16 e fis2\) |
 
     
     \bar "||"
