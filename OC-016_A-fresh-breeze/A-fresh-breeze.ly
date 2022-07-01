@@ -3,6 +3,7 @@
 date = #(strftime "%B %d %Y" (localtime (current-time)))
 \header {
   title = "A Fresh Breeze"
+  subtitle = "Composition No. 16"
   %instrument = "Piano"
   composer = "VinLudens"
   %arranger = "Arr. by VinLudens"
