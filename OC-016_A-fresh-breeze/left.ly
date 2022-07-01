@@ -73,6 +73,15 @@ left = \relative c'' {
     a,,=,16 e' a b c8 r8 d,=16 a' c a fis8 r8 |
     g,=,16 d' g fis e d c r gis=,8 <e'= b'>8 ~ 4 |
     
+    a,=,8 e' a e r d= a' d |
+    r8 b,=, fis' b gis,=, e' b e |
+    a,=,8 e' a e r d= a' d |
+    b,=, f' b f gis,=, e' b e |
+    a,=,8 e' a e d= a' d a |
+
+    \bar "||" \time 6/8
+
+    r
 
   }
 

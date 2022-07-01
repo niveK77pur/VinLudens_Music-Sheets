@@ -71,7 +71,18 @@ right = \relative c'' {
     b''='8 a a b16 c ~ 4.\) a='8\( |
     a8 g g a16 b ~ 4.\) g='8\( |
     g8 fis fis e16 d ~ 8 e d c |
-    b8. a16 b8 c16 d ~ 4\) \tuplet 3/2 { <e b'='>8 <g d'> <e b'> } |
+    b8. a16 b8 c16 d ~ 4\) \tuplet 3/2 { <e b'='>8\( <g d'> <e b'> } |
+
+    8. <c=' e>16 8 <d'='' fis>16 <e g> <fis b>8. <e a>16 <d fis>8. <c e>16 |
+    <b e>4 <fis'='' d'>8. <f gis d'>16 ~ 4\) \tuplet 3/2 { <gis,=' b>8\( <b d> <gis b> } |
+    <g b>8. <c,=' e>16 8 fis16 g <b d,>4 \grace { b16 d } fis=''8. e16 |
+    <b d>8. <a c>16 <g b>8. <a c>16 <gis b d>4\) \tuplet 3/2 { b='8\( d b } |
+    b8. e,16 8 fis16 g b8. a16 g8. a16 |
+
+    \bar "||" \time 6/8
+
+    <b,= d g>\)
+
 
   }
 
