@@ -57,7 +57,7 @@ left = \relative c'' {
     r8 <a=, a,>( <a e'=>16) r16 r8 r8 <d= d,>8( <d fis=>16) r16 r8 |
     
     <g,=, g,>4( <g e'>16) r16 r8 r8 <d'= d,>8( <d a'>16) r16 r8 |
-    <a=, a,>4( <a e'>16) r16 r8 r8 <d'= d,>8( <d fis>16) r16 r8 |
+    <a=, a,>4( <a e'>16) r16 r8 r8 <d= d,>8( <d fis>16) r16 r8 |
     \voiceTwo <g,=, g,>4 <g e'>2. | \oneVoice
 
 
