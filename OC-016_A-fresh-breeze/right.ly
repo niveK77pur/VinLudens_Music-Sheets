@@ -59,7 +59,7 @@ right = \relative c'' {
     << { \voiceOne 
         fis='4\) \oneVoice r8 e16-_\( fis-_ <a=' d,>8. f16\) r8 f^\( |
         \voiceOne e8. e16 ~ \oneVoice 8-_ d16-_ e-_ d8.-_ c16 ~ 16 b8 d16 |
-        b2.\) r8 b'=' |
+        b2.\) r8 b'='\( |
       }
       \new Voice { \voiceTwo 
         <d,=' b a>8. 16 s2. |
@@ -68,6 +68,10 @@ right = \relative c'' {
       }
     >> \oneVoice
 
+    b''='8 a a b16 c ~ 4.\) a='8\( |
+    a8 g g a16 b ~ 4.\) g='8\( |
+    g8 fis fis e16 d ~ 8 e d c |
+    b8. a16 b8 c16 d ~ 4\) \tuplet 3/2 { <e b'='>8 <g d'> <e b'> } |
 
   }
 
