@@ -14,12 +14,12 @@ date = #(strftime "%B %d %Y" (localtime (current-time)))
   } }
 }
 
-%#(set-global-staff-size 20)
+% #(set-global-staff-size 20)
 %showLastLength = R1 * 10
 
 \paper {
   #(set-paper-size "a4")
-  evenHeaderMarkup = \markup { \if \should-print-page-number \fromproperty #'page:page-number-string }
+  evenHeaderMarkup = \markup { \if \should-print-page-number { \fill-line { "" \fromproperty #'page:page-number-string } } }
   oddHeaderMarkup = \evenHeaderMarkup
 }
 
