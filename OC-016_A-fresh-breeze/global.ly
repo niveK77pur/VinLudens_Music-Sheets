@@ -6,6 +6,26 @@ global = {
   \time 6/8
 }
 
+lhOpenBracket = \markup { \path #0.13 #'( (L 1 0) (L 0 0) (L 0 -2) ) }
+
+arpeggioLeftHand = {
+  %\once\override Arpeggio.padding = #-0.2
+  \once\override Arpeggio.stencil = #ly:text-interface::print
+  \once\override Arpeggio.text = \markup {
+    \raise #0.2
+    \path #0.13 #'( (L 1 0) (L 0 0) (L 0 -3) ) 
+  }
+}
+
+arpeggioRightHand = {
+  \once\override Arpeggio.padding = #-0.2
+  \once\override Arpeggio.stencil = #ly:text-interface::print
+  \once\override Arpeggio.text = \markup {
+    %\raise #-0.2
+    \path #0.13 #'( (L 0 3) (L 0 0) (L 1 0) ) 
+  }
+}
+
 %{
 Some other usefull commands
 
