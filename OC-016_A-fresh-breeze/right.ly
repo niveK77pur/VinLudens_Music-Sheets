@@ -122,7 +122,7 @@ right = \relative c'' {
   <d g,>4.\) b'='8\( d b |
 
   b='8 r4 e,='8 fis g |
-  fis4.\) \grace ais='\( b='4. |
+  fis4.\) \grace ais='8\( b='4. |
   <g=' d b>2.\) |
   r4. << { \voiceOne 
       <b=' d fis>\fermata |
