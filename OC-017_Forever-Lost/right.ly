@@ -37,7 +37,8 @@ right = \relative c'' {
 
   \clef "treble^8"
 
-  <dis=''' gis b>4.\arpeggio
+  <dis''=''' gis b>4.\arpeggio\( cis'=''''8. dis8. |
+  \grace { ais='''16 bis } <fis=''' ais>2.\) |
 
 
 %}
