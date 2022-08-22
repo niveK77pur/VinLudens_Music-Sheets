@@ -72,9 +72,9 @@ left = \relative c'' {
   \repeat unfold 4 { cis,=16 <cis' e> q } |
   \repeat unfold 4 { b,=,16 <gis' cis> q } |
   \repeat unfold 4 { ais,=,16 <gis' ais> q } |
-  dis,=,8 <gis b>16 q <b dis> q <dis gis> q <gis b> q <b dis> q |
-  <dis,,=, dis,>8-> <dis fisis>16 q <fisis ais> q <ais dis> q <dis fisis> q <fisis ais> q |
-  \time 9/8 <dis'=' dis,>16->-.\( <fisis, fisis,> <gis gis,> <dis dis,> <cis cis,> <ais ais,> <b b,>4. <fisis! fisis,>4. | \time 6/8
+  dis,=,8 <gis b>16\p\< q <b dis> q <dis gis> q <gis b> q <b dis> q\! |
+  <dis,,=, dis,>8-> <dis fisis>16\p\< q <fisis ais> q <ais dis> q <dis fisis> q <fisis ais> q\! |
+  \time 9/8 <dis'=' dis,>16->-.\(_"Different rhythm with tuplets?" <fisis, fisis,> <gis gis,> <dis dis,> <cis cis,> <ais ais,> <b b,>4. <fisis! fisis,>4. | \time 6/8
 
 
   <gis=, gis,>16\) \clef "treble" <gis''=' bis> q \repeat unfold 3 { gis,= q q } |
@@ -116,11 +116,11 @@ left = \relative c'' {
   \repeat unfold 12 { c='16 } |
   \clef "bass" \repeat unfold 12 { b=16 } |
   \repeat unfold 12 { bes=16 } |
-  ees,=4. ees, |
+  ees,=4._( ees, |
 
   \key gis \minor
   %% -- S1 -- %%
-  gis,=,,16 \clef "treble" dis'''=' gis b gis dis gis, dis' gis b gis dis |
+  gis,=,,16) \clef "treble" dis'''=' gis b gis dis gis, dis' gis b gis dis |
   fis,=16 dis' fis ais dis fis ais fis dis ais fis dis |
   e,=16 cis' e gis e cis e, cis' e gis e cis |
   dis,=16 b' cis fis cis b dis, b' cis fis \change Staff = "right" \clef "treble" b=' cis | \change Staff = "left" 
@@ -138,9 +138,9 @@ left = \relative c'' {
 
   ais=,16 dis gis ais dis gis b gis dis b gis dis |
 
-  dis,=,16 gis ais b cis dis d g a bes c d |
-  dis,,=,16 gis ais b cis dis d g a bes c d |
-  dis,,=,16 gis ais b cis dis d g a bes c d |
+  dis,=,16\< gis ais b cis dis d g a bes c d\! |
+  dis,,=,16\< gis ais b cis dis d g a bes c d\! |
+  dis,,=,16\< gis ais b cis dis d g a bes c d\! |
 
   dis,,=,16\( gis ais b cis dis cisis=16 gis' ais b cis dis\) |
   dis,=16\( gis ais b cis dis \clef "treble" cisis='16 gis' ais b cis dis\) |
@@ -167,9 +167,9 @@ left = \relative c'' {
   \repeat unfold 4 { cis,=16 <cis' e> q } |
   \repeat unfold 4 { b,=,16 <gis' cis> q } |
   \repeat unfold 4 { ais,=,16 <gis' ais> q } |
-  dis,=,8 <gis b>16 q <b dis> q <dis gis> q <gis b> q <b dis> q |
-  <dis,,=, dis,>8-> <dis fisis>16 q <fisis ais> q <ais dis> q <dis fisis> q <fisis ais> q |
-  \time 9/8 <dis'=' dis,>16->-.\( <fisis, fisis,> <gis gis,> <dis dis,> <cis cis,> <ais ais,> <b b,>4. <fisis! fisis,>4. | \time 6/8
+  dis,=,8 <gis b>16\p\< q <b dis> q <dis gis> q <gis b> q <b dis> q\! |
+  <dis,,=, dis,>8-> <dis fisis>16\p\< q <fisis ais> q <ais dis> q <dis fisis> q <fisis ais> q\! |
+  \time 9/8 <dis'=' dis,>16->-.\(_"Different rhythm with tuplets?" <fisis, fisis,> <gis gis,> <dis dis,> <cis cis,> <ais ais,> <b b,>4. <fisis! fisis,>4. | \time 6/8
 
 
   <gis=, gis,>16\) \clef "treble" <gis''=' bis> q \repeat unfold 3 { gis,= q q } |
@@ -201,13 +201,13 @@ left = \relative c'' {
 
   \cadenzaOn
   <ees,=, ees,>4. \small \tuplet 11/12 4. {
-    \stemUp g=,32[ bes d f \change Staff = "right" \stemDown \ottava 0 g bes d f \change Staff = "left" \stemUp \clef "treble" g bes d]
-    f[ \change Staff = "right" \stemDown \clef "treble^8" g bes d f d bes g \change Staff = "left" \stemUp f d bes]
-    g bes d f \change Staff = "right" \stemDown g bes d f g bes d
+    \stemUp \once\override Beam.positions = #'(4 . 5) g=,32[-"change beams!!" bes d f \change Staff = "right" \stemDown \ottava 0 g bes d f \change Staff = "left" \stemUp \clef "treble" g bes d]
+    \once\override Beam.positions = #'(6 . 5) f[ \change Staff = "right" \stemDown \clef "treble^8" g bes d f d bes g \change Staff = "left" \stemUp f d bes]
+    \cadenzaOff \partial 4. \once\override Beam.positions = #'(4.5 . 9) g bes d f \change Staff = "right" \stemDown g bes d f g bes d
   } | \change Staff = "left" \stemNeutral \normalsize
   r2. |
   r2. |
-  \clef "treble^8" <bes='' d f>2. |
+  \clef "treble^8" <bes,='' d f>2. |
 
   \bar "|."
 
