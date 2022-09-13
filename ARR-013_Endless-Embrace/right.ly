@@ -14,6 +14,7 @@ right = \relative c'' {
       fis'=''16-3 g-5 fis-3 d-2 b8-1 \change Staff = "left" fis='16-1 g-2 d-3 \change Staff = "right"  d-2 b8-1 \change Staff = "left" \clef "bass" fis=16-2 g-1 fis-2 d-3 |
       \change Staff = "right" r8 fis''=''16 d b8 \change Staff = "left" \clef "treble" fis='16 g fis d b8 \clef "bass" fis=16 g fis d |
       \oneVoice \change Staff = "right" fis''=''16 g fis d b8 \change Staff = "left" \clef "treble" fis='16 g fis d b8 \clef "bass" fis=16 g fis d |
+
       \change Staff = "right" r16 g''=''-5 fis-4 d-2 b8-1 fis'=''16-3 g-5 fis d b8 fis'=''16-2( g-3 fis-2 d-1 |
     }
     \new Voice { \voiceOne
@@ -24,7 +25,20 @@ right = \relative c'' {
     }
   >> \oneVoice
 
-  d'4-5) \normalsize
+  d'4-5) \normalsize b,='4\( fis\) r8 e\( |
+  g4. fis8\) r8 d\( e d\) |
+  r8 \(d e d e d4 d8\) |
+  r8 d8\( c' c ~ 8 b4 d,8\) |
+
+  r4 b'='4\( fis\) r8 e\( |
+  g4\) r4 fis\( cis |
+  d2\) s |
+  <d'='' a fis>2-> <a'=''-5 e-3 cis-2> |
+
+  % -- S1 --
+  r4 r8 
+
+  % -- E1 --
 
 %}
 }

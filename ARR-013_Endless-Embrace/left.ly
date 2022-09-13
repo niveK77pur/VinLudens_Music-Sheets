@@ -22,5 +22,23 @@ left = \relative c, {
     }
   >> \oneVoice
 
+
+
+  \clef "bass"
+  b=,8 fis'16 b d8 b,16 fis' b8 b,16 fis' b d8. |
+  c,=8 g'16 c e8 c,16 g' c e8. c,4 |
+  g=,8 d'16 g b8 g,16 d' g b8. g,4 |
+  a=,8 e'16 a c8 a,16 e' a c8. a,4 |
+
+  b=,8 fis'16 b d8 b,16 fis' b8 b,16 fis' b d8. |
+  fis,,=,8 c'16 fis a8 fis,16 c' fis a8. fis,4 |
+  \stemDown g=,16\( d' g \change Staff = "right" a \stemNeutral b a-1 b d e-5 d-1 e g a-5 g-1 a-2 b-3 |
+  \change Staff = "left" a,,=,\)\(^"Adjust slurs!" e' a b \change Staff = "right"  d e g a-1 \change Staff = "left" a,=2\) |
+
+  % -- S1 --
+  r1 |
+
+  % -- E1 --
+
 %}
 }
