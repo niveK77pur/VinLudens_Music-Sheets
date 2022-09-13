@@ -1,6 +1,7 @@
 \version "2.22.1"
 
-date = #(strftime "%B %d %Y" (localtime (current-time)))
+%date = #(strftime "%B %d %Y" (localtime (current-time)))
+date = "May 01 2022"
 \header {
   title = "Tenshi ni Fureta yo"
   subtitle = "K-On!!, Season 2, Episode 24, 19:43"
