@@ -2,7 +2,7 @@
 
 
 global = {
-  \key b \minor
+  % \key b \minor
   \time 4/4
 }
 
