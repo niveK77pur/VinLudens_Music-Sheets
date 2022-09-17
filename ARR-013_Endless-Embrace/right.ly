@@ -145,9 +145,19 @@ right = \relative c'' {
 
   << { \voiceTwo
       <b=' cis>2\) s2 |
+      s2 g=''8.-5  fis16 ~ 8 a, |
+      <b cis>2 g'=''2 |
+      <b=' cis>2 r8 \change Staff = "left" \clef "treble" \stemUp e=' fis \change Staff = "right" \ottava 0 \stemNeutral d'='' |
+
+      cis=''8. a fis8 r8 b,= d b |
+      e='8. fis b8 ~ 2 |
+
     }
-    \new Voice { \voiceOne \small
-      r8
+    \new Voice { \small
+      r8 \stemDown g=''8 \stemNeutral \change Staff = "left" \clef "treble^8" a='' b fis b ~ 4 |
+      \change Staff = "right" \clef "treble" \ottava 1 a=''8 e a \ottava 0 \change Staff = "left" \clef "treble^8" b g' b, ~ 4 |
+      \change Staff = "right" r8 \stemDown a=''8 \stemNeutral \change Staff = "left" \clef "treble^8" b cis g' cis, ~ 4 |
+      \change Staff = "right" \voiceOne r8 \ottava 1 a=''8 b cis a' d, ~ 4 \ottava 0 |
     }
   >> \oneVoice
 

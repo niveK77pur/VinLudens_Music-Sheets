@@ -145,6 +145,21 @@ left = \relative c, {
 
 
   \clef "bass" g,=1 |
+  \clef "bass" g=1 |
+  \clef "bass" a=1 |
+  \clef "bass" b=1 |
+
+  \clef "bass" g=1 |
+  g=1 |
+  \clef "bass" <a= a,>1 |
+  \clef "bass" <b= b,>1 |
+
+  \clef "bass" g=1 |
+  g=1 |
+  \clef "bass" <a= a,>1 |
+  \clef "bass" <b= b,>2 e,=-2 |
+  c=2-1 f,=,-2 |
+  b,=,,2-5
 
 %}
 }
