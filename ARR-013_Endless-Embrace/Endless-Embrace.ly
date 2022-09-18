@@ -36,6 +36,7 @@ date = #(strftime "%B %d %Y" (localtime (current-time)))
 \include "right.ly"
 \include "left.ly"
 \include "dynamics.ly"
+\include "pedal.ly"
 
 \score {
   \new PianoStaff \with {
@@ -48,6 +49,7 @@ date = #(strftime "%B %d %Y" (localtime (current-time)))
     \new Staff = "left" \with {
       midiInstrument = "acoustic grand"
     } { \clef bass \left }
+    \new Dynamics = "Pedal" \pedal
   >>
   \layout { }
   \midi {
