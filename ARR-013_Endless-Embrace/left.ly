@@ -38,7 +38,7 @@ left = \relative c, {
   \bar "||"
   \key b \minor
 
-  % -- S1 --
+  % -# S1 #-
   r1 |
 
   <g,=, g,>4. <b d g>8 ~ q g8 q4 |
@@ -55,7 +55,7 @@ left = \relative c, {
   \tuplet 5/4 4 { <a'=, a,>16 e a cis e a e cis a e a, e' a cis e } a4 |
   <b,=, b,>8. \tuplet 14/11 { b16 d fis b \clef "treble" d fis b fis d \clef "bass" b fis d b fis } b,8 |
   \tuplet 20/12 { <b'=, b,>16 fis b d fis b fis d b d fis b d fis \change Staff = "right" \small \ottava 0  b d fis b d fis } b4 | \change Staff = "left" \normalsize \ottava 0
-  % -- E1 --
+  % -# E1 #-
 
   << { \voiceOne
       r4 r8 <g,,,,=, e'> ~ q4 <d' g> |
@@ -71,6 +71,7 @@ left = \relative c, {
     }
   >> \oneVoice
 
+  % -# S3 #-
   b,=,4 \clef "treble" fis''16 a d a' b4 s4 |
   \clef "bass" <e,,,= b' d>1 |
 
@@ -81,6 +82,7 @@ left = \relative c, {
 
 
   <e,= d'>1 |
+  % -# E3 #-
 
   \bar "||"
 
@@ -129,10 +131,12 @@ left = \relative c, {
     }
   >> \oneVoice
 
+  % -# S2 #-
   g=,16-> d' g-1 b-3 fis'='->-1 b, \repeat unfold 5 { fis' b, } |
   a,=,16 e' a cis \repeat unfold 6 { g'=' cis, } |
   b,=,16 d-4 fis-2 a-1 b=-2 fis-3-4 b=-1 fis-3 \repeat unfold 4 { b= fis } |
   b,=,16 fis'-2 a-1 b-2 d-1 fis,-4 \repeat unfold 5 { d' fis, } |
+  % -# E2 #-
   g,=,16 d' g-1 b-3 fis'='-1 b, \repeat unfold 5 { fis' b, } |
   a,=,16 e' a b \repeat unfold 6 { e=' b } |
   b,=,16 d fis a b= fis b= fis \repeat unfold 4 { b= fis } |
@@ -157,9 +161,91 @@ left = \relative c, {
   \clef "bass" g=1 |
   g=1 |
   \clef "bass" <a= a,>1 |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   \clef "bass" <b= b,>2 e,=-2 |
   c=2-1 f,=,-2 |
-  b,=,,2-5
+  % -- S1 --
+  b,=,,2-5 r2 |
+
+  <g'=, g,>4. <b d g>8 ~ q g8 q4 |
+  <a=, a,>4. <cis e a>8 ~ q a8 q4 |
+  <b=, b,>4. <d fis b>8 ~ q b8 q4 |
+  <b=, b,>4. <d fis b>8 ~ q b8 q4 |
+
+  \repeat unfold 6 { g=,16 d' } g,=,\( d' fis d\) |
+  \repeat unfold 6 { a=,16 e' } fis=\( e g e\) |
+  \repeat unfold 4 { b=,16 e } fis b, g' b, a' b, fis' b, |
+  g' b, a' b, b' b, fis' b, ~ 2 |
+
+  <g=, g,>8. \tuplet 14/11 { g16 b d g b d g d b g d b g d } g,=,,8 |
+  \tuplet 5/4 4 { <a'=, a,>16 e a cis e a e cis a e a, e' a cis e } a4 |
+  <b,=, b,>8. \tuplet 14/11 { b16 d fis b \clef "treble" d fis b fis d \clef "bass" b fis d b fis } b,8 |
+  \tuplet 20/12 { <b'=, b,>16 fis b d fis b fis d b d fis b d fis \change Staff = "right" \small \ottava 0  b d fis b d fis } b4 | \change Staff = "left" \normalsize \ottava 0
+  % -- E1 --
+
+  <g,,,,=, g,>8-.-> r8 r \clef "treble" <b''=' d fis>8-. r4 q8-. r |
+  <a=' cis fis>8-. r8 r q8-. r2 |
+  \clef "bass" <g,,=, g,>8-.-> r8 r \clef "treble" <b''=' d fis>8-. r4 q8-. r |
+  <cis='' fis>8-. r8 r2. |
+
+  << { \voiceOne
+      r4 r8 \clef "treble" <b=' d fis>8-. r4 q8-. r |
+      r4 r8 \clef "treble" <a cis fis>8-. r2 |
+      r4 r8 \clef "treble" <b=' d fis>8-. r4 q8-. r |
+      s1 |
+    }
+    \new Voice { \voiceTwo
+      \clef "bass" <g,,=, g,>1 |
+      \clef "bass" <fis=, fis,>1 |
+      \clef "bass" <g=, g,>1 |
+      \clef "bass" <fis=, fis,>1 |
+    }
+  >> \oneVoice
+
+  % -- S2 --
+  g=,16 d' g b fis'=' b, \repeat unfold 5 { fis' b, } |
+  a,=,16 e' a cis \repeat unfold 6 { g'=' cis, } |
+  b,=,16 d fis a b= fis b= fis \repeat unfold 4 { b= fis } |
+  b,=,16 fis' a b \repeat unfold 6 { d fis, } |
+  % -- E2 --
+
+  g,=,16 d' g b fis'=' b, \repeat unfold 5 { fis' b, } |
+  a,=,16 e' a b \repeat unfold 6 { e=' b } |
+  b,=,16 d fis a b= fis b= fis \repeat unfold 4 { b= fis } |
+  b,=,16 d fis a \change Staff = "right" b d fis a fis a fis d b \change Staff = "left" a fis d |
+
+  % -# S3 #-
+  b=,4 \clef "treble" fis''16 a d a' b4 s4 |
+  \clef "bass" <e,,,= b' d>1 |
+
+  \clef "bass" <b=, fis' a b>2. <b' dis g>4 |
+
+
+
+
+
+  <e,= d'>1 |
+  % -# E3 #-
+
+  \bar "|."
 
 %}
 }
