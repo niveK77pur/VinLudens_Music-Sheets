@@ -67,7 +67,7 @@ left = \relative c, {
       <g,=, g,>1 |
       <fis=, fis,>1 |
       <g=, g,>1 |
-      <fis=, fis,>2 <fis'= a cis d> |
+      \oneVoice <fis=, fis,>2 <fis'= a cis d> |
     }
   >> \oneVoice
 
@@ -127,7 +127,7 @@ left = \relative c, {
       <g,=, g,>1 |
       <fis=, fis,>1 |
       <g=, g,>1 |
-      <fis=, fis,>2 <fis cis' fis>2 |
+      \oneVoice <fis=, fis,>2 <fis cis' fis>2 |
     }
   >> \oneVoice
 
@@ -153,12 +153,12 @@ left = \relative c, {
   \clef "bass" a=1 |
   \clef "bass" b=1 |
 
-  \clef "bass" g=1 |
+  g=1 | %\clef "bass" g=1 |
   g=1 |
   \clef "bass" <a= a,>1 |
   \clef "bass" <b= b,>1 |
 
-  \clef "bass" g=1 |
+  g=1 |% \clef "bass" g=1 |
   g=1 |
   \clef "bass" <a= a,>1 |
 

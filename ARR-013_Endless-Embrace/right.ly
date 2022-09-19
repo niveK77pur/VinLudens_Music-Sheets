@@ -151,14 +151,14 @@ right = \relative c'' {
       <b=' cis>2\) s2 |
       s2 g'=''8.-5^\(  fis16 ~ 8 a, |
       <b cis>2 g'=''2 |
-      <b,=' cis>2\) r8 \change Staff = "left" \clef "treble" \stemUp e,='\( fis \change Staff = "right" \ottava 0 \stemNeutral d'='' |
+      <b,=' cis>2\) r8 \change Staff = "left" \clef "treble" \stemUp e,='_\( fis \change Staff = "right" \ottava 0 \stemNeutral d'='' |
 
-      cis=''8. \change Staff = "left" \clef "treble" a fis8 r8 b,= d b |
+      cis=''8. \change Staff = "left" \clef "treble" \voiceOne a fis8 r8 b,= d b |
       e='8. fis b,8 ~ 2\) |
       s1 |
-      r2 r8 \change Staff = "left" \clef "treble" \stemUp e='\( fis \change Staff = "right" \ottava 0 \stemNeutral d'='' |
+      r2 r8 \change Staff = "left" \clef "treble" \stemUp e='_\( fis \change Staff = "right" \voiceTwo \ottava 0 \stemNeutral d'='' |
 
-      cis=''8. \change Staff = "left" \clef "treble" a fis8 r8 b,= d b |
+      cis=''8. \change Staff = "left" \clef "treble" \voiceOne a fis8 r8 b,= d b |
       e='8. fis g8 ~ 2\) |
       s1 |
 
