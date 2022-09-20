@@ -1,1 +1,3 @@
 *.mp3
+.nvimrc.lua
+.lilyrc
