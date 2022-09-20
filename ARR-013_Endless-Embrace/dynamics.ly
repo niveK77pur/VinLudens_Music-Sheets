@@ -79,7 +79,7 @@ dynamics = {
   s2 s2\cresc |
   s2 s8 s4.\sf |
   s1\ff |
-  s1*3 |
+  s1*3 | \once\override DynamicText.layer = #10 \once\override DynamicText.whiteout = #3
   s1\subpp |
   s1*3 |
   s4 s2.\ppp |

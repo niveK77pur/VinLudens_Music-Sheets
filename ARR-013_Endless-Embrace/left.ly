@@ -31,9 +31,9 @@ left = \relative c, {
   a=,8 e'16 a c8 a,16 e' a c8. a,4 |
 
   e=,8 b'16 e g8 e,16 b' e8 e,16 b' e g8. |
-  fis,=,8 c'16 fis a8 fis,16 c' fis a8. fis,4 |
-  \stemDown g=,16\( d' g \change Staff = "right" a \stemNeutral b a-1 b d e-5 d-1 e g a-5 g-1 a-2 b-3 |
-  \change Staff = "left" a,,=,\)\(^"Adjust slurs!" e' a b \change Staff = "right"  d e g a-1 \change Staff = "left" a,=2\) |
+  fis,=,8 c'16 fis a8 fis,16 c' fis a8. fis,4 | \shape #'((0 . -0.5) (0 . -7) (0 . -4) (0 . 11)) PhrasingSlur
+  g=,16\( d' g \change Staff = "right" \stemDown a \stemNeutral b a-1 b d e-5 d-1 e g a-5 g-1 a-2 b-3 |
+  \shape #'((0 . -3) (2 . 0) (0 . 2) (0 . 8.3)) PhrasingSlur \change Staff = "left" a,,=,\)\( e' a b \change Staff = "right"  d e g a-1 \change Staff = "left" a,=2\) |
 
   \bar "||"
   \key b \minor
@@ -86,7 +86,7 @@ left = \relative c, {
 
   \bar "||"
 
-  \clef "bass" g,=,8-"Adjust to kneed beam?" d''=' b d fis, b, d fis |
+  \clef "bass" g,=,8 d''=' b d fis, b, d fis |
   fis,=,8 e''=' cis e a, cis e, a |
   e,=,8 d''=' b d g, b e, g |
   d,=,8 cis''=' a cis fis, a cis, fis |
@@ -101,9 +101,9 @@ left = \relative c, {
   b=16-5 e-2 fis-1 \repeat unfold 3 { b,= e fis } b,=-5 e-1 fis-2  e-1 |
   b=16-2 e-1 b a e a b e b a e a b e b a |
 
-  \override Beam.positions = #'(3.5 . 4.5) g,=,16-"Adjust beams?" d' g \change Staff = "right" b \change Staff = "left" d, g \change Staff = "right" b d \change Staff = "left" g,,=,16 d' g \change Staff = "right" b \change Staff = "left" d, g \change Staff = "right" b d \change Staff = "left" |
+  \override Beam.positions = #'(4 . 5) g,=,16 d' g \change Staff = "right" b \change Staff = "left" d, g \change Staff = "right" b d \change Staff = "left" g,,=,16 d' g \change Staff = "right" b \change Staff = "left" d, g \change Staff = "right" b d \change Staff = "left" |
   \revert Beam.positions a,=,16-5 e'-2 a-1 cis-2 e,-5 a-3 cis-2 e-1 a,,=,16-5 e' a cis e, a cis e |
-  \override Beam.positions = #'(4 . 5) b,=,16-"Afisjust beams?" fis' b \change Staff = "right" d \change Staff = "left" fis, b \change Staff = "right" d fis \change Staff = "left" b,,=,16 fis' b \change Staff = "right" d \change Staff = "left" fis, b \change Staff = "right" d fis \change Staff = "left" | \revert Beam.positions
+  \override Beam.positions = #'(4.5 . 5.3) b,=,16 fis' b \change Staff = "right" d \change Staff = "left" fis, b \change Staff = "right" d fis \change Staff = "left" b,,=,16 fis' b \change Staff = "right" d \change Staff = "left" fis, b \change Staff = "right" d fis \change Staff = "left" | \revert Beam.positions
   << { \change Staff = "right"
       a='16 b a e b e \change Staff = "left" \clef "treble" a=' b a e b e a=' b a e |
     }
@@ -115,7 +115,7 @@ left = \relative c, {
   \clef "bass" \repeat unfold 5 { g=,16 d' b' } d, |
   \repeat unfold 5 { a=,16 e' cis' } e, |
   \repeat unfold 5 { b=,16 fis' d' } fis, |
-  a=16 b a e b e a b a e b e \showStaffSwitch \change Staff = "right" \clef "bass" a-"Dotted staff switch line" b a e | \change Staff = "left"  \hideStaffSwitch
+  a=16 b a e b e a b a e b e \once\override VoiceFollower.bound-details.right.Y = #-0.6 \showStaffSwitch \change Staff = "right" \clef "bass" a b a e | \change Staff = "left"  \hideStaffSwitch
 
   << { \voiceOne
       r4 d=8 <e g,> ~ q8 d g4 |
@@ -201,9 +201,9 @@ left = \relative c, {
   \tuplet 20/12 { <b'=, b,>16 fis b d fis b fis d b d fis b d fis \change Staff = "right" \small \ottava 0  b d fis b d fis } b4 | \change Staff = "left" \normalsize \ottava 0
   % -- E1 --
 
-  <g,,,,=, g,>8-.-> r8 r \clef "treble" <b''=' d fis>8-. r4 q8-. r |
+  <g,,,,=, g,>8-. r8 r \clef "treble" <b''=' d fis>8-. r4 q8-. r |
   <a=' cis fis>8-. r8 r q8-. r2 |
-  \clef "bass" <g,,=, g,>8-.-> r8 r \clef "treble" <b''=' d fis>8-. r4 q8-. r |
+  \clef "bass" <g,,=, g,>8-. r8 r \clef "treble" <b''=' d fis>8-. r4 q8-. r |
   <cis='' fis>8-. r8 r2. |
 
   << { \voiceOne
@@ -230,7 +230,7 @@ left = \relative c, {
   g,=,16 d' g b fis'=' b, \repeat unfold 5 { fis' b, } |
   a,=,16 e' a b \repeat unfold 6 { e=' b } |
   b,=,16 d fis a b= fis b= fis \repeat unfold 4 { b= fis } |
-  b,=,16 d fis a \change Staff = "right" b d fis a fis a fis d b \change Staff = "left" a fis d |
+  b,=,16 d fis a \change Staff = "right" b d fis a fis a fis d \stemUp b \change Staff = "left" a fis d \stemNeutral |
 
   % -# S3 #-
   b=,4 \clef "treble" fis''16 a d a' b4 s4 |

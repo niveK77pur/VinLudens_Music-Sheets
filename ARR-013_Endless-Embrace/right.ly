@@ -18,7 +18,7 @@ right = \relative c'' {
       \change Staff = "right" r16 g''=''-5 fis-4 d-2 b8-1 fis'=''16-3 g-5 fis d b8 fis'=''16-2( g-3 fis-2 d-1 |
     }
     \new Voice { \voiceOne
-      \change Staff = "left" r4 \clef "treble" <\parenthesize b=' g>^\(_"Adjust slur" \showStaffSwitch \change Staff = "right" <fis-4 \parenthesize d> \hideStaffSwitch <g-4 e-2> |
+      \change Staff = "left" r4 \clef "treble" \shape #'((0 . -7) (-1 . 6) (-3 . 0) (0 . 0)) PhrasingSlur <\parenthesize b=' g>^\( \change Staff = "right" <fis-4 \parenthesize d> <g-4 e-2> |
       <a-5 fis-3>4. <d b>8 q2\) |
       \change Staff = "right" \voiceOne r4 r8 b='8-1\( <d-3 b> q <e-4 cis> <d-3 b> | \oneVoice
       <d=''-3 b>1\) |
@@ -54,7 +54,7 @@ right = \relative c'' {
   <cis a fis>8. <a fis d> <fis d b>8\) r8 <b,=' g>\( <d b> <b g> |
   <e cis a>8. <fis d b> <b, e, cis>8\) r8 <e='' cis a>\( <fis d b> <d' a> |
   <cis a fis>8. <a fis d> <fis d b>8\) r8 <b,=' fis>\( <d b> <b fis> |
-  <e cis a>8. <fis d b> <b fis d>8 ~ q2\) |
+  \tweak Beam.X-positions #'(-0.4 . 1.2) <e cis a>8. <fis d b> <b fis d>8 ~ q2\) |
   % -# E1 #-
 
 
@@ -72,8 +72,8 @@ right = \relative c'' {
 
 
   % -# S3 #-
-  cis4\) d=''16 fis a32 b16. <d fis b>4 \change Staff = "left" a,='32-2 b-1 a fis d-5 \change Staff = "right" \clef "bass" b-4 a-3 fis-2 |
-  r16 \once\override Beam.positions = #'(-5.5 . -3.5) \clef "treble" e'='32^"adapt cross beam" g b \change Staff = "left" \clef "treble" e-5 g-3 b-2 \change Staff = "right" <d fis b>2. |
+  cis4\) d=''16 fis a32 b16. <d fis b>4 \change Staff = "left" \once\override Beam.positions = #'(7 . 5.5) a=''32-2 b-1 a fis d \change Staff = "right" \clef "treble" b-4 a-3 fis-2 |
+  r16 \once\override Beam.positions = #'(-5.5 . -4) \clef "treble" e='32 g b \change Staff = "left" \clef "treble" e-5 g-3 b-2 \change Staff = "right" <d fis b>2. |
   << { \voiceOne
       r4 b=''16 a cis32 d16. <b fis'>4 r8 <b dis g b>8\arpeggio |
     }
@@ -81,7 +81,7 @@ right = \relative c'' {
       s4 cis,=''16 e fis a <cis, fis>4 s4 |
     }
   >> \oneVoice
-  \acciaccatura b''='''8 a='''4 \appoggiatura { \change Staff = "left" \clef "treble" e,=''16-5 g b-"Slur above" } \change Staff = "right" <d=''' fis b>2.\fermata |
+  \acciaccatura b''='''8 a='''4 \appoggiatura { \shape #'((0 . 0) (1.5 . 0) (0.5 . 0) (0 . 6)) Slur \change Staff = "left" \clef "treble" e,=''16-5 g-3 b-2 } \change Staff = "right" <d=''' fis b>2.\fermata |
   % -# E3 #-
 
   \bar "||"
@@ -151,12 +151,12 @@ right = \relative c'' {
       <b=' cis>2\) s2 |
       s2 g'=''8.-5^\(  fis16 ~ 8 a, |
       <b cis>2 g'=''2 |
-      <b,=' cis>2\) r8 \change Staff = "left" \clef "treble" \stemUp e,='_\( fis \change Staff = "right" \ottava 0 \stemNeutral d'='' |
+      <b,=' cis>2\) r8 \change Staff = "left" \clef "treble" \stemUp \shape #'((0 . 0) (0 . -2) (0 . 0) (0 . 0)) PhrasingSlur e,='_\( fis \change Staff = "right" \ottava 0 \stemNeutral d'='' |
 
       cis=''8. \change Staff = "left" \clef "treble" \voiceOne a fis8 r8 b,= d b |
       e='8. fis b,8 ~ 2\) |
       s1 |
-      r2 r8 \change Staff = "left" \clef "treble" \stemUp e='_\( fis \change Staff = "right" \voiceTwo \ottava 0 \stemNeutral d'='' |
+      r2 r8 \change Staff = "left" \clef "treble" \stemUp \shape #'((0 . 0) (0 . -0.6) (-1 . -3) (0 . 1)) PhrasingSlur e='_\( fis \change Staff = "right" \voiceTwo \ottava 0 \stemNeutral d'='' |
 
       cis=''8. \change Staff = "left" \clef "treble" \voiceOne a fis8 r8 b,= d b |
       e='8. fis g8 ~ 2\) |
@@ -198,7 +198,7 @@ right = \relative c'' {
   <cis a fis>8. <a fis d> <fis d b>8\) r8 <b,=' g>\( <d b> <b g> |
   <e cis a>8. <fis d b> <b, e, cis>8\) r8 <e='' cis a>\( <fis d b> <d' a> |
   <cis a fis>8. <a fis d> <fis d b>8\) r8 <b,=' fis>\( <d b> <b fis> |
-  <e cis a>8. <fis d b> <b fis d>8 ~ q2\) |
+  \tweak Beam.X-positions #'(-0.4 . 1.2) <e cis a>8. <fis d b> <b fis d>8 ~ q2\) |
   % -- E1 --
 
   r8 d,,='\( e fis ~ 4 b,4 |
@@ -233,8 +233,8 @@ right = \relative c'' {
   s1 |
 
   % -# S3 #-
-  r4 d=''16 fis a32 b16. <d fis b>4 \change Staff = "left" a,='32 b a fis d \change Staff = "right" \clef "bass" b a fis |
-  r16 \once\override Beam.positions = #'(-5.5 . -3.5) \clef "treble" e'='32^"adapt cross beam" g b \change Staff = "left" \clef "treble" e g b \change Staff = "right" <d fis b>2. |
+  r4 d=''16 fis a32 b16. <d fis b>4 \change Staff = "left" \once\override Beam.positions = #'(7 . 5.5) a=''32 b a fis d \change Staff = "right" \clef "treble" b a fis |
+  r16 \once\override Beam.positions = #'(-5.5 . -3.5) \clef "treble" e='32 g b \change Staff = "left" \clef "treble" e g b \change Staff = "right" <d fis b>2. |
   << { \voiceOne
       r4 b=''16 a cis32 d16. <b fis'>4 r8 <b dis g b>8\arpeggio |
     }
@@ -242,7 +242,7 @@ right = \relative c'' {
       s4 cis,=''16 e fis a <cis, fis>4 s4 |
     }
   >> \oneVoice
-  \acciaccatura b''='''8 a='''4 \appoggiatura { \change Staff = "left" \clef "treble" e,=''16 g b-"Slur above" } \change Staff = "right" <d=''' fis b>2.\fermata |
+  \acciaccatura b''='''8 a='''4 \appoggiatura { \shape #'((0 . 0) (1.5 . 0) (0.5 . 0) (0 . 6)) Slur \change Staff = "left" \clef "treble" e,=''16 g b } \change Staff = "right" <d=''' fis b>2.\fermata |
   % -# E3 #-
 
   \bar "|."

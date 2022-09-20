@@ -25,7 +25,7 @@ pedal = { \override SustainPedal.X-offset = #5
   \sustainTrailEnd s4.\sustainRaise s8\sustainOff s2 |
   s1 |
   s1 |
-  s1-\TC |
+  s1^\TC |
   s2 s8 \sustainTrailStart s4.\sustainOn |
   s1\sustainRaise |
   s4\sustainRaise s4-\UC s2 \sustainOff|
@@ -78,7 +78,7 @@ pedal = { \override SustainPedal.X-offset = #5
   s1\sustainRaise |
   \sustainTrailEnd s4.\sustainRaise s8\sustainOff s2 |
   s1*4 |
-  s2-\UC s8. \sustainTrailStart s16\sustainOn s4 |
+  s2^\UC s8. \sustainTrailStart s16\sustainOn s4 |
   s2\sustainRaise s2\sustainOff |
   s1*3 |
   s2 s2\sustainOn |

@@ -4,6 +4,7 @@
 global = {
   % \key b \minor
   \time 4/4
+  \override VoiceFollower.style = #'dashed-line
 }
 
 %{
