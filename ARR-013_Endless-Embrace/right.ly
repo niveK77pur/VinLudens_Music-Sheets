@@ -5,21 +5,21 @@ right = \relative c'' {
   \global \key e \minor
   \tempo 4=99
 
-  r4 <d=''-3 b-5>\( <fis,-1 d-2> <g-1 e-3> |
+  r4 \set fingeringOrientations = #'(left) <d=''-3 b-5>\( <fis,-1 d-2> <g-1 e-3> |
   <a-2 fis-4>4. <b-3 g-5>8 <d,-1 b-2>2\) |
   r4 <d='-1 b-2>\( <fis-4 d-2>8 <d b> q4\) |
-  r4 <d b>\( <fis d>8 <d b> q4\) |
+  r4 <d b>\( <fis d>8 <d b> q4\) | \unset fingeringOrientations
 
   << { \small
-      fis'=''16-3 g-5 fis-3 d-2 b8-1 \change Staff = "left" fis='16-1 g-2 d-3 \change Staff = "right"  d-2 b8-1 \change Staff = "left" \clef "bass" fis=16-2 g-1 fis-2 d-3 |
+      fis'=''16-3 g-5 fis-3 d-2 b8-1 \change Staff = "left" fis='16-1 g-2 d-3 \change Staff = "right" \override Fingering.staff-padding = #'() d-2 b8-1 \revert Fingering.staff-padding \change Staff = "left" \clef "bass" fis=16-2 g-1 fis-2 d-3 |
       \change Staff = "right" r8 fis''=''16 d b8 \change Staff = "left" \clef "treble" fis='16 g fis d b8 \clef "bass" fis=16 g fis d |
       \oneVoice \change Staff = "right" fis''=''16 g fis d b8 \change Staff = "left" \clef "treble" fis='16 g fis d b8 \clef "bass" fis=16 g fis d |
 
       \change Staff = "right" r16 g''=''-5 fis-4 d-2 b8-1 fis'=''16-3 g-5 fis d b8 fis'=''16-2( g-3 fis-2 d-1 |
     }
     \new Voice { \voiceOne
-      \change Staff = "left" r4 \clef "treble" \shape #'((0 . -7) (-1 . 6) (-3 . 0) (0 . 0)) PhrasingSlur <\parenthesize b=' g>^\( \change Staff = "right" <fis-4 \parenthesize d> <g-4 e-2> |
-      <a-5 fis-3>4. <d b>8 q2\) |
+      \change Staff = "left" r4 \clef "treble" \shape #'((0 . -7) (-1 . 6) (-3 . 0) (0 . 0)) PhrasingSlur <\parenthesize b=' g>^\( \change Staff = "right" \set fingeringOrientations = #'(left) <fis-4 \parenthesize d> <g-4 e-2> |
+      <a-5 fis-3>4. \unset fingeringOrientations <d b>8 q2\) |
       \change Staff = "right" \voiceOne r4 r8 b='8-1\( <d-3 b> q <e-4 cis> <d-3 b> | \oneVoice
       <d=''-3 b>1\) |
     }
@@ -33,7 +33,7 @@ right = \relative c'' {
   r4 b'='4\( fis\) r8 e\( |
   g4\) r4 fis\( cis |
   d2\) s |
-  <d'='' a fis>2-> <a'=''-5 e-3 cis-2> |
+  <d'='' a fis>2-> \set fingeringOrientations = #'(right) <a'=''-5 e-3 cis-2> | \unset fingeringOrientations
 
   \bar "||"
   \key b \minor
@@ -149,39 +149,39 @@ right = \relative c'' {
 
   << { \voiceTwo
       <b=' cis>2\) s2 |
-      s2 g'=''8.-5^\(  fis16 ~ 8 a, |
-      <b cis>2 g'=''2 |
-      <b,=' cis>2\) r8 \change Staff = "left" \clef "treble" \stemUp \shape #'((0 . 0) (0 . -2) (0 . 0) (0 . 0)) PhrasingSlur e,='_\( fis \change Staff = "right" \ottava 0 \stemNeutral d'='' |
+      s2 \shape #'(((0 . 0) (0 . 0) (0 . 0.5) (3 . 0)) ((0 . 1) (0 . 3) (0 . -0.5) (-0.2 . -1.1))) PhrasingSlur g'=''8.^5^\(  fis16 ~ 8 a, |
+      <b cis>2 g'=''2-5 |
+      <b,='_1 cis_2>2\) r8 \change Staff = "left" \clef "treble" \stemUp \shape #'((0 . 0) (0 . -2) (0 . 0) (0 . 0)) PhrasingSlur e,='-3_\( fis-2 \change Staff = "right" \ottava 0 \stemNeutral d'=''-3 |
 
-      cis=''8. \change Staff = "left" \clef "treble" \voiceOne a fis8 r8 b,= d b |
-      e='8. fis b,8 ~ 2\) |
+      cis=''8.-2 \change Staff = "left" \clef "treble" \voiceOne a fis8 r8 b,=-4 d-2 b-4 |
+      e='8.-2 fis-1 b,8-3 ~ 2\) |
       s1 |
-      r2 r8 \change Staff = "left" \clef "treble" \stemUp \shape #'((0 . 0) (0 . -0.6) (-1 . -3) (0 . 1)) PhrasingSlur e='_\( fis \change Staff = "right" \voiceTwo \ottava 0 \stemNeutral d'='' |
+      r2 r8 \change Staff = "left" \clef "treble" \stemUp \shape #'((0 . 0) (0 . -0.6) (-1 . -3) (0 . 1)) PhrasingSlur e='_\( fis \change Staff = "right" \voiceTwo \ottava 0 \stemNeutral d'=''-1 |
 
-      cis=''8. \change Staff = "left" \clef "treble" \voiceOne a fis8 r8 b,= d b |
-      e='8. fis g8 ~ 2\) |
+      cis=''8.-2 \change Staff = "left" \clef "treble" \voiceOne a fis8 r8 b,= d b |
+      e='8.-2 fis-1 g8-1 ~ 2\) |
       s1 |
 
     }
     \new Voice { \voiceOne \small
-      r8 \stemDown g'=''8 \stemNeutral \change Staff = "left" \clef "treble^8" a='' b fis' b, ~ 4 |
-      \change Staff = "right" \clef "treble" \ottava 1 a=''8 e a \ottava 0 \change Staff = "left" \clef "treble^8" b g' b, ~ 4 |
-      \change Staff = "right" r8 \stemDown a=''8 \stemNeutral \change Staff = "left" \clef "treble^8" b cis g' cis, ~ 4 |
-      \change Staff = "right" \voiceOne r8 \ottava 1 a=''8 b cis a' d, ~ 4 \ottava 0 |
+      r8 \stemDown g'=''8-5 \stemNeutral \change Staff = "left" \clef "treble^8" a=''-3 b-2 fis'-1 b,-2 ~ 4 |
+      \change Staff = "right" \clef "treble" \ottava 1 \override Fingering.staff-padding = #'() a=''8-5 e-2 a-5 \ottava 0 \change Staff = "left" \clef "treble^8" b-3 g'-1 b,-3 ~ 4 | \revert Fingering.staff-padding
+      \change Staff = "right" r8 \stemDown \set fingeringOrientations = #'(right) <a=''-5>8 \unset fingeringOrientations \stemNeutral \change Staff = "left" \clef "treble^8" b-3 cis-2 g'-1 cis,-2 ~ 4 |
+      \change Staff = "right" \voiceOne r8 \ottava 1 a=''8-5 b-1 cis-2 \override Fingering.add-stem-support = ##f a'-5 d,-2 ~ 4 \ottava 0 |\revert Fingering.add-stem-support 
 
-      r8 \ottava 1 a=''8 b d b' fis d fis |
+      r8 \ottava 1 a=''8-1 b-2 d-4 \once\override Fingering.add-stem-support = ##f b'-5 fis d fis |
       r8 a,=''8 b d b' fis d fis |
       r8 b,=''8 cis d b' fis d fis |
-      d='''4 cis b \parenthesize a \ottava 0 |
+      d='''4 cis-4 b \parenthesize a-2 \ottava 0 |
 
-      r8 \ottava 1 a=''8 b d fis d b d |
-      r8  a=''8 b d fis d b d |
+      r8 \ottava 1 a=''8-2 b-3 d-5 \once\override Fingering.add-stem-support = ##t fis-4 d b d |
+      r8  a=''8-1 b-2 d fis d b d |
       r8 b=''8 cis d b' fis d fis |
     }
   >> \oneVoice
 
-  \change Staff = "right" \oneVoice e='''8 d cis b a fis e d |
-  \ottava 0 b a fis f e d b a |
+  \change Staff = "right" \oneVoice e='''8-2 d cis-3 b a-1 fis-3 e d |
+  \ottava 0 b-2 a-1 fis-4 f-3 e d b-2 a |
   % -- S1 --
   fis2\fermata r8 <e''='' cis a>\( <fis d b> <d' a> |
 

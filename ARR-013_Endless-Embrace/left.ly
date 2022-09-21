@@ -11,7 +11,7 @@ left = \relative c, {
   e=,16 a b a d a b a e a b a b-1 a-2 e-4 d-1 |
 
 
-  e,=,,1->_5 |
+  \set fingeringOrientations = #'(left) <e,=,,-5>1-> | \unset fingeringOrientations
   \clef "bass" <fis'=, fis,>1 |
   \clef "bass" <g g,>1 |
   << { \voiceTwo
@@ -25,15 +25,15 @@ left = \relative c, {
 
 
   \clef "bass"
-  b=,8 fis'16 b d8 b,16 fis' b8 b,16 fis' b d8. |
+  \override Fingering.direction = #DOWN b=,8-5 fis'16-2 b-1 d8-2 b,16-5 fis' b8 b,16 fis' b d8. | \revert Fingering.direction
   c,=8 g'16 c e8 c,16 g' c e8. c,4 |
   g=,8 d'16 g b8 g,16 d' g b8. g,4 |
   a=,8 e'16 a c8 a,16 e' a c8. a,4 |
 
   e=,8 b'16 e g8 e,16 b' e8 e,16 b' e g8. |
   fis,=,8 c'16 fis a8 fis,16 c' fis a8. fis,4 | \shape #'((0 . -0.5) (0 . -7) (0 . -4) (0 . 11)) PhrasingSlur
-  g=,16\( d' g \change Staff = "right" \stemDown a \stemNeutral b a-1 b d e-5 d-1 e g a-5 g-1 a-2 b-3 |
-  \shape #'((0 . -3) (2 . 0) (0 . 2) (0 . 8.3)) PhrasingSlur \change Staff = "left" a,,=,\)\( e' a b \change Staff = "right"  d e g a-1 \change Staff = "left" a,=2\) |
+  \override Fingering.avoid-slur = #'outside g=,16\( d' g \change Staff = "right" \stemDown a \stemNeutral b a-1 b d e-5 d-1 e g a-5 g-1 a-2 b-3 |
+  \revert Fingering.avoid-slur \shape #'((0 . -3) (2 . 0) (0 . 2) (0 . 8.3)) PhrasingSlur \change Staff = "left" a,,=,\)\( e' a b \change Staff = "right"  d e g a-1 \change Staff = "left" a,=2\) |
 
   \bar "||"
   \key b \minor
@@ -154,7 +154,7 @@ left = \relative c, {
   \clef "bass" b=1 |
 
   g=1 | %\clef "bass" g=1 |
-  g=1 |
+  \set fingeringOrientations = #'(right) <g=-5>1 | \unset fingeringOrientations
   \clef "bass" <a= a,>1 |
   \clef "bass" <b= b,>1 |
 
@@ -179,11 +179,11 @@ left = \relative c, {
 
 
 
-
+  \override Fingering.direction = #DOWN
   \clef "bass" <b= b,>2 e,=-2 |
   c=2-1 f,=,-2 |
   % -- S1 --
-  b,=,,2-5 r2 |
+  b,=,,2-5 r2 | \revert Fingering.direction
 
   <g'=, g,>4. <b d g>8 ~ q g8 q4 |
   <a=, a,>4. <cis e a>8 ~ q a8 q4 |

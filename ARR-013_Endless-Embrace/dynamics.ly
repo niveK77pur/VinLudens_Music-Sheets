@@ -85,7 +85,7 @@ dynamics = {
   s4 s2.\ppp |
   s1*3 |
 
-  s1\mp |
+  \once\override DynamicText.X-offset = #0.0 s1\mp |
   s1*3 |
   s1\crescPoco |
   s1 |
