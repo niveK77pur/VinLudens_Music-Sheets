@@ -52,6 +52,6 @@ date = #(strftime "%B %d %Y" (localtime (current-time)))
   \layout { }
   \midi {
     %\tempo 4=80
-    \set Staff.midiMaximumVolume = #0.7
+    \set Staff.midiMaximumVolume = #2.0
   }
 }
