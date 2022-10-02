@@ -30,5 +30,31 @@ left = \relative c' {
   <e, b'>4 b'8 <fis cis'>8. cis' |
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <fis,= gis,>8 gis b <dis,= fis,> fis ais |
+  <dis,= e,> e gis <dis= fis,> fis ais |
+  <fis= gis,>8 gis b <dis,= fis,> fis ais |
+  <dis,= e,> e gis <dis= fis,> fis ais |
+
+  <fis= gis,>8 gis b <dis,= fis,> fis ais |
+  <dis,= e,> e gis <dis= fis,> fis ais |
+  <dis,= e,> e gis <dis= fis,> fis ais |
+  <e,=, e,>4. <fis fis,> |
+
+
+
 %}
 }
