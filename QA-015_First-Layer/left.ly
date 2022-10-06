@@ -44,17 +44,39 @@ left = \relative c' {
 
 
 
-  <fis,= gis,>8 gis b <dis,= fis,> fis ais |
-  <dis,= e,> e gis <dis= fis,> fis ais |
-  <fis= gis,>8 gis b <dis,= fis,> fis ais |
-  <dis,= e,> e gis <dis= fis,> fis ais |
+  <fis,= gis,>8 gis b <dis,= fis,>8 fis16 ais8. |
+  <dis,= e,>8 e16 gis8. <dis= fis,>8 fis ais |
+  <fis= gis,>8 gis b <dis,= fis,> fis16 ais8. |
+  <dis,= e,>8 e16 gis8. <dis= fis,>8 fis16 ais8. |
 
-  <fis= gis,>8 gis b <dis,= fis,> fis ais |
-  <dis,= e,> e gis <dis= fis,> fis ais |
-  <dis,= e,> e gis <dis= fis,> fis ais |
+  <fis= gis,>8 gis b <dis,= fis,>8 fis16 ais8. |
+  <dis,= e,>8 e16 gis8. <dis= fis,>8 fis ais |
+  <dis,= e,>8 e gis <dis= fis,> fis ais |
   <e,=, e,>4. <fis fis,> |
 
+  r2. |
 
+
+  \bar "||"
+  \key cis \minor
+
+  \ottava -1 cis,=,,4. \ottava 0 cis''=8 cis16 gis' cis,8 |
+  cis=8 cis16 gis' cis,8 cis=8 cis16 gis' cis,8 |
+  cis=8 cis16 gis' cis,8 cis=8 cis16 gis' cis,8 |
+  b=,8 b16 gis' b,8 a=,8 a16 gis' a,8 |
+
+  cis,=,4. cis'=8 cis16 gis' cis,8 |
+  cis=8 cis16 gis' cis,8 cis=8 cis16 gis' cis,8 |
+  \ottava -1 cis,,=,,4. \ottava 0 cis''=8 cis16 gis' cis,8 |
+  e,=,4. <fis fis'> |
+
+  cis=,4. cis'=8 cis16 gis' cis,8 |
+  cis=8 cis16 gis' cis,8 cis=8 cis16 gis' cis,8 |
+  <e,=, e,>4. <fis fis,>4 fis16 e |
+  <a a,>4. <b b,> |
+
+  cis,=,2. |
+  
 
 %}
 }
