@@ -93,7 +93,7 @@ left = \relative c' {
   >> \oneVoice
 
   \clef "treble"
-  <cis''=' e f>8. q8. q8. q8. |
+  <cis''=' e f>8.-> q8. q8. q8. |
   <e=' f>8. q8. q8. q8. |
   q2. |
   r2. |

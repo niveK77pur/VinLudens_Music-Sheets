@@ -14,7 +14,7 @@ date = #(strftime "%B %d %Y" (localtime (current-time)))
   } }
 }
 
-%#(set-global-staff-size 20)
+#(set-global-staff-size 19)
 %showLastLength = R1 * 10
 
 % version "2.23.10"
