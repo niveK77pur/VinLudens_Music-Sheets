@@ -4,7 +4,7 @@
 left = \relative c' {
   \global
 
-  \repeat volta 2 {
+  % \repeat volta 2 {
 
     <gis dis'>8 r4 <fis cis'>8 r4 |
     <e b'>8 r4 <fis cis'>8 r4 |
@@ -16,7 +16,9 @@ left = \relative c' {
     <e b'>8 r4 <fis cis'>8 r4 |
     <e b'>8 r4 <fis cis'>8 r4 |
 
-  }
+  % }
+
+  \bar ":.|.:"
 
 
   <gis dis'>4 dis'8 <fis, cis'>8. cis'8. |
@@ -75,8 +77,45 @@ left = \relative c' {
   <e,=, e,>4. <fis fis,>4 fis16 e |
   <a a,>4. <b b,> |
 
-  cis,=,2. |
-  
+  << { \voiceOne
+      r4 cis=8 4 8 |
+      4 8 4 8 |
+      \key gis \minor
+      <cis=>4\arpeggio 8 4 8 |
+      4 8 4 8 |
+    }
+    \new Voice { \voiceTwo
+      cis,=,2. ~ |
+      2.
+      \once \set PianoStaff.connectArpeggios = ##t
+      <cis=,>2.\arpeggio |
+    }
+  >> \oneVoice
+
+  \clef "treble"
+  <cis''=' e f>8. q8. q8. q8. |
+  <e=' f>8. q8. q8. q8. |
+  q2. |
+  r2. |
+
+  \bar "||"
+  \clef "bass"
+
+  <gis,= dis'>8 r4 <fis cis'>8 r4 |
+  <e b'>8 r4 <fis cis'>8 r4 |
+  <gis dis'>8 r4 <fis cis'>8 r4 |
+  <e b'>8 r4 <fis cis'>8 r4 |
+
+  <gis dis'>8 r4 <fis cis'>8 r4 |
+  <e b'>8 r4 <fis cis'>8 r4 |
+  <e b'>8 r4 <fis cis'>8 r4 |
+  <e b'>8 r4 <fis cis'>8 r4 |
+
+  \bar ":|."
+
+  \clef "treble" <gis'=' dis>8 r4 r4. |
+  \bar "|."
+
 
 %}
 }
