@@ -49,9 +49,9 @@ right = \relative c'' {
   <b=' dis fis b>8.\)\( <ais ais'>16 <b b'>8 <cis fis gis cis> <b b'> <cis cis'> |
   <dis gis ais dis> <cis cis'> <b b'> <ais dis fis ais>4.\) |
   <b=' dis fis b>8.\( <ais ais'>16 <b b'>8 <cis fis gis cis> <b b'> <cis cis'> |
-  <dis gis ais dis>8 <gis gis'> <fis fis'> <cis fis gis cis> <dis dis'>\) <b b'>16 <ais ais'> |
+  <dis gis ais dis>8 <gis gis'> <fis fis'> <cis fis gis cis> <dis dis'>\) <b b'>16\( <ais ais'> |
 
-  <b=' dis fis b>8.\( <ais ais'>16 <b b'>8 <cis fis gis cis> <b b'> <cis cis'> |
+  <b=' dis fis b>8. <ais ais'>16 <b b'>8 <cis fis gis cis> <b b'> <cis cis'> |
   <dis gis ais dis> <cis cis'> <b b'> <ais dis fis ais>4\) r16 <ais ais'>\( |
   <b=' dis gis b>8. <ais ais'>16 <b b'>8 <cis fis ais  cis>8. <b b'>16 <ais ais'>8 |
   <b dis gis b>8. <ais ais'>16 <b b'> <cis cis'> <dis gis ais dis>8 <b b'> <ais ais'> |
