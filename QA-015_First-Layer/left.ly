@@ -81,8 +81,8 @@ left = \relative c' {
       r4 cis=8 4 8 |
       4 8 4 8 |
       \key gis \minor
-      <cis=>4\arpeggio 8 4 8 |
-      4 8 4 8 |
+      <cis=>8.\arpeggio q q q |
+      q8. q q q |
     }
     \new Voice { \voiceTwo
       cis,=,2. ~ |
@@ -113,7 +113,7 @@ left = \relative c' {
 
   \bar ":|."
 
-  \clef "treble" <gis'=' dis>8 r4 r4. |
+  \clef "treble" <gis'=' dis'>8 r4 r4. |
   \bar "|."
 
 

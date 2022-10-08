@@ -65,9 +65,9 @@ right = \relative c'' {
   cis,='16\( gis' e fis dis e b'4. ~ |
   4.\) r |
   cis,='16\( gis' e fis e b' gis4.\) |
-  cis=''4 dis16 e dis8 cis b |
+  cis=''4\( dis16 e dis8 cis b |
 
-  gis='8\( e16 fis dis e b'4. ~ |
+  gis='8\) e16\( fis dis e b'4. ~ |
   4.\) \clef "bass" \ottava -1 e,,,,=,, \ottava 0 |
   \clef "treble" cis'''='16\( gis' e fis e b' gis8.\) b='16\( cis dis |
   e16 dis cis b gis fis fis' e dis e dis cis |
