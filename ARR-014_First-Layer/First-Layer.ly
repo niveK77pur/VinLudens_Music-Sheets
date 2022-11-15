@@ -2,7 +2,7 @@
 
 date = #(strftime "%B %d %Y" (localtime (current-time)))
 \header {
-  title = "First Layer"
+  title = "The First Layer"
   subtitle = "Made in Abyss OST"
   %instrument = "Piano"
   composer = "Kevin Penkin"
@@ -10,7 +10,7 @@ date = #(strftime "%B %d %Y" (localtime (current-time)))
   tagline = \markup { \center-column {
     \with-url #"https://youtube.com/c/VinLudens"
     \line { "Engraving with Lilypond" $(lilypond-version) \char ##x2014 "https://youtube.com/c/VinLudens" }
-    \line { \small \italic {  \date  } }
+    \line { \small \italic {  October 08 2022  } }
   } }
 }
 
