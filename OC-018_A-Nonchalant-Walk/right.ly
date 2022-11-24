@@ -52,7 +52,7 @@ right = \relative c'' {
   \time 4/4
   % \tempo 2 = 60
 
-  <dis=' ais fis dis>2\) <dis=' fis ais>2 |
+  <dis=' ais fis dis>2\)^"PUT IN LH!!" <dis=' fis ais>2 |
   <eis=' fis ais>1 ~ |
   <eis fis ais cis>1 |
 
@@ -69,7 +69,7 @@ right = \relative c'' {
   \key d \major
 
   \repeat unfold 2 { \tuplet 3/2 2 { <d,,=' fis a>4 b' q  b q b } } |
-  \tuplet 3/2 2 { <eis,=' a cis>4 d' q  d q d q d q d cis b } |
+  \tuplet 3/2 2 { <eis,=' a cis>4 d' q  d q d q d q d q b } |
   \tuplet 3/2 2 { <d,=' fis a>4 b' q  b q b q b q b cis d } |
   \tuplet 3/2 2 { <eis,=' a e'!>4 q q q <eis a d> <eis a cis> } |
   \tuplet 3/2 2 { q4 b'=' a eis e d } |
@@ -78,17 +78,17 @@ right = \relative c'' {
   <a'='' cis e>1\fermata |
 
   \cadenzaOn
-  \tuplet 15/8 { \stemDown f'='''16[ e cis a \change Staff = "left" \stemUp f e cis a \change Staff = "right" \stemDown f e cis a \change Staff = "left" \stemUp \clef "bass" f e cis] }
-  \tuplet 15/8 { a[ cis e f \change Staff = "right" \stemDown a cis e f \change Staff = "left" \stemUp \clef "treble" a cis e f \change Staff = "right" \stemDown a cis e] }
-  \tuplet 12/8 { f[ e cis a \change Staff = "left" \stemUp f e cis a \change Staff = "right" \stemDown f e cis a] }
+  \once\override Beam.positions = #'(-1 . -7.2) \tuplet 15/8 { \stemDown f'='''16[ e cis a \change Staff = "left" \stemUp f e cis a \change Staff = "right" \stemDown f e cis a \change Staff = "left" \stemUp \clef "bass" f e cis] }
+  \once\override Beam.positions = #'(1.5 . 10) \tuplet 15/8 { a[ cis e f \change Staff = "right" \stemDown a cis e f \change Staff = "left" \stemUp \once\override Staff.ClefModifier.X-offset = #-3 \clef "treble" a-"FIX CLEF PLACEMENT?" cis e f \change Staff = "right" \stemDown a cis e] }
+  \once\override Beam.positions = #'(0 . -6) \tuplet 12/8 { f[ e cis a \change Staff = "left" \stemUp f e cis a \change Staff = "right" \stemDown f e cis a] }
   \change Staff = "left" \stemUp \clef "bass" \cadenzaOff \partial 4
   \stemNeutral f16[ e cis a]( |
 
   g4)
   \cadenzaOn
-  \tuplet 15/8 { \stemUp b16[ dis fis g \change Staff = "right" \stemDown b dis fis g \change Staff = "left" \stemUp \clef "treble" b dis fis g \change Staff = "right" \stemDown b dis fis] }
-  \tuplet 15/8 { g[ fis dis b \change Staff = "left" \stemUp g fis dis b \change Staff = "right" \stemDown g fis dis b \change Staff = "left" \stemUp \clef "bass" g fis dis] }
-  \tuplet 12/8 { b[ dis fis g \change Staff = "right" \stemDown b dis fis g \change Staff = "left" \stemUp \clef "treble" b dis fis g] }
+  \once\override Beam.positions = #'(3 . 8) \tuplet 15/8 { \stemUp b16[ dis fis g \change Staff = "right" \stemDown b dis fis g \change Staff = "left" \stemUp \clef "treble" b dis fis g \change Staff = "right" \stemDown b dis fis] }
+  \once\override Beam.positions = #'(-2 . -7) \tuplet 15/8 { g[ fis dis b \change Staff = "left" \stemUp g fis dis b \change Staff = "right" \stemDown g fis dis b \change Staff = "left" \stemUp \clef "bass" g fis dis] }
+  \once\override Beam.positions = #'(3 . 6) \tuplet 12/8 { b[ dis fis g \change Staff = "right" \stemDown b dis fis g \change Staff = "left" \stemUp \clef "treble" b dis fis g] }
   \change Staff = "right" \stemNeutral \cadenzaOff \partial 4
   b16( dis fis g |
 
@@ -97,5 +97,34 @@ right = \relative c'' {
 
   \time 3/4
   s4 <fis,=' b dis> <gis b e> |
+
+  \bar "||"
+  \time 3/4
+
+  %% S1 %%
+  << { \voiceOne
+      dis'=''4\( cis ~ 8 ais |
+      gis4 fis ~ 8 gis |
+      ais4 gis ~ 8 fis |
+      eis8 fis cis2\) |
+
+      dis'=''4\( cis ~ 8 eis | \oneVoice
+      fis4 cis gis' |
+      ais4. \appoggiatura ais8 b8 ais gis |
+      fis4 dis cis\) |
+    }
+    \new Voice { \voiceTwo
+      <dis,=' ais'>2 r4 |
+      <ais= dis>2 r4 |
+      <cis=' fis>2 r4 |
+      r4 \change Staff = "left" \voiceOne r8 gis= fis4 | \change Staff = "right" \voiceTwo
+
+      dis'='2 r4 |
+      s2. |
+      s2. |
+      s2. |
+    }
+  >> \oneVoice
+  %% E1 %%
 
 }

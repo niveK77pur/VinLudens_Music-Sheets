@@ -93,10 +93,42 @@ left = \relative c {
 
 
   \key fis \major
-  \clef "bass" b,,=,4 cis16 e dis gis fis b ais \clef "treble" dis cis fis e ais |
+  \clef "bass" b,,=,4\fermata cis16 e dis gis fis b ais \clef "treble" dis cis fis e ais |
 
   \time 3/4
   gis16 \change Staff = "right" \stemDown cis b e \change Staff = "left" \stemNeutral \clef "bass" b,,=,4 e |
 
+  \bar "||"
+  \time 3/4
+
+  %% S1 %%
+
+  <b=, fis' cis'>2. |
+  <e,=, b'>2. |
+  <gis=, dis' ais'>2. |
+  dis=,2. |
+
+  <b'=, fis' cis'>2. |
+  <dis= ais' cis>2. |
+  <cis= gis' ais>2. |
+  <b=, fis' ais>2. |
+
+
+
+
+
+
+
+
+
+
+
+
+  %% E1 %%
+
+  <fis'= cis' dis>2. |
+  <dis ais' cis>2. |
+  <cis gis' ais>2. |
+  <b fis' ais>2. |
 
 }
