@@ -77,20 +77,20 @@ right = \relative c'' {
   \appoggiatura { cis='8 d } e2 <a=' e'> |
   <a'='' cis e>1\fermata |
 
-  \cadenzaOn
+  \cadenzaOn\small
   \once\override Beam.positions = #'(-1 . -7.2) \tuplet 15/8 { \stemDown f'='''16[ e cis a \change Staff = "left" \stemUp f e cis a \change Staff = "right" \stemDown f e cis a \change Staff = "left" \stemUp \clef "bass" f e cis] }
   \once\override Beam.positions = #'(1.5 . 10) \tuplet 15/8 { a[ cis e f \change Staff = "right" \stemDown a cis e f \change Staff = "left" \stemUp \once\override Staff.ClefModifier.X-offset = #-3 \clef "treble" a-"FIX CLEF PLACEMENT?" cis e f \change Staff = "right" \stemDown a cis e] }
   \once\override Beam.positions = #'(0 . -6) \tuplet 12/8 { f[ e cis a \change Staff = "left" \stemUp f e cis a \change Staff = "right" \stemDown f e cis a] }
   \change Staff = "left" \stemUp \clef "bass" \cadenzaOff \partial 4
-  \stemNeutral f16[ e cis a]( |
+  \stemNeutral\normalsize f16[ e cis a]( |
 
   g4)
-  \cadenzaOn
+  \cadenzaOn\small
   \once\override Beam.positions = #'(3 . 8) \tuplet 15/8 { \stemUp b16[ dis fis g \change Staff = "right" \stemDown b dis fis g \change Staff = "left" \stemUp \clef "treble" b dis fis g \change Staff = "right" \stemDown b dis fis] }
   \once\override Beam.positions = #'(-2 . -7) \tuplet 15/8 { g[ fis dis b \change Staff = "left" \stemUp g fis dis b \change Staff = "right" \stemDown g fis dis b \change Staff = "left" \stemUp \clef "bass" g fis dis] }
   \once\override Beam.positions = #'(3 . 6) \tuplet 12/8 { b[ dis fis g \change Staff = "right" \stemDown b dis fis g \change Staff = "left" \stemUp \clef "treble" b dis fis g] }
   \change Staff = "right" \stemNeutral \cadenzaOff \partial 4
-  b16( dis fis g |
+  \normalsize b16( dis fis g |
 
   \key fis \major
   <b,='' dis fis>1) |
