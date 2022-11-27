@@ -124,11 +124,116 @@ left = \relative c {
 
 
 
+
   %% E1 %%
+
 
   <fis'= cis' dis>2. |
   <dis ais' cis>2. |
   <cis gis' ais>2. |
   <b fis' ais>2. |
+
+  <fis'= cis' dis>2. |
+  <dis ais' cis>2. |
+
+  <cis gis' ais>2. |
+  <b fis' ais>2. |
+  <gis dis' fis>2. |
+  <fis' ais cis>2. |
+  \ottava -1 fis,,=,,2. \ottava 0 |
+
+  %% S1 %%
+
+  <b'=, fis' cis'>2. |
+  <e,=, b'>2. |
+  <gis=, dis' ais'>2. |
+  dis=,2. |
+
+  <b'=, fis' cis'>2. |
+  <dis= ais' cis>2. |
+  <cis= gis' ais>2. |
+  <b=, fis' ais>2. |
+
+
+
+
+
+
+
+
+
+
+
+
+
+  %% E1 %%
+
+
+  <fis'= cis' dis>2. |
+  <gis dis' fis>2. |
+  <ais eis'>2.
+  \clef "treble" <b fis' gis>2. |
+
+  <cis gis' ais>2. |
+  <dis ais' cis>2. |
+
+  <e b'>2. |
+
+  \time 4/4
+  \clef "bass" \grace b,=,8 ~ <b=, dis fis ais>2 <b d fis ais> |
+
+  \bar "||"
+  \key fis \minor
+  \time 3/4
+
+  <d= fis a cis>2. |
+  <d eis a cis>2. |
+  <b cis e gis>2. |
+  <a cis e gis>2. |
+
+  \time 4/4
+
+  <cis= dis fis a>1 |
+  <d fis gis b>1 |
+  <cis= dis fis a>1 |
+  <d fis a cis>1 |
+
+  <cis= dis fis a>1 |
+  <d fis gis b>1 |
+  <cis= dis fis a>1 |
+
+  \time 5/4
+
+
+  <e g bes c>2 \clef "treble" <c'=' e g>4 <c ees g>2 ~ |
+  q2 q4 <b ees fis!>2 |
+
+  \time 4/4
+  \key des \major
+
+  q4 <a des ges> <aes ees' ges> \clef "bass" ges,=,16( <ges'= des'>8.) ~ |
+
+  \time 3/4
+
+  q8 f= des ges,=, f ees |
+
+
+
+
+
+
+
+
+
+  \ottava -1 des,2. \ottava 0 |
+  \tuplet 2/3 { des'=,8 aes' } des des aes' |
+  des=' \clef "treble" des aes' des des aes' |
+  des2. |
+  s2. |
+  s2. |
+  s2. |
+  s2. |
+
+  \bar "|."
 
 }

@@ -127,4 +127,113 @@ right = \relative c'' {
   >> \oneVoice
   %% E1 %%
 
+  %% S2 %%
+  fis'=''4\( eis ~ 8 dis |
+  cis4 fis,=' ~ 8 gis |
+  ais4.\) b='8\( cis dis |
+  ais'=''4 gis ~ 8\) ais\( |
+
+  gis4 fis ~ 8 eis |
+  \appoggiatura fis8 gis4 fis ~ 8 dis |
+  %% E2 %%
+  cis=''4. dis8 eis fis |
+  <fis,=' ais>4 gis ~ 8 fis |
+  gis2 dis'=''4 |
+  cis2.\) ~ |
+  2. |
+
+  %% S1 %%
+  << { \voiceOne
+      dis=''4\( cis ~ 8 ais |
+      gis4 fis ~ 8 gis |
+      ais4 gis ~ 8 fis |
+      eis8 fis cis2\) |
+
+      dis'=''4\( cis ~ 8 eis | \oneVoice
+      fis4 cis gis' |
+      ais4. \appoggiatura ais8 b8 ais gis |
+      fis4 dis cis\) |
+    }
+    \new Voice { \voiceTwo
+      <dis,=' ais'>2 r4 |
+      <ais= dis>2 r4 |
+      <cis=' fis>2 r4 |
+      r4 \change Staff = "left" \voiceOne r8 gis= fis4 | \change Staff = "right" \voiceTwo
+
+      dis'='2 r4 |
+      s2. |
+      s2. |
+      s2. |
+    }
+  >> \oneVoice
+  %% E1 %%
+
+  %% S2 %%
+  fis'=''4\( eis ~ 8 dis |
+  cis4 fis,=' ~ 8 gis |
+  ais4.\) b='8\( cis dis |
+  ais'=''4 gis ~ 8\) ais\( |
+
+  gis4 fis ~ 8 eis |
+  \appoggiatura fis8 gis4 fis ~ 8 dis |
+  %% E2 %%
+  cis=''4 r8 cis16( dis cis8) fis |
+
+  \time 4/4
+  <ais,=' fis dis>2\) <ais fis d>4\( gis\) |
+
+  \bar "||"
+  \key fis \minor
+  \time 3/4
+
+  <cis='' a fis>4\( b ~ 8 a |
+  <e' a, eis>4 d ~ 8 cis |
+  <b gis e>4 a ~ 8 b |
+  <e,=' cis>4 fis ~ 8 gis\) |
+
+  \time 4/4
+
+  \tuplet 3/2 4 { gis8\( fis gis a b cis } gis'4 fis |
+  cis4 b a b\) |
+  \tuplet 3/2 4 { gis8\( fis gis a b cis } gis'4 \tuplet 3/2 { fis8 fisis gis } |
+  a16 fis fis d d cis cis a a fis fis d d cis cis a\) |
+
+  \tuplet 3/2 4 { gis'='8\( fis gis a b cis } gis'4 fis |
+  \appoggiatura bis,8 cis4 b a b\) |
+  \tuplet 3/2 4 { gis8\( fis gis a b cis } gis'4 \tuplet 3/2 { fis8 fisis gis } |
+
+  \time 5/4
+
+  << { \voiceTwo
+      \tuplet 3/2 { a=''8 b a } fis16 e d\) a' <fis='' d b>8. a16 <f d bes>2 |
+      \tuplet 3/2 { a=''8 b a } fis16 e d a' q8. a16 <e cis bes>4.. a16 |
+
+      \time 4/4
+      \key des \major
+
+      q8. aes=''16 <f='' des aes>8. ges=''16 <ees='' bes aes>8. f=''16 ~ 16 <des='' aes f>8. ~ |
+
+      \time 3/4
+
+      q2. |
+    }
+    \new Voice { \voiceOne
+      s4 s8. a'=''16 ~ 8. 16 ~ 2 |
+      r4 r8. a=''16 ~ 8. 16 ~ 4.. 16 ~ |
+      8. aes16 ~ 8. ges16 ~ 8. f16 ~ 4 ~ |
+      2. |
+    }
+  >> \oneVoice
+
+  r2. |
+  r4. \clef "bass" <f,,= bes ees>4. |
+  \clef "treble" <f' bes ees>4. <f' bes ees>4. |
+  \ottava 2 <f' bes ees>4\( des'='''' ~ 8 c |
+  bes4 aes ~ 8 bes |
+  des4 c ~ 8 bes |
+  aes4 f ~ 8 ees |
+  des2.\) \ottava 0 |
+
+  \bar "|."
+
 }
