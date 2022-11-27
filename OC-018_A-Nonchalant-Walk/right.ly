@@ -100,6 +100,7 @@ right = \relative c'' {
 
   \bar "||"
   \time 3/4
+  \tempo "Tempo 1"
 
   %% S1 %%
   << { \voiceOne
