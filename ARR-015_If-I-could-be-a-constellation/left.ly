@@ -31,11 +31,32 @@ left = \relative c' {
   <des'= c'>8.-- q16 r4 r8 q8. q |
   <ees= des'>4. aes=8\( bes8. c16 ~ 4\) |
   <c,= bes'>4 r4 r8 q8. q  |
-  <f= ees'>4. g=8\( aes8. ees16 ~ 4\) |
+  <f= ees'>4. g=8\( aes8. ees'16 ~ 4\) |
 
-  <des= c'>4 r4 r8 q8. q |
-  <ees= des'>8. aes=8.\( bes8 c2\) |
-  <c,= bes'>8. g'=8.\( aes8 ~ 2\) |
-  <f= ees'>1 |
+  <des,= c'>4 r4 r8 q8. q |
+  <ees= des'>8. aes=8.\( bes8 ees2\) |
+  <c,= bes'>8. g'=8.\( aes8 ~ 4.\) <f= ees'>8 ~ |
+  q1 |
+
+  \clef "bass" des=4( <aes' c>8-.) r r des,( q-.) r |
+  ees=8.( <g bes des>16) ~ q4 r8 ees( <bes' des>16 ees,) r8 |
+  c=4( <g' bes>8-.) r r c,( q-.) r |
+  f=8.( <c' ees>16) ~ q8 g aes8. ees c8 |
+
+
+  des=4. <aes'= des e>8 ~ q4 des,,=,4 |
+  ees4. <bes''= ees g>8 ~ q4 ees,,=,4 |
+  c=,2 ~ 8 <fis'= a c> ~ q8 f,=, ~ |
+  f=,8 c' f a ~ 4 r4 |
+
+
+
+
+
+
+
+
+
+  f,=,8 f' g, g' aes, aes' c, c' |
 
 }
