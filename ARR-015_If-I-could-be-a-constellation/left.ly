@@ -59,4 +59,30 @@ left = \relative c' {
 
   f,=,8 f' g, g' aes, aes' c, c' |
 
+  bes,=,8 c'=' des ees f ees des c |
+  c,= \clef "treble" c'=' ees g bes g ees c \clef "bass" |
+  des,=8 c'=' des ees f ees des c |
+  aes,=,8 ees' aes c ees c aes4 |
+
+  bes,=,8 c'=' des ees f ees des c |
+  c,= \clef "treble" c'=' ees g bes \change Staff = "right" c ees g \change Staff = "left" |
+
+
+
+
+
+
+
+
+
+
+
+
+  \clef "bass" <des,,= des,>8 r8 r4 r4 des,=,8( <ees'= ees,>8) ~ |
+  q8 bes=, ees aes g ees bes aes |
+  g4 ees bes \ottava -1 \repeat tremolo 4 { ees32 ees, } \ottava 0 |
+
+
+  <des'=, des,>4
+
 }

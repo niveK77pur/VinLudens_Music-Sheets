@@ -31,7 +31,7 @@ right = \relative c'' {
   ees=''8 des8 8 c8 8. bes aes8 |
   c8. bes16 ~ 4 r4 r8 ees=''8 |
   8 des8 8 c8 8. bes aes8 |
-  bes8. c16 ~ 4 r4 c8 aes' |
+  bes8. c16-"C or Des?" ~ 4 r4 c8 aes' |
 
   g8. ees8. 8 ~ 8 r8 c=''8 aes' |
   g8. aes ees8 r8 ees f ees16 16 ~ |
@@ -58,5 +58,31 @@ right = \relative c'' {
   >> \oneVoice
 
   ees'=''2 r4 aes=''8 g ~ |
+  << { \voiceOne
+      g=''8 ees ~ 4 r4 aes8 g ~ |
+      g8 aes4. r4 aes8 g ~ |
+      g8 aes4 ees4 f ees8 ~ |
+      ees des4 c8 ~ 4 aes'=''8 g ~ |
+
+      g=''8 ees ~ 4 r4 aes8 g ~ |
+      g8 aes4. s2 |
+    }
+    \new Voice { \voiceTwo
+      r4. c,=''8 des c r4 |
+      r4. c=''8 ees c r4 |
+      r4. c=''8 des c r4 |
+      r1 |
+
+      r4. c=''8 des c r4 |
+      s1 |
+    }
+  >> \oneVoice
+
+  <aes'='' aes,>8. <g g,> <aes aes,>8 ~ 8 <bes bes,> ~ 8 <bes g ees bes> ~ |
+  q1 |
+  r2 r8 <ees,='' ees,>8 <aes aes,> <bes bes,> |
+
+
+  <c=''' aes ees c>8
 
 }
