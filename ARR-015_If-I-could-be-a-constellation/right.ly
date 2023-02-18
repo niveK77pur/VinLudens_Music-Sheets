@@ -113,6 +113,19 @@ right = \relative c'' {
   \bar "||"
 
 
-  ees
+  ees8 des des c bes8. aes16 |
+  bes8 c4 r4 ees8 ~ |
+  ees8 des des c bes8. aes16 |
+  bes8 aes4 \ottava 1 c'='''8. aes' |
+
+
+  g8. ees ees aes |
+  g8. aes ees f |
+  ees8. des c des |
+
+  \time 4/4 ees4. 8 8. g ees8 ~ |
+  ees4 \ottava 0 s2 aes,=''8 g ~ |
+
+  \time 6/8 g=''8 ees4
 
 }

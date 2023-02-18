@@ -113,6 +113,19 @@ left = \relative c' {
   \bar "||"
   \time 6/8 \tempo "Andante" 4. = 72
 
-  r
+  \repeat unfold 2 { des=8 <aes' c> <c ees> } |
+  \repeat unfold 2 { ees,=8 <bes' des> <des g> } |
+  \repeat unfold 2 { c,=8 <g' bes> <bes ees> } |
+  \repeat unfold 2 { f=8 <c' ees> <ees g> } |
+
+  \clef "treble"
+  \repeat unfold 2 { des='8 <aes' c> <c ees> } |
+  \repeat unfold 2 { ees,='8 <bes' des> <des g> } |
+  c,='8 <g' bes> <bes ees> e,='8 <g bes> <bes e> |
+
+  \time 4/4 f='8 <c' ees> g q aes q ees q |
+  aes,=8 ees' aes16 \change Staff = "right" bes c des c bes \change Staff = "left" aes ees aes,4 |
+
+  \time 6/8 \clef "bass" bes,=,8
 
 }
