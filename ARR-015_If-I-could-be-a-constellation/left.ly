@@ -80,9 +80,39 @@ left = \relative c' {
 
   \clef "bass" <des,,= des,>8 r8 r4 r4 des,=,8( <ees'= ees,>8) ~ |
   q8 bes=, ees aes g ees bes aes |
-  g4 ees bes \ottava -1 \repeat tremolo 4 { ees32 ees, } \ottava 0 |
+  g4 ees bes \ottava -1 \repeat tremolo 4 { ees=,32 ees, } \ottava 0 |
 
 
-  <des'=, des,>4
+  <des'=, des,>4 <des''=' f>8. des,,=,16 des'16 des, des'8 q4 |
+  <ees= ees,>4 <ees'=' g>8 ees,,=,16 ees'16 ~ 16 ees, ees'8 <des= des,>4 |
+  <c= c,>4 <ees'=' g>8. c,,=,16 c'16 c, c'8 q4 |
+  <f= f,>4 <aes= c>8 f,=,16 f'16 f, f' f,8 q4 |
+
+  % \clef "treble"
+  <des''=' des,>4 <des f>8 des,16 des'16 des, des' des,8 q4 |
+  <ees'=' ees,>4 <ees g>8 ees,16 ees'16 ees, ees' ees,8 <des'=' des,>4 |
+  <c,= c,>8 <c c,> r2 <e e,>8 <f f,> ~ |
+  <f f,>4 <g g,> <aes aes,> \ottava -1 \repeat tremolo 4 { ees,=,32 ees, } \ottava 0 |
+
+  <des'=, des,>4 <des''=' f>8. des,,=,16 des'16 des, des'8 q4 |
+  <ees= ees,>4 <ees'=' g>8 ees,,=,16 ees'16 ~ 16 ees, ees'8 <des= des,>4 |
+  <c= c,>4 <ees'=' g>8. c,,=,16 c'16 c, c'8 q4 |
+  <f= f,>4 <e e,> <ees ees,>8 <aes,=, aes,> ~ q4 |
+
+  <bes=, bes,>4 <bes'= f'>2 q4 |
+  <c=' c,>4 <ees g>2 q4 |
+  <des=' des,>4 <des f aes>2 q4 |
+  <ees,= ees,>2 r |
+
+  <des,=, des,>8 r8 r4 <c'= c,>8. <b b,> <bes bes,>8 |
+  r4 r4 r8 aes,=,,8 aes'16 aes,8. |
+  <des=, des,>8 r8 r4 <c'= c,>8. <b b,> <bes bes,>8 |
+  r1 |
+
+
+  \bar "||"
+  \time 6/8 \tempo "Andante" 4. = 72
+
+  r
 
 }
