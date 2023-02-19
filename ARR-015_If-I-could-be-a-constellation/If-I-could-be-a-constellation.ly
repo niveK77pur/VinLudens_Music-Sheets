@@ -3,6 +3,7 @@
 date = #(strftime "%B %d %Y" (localtime (current-time)))
 \header {
   title = "If I could be a constellation"
+  subtitle = "TODO SUBTITLE AND TITLE!!!"
   %instrument = "Piano"
   composer = "VinLudens"
   %arranger = "Arr. by VinLudens"
@@ -13,7 +14,7 @@ date = #(strftime "%B %d %Y" (localtime (current-time)))
   } }
 }
 
-%#(set-global-staff-size 20)
+#(set-global-staff-size 17.5)
 %showLastLength = R1 * 10
 
 % version "2.24.0"

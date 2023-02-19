@@ -18,15 +18,15 @@ dynamics = {
   \global
   % allow text in the dynamics block to be centered vertically
   % \override TextScript.extra-offset = #'(0 . 1)
-  s1\mf |
-  s4 s4\p s2\mf |
+  \once\override DynamicText.X-offset = #-4 s1\mf |
+  s4 s4\p s8 s8\mf s4 |
   s1 |
   s1 |
   s1\mf |
   s1*4 |
   s2. s8 s8\p |
   s1*7 |
-  s2. s8 s8\mp |
+  s2. s8 s8\tweak X-offset #-3.6 \mp |
   s1*3 |
   s4 s8 s8\< s2 |
   s4\sp s8 s8\pp s2 |
@@ -56,9 +56,9 @@ dynamics = {
   s2.*6 |
   \time 4/4
   s1\cresc |
-  s2. s8\mp s8\crescPoco |
+  s2. s8\mp s8 |
   \time 6/8
-  s2.*6 |
+  s2.*6\tweak X-offset #-5 \crescPoco |
   \time 4/4
   s1\mf |
   s1 |
