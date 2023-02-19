@@ -91,7 +91,7 @@ right = \relative c'' {
 
 
   r8 <bes='' bes,>8\( <bes bes,> <aes aes,>16 <g g,> ~ 8 <aes aes,> ~ 4\) |
-  r8 <bes='' bes,>8\( <bes bes,> <aes aes,>16 <g g,> ~ 8 <aes aes,>\) r8\( <ees ees,> |
+  r8 <bes='' bes,>8\( <bes bes,> <aes aes,>16 <g g,> ~ 8 <aes aes,>\) r8 <ees ees,>\( |
   <ees ees,>4 <aes aes,>8 <g g,> ~ 8 <aes aes,>4\) <g ees c g>8\( ~ |
   q8 <f f,> <g g,> <aes aes,>\) r8 <ees ees,>\( <aes aes,> <bes bes,> |
 
@@ -103,7 +103,7 @@ right = \relative c'' {
   r8 \ottava 1 aes'='''16-5\( bes, aes' bes, g'-4 bes, aes'-5 bes, ees bes'-5 bes, ees bes'\) bes,-1 |
   c-2 ees-3 aes-5\( c,-1 aes' c, g'-4 c, aes' c, ees-2 bes'-5 c, ees-2 c'-5\) c,-1 |
   des-2 f-3 aes-5\( des,-1 aes' des, g des aes' des, f-3 bes-5 des, f bes8\) |
-  r8 <aes aes,>8\( <aes aes,> <g g,> <aes aes,>8. <bes bes,> <bes bes,>8--\) \ottava 0 |
+  r8 <aes aes,>8\tweak positions #'(0 . 5.25)\( <aes aes,> <g g,> <aes aes,>8. <bes bes,> <bes bes,>8--\) \ottava 0 |
   %% CHORUS 1 END %%
 
   <aes,,=' f>8\( r8 aes16( bes c des <c g>8.) <aes f> <bes g>8\) |
@@ -168,14 +168,14 @@ right = \relative c'' {
   q8 <f f,> <g g,> <aes aes,>\) r8 <ees ees,>\( <aes aes,> <bes bes,> |
 
   <c=''' aes ees c>8 q16 q\tweak minimum-length #2.7 ~ q8 <aes aes,> <c=''' aes ees c>8 q16 q\tweak minimum-length #2.7 ~ q8 <aes aes,> |
-  <bes g ees bes>8 <aes aes,> <aes aes,>4\) r8 <ees ees,>8\( <aes aes,> <bes bes,> |
+  <bes g ees bes>8 <aes aes,> <aes aes,>4\) r8 <ees ees,>8\shape #'(() ((0 . 0) (0 . 0.5) (0 . 0.5) (0 . 0)))\( <aes aes,> <bes bes,> |
   <c=''' aes ees c>8 q16 q\tweak minimum-length #2.7 ~ q8 <aes aes,> <c=''' aes ees c>8 q16 q\tweak minimum-length #2.7 ~ q8 <aes aes,> |
   <bes g ees bes>8 <aes aes,> <ees' ees,>8. <des des,>16 <c c,>4 <bes bes,>8 <aes aes,>\) |
 
   r8 \ottava 1 aes'='''16\( bes, aes' bes, g' bes, aes' bes, ees bes' bes, ees bes'\) bes, |
   c ees aes\( c, aes' c, g' c, aes' c, ees bes' c, ees c'\) c, |
-  des f aes\( des, aes' des, g des aes' des, f bes des, f\) bes8 |
-  r8 <aes aes,>8\( <aes aes,> <g g,> <aes aes,>8. <bes bes,> <bes bes,>8--\) \ottava 0 |
+  des f aes\( des, aes' des, g des aes' des, f bes des, f bes8\) |
+  r8 <aes aes,>8\tweak positions #'(0 . 5.2)\( <aes aes,> <g g,> <aes aes,>8. <bes bes,> <bes bes,>8--\) \ottava 0 |
   %% CHORUS 2 END %%
 
   <aes,,=' f>8\( r aes16 bes c des <c g>8. <aes f> <ges bes>8 ~ |
