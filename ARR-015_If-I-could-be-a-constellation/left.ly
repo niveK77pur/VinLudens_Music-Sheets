@@ -6,9 +6,9 @@ left = \relative c' {
 
 
   <aes= des f>8-_ r8 r4 q8.-_ <aes c f>8.-_ <bes des f>8-_ |
-  r4 r4 r8 aes,,=,,8 aes'16 aes,8. |
+  r4 r4 r8 aes,,=,,8( aes'16 aes,8.) |
   <aes''= des f>8-_ r8 r4 q8.-_ <aes c f>8.-_ <bes des>8-_ |
-  r8 f16( ees) r16 c8 bes16( c bes8.-_) aes8-_ r |
+  r8 f16(\( ees) r16 c8 bes16( c bes8.-_) aes8-_\) r |
 
   des,=,8 <aes' f'> des, q c=,8 <g' ees'> c, q |
 
@@ -79,9 +79,9 @@ left = \relative c' {
 
 
   \clef "bass" <des,,= des,>8 r8 r4 r4 des,=,8( <ees'= ees,>8) ~ |
-  q8 bes=, ees aes g ees bes aes |
+  q8 bes=,\( ees aes g ees bes aes |
   %% CHORUS 1 START %%
-  g4 ees bes \ottava -1 \repeat tremolo 4 { ees=,32 ees, } \ottava 0 |
+  g4 ees bes\) \ottava -1 \repeat tremolo 4 { ees=,32 ees, } \ottava 0 |
 
 
   <des'=, des,>4 <des''=' f>8. des,,=,16 des'16 des, des'8 q4 |
@@ -107,7 +107,7 @@ left = \relative c' {
   %% CHORUS 1 END %%
 
   <des,=, des,>8 r8 r4 <c'= c,>8. <b b,> <bes bes,>8 |
-  r4 r4 r8 aes,=,,8 aes'16 aes,8. |
+  r4 r4 r8 aes,=,,8( aes'16 aes,8.) |
   <des=, des,>8 r8 r4 <c'= c,>8. <b b,> <bes bes,>8 |
   r1 |
 
@@ -151,10 +151,10 @@ left = \relative c' {
 
   \time 4/4
   \clef "bass" <des,,= des,>8 r8 r4 r4 des,=,8( <ees'= ees,>8) ~ | \once\override TextSpanner.bound-details.left.text = "Swing"
-  q8._\startTextSpan bes=,16 ees8. aes16 g8. ees16 bes8. aes16\stopTextSpan |
+  q8.-\startTextSpan bes=,16\( ees8. aes16 g8. ees16 bes8. aes16\stopTextSpan |
 
   %% CHORUS 1 START %%
-  g4 ees bes \ottava -1 \repeat tremolo 4 { ees=,32 ees, } \ottava 0 |
+  g4 ees bes\) \ottava -1 \repeat tremolo 4 { ees=,32 ees, } \ottava 0 |
 
   <des'=, des,>4 <des''=' f>8. des,,=,16 des'16 des, des'8 q4 |
   <ees= ees,>4 <ees'=' g>8 ees,,=,16 ees'16 ~ 16 ees, ees'8 <des= des,>4 |
