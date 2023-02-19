@@ -103,8 +103,8 @@ right = \relative c'' {
   r8 \ottava 1 aes'='''16 bes, aes' bes, g' bes, aes' bes, ees bes' bes, ees bes' bes, |
   c ees aes c, aes' c, g' c, aes' c, ees bes' c, ees c' c, |
   des f aes des, aes' des, g des aes' des, f bes des, f bes8 |
-  %% CHORUS 1 END %%
   r8 <aes aes,>8 <aes aes,> <g g,> <aes aes,>8. <bes bes,> <bes bes,>8-- \ottava 0 |
+  %% CHORUS 1 END %%
 
   <aes,,=' f>8 r8 aes16( bes c des <c aes>8.) <aes f> <bes g>8 |
   r4 <aes'='' des aes'>2. \arpeggio |
@@ -153,6 +153,50 @@ right = \relative c'' {
   <aes aes,>4 <g g,>8 <aes aes,> ~ 8 <bes bes,>4 <bes g ees bes>8 ~ |
   q1 |
 
+  %% CHORUS 2 START %%
+  r2 r8 <ees,='' ees,>8 <aes aes,> <bes bes,> |
+
+  <c=''' aes ees c>8 q16 q ~ q8 <aes aes,> <c=''' aes ees c>8 q16 q ~ q8 <aes aes,> |
+  <bes g ees bes>8 <aes aes,> <aes aes,>4 r8 <ees ees,>8 <aes aes,> <bes bes,> |
+  <c=''' aes ees c>8 q16 q ~ q8 <aes aes,> <c=''' aes ees c>8 q16 q ~ q8 <aes aes,> |
+  <bes g ees bes>8 <aes aes,> <des des,>4 <c c,> <bes bes,>8 <aes aes,> |
+
+
+  r8 <bes='' bes,>8 <bes bes,> <aes aes,>16 <g g,> ~ 8 <aes aes,> ~ 4 |
+  r8 <bes='' bes,>8 <bes bes,> <aes aes,>16 <g g,> ~ 8 <aes aes,> r8 <ees ees,> |
+  <ees ees,>4 <aes aes,>8 <g g,> ~ 8 <aes aes,>4 <g ees c g>8 ~ |
+  q8 <f f,> <g g,> <aes aes,> r8 <ees ees,> <aes aes,> <bes bes,> |
+
+  <c=''' aes ees c>8 q16 q ~ q8 <aes aes,> <c=''' aes ees c>8 q16 q ~ q8 <aes aes,> |
+  <bes g ees bes>8 <aes aes,> <aes aes,>4 r8 <ees ees,>8 <aes aes,> <bes bes,> |
+  <c=''' aes ees c>8 q16 q ~ q8 <aes aes,> <c=''' aes ees c>8 q16 q ~ q8 <aes aes,> |
+  <bes g ees bes>8 <aes aes,> <ees' ees,>8. <des des,>16 <c c,>4 <bes bes,>8 <aes aes,> |
+
+  r8 \ottava 1 aes'='''16 bes, aes' bes, g' bes, aes' bes, ees bes' bes, ees bes' bes, |
+  c ees aes c, aes' c, g' c, aes' c, ees bes' c, ees c' c, |
+  des f aes des, aes' des, g des aes' des, f bes des, f bes8 |
+  r8 <aes aes,>8 <aes aes,> <g g,> <aes aes,>8. <bes bes,> <bes bes,>8-- \ottava 0 |
+  %% CHORUS 2 END %%
+
+
+  <aes,,=' f>8 r aes16 bes c des <c g>8. <aes f> <ges bes>8 ~ |
+  q8 c=''4 bes aes4. |
+  <f=' des>8 r8 f16 g aes bes <aes f>8. <f des> <ees bes>8 ~ |
+
+  \key des \major
+
+  q4 des4 c aes |
+  <des=' aes f>8 r8 des16 ees f ges <aes des,>8. <bes des,> <aes des,>8 ~ |
+  q8 ges f ges aes bes aes ges |
+  <des=' aes f>8 r8 des16 ees f ges <f des>8. \clef "bass" <bes,= aes> <aes ges>8 ~ |
+
+  q4. <bes aes> <des bes>4 ~ |
+  q8 <c aes>4. <aes f>4 f |
+  \once\override Beam.positions = #'(-2 . -1) \set tieWaitForNote = ##t aes8~ des~ ees f~ <f des aes>2 | \unset tieWaitForNote
+
+  \clef "treble" \ottava 1 <aes'='' bes des f>1\arpeggio \ottava 0 |
+
+  \bar "|."
 
 
 }
