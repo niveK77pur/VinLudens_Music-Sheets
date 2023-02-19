@@ -80,6 +80,7 @@ left = \relative c' {
 
   \clef "bass" <des,,= des,>8 r8 r4 r4 des,=,8( <ees'= ees,>8) ~ |
   q8 bes=, ees aes g ees bes aes |
+  %% CHORUS 1 START %%
   g4 ees bes \ottava -1 \repeat tremolo 4 { ees=,32 ees, } \ottava 0 |
 
 
@@ -102,6 +103,7 @@ left = \relative c' {
   <bes=, bes,>4 <bes'= f'>2 q4 |
   <c=' c,>4 <ees g>2 q4 |
   <des=' des,>4 <des f aes>2 q4 |
+  %% CHORUS 1 END %%
   <ees,= ees,>2 r |
 
   <des,=, des,>8 r8 r4 <c'= c,>8. <b b,> <bes bes,>8 |
@@ -126,6 +128,31 @@ left = \relative c' {
   \time 4/4 f='8 <c' ees> g q aes q ees q |
   aes,=8 ees' aes16 \change Staff = "right" bes c des c bes \change Staff = "left" aes ees aes,4 |
 
-  \time 6/8 \clef "bass" bes,=,8
+  \time 6/8
+  \clef "bass"
+  bes,=,8 c'16 des ees f aes f ees des c8 |
+
+
+
+
+
+  c,=8 c'16 ees g bes \stemDown \change Staff = "right" <c ees>-"Adjust beam" \change Staff = "left" bes g ees c8 | \stemNeutral
+  des,=8 c'16 des ees f aes f ees des c8 |
+  aes,=,8 ees'16 aes c ees r ees c aes ees8 |
+
+
+  bes=,8 c'16 des ees f aes f ees des c8 |
+
+
+
+
+
+  c,=8 c'16 ees g bes \stemDown \change Staff = "right" c-"Adjust beam" \change Staff = "left" bes g \change Staff = "right" c ees g | \change Staff = "left" \stemNeutral
+
+  \time 4/4
+  \clef "bass" <des,,= des,>8 r8 r4 r4 des,=,8( <ees'= ees,>8) ~ | \once\override TextSpanner.bound-details.left.text = "Swing"
+  q8._\startTextSpan bes=,16 ees8. aes16 g8. ees16 bes8. aes16\stopTextSpan |
+
+  g4 ees bes \ottava -1 \repeat tremolo 4 { ees=,32 ees, } \ottava 0 |
 
 }

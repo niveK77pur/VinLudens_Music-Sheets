@@ -48,7 +48,12 @@ date = #(strftime "%B %d %Y" (localtime (current-time)))
       midiInstrument = "acoustic grand"
     } { \clef bass \left }
   >>
-  \layout { }
+  \layout {
+    \context {
+      \PianoStaff
+      \consists "Span_stem_engraver"
+    }
+  }
   \midi {
     %\tempo 4=80
     \set Staff.midiMaximumVolume = #3.0

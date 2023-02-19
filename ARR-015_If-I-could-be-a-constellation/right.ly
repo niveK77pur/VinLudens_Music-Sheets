@@ -80,6 +80,7 @@ right = \relative c'' {
 
   <aes'='' aes,>8. <g g,> <aes aes,>8 ~ 8 <bes bes,> ~ 8 <bes g ees bes> ~ |
   q1 |
+  %% CHORUS 1 START %%
   r2 r8 <ees,='' ees,>8 <aes aes,> <bes bes,> |
 
 
@@ -102,6 +103,7 @@ right = \relative c'' {
   r8 \ottava 1 aes'='''16 bes, aes' bes, g' bes, aes' bes, ees bes' bes, ees bes' bes, |
   c ees aes c, aes' c, g' c, aes' c, ees bes' c, ees c' c, |
   des f aes des, aes' des, g des aes' des, f bes des, f bes8 |
+  %% CHORUS 1 END %%
   r8 <aes aes,>8 <aes aes,> <g g,> <aes aes,>8. <bes bes,> <bes bes,>8-- \ottava 0 |
 
   <aes,,=' f>8 r8 aes16( bes c des <c aes>8.) <aes f> <bes g>8 |
@@ -126,6 +128,31 @@ right = \relative c'' {
   \time 4/4 ees4. 8 8. g ees8 ~ |
   ees4 \ottava 0 s2 aes,=''8 g ~ |
 
-  \time 6/8 g=''8 ees4
+  \time 6/8
+  << { \oneVoice
+      g=''8 ees4 \voiceOne r4 \oneVoice aes=''8 |
+    }
+    \new Voice { \voiceTwo
+      s4. \crossStaff { c,=''16 } s16 s4 |
+    }
+  >> \oneVoice
+  g'=''8. aes \voiceOne r4 \oneVoice aes8 |
+  g8. aes <ees c>8. <f des> |
+  <ees c>8. <des bes> <c aes>4 aes'=''8 |
+
+  << { \oneVoice
+      g=''8. ees \voiceOne r4 \oneVoice aes=''8 |
+    }
+    \new Voice { \voiceTwo
+      s4. \crossStaff { c,=''16 } s16 s4 |
+    }
+  >> \oneVoice
+  g'=''8. aes s4. |
+
+  \time 4/4 \tempo "Tempo 1" 4 = 120
+  <aes aes,>4 <g g,>8 <aes aes,> ~ 8 <bes bes,>4 <bes g ees bes>8 ~ |
+  q1 |
+
+
 
 }
