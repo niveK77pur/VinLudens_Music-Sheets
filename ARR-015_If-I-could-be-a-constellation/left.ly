@@ -192,7 +192,7 @@ left = \relative c' {
 
   q8 ges, \repeat unfold 3 { ges'8 ges, } |
   \repeat unfold 4 { ges'8 ges, } |
-  \repeat unfold 4 { <ges'=, ges,>8-. } q2 \ottava 0 |
+  \repeat unfold 3 { <ges'=, ges,>8-. } q8 ~ q2 \ottava 0 |
 
   \clef "treble" \once \set PianoStaff.connectArpeggios = ##t <ges''=' des' ges>1\arpeggio |
 

@@ -39,7 +39,7 @@ right = \relative c'' {
   8 c r8 \small bes='16( c bes aes \change Staff = "left" \clef "treble" e ees des8) \change Staff = "right" \normalsize ees'=''16 f, |
 
   ees'=''16 f, des' f, des' f, c' f, c'8. bes aes8 |
-  <c g>8. <bes f>16 ~ q8 \ottava 1 \small \grace fis''8 g='''8 ees4 \ottava 0 \normalsize r8 ees,=''16 g, |
+  <c g>8. <bes f>16 ~ q8 \ottava 1 \small \acciaccatura fis''8 g='''8 ees4 \ottava 0 \normalsize r8 ees,=''16 g, |
   ees'=''16 g, des' g, des' g, c g c8. bes aes8 |
   <bes g>8. <aes f>16 ~ q4 r8. c='' aes'8 |
 
