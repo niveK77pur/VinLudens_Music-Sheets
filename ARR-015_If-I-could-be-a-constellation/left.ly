@@ -8,7 +8,7 @@ left = \relative c' {
   <aes= des f>8-_ r8 r4 q8.-_ <aes c f>8.-_ <bes des f>8-_ |
   r4 r4 r8 aes,,=,,8( aes'16 aes,8.) |
   <aes''= des f>8-_ r8 r4 q8.-_ <aes c f>8.-_ <bes des>8-_ |
-  r8 f16(\( ees) r16 c8 bes16( c bes8.-_) aes8-_\) r |
+  r8 f16(\( ees-2) r16 c8-4 bes16-2( c-1 bes8.-_) aes8-_\) r |
 
   des,=,8 <aes' f'> des, q c=,8 <g' ees'> c, q |
 
@@ -24,7 +24,7 @@ left = \relative c' {
   des=,8 <aes' f'> des, q c=,8 <g' ees'> c, q |
   bes=,,8 <f' des'> bes, f' bes, f' bes, f' |
   <aes=, aes,>1 ~ |
-  q2 r8 aes,=,,8 aes'16 aes,8. |
+  q2 r8 aes,=,,8( aes'16 aes,8.) |
 
   \bar "||"
 
@@ -41,13 +41,13 @@ left = \relative c' {
   \clef "bass" des=4( <aes' c>8-.) r r des,( q-.) r |
   ees=8.( <g bes des>16) ~ q4 r8 ees( <bes' des>16 ees,) r8 |
   c=4( <g' bes>8-.) r r c,( q-.) r |
-  f=8.( <c' ees>16) ~ q8 g aes8. ees c8 |
+  f=8.( <c' ees>16) ~ q8 g-3\( aes8.-2 ees-3 c8-5 |
 
 
-  des=4. <aes'= des e>8 ~ q4 des,,=,4 |
+  des=4.-4\) <aes'= des e>8 ~ q4 des,,=,4 |
   ees4. <bes''= ees g>8 ~ q4 ees,,=,4 |
   c=,2 ~ 8 <fis'= a c> ~ q8 f,=, ~ |
-  f=,8 c' f a ~ 4 r4 |
+  f=,8 c' f-1 a-2 ~ 4 r4 |
 
 
 
@@ -59,13 +59,13 @@ left = \relative c' {
 
   f,=,8 f' g, g' aes, aes' c, c' |
 
-  bes,=,8 c'=' des ees f ees des c |
-  c,= \clef "treble" c'=' ees g bes g ees c \clef "bass" |
+  bes,=,8 c'='-1 des-3 ees-2 f ees des c-1 |
+  c,= \clef "treble" c'='-1 ees-3 g-2 bes g ees c-1 \clef "bass" |
   des,=8 c'=' des ees f ees des c |
-  aes,=,8 ees' aes c ees c aes4 |
+  aes,=,8 ees' aes-1 c-2 ees c aes4 |
 
   bes,=,8 c'=' des ees f ees des c |
-  c,= \clef "treble" c'=' ees g bes \change Staff = "right" c ees g \change Staff = "left" |
+  c,= \clef "treble" c'=' ees g bes \change Staff = "right" c ees g-4 \change Staff = "left" |
 
 
 
@@ -79,9 +79,9 @@ left = \relative c' {
 
 
   \clef "bass" <des,,= des,>8 r8 r4 r4 des,=,8( <ees'= ees,>8) ~ |
-  q8 bes=,\( ees aes g ees bes aes |
+  q8 bes=,-5\( ees-3 aes-1 g-2 ees-3 bes-1 aes-2 |
   %% CHORUS 1 START %%
-  g4 ees bes\) \ottava -1 \repeat tremolo 4 { ees=,32 ees, } \ottava 0 |
+  g4-1 ees bes\) \ottava -1 \repeat tremolo 4 { ees=,32 ees, } \ottava 0 |
 
 
   <des'=, des,>4 <des''=' f>8. des,,=,16 des'16 des, des'8 q4 |
@@ -115,30 +115,30 @@ left = \relative c' {
   \bar "||"
   \time 6/8 \tempo "Andante" 4. = 72
 
-  \repeat unfold 2 { des=8 <aes' c> <c ees> } |
-  \repeat unfold 2 { ees,=8 <bes' des> <des g> } |
+  \repeat unfold 2 { des=8 <aes'-2 c-1> <c-2 ees-1> } |
+  \repeat unfold 2 { ees,=8 <bes'-2 des-1> <des-3 g-1> } |
   \repeat unfold 2 { c,=8 <g' bes> <bes ees> } |
   \repeat unfold 2 { f=8 <c' ees> <ees g> } |
 
   \clef "treble"
   \repeat unfold 2 { des='8 <aes' c> <c ees> } |
   \repeat unfold 2 { ees,='8 <bes' des> <des g> } |
-  c,='8 <g' bes> <bes ees> e,='8 <g bes> <bes e> |
+  c,='8 <g' bes> <bes ees> e,='8-5 <g-3 bes-2> <bes-2 e-1> |
 
-  \time 4/4 f='8 <c' ees> g q aes q ees q |
-  aes,=8 ees' aes16 \change Staff = "right" bes c des c bes \change Staff = "left" aes ees aes,4 |
+  \time 4/4 f='8-5 <c' ees> g-4 q aes-3 q ees-5 q |
+  aes,=8 ees' aes16 \change Staff = "right" bes-1 c-2 des c bes \change Staff = "left" aes ees aes,4 |
 
   \time 6/8
   \clef "bass"
-  bes,=,8 c'16 des ees f aes f ees des c8 |
+  bes,=,8 c'16-1 des-3 ees f aes-2 f-1 ees des c8-1 |
 
 
 
 
 
-  c,=8 c'16 ees g bes \stemDown \change Staff = "right" <c ees>-"Adjust beam" \change Staff = "left" bes g ees c8 | \stemNeutral
+  c,=8 c'16 ees g bes \stemDown \change Staff = "right" <c-1 ees-2>-"Adjust beam" \change Staff = "left" bes g ees c8 | \stemNeutral
   des,=8 c'16 des ees f aes f ees des c8 |
-  aes,=,8 ees'16 aes c ees r ees c aes ees8 |
+  aes,=,8 ees'16 aes-1 c-2 ees r ees c aes ees8 |
 
 
   bes=,8 c'16 des ees f aes f ees des c8 |
@@ -147,7 +147,7 @@ left = \relative c' {
 
 
 
-  c,=8 c'16 ees g bes \stemDown \change Staff = "right" c-"Adjust beam" \change Staff = "left" bes g \change Staff = "right" c ees g | \change Staff = "left" \stemNeutral
+  c,=8 c'16 ees-3 g-2 bes-1 \stemDown \change Staff = "right" c-"Adjust beam" \change Staff = "left" bes-1 g-2 \change Staff = "right" c-1 ees-2 g-4 | \change Staff = "left" \stemNeutral
 
   \time 4/4
   \clef "bass" <des,,= des,>8 r8 r4 r4 des,=,8( <ees'= ees,>8) ~ | \once\override TextSpanner.bound-details.left.text = "Swing"
