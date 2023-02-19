@@ -31,7 +31,7 @@ right = \relative c'' {
   ees=''8 des8 8 c8 8. bes aes8 |
   c8. bes16 ~ 4\) r4 r8 ees=''8\( |
   8 des8 8 c8 8. bes aes8 |
-  bes8. c16-"C or Des?" ~ 4\) r4 c8\( aes' |
+  bes8. c16 ~ 4\) r4 c8\( aes' |
 
   g8. ees8. 8 ~ 8\) r8 c=''8\( aes' |
   g8. aes ees8 r8 ees f ees16 16 ~ |
