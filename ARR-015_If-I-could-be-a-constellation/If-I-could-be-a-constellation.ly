@@ -3,10 +3,10 @@
 date = #(strftime "%B %d %Y" (localtime (current-time)))
 \header {
   title = "If I could be a constellation"
-  subtitle = "TODO SUBTITLE AND TITLE!!!"
+  subtitle = "Bocchi The Rock! EP 12"
   %instrument = "Piano"
-  composer = "VinLudens"
-  %arranger = "Arr. by VinLudens"
+  composer = "Kessoku Band"
+  arranger = "Arr. by VinLudens"
   tagline = \markup { \center-column {
     \with-url #"https://youtube.com/c/VinLudens"
     \line { "Engraving with Lilypond" $(lilypond-version) \char ##x2014 "https://youtube.com/c/VinLudens" }
