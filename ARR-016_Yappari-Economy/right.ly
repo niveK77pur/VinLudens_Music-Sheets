@@ -3,6 +3,7 @@
 
 right = \relative c' {
   \global
+
   r
-%}
+
 }
