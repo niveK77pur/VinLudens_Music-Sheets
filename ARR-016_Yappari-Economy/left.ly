@@ -61,7 +61,7 @@ left = \relative c, {
       }
       {
         \partial 4 c,4-"Terminate Slur" |
-        f=,16_"Straight" c' f c aes' c, f, c' bes=, f' bes f bes f bes, f' |
+        f=,16_"Straight" c' f c aes' c, f, c' bes=, f' bes f bes f bes, f'
       }
     } |
   }
