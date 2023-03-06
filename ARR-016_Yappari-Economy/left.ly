@@ -68,11 +68,11 @@ left = \relative c, {
 
   <aes,=, as,>4 <as es' as>\arpeggio <as' c es>\arpeggio \clef "treble" <es'=' as c>\arpeggio |
   \clef "bass" <c,= c,> <es g bes>16 <bes bes,>8-. <aes aes,>16 ~ q8 aes_( <cis e aes>4) |
-  <aes=, es' as>2\arpeggio <bes d> |
+  \voiceTwo <aes=, es' as>2\arpeggio <bes d> | \oneVoice
   %% E3 %%
 
   \change Staff = "right"
-  \clef "treble" bes''='16-5 g-3 fis-2 f-1 es-2 \change Staff = "left" aes,=-2 bes-1 fis-4
+  bes''='16-5 g-3 fis-2 f-1 es-2 \change Staff = "left" aes,=-2 bes-1 fis-4
   \change Staff = "right" r16 <fis'=' d bes>-. \change Staff = "left" r16 <f=' d bes>16 ~ q4
   |
 

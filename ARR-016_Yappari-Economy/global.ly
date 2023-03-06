@@ -18,6 +18,25 @@ fingerInStaff = #(define-music-function () ()
   #{ \once\override Fingering.add-stem-support = ##f #}
 )
 
+% http://leighverlag.blogspot.com/2014/11/piano-rhlh-brackets.html
+RHBracketSet = {
+ \once\override Fingering.self-alignment-Y = #-1
+ \once\override Fingering.Y-offset = #-0.75
+ \once\set fingeringOrientations = #'(left)
+}
+RH = \markup {
+  \path #0.1 #'((moveto -1 0)(rlineto 0 -2.5)(rlineto 0.5 0))
+}
+
+LHBracketSet = {
+ \once\override Fingering.self-alignment-Y = #1
+ \once\override Fingering.Y-offset = #0.75
+ \once\set fingeringOrientations = #'(left)
+}
+LH = \markup {
+  \path #0.1 #'((moveto -1 0)(rlineto 0 2.5)(rlineto 0.5 0))
+}
+
 %{
 Some other usefull commands
 

@@ -68,11 +68,11 @@ right = \relative c' {
 
   <g'=''-5 es-2>8\( q16 q q8 q16 q <bes-3 g-1>8 q16 q q8 q16 q |
   <c-4 g-1>16 q16 q8 q16 <es-5 g,>8 <c-4 a-2>16 ~ 2\) |
-  <es,,=' c>2_\( \clef "bass" <bes f> |
+  <es,,=' c>2\( \change Staff = "left" \voiceOne \RHBracketSet <bes f\finger\RH> | \oneVoice
   %% E3 %%
 
   \change Staff = "left"
-  es,=4._5^\) r8 r8
+  \LHBracketSet <es,=\finger\LH>4._5^\) r8 r8
   \change Staff = "right" r8 r8. \clef "treble^8" g''=''16
   |
 
