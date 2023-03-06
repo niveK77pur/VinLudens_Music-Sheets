@@ -74,9 +74,14 @@ right = \relative c' {
 
   \change Staff = "left"
   \LHBracketSet <es,=\finger\LH>4._5^\) r8 r8
-  \change Staff = "right" r8 r8. \clef "treble^8" g''=''16
+  \change Staff = "right" r8 r8. \clef "treble^8" g''=''16 ~
   |
 
-  \bar "||"
+  \bar "||" \tempo "Andantino" 4 = 80
+
+  16 bes='' ees g16 16 8 g16 ~ 8 f16 g f16 es b-1 bes-3 |
+  g=''16 bes8 c16 ~ 16 bes8 aes16 g16 aes-4 g f e16 es'8 des16 |
+  c='''8-3 aes16-3 g f8. f'16 ~ 8  c16 bes a8. <bes^3 g^1>16 ~ |
+  q8 <c^4 aes^2> <cis^3 a^1> <d^4 bes^2> <es a, fis>8-. r16 <d aes f>16 ~ q4 |
 
 }

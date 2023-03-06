@@ -61,7 +61,7 @@ left = \relative c, {
       }
       {
         \partial 4 c,4\tweak control-points
-                  #'((-2 . -5) (-1 . -5.7) (0 . -5.7) (1 . -5)) ( <> )-"Fix slur if broken" |
+                  #'((-2 . -5) (-1 . -5.7) (0 . -5.7) (1 . -5)) ( <>-"Fix slur if broken" ) |
         \straightNotesStart f=,16 c' f c aes' c, f, c' bes=, f' bes f bes f bes, f'\straightNotesEnd
       }
     } |
@@ -78,5 +78,10 @@ left = \relative c, {
   |
 
   \bar "||"
+
+  ees,=8 bes' g' bes, aes \clef "treble" es' b' es, |
+  g,= d' bes' d, \clef "bass" e,= bes' g' bes, |
+  f= c' as' c, f, a f' c |
+  \clef "treble" bes=( d es f <fis es c>8-.) r16 <f d b>16 ~ 4 |
 
 }
