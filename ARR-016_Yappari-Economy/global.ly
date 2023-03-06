@@ -6,6 +6,18 @@ global = {
   \time 4/4
 }
 
+parenthesizedFermata = #(define-event-function () ()
+  #{
+    \tweak Parentheses.font-size #-1
+    \parenthesize
+    \fermata
+  #}
+)
+
+fingerInStaff = #(define-music-function () ()
+  #{ \once\override Fingering.add-stem-support = ##f #}
+)
+
 %{
 Some other usefull commands
 
