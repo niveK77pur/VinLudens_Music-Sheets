@@ -28,7 +28,7 @@ left = \relative c, {
 
   \revert Fingering.direction
   \tuplet 3/2 4 { f8 8 8 8 es c fis8 8 8 8 ees c  } |
-  f4.\) ~ <f d b aes>8 ~ 2\parenthesizedFermata |
+  f4.\) ~ <f d b aes>8 ~ 2\parenthesizedShortFermata |
   \change Staff = "left"
 
   %% S1 %%

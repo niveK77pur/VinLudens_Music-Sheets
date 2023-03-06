@@ -35,7 +35,7 @@ right = \relative c' {
   \tuplet 6/4 4 { bes'='16\( e, des bes' e, des b' f d b' f d c' fis, ees c' fis, ees \fingerInStaff des'-4 aes f des' aes f } |
   <ees'='' ees,>8 16 16 <d d,>16 <des des,>8 <c c,>16 ~ 8.\) c16( <ees c'>4) |
   \tuplet 6/4 4 { bes='16\( e, des bes' e, des b' f d b' f d c' fis, ees c' fis, ees \fingerInStaff des'-5 g, e des' g, e\) } |
-  \tuplet 3/2 4 { r8 f='-. a-. c-. f-. f ~ } f4 <fis,=' d bes aes>\arpeggio\parenthesizedFermata |
+  \tuplet 3/2 4 { r8 f='-. a-. c-. f-. f ~ } f4 <fis,=' d bes aes>\arpeggio\parenthesizedShortFermata |
   %% E1 %%
 
   %% S2 %%

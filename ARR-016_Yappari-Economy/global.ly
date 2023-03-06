@@ -6,11 +6,11 @@ global = {
   \time 4/4
 }
 
-parenthesizedFermata = #(define-event-function () ()
+parenthesizedShortFermata = #(define-event-function () ()
   #{
-    \tweak Parentheses.font-size #-1
+    \tweak Parentheses.font-size #0
     \parenthesize
-    \fermata
+    \shortfermata
   #}
 )
 
