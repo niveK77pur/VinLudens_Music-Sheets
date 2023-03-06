@@ -9,7 +9,7 @@ left = \relative c, {
 
 
   \override Fingering.direction = #DOWN
-  r1 |
+  s1 |
 
   ees=,8 g bes g ees g bes-2 d-1 |
   ees-2 d des c-1 bes g-3 fis-4 f-1 |
