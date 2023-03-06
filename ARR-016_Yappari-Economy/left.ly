@@ -61,7 +61,7 @@ left = \relative c, {
       }
       {
         \partial 4 c,4\tweak control-points
-                  #'((-2 . -5) (-1 . -5.7) (0 . -5.7) (1 . -5)) ( <> ) |
+                  #'((-2 . -5) (-1 . -5.7) (0 . -5.7) (1 . -5)) ( <> )-"Fix slur if broken" |
         \straightNotesStart f=,16 c' f c aes' c, f, c' bes=, f' bes f bes f bes, f'\straightNotesEnd
       }
     } |
