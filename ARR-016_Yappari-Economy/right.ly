@@ -10,6 +10,7 @@ right = \relative c' {
   } 4 = 96
 
   ees='16( g bes ees) r8 \once\override Slur.positions = #'(-3.0 . 0) \acciaccatura f,='8( fis16 f16 ~ 16 ees8.) <f d bes aes>4( |
+
   <ees=' bes g>8) g16( fis g bes) r fis( g fis g ees ~ 8) r8 |
   r16 d''='''16(\( ees8) a,16( bes) r16 fis16( g8) d16( ees) ~ ees8\) r8 |
   <ees,=' bes g>8 g16( fis g bes) r fis( g fis g ees ~ 8) r8 |
