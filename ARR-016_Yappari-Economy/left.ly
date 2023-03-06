@@ -57,12 +57,12 @@ left = \relative c, {
     \alternative {
       {
         c,4) |
-        f=,16_"Straight" c' f c aes' c, f, c' bes=,16 f' bes f d' f, bes, f'
+        \straightNotesStart f=,16 c' f c aes' c, f, c' bes=,16 f' bes f d' f, bes, f'\straightNotesEnd
       }
       {
         \partial 4 c,4\tweak control-points
                   #'((-2 . -5) (-1 . -5.7) (0 . -5.7) (1 . -5)) ( <> ) |
-        f=,16_"Straight" c' f c aes' c, f, c' bes=, f' bes f bes f bes, f'
+        \straightNotesStart f=,16 c' f c aes' c, f, c' bes=, f' bes f bes f bes, f'\straightNotesEnd
       }
     } |
   }

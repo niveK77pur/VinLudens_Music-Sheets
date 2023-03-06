@@ -37,6 +37,22 @@ LH = \markup {
   \path #0.1 #'((moveto -1 0)(rlineto 0 2.5)(rlineto 0.5 0))
 }
 
+straightNotesStart = #(define-music-function (note) (ly:music?)
+  #{
+  \once\override TextSpanner.dash-fraction = #0.6
+  \once\override TextSpanner.dash-period = #2
+  % \once\override TextSpanner.padding = #0
+  \once\override TextSpanner.bound-details.left.text = \markup {
+   \small \italic "Straight"
+   % \rhythm { 16[ 16] } = \rhythm { 16[ 16] }
+  }
+  #note _\startTextSpan
+  #}
+)
+straightNotesEnd = #(define-event-function () ()
+  #{ \stopTextSpan #}
+)
+
 %{
 Some other usefull commands
 
