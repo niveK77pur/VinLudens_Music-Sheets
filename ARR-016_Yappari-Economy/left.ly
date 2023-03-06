@@ -60,7 +60,8 @@ left = \relative c, {
         f=,16_"Straight" c' f c aes' c, f, c' bes=,16 f' bes f d' f, bes, f'
       }
       {
-        \partial 4 c,4-"Terminate Slur" |
+        \partial 4 c,4\tweak control-points
+                  #'((-2 . -5) (-1 . -5.7) (0 . -5.7) (1 . -5)) ( <> ) |
         f=,16_"Straight" c' f c aes' c, f, c' bes=, f' bes f bes f bes, f'
       }
     } |

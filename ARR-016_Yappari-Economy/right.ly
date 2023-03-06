@@ -61,6 +61,7 @@ right = \relative c' {
       }
       {
         \partial 4 r8 c='16\( 16 |
+
         c8 g' c, g' <f c>16 ees c8 ees f\) |
       }
     }
