@@ -42,13 +42,29 @@ right = \relative c' {
   g='8\( g g g fis16 g ees c bes8\) \set fingeringOrientations = #'(right) <a'-4 fis!-2>( |
   \set fingeringOrientations = #'(right) <bes-3 g-1>4) <g' ees>8 r8 <fis bes,>16 <g ees> r16 q ~ q <bes g>8. |
   bes,='8_\( bes bes bes g16 bes g ees c8\) \set fingeringOrientations = #'(right) <a'-4 fis-2>( |
-  \set fingeringOrientations = #'(right) <bes-3 g-1>4) <bes'='' d,>8 r8 <c=''' fis,>16( bes c g ~ 8) \voiceOne \change Staff = "left" bes,,=\( | \oneVoice
+  \set fingeringOrientations = #'(right) <bes-3 g-1>4) <bes'='' d,>8 r8 <c=''' fis,>16( bes c g ~ 8) \voiceOne \change Staff = "left" bes,,=\( | \oneVoice \unset fingeringOrientations
   %% E2 %%
 
   \change Staff = "right" c='8 8 8 8 g'8 8 8 8 |
-  fis8 8 8 8 f4\fermata\) r16 f-3 f f |
+  fis8 8 8 8 f4\fermata\) r16 f-3\( f f |
 
   %% S3 %%
+  \set fingeringOrientations = #'(up) 
+  \repeat volta 2 {
+    <g='-4 ees bes>8\) g16-3\( g <bes-4 f d>\) g-2\( bes-3 <c-5 g e> ~ 4\) r8. <ees bes g>16\( ~ |
+    q8 c bes g <bes-4 f d> c bes d, |
+    <es='-5 bes-2>8\) es16\( 16 <d-4 bes-2>\) d16\( d <c-3 aes-1> ~ q4\)
+    \alternative {
+      {
+        c='8\( ees |
+        <f c>8 g c, ees <f c> g f ees\) |
+      }
+      {
+        \partial 4 r8 c='16\( 16 |
+        c8 g' c, g' <f c>16 ees c8 ees f\) |
+      }
+    }
+  }
   %% E3 %%
 
 }

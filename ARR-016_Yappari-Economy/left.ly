@@ -49,6 +49,25 @@ left = \relative c, {
   <d=' a d,>2\arpeggio <des as des,>4\arpeggio r |
 
   %% S3 %%
+
+  \repeat volta 2 {
+    <ees,= ees,>8 r8 <d d,>16-- r8 <c c,>16\( ~ q8 d,=,_4 ees_3 bes_5\) |
+    f'=,16_5 <f'=> g, q as q a q bes <bes'> c, q des q d q |
+    <g-4 ees-2>8 r8 <f d>16-- r8 <e c>16 ~ q8 g,=,8(
+    \alternative {
+      {
+        c,4) |
+        f=,16_"Straight" c' f c aes' c, f, c' bes=,16 f' bes f d' f, bes, f'
+      }
+      {
+        \partial 4 c,4-"Terminate Slur" |
+        f=,16_"Straight" c' f c aes' c, f, c' bes=, f' bes f bes f bes, f' |
+      }
+    } |
+  }
+
+  <aes,=, as,>4 <as es' as>\arpeggio <as' c es>\arpeggio \clef "treble" <es'=' as c>\arpeggio |
+  \clef "bass" c,=
   %% E3 %%
 
 }
