@@ -19,12 +19,12 @@ right = \relative c' {
   \bar "||"
 
   g,='8\( g g g fis16-3 g-5 ees-2 c-1 bes4-2\) |
-  r16 <fis''=''^3 bes,^1>16( <g^5 ees^2>8 q8) r8 <fis bes,>16( <g ees> r16 q ~ q <bes g>8.) |
+  \small r16 <fis''=''^3 bes,^1>16( <g^5 ees^2>8 q8) r8 <fis bes,>16( <g ees> r16 q ~ q <bes g>8.) | \normalsize
   g,='8\( g g g fis16 g ees c bes4\) |
-  r16 <fis''='' bes,>16( <g ees>8 q8) r8 <fis bes,>16( <g ees> r16 q ~ q <bes g>8.) |
+  \small r16 <fis''='' bes,>16( <g ees>8 q8) r8 <fis bes,>16( <g ees> r16 q ~ q <bes g>8.) | \normalsize
 
   bes,='8_\( bes bes bes g16 bes g-3 ees-2 c4-1\) |
-  r16 <bes''='' d,>8.( q8) r8 <c=''' fis,>16( bes c g ~ 8) \voiceOne r | \oneVoice
+  \small r16 <bes''='' d,>8.( q8) r8 <c=''' fis,>16( bes c g ~ 8) \voiceOne r | \oneVoice \normalsize
 
   \change Staff = "left"
   <f,,= c f,>2 <fis c fis,> |
@@ -39,10 +39,10 @@ right = \relative c' {
   %% E1 %%
 
   %% S2 %%
-  g='8\( g g g fis16 g ees c bes8\) \set fingeringOrientations = #'(right) <a'-4 fis!-2>( |
-  \set fingeringOrientations = #'(right) <bes-3 g-1>4) <g' ees>8 r8 <fis bes,>16 <g ees> r16 q ~ q <bes g>8. |
-  bes,='8_\( bes bes bes g16 bes g ees c8\) \set fingeringOrientations = #'(right) <a'-4 fis-2>( |
-  \set fingeringOrientations = #'(right) <bes-3 g-1>4) <bes'='' d,>8 r8 <c=''' fis,>16( bes c g ~ 8) \voiceOne \change Staff = "left" bes,,=\( | \oneVoice \unset fingeringOrientations
+  g='8\( g g g fis16 g ees c bes8\) \set fingeringOrientations = #'(right) \small <a'-4 fis!-2>( |
+  \set fingeringOrientations = #'(right) <bes-3 g-1>4) <g' ees>8 r8 <fis bes,>16 <g ees> r16 q ~ q <bes g>8. | \normalsize
+  bes,='8_\( bes bes bes g16 bes g ees c8\) \set fingeringOrientations = #'(right) \small <a'-4 fis-2>( |
+  \set fingeringOrientations = #'(right) <bes-3 g-1>4) <bes'='' d,>8 r8 <c=''' fis,>16( bes c g ~ 8) \normalsize \voiceOne \change Staff = "left" bes,,=\( | \oneVoice \unset fingeringOrientations
   %% E2 %%
 
   \change Staff = "right" c='8 8 8 8 g'8 8 8 8 |
@@ -95,10 +95,10 @@ right = \relative c' {
   %% E1 %%
 
   %% S2 %%
-  r16 bes,=16\( g'='8 g g fis16 g ees c bes8\) \set fingeringOrientations = #'(right) <a' fis!>( |
-  \set fingeringOrientations = #'(right) <bes g>4) <g' ees>8 r8 <fis bes,>16 <g ees> r16 q ~ q <bes g>8. |
-  r16 c,,='16_\( bes'='8 bes bes g16 bes g ees c8\) \set fingeringOrientations = #'(right) <a' fis>( |
-  \set fingeringOrientations = #'(right) <bes g>4) <bes'='' d,>8 r8 <c=''' fis,>16( bes c g ~ 8) \voiceOne \change Staff = "left" bes,,=\( | \oneVoice \unset fingeringOrientations
+  r16 bes,=16\( g'='8 g g fis16 g ees c bes8\) \set fingeringOrientations = #'(right) \small <a' fis!>( |
+  \set fingeringOrientations = #'(right) <bes g>4) <g' ees>8 r8 <fis bes,>16 <g ees> r16 q ~ q <bes g>8. | \normalsize
+  r16 c,,='16_\( bes'='8 bes bes g16 bes g ees c8\) \set fingeringOrientations = #'(right) \small <a' fis>( |
+  \set fingeringOrientations = #'(right) <bes g>4) <bes'='' d,>8 r8 <c=''' fis,>16( bes c g ~ 8) \normalsize \voiceOne \change Staff = "left" bes,,=\( | \oneVoice \unset fingeringOrientations
   %% E2 %%
 
   \change Staff = "right" c='8 8\) r8 c\( g' g\) r g\( |

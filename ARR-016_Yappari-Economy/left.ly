@@ -119,7 +119,7 @@ left = \relative c, {
 
   \time 4/4
 
-  \cadenzaOn \stemDown
+  \cadenzaOn \stemUp
   \clef "bass" \tuplet 10/8 { bes,=,32[ f' aes \change Staff = "right" bes d fis-> d bes \change Staff = "left" aes f] }
   \clef "bass" \tuplet 10/8 { bes,=,32[ f' aes \change Staff = "right" bes d g-> d bes \change Staff = "left" aes f] }
   \clef "bass" \tuplet 6/4 { bes,=,16[ f' aes \change Staff = "right" bes d f]\fermata }
