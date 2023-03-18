@@ -113,7 +113,7 @@ right = \relative c' {
   <c'=''' aes>4  <bes g>8 <as f>4 <g es>8 |
 
   q4 <as f>8 <bes g>4\) <g es>8\( |
-  q4 <as f>8 <bes f>4\) <g es>8\( |
+  q4 <as f>8 <bes f>4\) <g es>8\shape #'(((0 . 0) (0.9 . 0.7) (1.8 . 0.7) (2.7 . 0)) ()) \( |
   <bes g>8 q <c as> <bes g> q <c as> |
   <bes g>2.\) |
 
@@ -149,7 +149,7 @@ right = \relative c' {
 
   <g'='' es>8\( q16 q q8 q16 q <bes g>8 q16 q q8 q16 q |
   <c g>16 q16 q8 q16 <es g,>8 <c a>16 ~ 2\) |
-  \clef "bass" <es,,=' c>2\( <bes f> |
+  \clef "bass" <es,,=' c>2-\shape #'((0 . -2.5) (0 . 2) (0 . 0) (-0.5 . -2.5)) -\( <bes f> |
   %% E3 %%
 
   << { \voiceOne
