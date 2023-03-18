@@ -44,8 +44,8 @@ pedal = {
     s8\sr s8\sr s8\sr s8\sr s8\sr s8\sr s8\sr s8\sr |
     s8\sr s8\soff s16\son s8\soff s16\son s4
     \alternative {
-      { s4 | s2\sr s2\sr }
-      { \partial 4 s4-"Fix pedal here on alternative?" | s2\sr s2\sr }
+      { s4 | s2\sr \stoff s4\sr s8.... s128\soff }
+      { \partial 4 \ston s4\son | s2\sr s2\sr }
     } |
   }
   s1\sr |
@@ -57,7 +57,12 @@ pedal = {
   s2\sr s2\sr |
   s2\sr s8.\soff s16\son s4 |
   s4\sr \stoff s16\sr s8.\soff s2 |
-  s1*8 |
+  s1*3 |
+  s2. s8\son s8\soff |
+  s2. s8 s8\son |
+  s1\soff |
+  s2. s4\son |
+  s1 |
   s4 s4\son s2\sr |
   \time 3/4
   s2.\sr |

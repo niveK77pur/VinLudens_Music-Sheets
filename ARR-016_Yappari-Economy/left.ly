@@ -24,7 +24,7 @@ left = \relative c, {
   ees=,8 g bes g ees g bes g,=,, |
 
   aes c ees-1 d-3 c-4 ees g fis |
-  ees=,8 g bes g ees[ g] c'='\( \change Staff = "right" \voiceTwo ees | \oneVoice
+  ees=,8 g bes g ees[ g] c'='-\shape #'(((0 . -5) (6 . 5) (-5 . -1) (0 . -2.6)) ((0 . 3) (0 . 3) (0 . 2) (0 . 1))) -\( \change Staff = "right" \voiceTwo ees | \oneVoice
 
   \revert Fingering.direction
   \tuplet 3/2 4 { f8 8 8 8 es c fis8 8 8 8 ees c  } |
@@ -33,7 +33,7 @@ left = \relative c, {
 
   %% S1 %%
   <bes,,=, bes,>4 <b b,> <c c,> <des des,> |
-  <ees ees,>4 <d d,>16 <des des,>8 <c c,>16 ~ <c c,>8 g c,4 |
+  <ees ees,>4 <d d,>16-. <des des,>8-. <c c,>16 ~ <c c,>8 g c,4 |
   <bes'=, bes,>4 <b b,> <c c,> <des des,> |
   \clef "treble" \tuplet 3/2 4 { r8 c'='-. f-. a-. c-. c ~ } c4 r4 \clef "bass" |
   %% E1 %%
@@ -61,7 +61,7 @@ left = \relative c, {
       }
       {
         \partial 4 c,4\tweak control-points
-                  #'((-2 . -5) (-1 . -5.7) (0 . -5.7) (1 . -5)) ( <>-"Fix slur if broken" ) |
+                  #'((-2 . -5) (-1 . -5.7) (0 . -5.7) (1 . -5)) ( <> ) |
         \straightNotesStart f=,16 c' f c aes' c, f, c' bes=, f' bes f bes f bes, f'\straightNotesEnd
       }
     } |
@@ -89,7 +89,7 @@ left = \relative c, {
 
   %% S1 %%
   <bes,,=, bes,>4 <b b,> <c c,> <des des,> |
-  <ees ees,>4 <d d,>16 <des des,>8 <c c,>16 ~ <c c,>8 g c,4 |
+  <ees ees,>4 <d d,>16-. <des des,>8-. <c c,>16 ~ <c c,>8 g c,4 |
   <bes'=, bes,>4 <b b,> <c c,> <des des,> |
   \clef "treble" \tuplet 3/2 4 { r8 c'='-. f-. a-. c-. c ~ } c4 r4 \clef "bass" |
   %% E1 %%
@@ -141,7 +141,7 @@ left = \relative c, {
       }
       {
         \partial 4 c,4\tweak control-points
-                  #'((-2 . -5) (-1 . -5.7) (0 . -5.7) (1 . -5)) ( <>-"Fix slur if broken" ) |
+                  #'((-2 . -5) (-1 . -5.7) (0 . -5.7) (1 . -5)) ( <> ) |
         \straightNotesStart f=,16 c' f c aes' c, f, c' bes=, f' bes f bes f bes, f'\straightNotesEnd
       }
     } |

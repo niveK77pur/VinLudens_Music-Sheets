@@ -19,7 +19,7 @@ right = \relative c' {
   \bar "||"
 
   g,='8\( g g g fis16-3 g-5 ees-2 c-1 bes4-2\) |
-  \small r16 <fis''=''^3 bes,^1>16( <g^5 ees^2>8 q8) r8 <fis bes,>16( <g ees> r16 q ~ q <bes g>8.) | \normalsize
+  \small r16 <fis''=''^3 bes,^1>16( <g^5 ees^2>8 q8) r8 <fis bes,>16( <g ees> r16 q ~ q <bes^3 g^1>8.) | \normalsize
   g,='8\( g g g fis16 g ees c bes4\) |
   \small r16 <fis''='' bes,>16( <g ees>8 q8) r8 <fis bes,>16( <g ees> r16 q ~ q <bes g>8.) | \normalsize
 
@@ -33,7 +33,7 @@ right = \relative c' {
 
   %% S1 %%
   \tuplet 6/4 4 { bes'='16\( e, des bes' e, des b' f d b' f d c' fis, ees c' fis, ees \fingerInStaff des'-4 aes f des' aes f } |
-  <ees'='' ees,>8 16 16 <d d,>16 <des des,>8 <c c,>16 ~ 8.\) c16( <ees c'>4) |
+  <ees'='' ees,>8 16 16 <d d,>16-. <des des,>8-. <c c,>16 ~ 8.\) c16( <ees c'>4) |
   \tuplet 6/4 4 { bes='16\( e, des bes' e, des b' f d b' f d c' fis, ees c' fis, ees \fingerInStaff des'-5 g, e des' g, e\) } |
   \tuplet 3/2 4 { r8 f='-. a-. c-. f-. f ~ } f4 <fis,=' d bes aes>\arpeggio\parenthesizedShortFermata |
   %% E1 %%
@@ -42,7 +42,7 @@ right = \relative c' {
   g='8\( g g g fis16 g ees c bes8\) \set fingeringOrientations = #'(right) \small <a'-4 fis!-2>( |
   \set fingeringOrientations = #'(right) <bes-3 g-1>4) <g' ees>8 r8 <fis bes,>16 <g ees> r16 q ~ q <bes g>8. | \normalsize
   bes,='8_\( bes bes bes g16 bes g ees c8\) \set fingeringOrientations = #'(right) \small <a'-4 fis-2>( |
-  \set fingeringOrientations = #'(right) <bes-3 g-1>4) <bes'='' d,>8 r8 <c=''' fis,>16( bes c g ~ 8) \normalsize \voiceOne \change Staff = "left" bes,,=\( | \oneVoice \unset fingeringOrientations
+  \set fingeringOrientations = #'(right) <bes-3 g-1>4) <bes'='' d,>8 r8 <c=''' fis,>16( bes c g ~ 8) \normalsize \voiceOne \change Staff = "left" bes,,=-\shape #'(((-0.3 . 3.6) (0 . 6) (0 . 6.5) (0 . 6.5)) ()) -\( | \oneVoice \unset fingeringOrientations
   %% E2 %%
 
   \change Staff = "right" c='8 8 8 8 g'8 8 8 8 |
@@ -52,7 +52,7 @@ right = \relative c' {
   \set fingeringOrientations = #'(up) 
   \repeat volta 2 {
     <g='-4 ees bes>8\) g16-3\( g <bes-4 f d>\) g-2\( bes-3 <c-5 g e> ~ 4\) r8. <ees bes g>16\( ~ |
-    q8 c bes g <bes-4 f d> c bes d, |
+    q8 c bes g \fingerInStaff <bes-4 f d> c bes d, |
     <es='-5 bes-2>8\) es16\( 16 <d-4 bes-2>\) d16\( d <c-3 aes-1> ~ q4\)
     \alternative {
       {
@@ -89,7 +89,7 @@ right = \relative c' {
 
   %% S1 %%
   \tuplet 6/4 4 { bes,='16\( e, des bes' e, des b' f d b' f d c' fis, ees c' fis, ees \fingerInStaff des' aes f des' aes f } |
-  <ees'='' ees,>8 16 16 <d d,>16 <des des,>8 <c c,>16 ~ 8.\) c16( <ees c'>4) |
+  <ees'='' ees,>8 16 16 <d d,>16-. <des des,>8-. <c c,>16 ~ 8.\) c16_( <ees c'>4) |
   \tuplet 6/4 4 { bes='16\( e, des bes' e, des b' f d b' f d c' fis, ees c' fis, ees \fingerInStaff des' g, e des' g, e\) } |
   \tuplet 3/2 4 { r8 f='-. a-. c-. f-. f ~ } f4 <fis,=' d bes aes>\arpeggio\parenthesizedShortFermata |
   %% E1 %%
@@ -98,7 +98,7 @@ right = \relative c' {
   r16 bes,=16\( g'='8 g g fis16 g ees c bes8\) \set fingeringOrientations = #'(right) \small <a' fis!>( |
   \set fingeringOrientations = #'(right) <bes g>4) <g' ees>8 r8 <fis bes,>16 <g ees> r16 q ~ q <bes g>8. | \normalsize
   r16 c,,='16_\( bes'='8 bes bes g16 bes g ees c8\) \set fingeringOrientations = #'(right) \small <a' fis>( |
-  \set fingeringOrientations = #'(right) <bes g>4) <bes'='' d,>8 r8 <c=''' fis,>16( bes c g ~ 8) \normalsize \voiceOne \change Staff = "left" bes,,=\( | \oneVoice \unset fingeringOrientations
+  \set fingeringOrientations = #'(right) <bes g>4) <bes'='' d,>8 r8 <c=''' fis,>16( bes c g ~ 8) \normalsize \voiceOne \change Staff = "left" bes,,=-\tweak positions #'(-7 . -5) -\( | \oneVoice \unset fingeringOrientations
   %% E2 %%
 
   \change Staff = "right" c='8 8\) r8 c\( g' g\) r g\( |
