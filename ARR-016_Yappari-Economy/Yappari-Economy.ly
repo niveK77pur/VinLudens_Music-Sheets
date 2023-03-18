@@ -38,6 +38,8 @@ date = #(strftime "%B %d %Y" (localtime (current-time)))
 \include "dynamics.ly"
 \include "pedal.ly"
 
+\pointAndClickOff
+
 \score {
   \new PianoStaff \with {
     instrumentName = "Piano"
