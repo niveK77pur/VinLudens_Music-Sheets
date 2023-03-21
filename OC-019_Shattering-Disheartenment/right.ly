@@ -29,7 +29,41 @@ right = \relative c'''' {
   fis8 gis dis fis4 e8 |
 
   %% S1 %%
-  dis=''4.\)
+  dis=''4.\) \ottava 0 r8 <ais=' ais'>\( <b b'> |
+  <dis gis ais dis>4 <ais ais'>4 <ais ais'>8 <b b'> |
+  <ais dis fis ais>4 <gis gis'>4\) cis,='8. d16 |
+  <dis b fis>4 q4 <b'=' b'>8.\( <ais ais'>16 |
+
+  <b dis fis b>4 q \tuplet 3/2 { <ais ais'>8 <b b'> <cis cis'> } |
+  <dis gis ais dis>4 q <fis='' fis'>8. <e e'>16 |
+  <dis gis ais dis>4 q <cis cis'>8 <b b'> |
   %% E1 %%
+  <ais ais'>8 <b b'> <dis dis'>4 <cis cis'>8 <b b'> |
+
+  %% S2 %%
+  <b dis fis b>4.\) r8 <ais=' ais'>\( <b b'> |
+  <dis gis ais dis>4 <ais ais'>4 <ais ais'>8 <b b'> |
+  <ais dis fis ais>4 <gis gis'>4\) cis,='8. d16 |
+  <dis b fis>4 q4 <b'=' b'>8.\( <ais ais'>16 |
+
+  <b dis fis b>4 q \tuplet 3/2 { <ais ais'>8 <b b'> <cis cis'> } |
+  <dis gis ais dis>4 q\) <fis='' fis'>8\( <gis gis'> |
+  <ais dis fis ais>8 <b b'> <ais ais'> <cis cis'>8. <b b'>16 <\parenthesize ais ais'>8 |
+  %% E2 %%
+
+  \time 4/4
+  <fis fis'>2 <dis dis'>2\) ~ |
+  q2 r4 r8 dis='' |
+  dis2 r4 r8 dis'8 |
+  dis2.. cis8 |
+  cis2.. b8 |
+  b2.. ais8 |
+  ais2\fermata r4 ais=''8\( gis |
+
+  \time 6/8 \bar "||"
+
+
+
+  <ais dis, ais>4.\)
 
 }
