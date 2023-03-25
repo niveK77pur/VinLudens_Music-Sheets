@@ -64,6 +64,71 @@ right = \relative c'''' {
 
 
 
-  <ais dis, ais>4.\)
+  <ais dis, ais>4.\) r8 dis,=''\( cis |
+  <dis ais>4.\) r8 ais'=''8\( gis |
+  <gis dis ais>8 ais4\) dis,=''8.\( eis16 fis8 |
+  <dis ais>4. cis8\) ais'=''8\( cis  |
+
+  <ais fis cis>4.\) dis,=''8. cis16 b8 |
+  ais8 b cis dis8. cis16 b8 |
+  ais8 b cis ais8. gis16 fis8 |
+  e8 \tuplet 5/4 { dis16 e fis gis ais } b8 dis=''\( cis |
+
+  <dis b fis>2.\) |
+  <dis b fis>2. |
+  <dis b fis>4. <fis b, fis> |
+  <dis b fis>2. |
+
+  <dis b fis>4. b8.\( ais16 gis8 |
+  fis8 gis dis fis4\) e'=''8\( |
+  <dis b fis>4.\) fis8.\( e16 dis8 |
+  cis8 dis ais cis4\) ais'=''8\( |
+
+  fis8 ais fis ais e dis |
+  cis8 dis ais cis4\) cis'='''8\( |
+  ais8 \tuplet 11/10 { cis16 b ais gis fis e dis cis b ais gis } |
+  fis8 gis dis fis4 e8 |
+
+  %% -- S1 -- %%
+  dis='4.\) \ottava 0 r8 <ais'=' ais'>\( <b b'> |
+  <dis gis ais dis>4 <ais ais'>4 <ais ais'>8 <b b'> |
+  <ais dis fis ais>4 <gis gis'>4\) cis,='8. d16 |
+  <dis b fis>4 q4 <b'=' b'>8.\( <ais ais'>16 |
+
+  <b dis fis b>4 q \tuplet 3/2 { <ais ais'>8 <b b'> <cis cis'> } |
+  <dis gis ais dis>4 q <fis='' fis'>8. <e e'>16 |
+  <dis gis ais dis>4 q <cis cis'>8 <b b'> |
+  %% -- E1 -- %%
+  <ais dis fis ais>8 <b b'> <fis fis'>4 <e e'>8 <dis dis'>\) |
+
+  %% S3 %%
+  << { \voiceTwo \mergeDifferentlyDottedOn \showStaffSwitch
+      \stemDown b=4.\(-"Custom Slur?" \change Staff = "left" \stemUp fis4. |
+      \change Staff = "right" \stemDown ais4. \change Staff = "left" \stemUp cis4. |
+      \change Staff = "right" \stemDown b8 ais \change Staff = "left" \voiceThree gis dis4.\) |
+      r4. cis=8\( b fis' |
+
+      dis2.\)  ~ |
+      4. cis=8\( b fis' |
+      gis2.\) |
+      r2. | \hideStaffSwitch \change Staff = "right"
+    }
+    \new Voice { \voiceOne
+      b=8 dis b' b' ais dis, |
+      ais,=8 dis ais' ais'='' gis dis |
+      r4. b'=''8\( ais gis |
+      fis dis cis \acciaccatura d8 dis4.\) |
+
+      r8 \clef "bass" fis,,=\( b dis b fis |
+      \clef "treble" ais'=' dis, b\) r4. |
+      b'='8\( ais gis fis dis cis |
+      \acciaccatura d <dis b>4.\) q |
+    }
+  >> \oneVoice
+  %% S3 %%
+
+  <dis'='' b fis>8 q q q q q |
+  <fis dis b>8 q q q q q |
+  <ais fis dis b> q q q <b,=' b'>8 <ais ais'> |
 
 }
