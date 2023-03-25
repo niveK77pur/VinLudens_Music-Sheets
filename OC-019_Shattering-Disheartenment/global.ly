@@ -6,6 +6,71 @@ global = {
   \time 6/8
 }
 
+% https://lsr.di.unimi.it/LSR/Snippet?id=1045
+% put together by Harm and Simon Albrecht
+% in <http://lists.gnu.org/archive/html/lilypond-user/2016-09/msg00441.html> ff.
+#(define (make-cross-stencil coord)
+   "Draw a cross-stencil at coord."
+   (let ((thick 0.1)
+         (sz 0.2))
+     (stencil-with-color
+      (ly:stencil-add
+       (make-line-stencil
+        thick
+        (- (car coord) sz)
+        (- (cdr coord) sz)
+        (+ (car coord) sz)
+        (+ (cdr coord) sz))
+       (make-line-stencil
+        thick
+        (- (car coord) sz)
+        (+ (cdr coord) sz)
+        (+ (car coord) sz)
+        (- (cdr coord) sz)))
+      cyan)
+     ))
+compoundSlur =
+#(define-event-function (contr-pts ann?) (list? boolean?)
+   (let ((proc (lambda (grob)
+                 (let*  (;; only here for reference:
+                          (cps (ly:slur::calc-control-points grob))
+                          (cps1 (list
+                                 (first contr-pts)
+                                 (second contr-pts)
+                                 (third contr-pts)
+                                 (fourth contr-pts)))
+                          (cps2 (list
+                                 (fourth contr-pts)
+                                 (fifth contr-pts)
+                                 (sixth contr-pts)
+                                 (seventh contr-pts)))
+                          (first-spline-stil
+                           (begin
+                            (ly:grob-set-property! grob 'control-points cps1)
+                            (ly:slur::print grob)))
+                          (second-spline-stil
+                           (begin
+                            (ly:grob-set-property! grob 'control-points cps2)
+                            (ly:slur::print grob)))
+                          ;; annotates all new control-points
+                          (crosses
+                           (if ann?
+                               (apply
+                                ly:stencil-add
+                                (map
+                                 (lambda (c)
+                                   (make-cross-stencil c))
+                                 (append cps1 cps2)))
+                               empty-stencil))
+                          )
+                   ;(pretty-print cps)
+
+                   (ly:stencil-add
+                    first-spline-stil
+                    second-spline-stil
+                    crosses)))))
+     #{ -\tweak stencil $proc ( #}))
+
 %{
 Some other usefull commands
 

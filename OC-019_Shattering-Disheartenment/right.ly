@@ -102,10 +102,10 @@ right = \relative c'''' {
   <ais dis fis ais>8 <b b'> <fis fis'>4 <e e'>8 <dis dis'>\) |
 
   %% S3 %%
-  << { \voiceTwo \mergeDifferentlyDottedOn \showStaffSwitch
-      \stemDown b=4.\(-"Custom Slur?" \change Staff = "left" \stemUp fis4. |
+  << { \voiceTwo \mergeDifferentlyDottedOn %\showStaffSwitch
+      \stemDown b=4.-\compoundSlur #'((0.5 . -4.4) (8.3 . -8) (14 . -3.9) (16.2 . -5.0) (24.3 . -9) (36 . 6) (38.5 . -8.6)) ##f ^"Custom Slur?" \change Staff = "left" \stemUp fis4. |
       \change Staff = "right" \stemDown ais4. \change Staff = "left" \stemUp cis4. |
-      \change Staff = "right" \stemDown b8 ais \change Staff = "left" \voiceThree gis dis4.\) |
+      \change Staff = "right" \stemDown b8 ais \change Staff = "left" \voiceThree gis dis4.) |
       r4. cis=8\( b fis' |
 
       dis2.\)  ~ |
