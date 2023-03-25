@@ -131,4 +131,78 @@ left = \relative c'' {
   <e'=' b e,>4.\arpeggio q |
   q4.\arpeggio q8 r4 |
 
+
+  r8 b,=, <dis fis b> q b q |
+  fis=,8 <cis' fis ais> q fis, q q |
+  gis=,8 <dis' gis b> q gis, q q |
+  e=,8 <b' e> q e, q q |
+
+  b'=, <dis fis b> q b q q |
+  fis=,8 <cis' fis ais> q fis, q q |
+  gis=,8 <dis' gis b> q gis, q q |
+  e=,8 <b' e> q e, q q |
+
+
+  %% S3 %%
+  \voiceTwo \mergeDifferentlyDottedOn
+  b'=,8 dis b' fis b fis |
+  fis,=, cis' fis cis' fis, cis |
+  gis=, dis' gis  dis gis, dis' |
+  e,=, b' e r4. |
+
+  b=,2. |
+  fis=,2. |
+  <dis'= gis,>2. |
+  <b=, e,>2. |
+
+
+
+
+
+
+
+
+
+
+
+
+  \mergeDifferentlyDottedOff \oneVoice
+  %% E3 %%
+
+  <e= b e,>2. |
+  <e'=' b e,>2. |
+  \clef "treble" <e'='' b e,>2. |
+  \once \set PianoStaff.connectArpeggios = ##t q4.\arpeggio r4. |
+
+  \bar "||"
+
+  r4. <b=' dis,> |
+  <ais fis cis>2. |
+  r4. <b=' dis,> |
+  <\parenthesize ais fis cis>2. |
+
+  r4. <b=' dis,> |
+  <ais fis cis>2. |
+  r4. <b=' dis,> |
+  <ais fis cis>2. |
+
+  \clef "bass" e,=8 b' e dis e b |
+  dis,=8 fis b ais b fis |
+  e=8 b' e dis e b |
+  dis,=8 fis b ais b fis |
+
+  e=8 b' e dis e b |
+  dis,=8 fis b ais b fis |
+  \tuplet 2/3 4. { gis,=,8 dis' gis dis } |
+  \tuplet 2/3 4. { e,=,8 b' e b } |
+
+  e,=,2. |
+  b8\( dis fis b dis fis |
+  \clef "treble" b dis fis b \change Staff = "right" dis b'='' |
+  ais b fis dis \change Staff = "left" b \change Staff = "right" cis |
+
+  s2.\) | \change Staff = "left" \oneVoice
+  \clef "bass" b,=2. |
+
+
 }

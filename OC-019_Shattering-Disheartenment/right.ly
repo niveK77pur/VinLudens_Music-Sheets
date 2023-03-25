@@ -125,10 +125,87 @@ right = \relative c'''' {
       \acciaccatura d <dis b>4.\) q |
     }
   >> \oneVoice
-  %% S3 %%
+  %% E3 %%
 
   <dis'='' b fis>8 q q q q q |
   <fis dis b>8 q q q q q |
-  <ais fis dis b> q q q <b,=' b'>8 <ais ais'> |
+  <ais fis dis b> q q q <b,=' b'>8\( <ais ais'> |
+
+  %% S2 %%
+  <b dis fis b>4.\) r8 <ais=' ais'>\( <b b'> |
+  <dis gis ais dis>4 <ais ais'>4 <ais ais'>8 <b b'> |
+  <ais dis fis ais>4 <gis gis'>4\) cis,='8. d16 |
+  <dis b fis>4 q4 <b'=' b'>8.\( <ais ais'>16 |
+
+  <b dis fis b>4 q \tuplet 3/2 { <ais ais'>8 <b b'> <cis cis'> } |
+  <dis gis ais dis>4 q\) <fis='' fis'>8\( <gis gis'> |
+  <ais dis fis ais>8 <b b'> <ais ais'> <cis cis'>8. <b b'>16 <\parenthesize ais ais'>8 |
+  <fis fis'>4. <dis dis'>\) |
+  %% E2 %%
+
+  %% S3 %%
+  << { \voiceTwo \mergeDifferentlyDottedOn \showStaffSwitch
+      \stemDown b,=4.\(-"Custom Slur?" \change Staff = "left" \stemUp fis4. |
+      \change Staff = "right" \stemDown ais4. \change Staff = "left" \stemUp cis4. |
+      \change Staff = "right" \stemDown b8 ais \change Staff = "left" \voiceThree gis dis4.\) |
+      r4. cis=8\( b fis' |
+
+      dis2.\)  ~ |
+      4. cis=8\( b fis' |
+      gis2.\) |
+      r2. | \hideStaffSwitch \change Staff = "right"
+    }
+    \new Voice { \voiceOne
+      b=8 dis b' b' ais dis, |
+      ais,=8 dis ais' ais'='' gis dis |
+      r4. b'=''8\( ais gis |
+      fis dis cis \acciaccatura d8 dis4.\) |
+
+      r8 \clef "bass" fis,,=\( b dis b fis |
+      \clef "treble" ais'=' dis, b\) r4. |
+      b'='8\( ais gis fis dis cis |
+      \acciaccatura fis <dis b>4.\) q |
+    }
+  >> \oneVoice
+  %% E3 %%
+
+  <dis'='' b fis>4. q |
+  <fis dis b>4. q |
+  <ais fis dis>4. q |
+  <dis ais fis>4.\arpeggio\fermata r8 dis='''8\( cis |
+
+  \bar "||"
+
+  dis4.\) <fis, dis> |
+  <dis cis>4. r8 dis'='''8\( cis |
+  dis4.\) <dis, cis>4. |
+  ais4. r8 dis'='''8\( cis |
+
+  cis8 dis4\) <fis, dis>4 gis16 ais |
+  <fis cis>4. r8 dis'='''\( fis |
+  dis4.\) <gis, dis>8. fis16 e8 |
+  <dis cis>4. cis8.\( dis16 e8 |
+
+  <dis='' b fis>4.\) b8.\( ais16 gis8 |
+  fis gis dis fis4\) e'=''8\( |
+  q4.\) fis8.\( e16 dis8 |
+  cis8 dis ais cis4\) ais'=''8\( |
+
+  fis8 ais fis ais e dis |
+  cis dis ais cis4\) cis'='''8\( |
+  ais8 \tuplet 13/10 { cis16 b ais gis fis e dis cis b ais gis fis e } |
+  dis8 cis dis \clef "bass" <b gis>4. |
+
+  <cis b g>16\arpeggio dis cis b g fis e8 dis e ~ |
+  4. \clef "treble" <fis'=' dis b>\)\arpeggio |
+  s2. |
+  s2. |
+
+  <dis'='' fis,>2. ~ |
+  q2. |
+
+  \mark \markup { \normalsize \musicglyph "scripts.ufermata" }
+  \bar "|."
+
 
 }
