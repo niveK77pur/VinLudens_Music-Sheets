@@ -23,6 +23,10 @@ date = #(strftime "%B %d %Y" (localtime (current-time)))
   oddHeaderMarkup = \evenHeaderMarkup
 }
 
+\include "oll-core/package.ily"
+\loadModule snippets.notation-snippets.compound-slurs
+%\include "compound-slurs.ily"
+
 \include "global.ly"
 \include "right.ly"
 \include "left.ly"

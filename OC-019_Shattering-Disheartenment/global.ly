@@ -6,70 +6,47 @@ global = {
   \time 6/8
 }
 
-% https://lsr.di.unimi.it/LSR/Snippet?id=1045
-% put together by Harm and Simon Albrecht
-% in <http://lists.gnu.org/archive/html/lilypond-user/2016-09/msg00441.html> ff.
-#(define (make-cross-stencil coord)
-   "Draw a cross-stencil at coord."
-   (let ((thick 0.1)
-         (sz 0.2))
-     (stencil-with-color
-      (ly:stencil-add
-       (make-line-stencil
-        thick
-        (- (car coord) sz)
-        (- (cdr coord) sz)
-        (+ (car coord) sz)
-        (+ (cdr coord) sz))
-       (make-line-stencil
-        thick
-        (- (car coord) sz)
-        (+ (cdr coord) sz)
-        (+ (car coord) sz)
-        (- (cdr coord) sz)))
-      cyan)
-     ))
-compoundSlur =
-#(define-event-function (contr-pts ann?) (list? boolean?)
-   (let ((proc (lambda (grob)
-                 (let*  (;; only here for reference:
-                          (cps (ly:slur::calc-control-points grob))
-                          (cps1 (list
-                                 (first contr-pts)
-                                 (second contr-pts)
-                                 (third contr-pts)
-                                 (fourth contr-pts)))
-                          (cps2 (list
-                                 (fourth contr-pts)
-                                 (fifth contr-pts)
-                                 (sixth contr-pts)
-                                 (seventh contr-pts)))
-                          (first-spline-stil
-                           (begin
-                            (ly:grob-set-property! grob 'control-points cps1)
-                            (ly:slur::print grob)))
-                          (second-spline-stil
-                           (begin
-                            (ly:grob-set-property! grob 'control-points cps2)
-                            (ly:slur::print grob)))
-                          ;; annotates all new control-points
-                          (crosses
-                           (if ann?
-                               (apply
-                                ly:stencil-add
-                                (map
-                                 (lambda (c)
-                                   (make-cross-stencil c))
-                                 (append cps1 cps2)))
-                               empty-stencil))
-                          )
-                   ;(pretty-print cps)
+cslurFirst = 
+     ^\compoundSlur \with {
+       annotate = ##f
+       show-grid = ##f
+       start-angle = -30
+       start-ratio = 0.2
+       start-point = #'( 0 . -1.8 )
+       end-angle = -30
+       end-point = #'( -0.5 . -5.0 )
+       % start-ratio = 0.6
+       % end-point = #`(,end-x . ,end-y)
 
-                   (ly:stencil-add
-                    first-spline-stil
-                    second-spline-stil
-                    crosses)))))
-     #{ -\tweak stencil $proc ( #}))
+       inflection =
+       #'((X-ratio . .2)
+          (Y-offset . -0.0)
+          (ratio-left . 0.2)
+          (angle . 15.0)
+          (label . "A")
+          )
+
+       inflection =
+       #'((X-ratio . .41)
+          (Y-offset . 1.3)
+          (label . "B")
+          )
+
+       inflection =
+       #'((X-ratio . .62)
+          (Y-offset . 0.9)
+          (label . "C")
+          )
+
+       inflection =
+       #'((X-ratio . .84)
+          (Y-offset . 4.4)
+          (ratio-right . 0.4)
+          (angle . -18)
+          (label . "D")
+          )
+
+     }
 
 %{
 Some other usefull commands
