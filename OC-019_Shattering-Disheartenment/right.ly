@@ -145,9 +145,9 @@ right = \relative c'''' {
 
   %% S3 %%
   << { \voiceTwo \mergeDifferentlyDottedOn %\showStaffSwitch
-      \stemDown b,=4.\(-"Custom Slur?" \change Staff = "left" \stemUp fis4. |
+      \stemDown b,=4.-\cslurFirst \change Staff = "left" \stemUp fis4. |
       \change Staff = "right" \stemDown ais4. \change Staff = "left" \stemUp cis4. |
-      \change Staff = "right" \stemDown b8 ais \change Staff = "left" \voiceThree gis dis4.\) |
+      \change Staff = "right" \stemDown b8 ais \change Staff = "left" \voiceThree gis dis4.) |
       r4. cis=8\( b fis' |
 
       dis2.\)  ~ |
