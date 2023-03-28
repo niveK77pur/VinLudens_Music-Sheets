@@ -197,11 +197,11 @@ left = \relative c'' {
   \tuplet 2/3 4. { e,=,8 b' e b } |
 
   e,=,2. |
-  b8\( dis fis b dis fis |
+  b8-\cslurEnd dis fis b dis fis |
   \clef "treble" b dis fis b \change Staff = "right" dis b'='' |
   ais b fis dis \change Staff = "left" b \change Staff = "right" cis |
 
-  s2.\) | \change Staff = "left" \oneVoice
+  s2.) | \change Staff = "left" \oneVoice
   \clef "bass" b,=2. |
 
 

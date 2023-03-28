@@ -19,14 +19,6 @@ cslurFirst =
        % start-ratio = 0.6
        % end-point = #`(,end-x . ,end-y)
 
-       % inflection =
-       % #'((X-ratio . .2)
-       %    (Y-offset . -0.0)
-       %    (ratio-left . 0.2)
-       %    (angle . 15.0)
-       %    (label . "A")
-       %    )
-
        inflection =
        #'((X-ratio . .41)
           (Y-offset . 1.3)
@@ -35,28 +27,21 @@ cslurFirst =
           (label . "B")
           )
 
-       % inflection =
-       % #'((X-ratio . .62)
-       %    (Y-offset . 0.9)
-       %    (label . "C")
-       %    )
-
-       % inflection =
-       % #'((X-ratio . .84)
-       %    (Y-offset . 4.4)
-       %    (ratio-right . 0.4)
-       %    (angle . -18)
-       %    (label . "D")
-       %    )
-
      }
 
+cslurEnd = 
+     ^\compoundSlur \with {
+       annotate = ##f
+       show-grid = ##f
+       start-angle = 10
+       end-angle = -30
 
        inflection =
-       #'((X-ratio . .41)
-          (Y-offset . 1.3)
-          (ratio-right . 0.5)
-          (angle . -20.0)
+       #'((X-ratio . .48)
+          (Y-offset . 0.5)
+          (ratio-right . 0.55)
+          (angle . 35.0)
+          (label . "*")
           )
 
      }
