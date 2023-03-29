@@ -193,7 +193,7 @@ left = \relative c'' {
 
   e=8 b' e dis e b |
   dis,=8 fis b ais b fis |
-  \tuplet 2/3 4. { gis,=,8 dis' gis dis } |
+  \tuplet 2/3 4. { gis,=,8-> dis' gis dis } |
   \tuplet 2/3 4. { e,=,8 b' e b } |
 
   e,=,2. |

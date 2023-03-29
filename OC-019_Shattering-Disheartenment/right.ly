@@ -114,8 +114,8 @@ right = \relative c'''' {
       r2. | \hideStaffSwitch \change Staff = "right"
     }
     \new Voice { \voiceOne
-      b=8 dis b' b' ais dis, |
-      ais,=8 dis ais' ais'='' gis dis |
+      b=8 dis b' b' ais dis, \noBreak |
+      ais,=8 dis ais' ais'='' gis dis \noBreak |
       r4. b'=''8\( ais gis |
       fis dis cis \acciaccatura d8 dis4.\) |
 
@@ -156,8 +156,8 @@ right = \relative c'''' {
       r2. | \hideStaffSwitch \change Staff = "right"
     }
     \new Voice { \voiceOne
-      b=8 dis b' b' ais dis, |
-      ais,=8 dis ais' ais'='' gis dis |
+      b=8 dis b' b' ais dis, \noBreak |
+      ais,=8 dis ais' ais'='' gis dis \noBreak |
       r4. b'=''8\( ais gis |
       fis dis cis \acciaccatura d8 dis4.\) |
 
