@@ -74,9 +74,9 @@ left = \relative c'' {
   <fis=' dis b>2. |
   \clef "bass" <cis=' ais fis>2. |
 
-  e,=8\( b' e dis e b |
+  e,=8\tweak positions #'(1.5 . 1.5) \tweak eccentricity #-2 \( b' e dis e b |
   dis,=8 fis b ais b fis\) |
-  e=8\( b' e dis e b |
+  e=8\tweak positions #'(1.5 . 1.5) \tweak eccentricity #-2 \( b' e dis e b |
   dis,=8 fis b ais b fis\) |
 
   e=8 b' e dis e b |

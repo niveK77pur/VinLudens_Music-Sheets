@@ -36,6 +36,8 @@ dynamics = {
 
   s2 s4\mf |
   s2.*7 |
+  \once\override DynamicText.self-alignment-X = #LEFT
+  % \once\override Staff.DynamicText.Y-offset = #-6.9
   s2.\f |
   s2.*6 |
   s2.\> |

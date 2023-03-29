@@ -14,7 +14,7 @@ cslurFirst =
        start-ratio = 0.67
        start-point = #'( 0 . -1.8 )
        end-angle = -70
-       end-ratio = 0.67
+       end-ratio = 0.63
        end-point = #'( -0.5 . -5.0 )
        % start-ratio = 0.6
        % end-point = #`(,end-x . ,end-y)
@@ -34,7 +34,8 @@ cslurEnd =
        annotate = ##f
        show-grid = ##f
        start-angle = 10
-       end-angle = -30
+       end-angle = -33
+       end-ratio = 0.55
 
        inflection =
        #'((X-ratio . .48)
