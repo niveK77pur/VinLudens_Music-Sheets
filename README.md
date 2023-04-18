@@ -1,3 +1,17 @@
+# :warning: Archived :warning:
+
+The ever growing number of sheets slowly starts to make this repository more of a burden than anything else (i.e. you can't grab individual folders which makes cloning take a bit of time among other things). Also, the inclusion of the PDF and MIDI files never felt quite right to me.
+
+That said, I have migrated everything to a new place: <https://github.com/VinLudens>  
+Feel free to `Follow` there if you starred this repository!
+
+There we have
+- 1 repository per music sheet, making everything much more neat, managable, and organised
+- Allows for an up-to-date list of sheets by listing and filtering the repositories (in this repo I'd need to manually update the README, which I never did)
+- CI/CD jobs to automatically build and make a GitHub release with the PDF and MIDI files (i.e. they are not tracked by git anymore)
+
+---
+
 Welcome! I am [VinLudens](https://www.youtube.com/channel/UCdBt0itOxHS80p_yS5fUELw) and this is my GitHub repository containing all the sheets with their respective code I have written in [Lilypond](http://lilypond.org/) thus far. Consider this a sort of archive.
 
 Lilypond is basically the equivalent to [LaTeX](https://www.latex-project.org/) but for writing music scores. I have my workflow in combination with [Vim](https://github.com/niveK77pur/.vim "my vim configs") and [Frescobaldi](http://www.frescobaldi.org/index.html) which allows me to produce my sheets fairly quickly and without too much trouble.
